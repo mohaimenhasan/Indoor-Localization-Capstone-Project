@@ -17,7 +17,7 @@ var app = express();
 // database setup
 let dev_url = 'mongodb://localhost:27017/datachain';
 let mongoDB = process.env.MONGO_URI || dev_url;
-mongoose.connect(mongoDB, { useNewUrlParser: true });
+mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.Promise = global.Promise;
 let db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
