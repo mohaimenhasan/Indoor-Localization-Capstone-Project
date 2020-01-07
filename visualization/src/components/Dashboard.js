@@ -20,7 +20,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import { mainListItems } from './listitems';
 import Chart from './Chart';
-// import Deposits from './Deposits';
+import Deposits from './Deposits';
 import Orders from './Orders';
 
 function Copyright() {
@@ -179,11 +179,11 @@ export default function Dashboard() {
                             </Paper>
                         </Grid>
                         {/* Recent Deposits */}
-                        {/*<Grid item xs={12} md={4} lg={3}>*/}
-                        {/*    <Paper className={fixedHeightPaper}>*/}
-                        {/*        <Deposits />*/}
-                        {/*    </Paper>*/}
-                        {/*</Grid>*/}
+                        <Grid item xs={12} md={4} lg={3}>
+                            <Paper className={fixedHeightPaper}>
+                                <Deposits />
+                            </Paper>
+                        </Grid>
                         {/* Recent Orders */}
                         <Grid item xs={12}>
                             <Paper className={classes.paper}>
