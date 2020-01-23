@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1swifi_1_1peak__gate" kind="class" language="C++" prot="public">
+    <compoundname>gr::swifi::peak_gate</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="peak__gate_8h" local="no">peak_gate.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1swifi_1_1peak__gate_1a3734c1447647b137a12ac2c7d2de626f" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1swifi_1_1peak__gate" kindref="compound">peak_gate</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;peak_gate&gt; gr::swifi::peak_gate::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/peak_gate.h" line="46" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/peak_gate.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1peak__gate_1a7a8347392e5a2543c5156b55849ce0bb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1peak__gate_1a3734c1447647b137a12ac2c7d2de626f" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::swifi::peak_gate::make</definition>
+        <argsstring>(float threshold, int num_peaks, int min_distance, int max_distance)</argsstring>
+        <name>make</name>
+        <param>
+          <type>float</type>
+          <declname>threshold</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_peaks</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>min_distance</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_distance</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1swifi_1_1peak__gate" kindref="compound">swifi::peak_gate</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If an input item passes over this threshold, it adds one more count. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_peaks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the number of peaks reaches this value, the block outputs 1, otherwise 0. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min_distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Required min. distance between two consecutive peaks. If the current peak is too close to the previous peak, it is not counted. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Required max. distance between two consecutive peaks. If the current peak is too far to the previous peak, peak count is restarted from 1 (i.e., starting from the current peak). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/peak_gate.h" line="59" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Input stream should contain peak/non-peak values, which usually are the correlation results. If the number of peaks (whose values greater than a threshold) reaches a given value, this block outputs 1, otherwise outputs 0. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="201">
+        <label>gr::swifi::peak_gate</label>
+        <link refid="classgr_1_1swifi_1_1peak__gate"/>
+        <childnode refid="202" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="202">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="203">
+        <label>gr::swifi::peak_gate</label>
+        <link refid="classgr_1_1swifi_1_1peak__gate"/>
+        <childnode refid="204" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="204">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wirlab/gr-swifi/include/swifi/peak_gate.h" line="44" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/peak_gate.h" bodystart="43" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classgr_1_1swifi_1_1peak__gate_1a7a8347392e5a2543c5156b55849ce0bb" prot="public" virt="non-virtual"><scope>gr::swifi::peak_gate</scope><name>make</name></member>
+      <member refid="classgr_1_1swifi_1_1peak__gate_1a3734c1447647b137a12ac2c7d2de626f" prot="public" virt="non-virtual"><scope>gr::swifi::peak_gate</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

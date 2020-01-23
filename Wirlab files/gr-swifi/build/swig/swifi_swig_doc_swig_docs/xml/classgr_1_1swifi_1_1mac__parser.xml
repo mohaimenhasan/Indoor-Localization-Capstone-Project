@@ -1,0 +1,631 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1swifi_1_1mac__parser" kind="class" language="C++" prot="public">
+    <compoundname>gr::swifi::mac_parser</compoundname>
+    <includes refid="mac__parser_8h" local="no">mac_parser.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1swifi_1_1mac__parser_1a9e08e988e3837f478c91cbf662cad718" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1swifi_1_1mac__parser" kindref="compound">mac_parser</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;mac_parser&gt; gr::swifi::mac_parser::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="82" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1mac__parser_1a1b486b8856a506b166c60258a1be991f" prot="protected" static="no" mutable="no">
+        <type><ref refid="structgr_1_1swifi_1_1mac__frame__info" kindref="compound">mac_frame_info</ref></type>
+        <definition>mac_frame_info gr::swifi::mac_parser::info</definition>
+        <argsstring></argsstring>
+        <name>info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="47" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1mac__parser_1a18e8c65669f5369079e2ec6564a9dc7c" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::swifi::mac_parser::read_pos</definition>
+        <argsstring></argsstring>
+        <name>read_pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="48" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1abc450888677a0d64fa809888c9201600" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* gr::swifi::mac_parser::next</definition>
+        <argsstring>(int size)</argsstring>
+        <name>next</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1a680b742f4f1d63e07c28ddb6b87427d1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t gr::swifi::mac_parser::next_uint64</definition>
+        <argsstring>()</argsstring>
+        <name>next_uint64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1a491275ef9a2bc2f970184914cf466dba" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::swifi::mac_parser::next_uint32</definition>
+        <argsstring>()</argsstring>
+        <name>next_uint32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1a752e91af99d6e2416972d9d6ca4e0789" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t gr::swifi::mac_parser::next_uint16</definition>
+        <argsstring>()</argsstring>
+        <name>next_uint16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1a77fd2f3eced6e39a057f663e3025a8b4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::mac_parser::next_uint8</definition>
+        <argsstring>()</argsstring>
+        <name>next_uint8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1a1fe69badcf60be5e1efd630c8f90da14" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::swifi::mac_parser::next_uint64</definition>
+        <argsstring>(void *dest)</argsstring>
+        <name>next_uint64</name>
+        <param>
+          <type>void *</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1a70e77558c120f15aede410336b1a916b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::swifi::mac_parser::next_uint32</definition>
+        <argsstring>(void *dest)</argsstring>
+        <name>next_uint32</name>
+        <param>
+          <type>void *</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1ac30a9beffc796151db25c12e588370ce" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::swifi::mac_parser::next_uint16</definition>
+        <argsstring>(void *dest)</argsstring>
+        <name>next_uint16</name>
+        <param>
+          <type>void *</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1a57e5bab03ae2460b43f909da305ff9ce" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::swifi::mac_parser::next_chunk</definition>
+        <argsstring>(int size, void *dest)</argsstring>
+        <name>next_chunk</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1a2cc9cda363ef703662500bad54f85b96" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string gr::swifi::mac_parser::next_string</definition>
+        <argsstring>(int size)</argsstring>
+        <name>next_string</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1a64f3aff910f3c6549d14335debfd0d7f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::swifi::mac_parser::get_remaining_size</definition>
+        <argsstring>()</argsstring>
+        <name>get_remaining_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1a79cc1c3a7b72778a49b59a976138fc31" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::swifi::mac_parser::parse_management</definition>
+        <argsstring>()</argsstring>
+        <name>parse_management</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1a0cf5200038db1d34abf3e9b9a6e17a82" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::swifi::mac_parser::parse_management_beacon</definition>
+        <argsstring>()</argsstring>
+        <name>parse_management_beacon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1a8d71fd8ac07462a9cd324be7e41dae8d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::swifi::mac_parser::parse_ies</definition>
+        <argsstring>()</argsstring>
+        <name>parse_ies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1ac82ecc25b564024d5cf091813448331a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::swifi::mac_parser::parse_ie_ssid</definition>
+        <argsstring>(int elen)</argsstring>
+        <name>parse_ie_ssid</name>
+        <param>
+          <type>int</type>
+          <declname>elen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1a215d9d132c12a52c499a2b6e1443ed56" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::swifi::mac_parser::parse_ie_supported_rates</definition>
+        <argsstring>(int elen)</argsstring>
+        <name>parse_ie_supported_rates</name>
+        <param>
+          <type>int</type>
+          <declname>elen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1a69afff599b3f0b7aaa351be1415e4659" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::swifi::mac_parser::parse_ie_dsss_parameter_set</definition>
+        <argsstring>(int elen)</argsstring>
+        <name>parse_ie_dsss_parameter_set</name>
+        <param>
+          <type>int</type>
+          <declname>elen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1a393d4422c4c17aec0d6887094ab3445f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::swifi::mac_parser::parse_ie_country</definition>
+        <argsstring>(int elen)</argsstring>
+        <name>parse_ie_country</name>
+        <param>
+          <type>int</type>
+          <declname>elen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1a9a5026965b71e63ca9199b0f881bf64c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::swifi::mac_parser::parse_ie_erp</definition>
+        <argsstring>(int elen)</argsstring>
+        <name>parse_ie_erp</name>
+        <param>
+          <type>int</type>
+          <declname>elen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1ad794b90a5aa6741e02bb7ee16aa920f4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::swifi::mac_parser::parse_ie_ht_capabilities</definition>
+        <argsstring>(int elen)</argsstring>
+        <name>parse_ie_ht_capabilities</name>
+        <param>
+          <type>int</type>
+          <declname>elen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1ad5a5ca84caad1ce711e460cbec3a0039" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::swifi::mac_parser::parse_control</definition>
+        <argsstring>()</argsstring>
+        <name>parse_control</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1a7a6f1093213b1598eb6f410bdab06c37" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::swifi::mac_parser::parse_control_block_ack_req</definition>
+        <argsstring>()</argsstring>
+        <name>parse_control_block_ack_req</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1a55dca8f1760046d725f474d5a3a2d1bb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::swifi::mac_parser::parse_control_block_ack</definition>
+        <argsstring>()</argsstring>
+        <name>parse_control_block_ack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1adb27ac4279442b90d3febf5e897fb6b1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::swifi::mac_parser::parse_data</definition>
+        <argsstring>()</argsstring>
+        <name>parse_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="77" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1a1152065cb1546a1c1d09b8c318054a8b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1mac__parser_1a9e08e988e3837f478c91cbf662cad718" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::swifi::mac_parser::make</definition>
+        <argsstring>()</argsstring>
+        <name>make</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="84" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1ae0a09123f85a028209b31300ab42819e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::swifi::mac_parser::mac_parser</definition>
+        <argsstring>()</argsstring>
+        <name>mac_parser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1a53634c85ea5f9a7b68a9d9dde63d612f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::swifi::mac_parser::~mac_parser</definition>
+        <argsstring>()</argsstring>
+        <name>~mac_parser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1ad159f0aff96472e574ee8d342747ef9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool gr::swifi::mac_parser::check_fcs</definition>
+        <argsstring>(const char *recv, int len)</argsstring>
+        <name>check_fcs</name>
+        <param>
+          <type>const char *</type>
+          <declname>recv</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse header from a received array of bytes whose order is specified by IEEE 802.11. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>recv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>received bytes. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bytes of received MAC frame. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if checksum is correct, false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__parser_1a224f00185790b4b2acc8af020e313a74" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structgr_1_1swifi_1_1mac__frame__info" kindref="compound">mac_frame_info</ref> &amp;</type>
+        <definition>virtual mac_frame_info&amp; gr::swifi::mac_parser::parse</definition>
+        <argsstring>(const char *recv, int len, const phy_frame_rx_info &amp;info)</argsstring>
+        <name>parse</name>
+        <param>
+          <type>const char *</type>
+          <declname>recv</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structgr_1_1swifi_1_1phy__frame__rx__info" kindref="compound">phy_frame_rx_info</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse header from a received array of bytes whose order is specified by IEEE 802.11. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>recv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>received bytes. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bytes of received MAC frame. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MAC frame information. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if checksum is correct, false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="108" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>MAC Header utility for IEEE 802.11a. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="165">
+        <label>gr::swifi::mac80211_ht_control_field</label>
+        <link refid="structgr_1_1swifi_1_1mac80211__ht__control__field"/>
+      </node>
+      <node id="168">
+        <label>gr::swifi::mac80211_qos_control_field</label>
+        <link refid="structgr_1_1swifi_1_1mac80211__qos__control__field"/>
+      </node>
+      <node id="162">
+        <label>gr::swifi::mac_parser</label>
+        <link refid="classgr_1_1swifi_1_1mac__parser"/>
+        <childnode refid="163" relation="usage">
+          <edgelabel>info</edgelabel>
+        </childnode>
+      </node>
+      <node id="166">
+        <label>gr::swifi::mac80211_frame_control_field</label>
+        <link refid="structgr_1_1swifi_1_1mac80211__frame__control__field"/>
+      </node>
+      <node id="163">
+        <label>gr::swifi::mac_frame_info</label>
+        <link refid="structgr_1_1swifi_1_1mac__frame__info"/>
+        <childnode refid="164" relation="usage">
+          <edgelabel>seq_control</edgelabel>
+        </childnode>
+        <childnode refid="165" relation="usage">
+          <edgelabel>ht_control</edgelabel>
+        </childnode>
+        <childnode refid="166" relation="usage">
+          <edgelabel>fc</edgelabel>
+        </childnode>
+        <childnode refid="167" relation="usage">
+          <edgelabel>rx_info</edgelabel>
+        </childnode>
+        <childnode refid="168" relation="usage">
+          <edgelabel>qos_control</edgelabel>
+        </childnode>
+      </node>
+      <node id="164">
+        <label>gr::swifi::mac80211_sequence_control_field</label>
+        <link refid="structgr_1_1swifi_1_1mac80211__sequence__control__field"/>
+      </node>
+      <node id="167">
+        <label>gr::swifi::phy_frame_rx_info</label>
+        <link refid="structgr_1_1swifi_1_1phy__frame__rx__info"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" line="45" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_parser.h" bodystart="44" bodyend="111"/>
+    <listofallmembers>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1ad159f0aff96472e574ee8d342747ef9a" prot="public" virt="virtual"><scope>gr::swifi::mac_parser</scope><name>check_fcs</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1a64f3aff910f3c6549d14335debfd0d7f" prot="protected" virt="non-virtual"><scope>gr::swifi::mac_parser</scope><name>get_remaining_size</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1a1b486b8856a506b166c60258a1be991f" prot="protected" virt="non-virtual"><scope>gr::swifi::mac_parser</scope><name>info</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1ae0a09123f85a028209b31300ab42819e" prot="public" virt="non-virtual"><scope>gr::swifi::mac_parser</scope><name>mac_parser</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1a1152065cb1546a1c1d09b8c318054a8b" prot="public" virt="non-virtual"><scope>gr::swifi::mac_parser</scope><name>make</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1abc450888677a0d64fa809888c9201600" prot="protected" virt="non-virtual"><scope>gr::swifi::mac_parser</scope><name>next</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1a57e5bab03ae2460b43f909da305ff9ce" prot="protected" virt="non-virtual"><scope>gr::swifi::mac_parser</scope><name>next_chunk</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1a2cc9cda363ef703662500bad54f85b96" prot="protected" virt="non-virtual"><scope>gr::swifi::mac_parser</scope><name>next_string</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1a752e91af99d6e2416972d9d6ca4e0789" prot="protected" virt="non-virtual"><scope>gr::swifi::mac_parser</scope><name>next_uint16</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1ac30a9beffc796151db25c12e588370ce" prot="protected" virt="non-virtual"><scope>gr::swifi::mac_parser</scope><name>next_uint16</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1a491275ef9a2bc2f970184914cf466dba" prot="protected" virt="non-virtual"><scope>gr::swifi::mac_parser</scope><name>next_uint32</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1a70e77558c120f15aede410336b1a916b" prot="protected" virt="non-virtual"><scope>gr::swifi::mac_parser</scope><name>next_uint32</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1a680b742f4f1d63e07c28ddb6b87427d1" prot="protected" virt="non-virtual"><scope>gr::swifi::mac_parser</scope><name>next_uint64</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1a1fe69badcf60be5e1efd630c8f90da14" prot="protected" virt="non-virtual"><scope>gr::swifi::mac_parser</scope><name>next_uint64</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1a77fd2f3eced6e39a057f663e3025a8b4" prot="protected" virt="non-virtual"><scope>gr::swifi::mac_parser</scope><name>next_uint8</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1a224f00185790b4b2acc8af020e313a74" prot="public" virt="virtual"><scope>gr::swifi::mac_parser</scope><name>parse</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1ad5a5ca84caad1ce711e460cbec3a0039" prot="protected" virt="virtual"><scope>gr::swifi::mac_parser</scope><name>parse_control</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1a55dca8f1760046d725f474d5a3a2d1bb" prot="protected" virt="virtual"><scope>gr::swifi::mac_parser</scope><name>parse_control_block_ack</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1a7a6f1093213b1598eb6f410bdab06c37" prot="protected" virt="virtual"><scope>gr::swifi::mac_parser</scope><name>parse_control_block_ack_req</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1adb27ac4279442b90d3febf5e897fb6b1" prot="protected" virt="virtual"><scope>gr::swifi::mac_parser</scope><name>parse_data</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1a393d4422c4c17aec0d6887094ab3445f" prot="protected" virt="virtual"><scope>gr::swifi::mac_parser</scope><name>parse_ie_country</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1a69afff599b3f0b7aaa351be1415e4659" prot="protected" virt="virtual"><scope>gr::swifi::mac_parser</scope><name>parse_ie_dsss_parameter_set</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1a9a5026965b71e63ca9199b0f881bf64c" prot="protected" virt="virtual"><scope>gr::swifi::mac_parser</scope><name>parse_ie_erp</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1ad794b90a5aa6741e02bb7ee16aa920f4" prot="protected" virt="virtual"><scope>gr::swifi::mac_parser</scope><name>parse_ie_ht_capabilities</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1ac82ecc25b564024d5cf091813448331a" prot="protected" virt="virtual"><scope>gr::swifi::mac_parser</scope><name>parse_ie_ssid</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1a215d9d132c12a52c499a2b6e1443ed56" prot="protected" virt="virtual"><scope>gr::swifi::mac_parser</scope><name>parse_ie_supported_rates</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1a8d71fd8ac07462a9cd324be7e41dae8d" prot="protected" virt="virtual"><scope>gr::swifi::mac_parser</scope><name>parse_ies</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1a79cc1c3a7b72778a49b59a976138fc31" prot="protected" virt="virtual"><scope>gr::swifi::mac_parser</scope><name>parse_management</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1a0cf5200038db1d34abf3e9b9a6e17a82" prot="protected" virt="virtual"><scope>gr::swifi::mac_parser</scope><name>parse_management_beacon</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1a18e8c65669f5369079e2ec6564a9dc7c" prot="protected" virt="non-virtual"><scope>gr::swifi::mac_parser</scope><name>read_pos</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1a9e08e988e3837f478c91cbf662cad718" prot="public" virt="non-virtual"><scope>gr::swifi::mac_parser</scope><name>sptr</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__parser_1a53634c85ea5f9a7b68a9d9dde63d612f" prot="public" virt="non-virtual"><scope>gr::swifi::mac_parser</scope><name>~mac_parser</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

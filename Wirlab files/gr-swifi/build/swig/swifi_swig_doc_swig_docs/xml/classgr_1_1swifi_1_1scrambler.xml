@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1swifi_1_1scrambler" kind="class" language="C++" prot="public">
+    <compoundname>gr::swifi::scrambler</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="scrambler_8h" local="no">scrambler.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1swifi_1_1scrambler_1a9909ebec161524f02b7d01bf1f497b4c" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1swifi_1_1scrambler" kindref="compound">scrambler</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;scrambler&gt; gr::swifi::scrambler::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/scrambler.h" line="45" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/scrambler.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1scrambler_1a01d0118bb96bb3ab0ee90234a6752bfe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1scrambler_1a9909ebec161524f02b7d01bf1f497b4c" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::swifi::scrambler::make</definition>
+        <argsstring>(bool is_scrambler, const std::string &amp;phy_tag_key)</argsstring>
+        <name>make</name>
+        <param>
+          <type>bool</type>
+          <declname>is_scrambler</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>phy_tag_key</declname>
+        </param>
+        <briefdescription>
+<para>Create a new instance of <ref refid="classgr_1_1swifi_1_1scrambler" kindref="compound">swifi::scrambler</ref> in tag-processing mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_scrambler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if scrambler, false if descrambler. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>phy_tag_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tag key for PHY processing. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/scrambler.h" line="54" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Scrambling the input stream with IEEE 802.11a scrambling construction. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="232">
+        <label>sync_block</label>
+      </node>
+      <node id="231">
+        <label>gr::swifi::scrambler</label>
+        <link refid="classgr_1_1swifi_1_1scrambler"/>
+        <childnode refid="232" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="234">
+        <label>sync_block</label>
+      </node>
+      <node id="233">
+        <label>gr::swifi::scrambler</label>
+        <link refid="classgr_1_1swifi_1_1scrambler"/>
+        <childnode refid="234" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wirlab/gr-swifi/include/swifi/scrambler.h" line="43" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/scrambler.h" bodystart="42" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classgr_1_1swifi_1_1scrambler_1a01d0118bb96bb3ab0ee90234a6752bfe" prot="public" virt="non-virtual"><scope>gr::swifi::scrambler</scope><name>make</name></member>
+      <member refid="classgr_1_1swifi_1_1scrambler_1a9909ebec161524f02b7d01bf1f497b4c" prot="public" virt="non-virtual"><scope>gr::swifi::scrambler</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

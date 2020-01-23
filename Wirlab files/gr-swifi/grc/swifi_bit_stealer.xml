@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<block>
+  <name>Bit Stealer</name>
+  <key>swifi_bit_stealer</key>
+  <category>SWiFi</category>
+  <import>import swifi</import>
+  <make>#if $mode() == 0
+swifi.bit_stealer($phy_tag_key)
+#else
+swifi.bit_stealer($rate)
+#end if</make>
+
+  <param>
+    <name>Mode</name>
+    <key>mode</key>
+    <value>0</value>
+    <hide>part</hide>
+    <option>
+      <name>Use PHY tag</name>
+      <key>0</key>
+    </option>
+    <option>
+      <name>Use Fixed Rate</name>
+      <key>1</key>
+    </option>
+  </param>
+
+  <param>
+    <name>PHY Tag Key</name>
+    <key>phy_tag_key</key>
+    <value>"phy"</value>
+    <type>string</type>
+    <hide>#if $mode() == 0 then 'none' else 'all'#</hide>
+  </param>
+
+  <param>
+    <name>Rate</name>
+    <key>rate</key>
+    <value>11</value>
+    <type>int</type>
+    <hide>#if $mode() == 1 then 'none' else 'all'#</hide>
+    <option>
+      <name>6 Mbps</name>
+      <key>11</key>
+    </option>
+    <option>
+      <name>9 Mbps</name>
+      <key>15</key>
+    </option>
+    <option>
+      <name>12 Mbps</name>
+      <key>10</key>
+    </option>
+    <option>
+      <name>18 Mbps</name>
+      <key>14</key>
+    </option>
+    <option>
+      <name>24 Mbps</name>
+      <key>9</key>
+    </option>
+    <option>
+      <name>36 Mbps</name>
+      <key>13</key>
+    </option>
+    <option>
+      <name>48 Mbps</name>
+      <key>8</key>
+    </option>
+    <option>
+      <name>54 Mbps</name>
+      <key>12</key>
+    </option>
+  </param>
+
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+
+  <source>
+    <name>out</name>
+    <type>byte</type>
+  </source>
+
+</block>

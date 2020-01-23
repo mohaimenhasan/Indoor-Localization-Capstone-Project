@@ -1,0 +1,1025 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="classgr_1_1swifi_1_1bit__inserter" kind="class"><name>gr::swifi::bit_inserter</name>
+    <member refid="classgr_1_1swifi_1_1bit__inserter_1a2b3b640b4a2a7cb87a66ea4ef3b87bde" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1bit__inserter_1aea62ef8699aeb974fe937e055419304a" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1swifi_1_1bit__inserter_1adc0c292e9ebf317ad51e36cda3bdf9f2" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1bit__packer" kind="class"><name>gr::swifi::bit_packer</name>
+    <member refid="classgr_1_1swifi_1_1bit__packer_1a797e7d4cc8c9ab15ada637ec1b3e1013" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1bit__packer_1ada99992951510e92db4b9ed70d5d0d59" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1bit__stealer" kind="class"><name>gr::swifi::bit_stealer</name>
+    <member refid="classgr_1_1swifi_1_1bit__stealer_1a781ec46b7354caef4cb481919107b1f1" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1bit__stealer_1a5bc3e715972ccf1855ece89e3019ec89" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1swifi_1_1bit__stealer_1a57808fd82f17744a97ae4da80d8244db" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1bit__unpacker" kind="class"><name>gr::swifi::bit_unpacker</name>
+    <member refid="classgr_1_1swifi_1_1bit__unpacker_1a57cb80ceeeb663f6b1adb09b5f5e0152" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1bit__unpacker_1a8111dce323599cf5e62c39dd84c89c17" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1bitmetrics__computer" kind="class"><name>gr::swifi::bitmetrics_computer</name>
+    <member refid="classgr_1_1swifi_1_1bitmetrics__computer_1a937d15bd1c5aff6085de6758654264f9" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1bitmetrics__computer_1ab8b6f42eca830e4a05f96de32c9b8a58" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1swifi_1_1bitmetrics__computer_1abc2ade6cde56e5539e2416fd59e023f8" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1bitmetrics__inserter" kind="class"><name>gr::swifi::bitmetrics_inserter</name>
+    <member refid="classgr_1_1swifi_1_1bitmetrics__inserter_1ad75159d38aa727265e2492bdd8dd8955" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1bitmetrics__inserter_1ae4c4c767a6f6754cc6444387b45d2684" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1swifi_1_1bitmetrics__inserter_1a8118809ee79ebeb1f66d43f0ef14e11e" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1bitmetrics__interleaver" kind="class"><name>gr::swifi::bitmetrics_interleaver</name>
+    <member refid="classgr_1_1swifi_1_1bitmetrics__interleaver_1acef2455f34b2b05b30ddb53d64bfc566" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1bitmetrics__interleaver_1ae4c3a9df98618699782012459b2ca2de" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1swifi_1_1bitmetrics__interleaver_1a28590d200260efbd64d8ad989222fcf4" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1swifi_1_1bitmetrics__interleaver_1a61b60254e0da44ceec62a55c880239ce" kind="function"><name>set_interleaving_map</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1channel__states__tag" kind="class"><name>gr::swifi::channel_states_tag</name>
+    <member refid="classgr_1_1swifi_1_1channel__states__tag_1a0f3b6e477f3776507b38130ea4840682" kind="variable"><name>d_phase_offset</name></member>
+    <member refid="classgr_1_1swifi_1_1channel__states__tag_1ad859fe3e1dafee0fc1e6bcb2d036ad18" kind="variable"><name>d_freq_offset</name></member>
+    <member refid="classgr_1_1swifi_1_1channel__states__tag_1a6d30686ec0fcd486afc8a3d7a2b4b240" kind="variable"><name>d_channel_states</name></member>
+    <member refid="classgr_1_1swifi_1_1channel__states__tag_1a66c6403464375440f1f76332671f8084" kind="function"><name>channel_states_tag</name></member>
+    <member refid="classgr_1_1swifi_1_1channel__states__tag_1ae369d56ff59668ff42d38689778dd976" kind="function"><name>channel_states</name></member>
+    <member refid="classgr_1_1swifi_1_1channel__states__tag_1abf4e05404a007dbe0ed634311eb5752e" kind="function"><name>channel_states</name></member>
+    <member refid="classgr_1_1swifi_1_1channel__states__tag_1a15e6defeafa699510ca0e5d917d0d693" kind="function"><name>set_channel_states</name></member>
+    <member refid="classgr_1_1swifi_1_1channel__states__tag_1af41aa1a23daa9c1e5e1c6add85644dc7" kind="function"><name>phase_offset</name></member>
+    <member refid="classgr_1_1swifi_1_1channel__states__tag_1ab001b9d9be602773f34d2fe792b255e4" kind="function"><name>set_phase_offset</name></member>
+    <member refid="classgr_1_1swifi_1_1channel__states__tag_1acb3802df1b2a2faea8cf5387e0347710" kind="function"><name>freq_offset</name></member>
+    <member refid="classgr_1_1swifi_1_1channel__states__tag_1a2fd1b5568e108ca3bc59859b029f9b44" kind="function"><name>set_freq_offset</name></member>
+    <member refid="classgr_1_1swifi_1_1channel__states__tag_1a88a7c0616c3e3958e8992c25e4056299" kind="function"><name>operator pmt::pmt_t</name></member>
+    <member refid="classgr_1_1swifi_1_1channel__states__tag_1a5d824fc5a5ac14741af924e072b3c2be" kind="function"><name>create</name></member>
+    <member refid="classgr_1_1swifi_1_1channel__states__tag_1ab43d9d6eb0310362cd9b3b98d61ca5dd" kind="function"><name>parse</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1chunks__to__symbols" kind="class"><name>gr::swifi::chunks_to_symbols</name>
+    <member refid="classgr_1_1swifi_1_1chunks__to__symbols_1ac430719f48c5caab49371ab1fb0508ad" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1chunks__to__symbols_1a3cae6fbe8e95709e9e0e65fecead3992" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1swifi_1_1chunks__to__symbols_1aa09e825beb615e509553a6198514ff8d" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1constellation__decoder" kind="class"><name>gr::swifi::constellation_decoder</name>
+    <member refid="classgr_1_1swifi_1_1constellation__decoder_1adb99c649d10f78e48b0e0b5bdc23c88f" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1constellation__decoder_1ac98e99f1acd5eb9a6185640f67b46304" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1swifi_1_1constellation__decoder_1a0effb7307eee745adbea485199150547" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1constellation__metrics" kind="class"><name>gr::swifi::constellation_metrics</name>
+    <member refid="classgr_1_1swifi_1_1constellation__metrics_1afddd64342e7326bc3bed5886e87c4346" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1constellation__metrics_1a042e2c469523139c7c53d1f8cd1b86a1" kind="function"><name>bitmetrics</name></member>
+  </compound>
+  <compound refid="structgr_1_1swifi_1_1control__ba__info" kind="struct"><name>gr::swifi::control_ba_info</name>
+    <member refid="structgr_1_1swifi_1_1control__ba__info_1a4d784317b915bba1d90b2c448b111083" kind="variable"><name>ba_control</name></member>
+    <member refid="structgr_1_1swifi_1_1control__ba__info_1a0d7f8e0bbe2564302b5cd1b08fc855e6" kind="variable"><name>ba_info</name></member>
+    <member refid="structgr_1_1swifi_1_1control__ba__info_1a5a08c9a6d93145cf4134d9705a713bf6" kind="variable"><name>ba_info_len</name></member>
+  </compound>
+  <compound refid="structgr_1_1swifi_1_1control__bar__info" kind="struct"><name>gr::swifi::control_bar_info</name>
+    <member refid="structgr_1_1swifi_1_1control__bar__info_1a33c25e865540307a37b3f6a8e49452d7" kind="variable"><name>bar_control</name></member>
+    <member refid="structgr_1_1swifi_1_1control__bar__info_1afe727d96052d3a903a5cae928530c136" kind="variable"><name>bar_info</name></member>
+    <member refid="structgr_1_1swifi_1_1control__bar__info_1a2451e39f2e605c9b80457523cad10d6d" kind="variable"><name>bar_info_len</name></member>
+  </compound>
+  <compound refid="structgr_1_1swifi_1_1control__frame__info" kind="struct"><name>gr::swifi::control_frame_info</name>
+    <member refid="structgr_1_1swifi_1_1control__frame__info_1a6bcf8ddc5b5b38e660aea33a9f7090fe" kind="variable"><name>bar_info</name></member>
+    <member refid="structgr_1_1swifi_1_1control__frame__info_1a85e75841ed00af8cf0f4270618650274" kind="variable"><name>ba_info</name></member>
+  </compound>
+  <compound refid="structgr_1_1swifi_1_1data__frame__info" kind="struct"><name>gr::swifi::data_frame_info</name>
+    <member refid="structgr_1_1swifi_1_1data__frame__info_1af9cb932052d7797f08a35ace7b1e93d2" kind="variable"><name>data</name></member>
+    <member refid="structgr_1_1swifi_1_1data__frame__info_1a07c5c84a6c0db42076db16049ed6ba6a" kind="variable"><name>len</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1dsss__frame__sync" kind="class"><name>gr::swifi::dsss_frame_sync</name>
+    <member refid="classgr_1_1swifi_1_1dsss__frame__sync_1ac501ccdf95393382c14a57ee7d22b971" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1dsss__frame__sync_1ae2faa63ca0547d39bd011089599bc0f9" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1swifi_1_1dsss__frame__sync_1a55844a51c5c2b52f93497e8d3cceb2a0" kind="function"><name>set_demod_reset_tag_key</name></member>
+    <member refid="classgr_1_1swifi_1_1dsss__frame__sync_1a26f8b7ce48b5af1f71be80d12155c01b" kind="function"><name>set_descrambler_reset_tag_key</name></member>
+    <member refid="classgr_1_1swifi_1_1dsss__frame__sync_1a93032080275013454a5caa59f91003ce" kind="function"><name>set_control_message_queue</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1dsss__frame__sync__2" kind="class"><name>gr::swifi::dsss_frame_sync_2</name>
+    <member refid="classgr_1_1swifi_1_1dsss__frame__sync__2_1a414b91bba9e1dc7000ae4aa7923feb77" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1dsss__frame__sync__2_1ac0bc9073418814ab6826cd4e0efe2efd" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1dynamic__rate__block" kind="class"><name>gr::swifi::dynamic_rate_block</name>
+    <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1a4e5e549a1ba3bd7ccb9401a50cda57ed" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1ae573d38044e6f08b653b8a3fbfdd940a" kind="variable"><name>d_tag_key</name></member>
+    <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1acb8e3e5119b72cea7302f249c58fcefa" kind="variable"><name>d_input_itemsize</name></member>
+    <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1af0811461d3f180447151d5f82f1327ec" kind="variable"><name>d_output_itemsize</name></member>
+    <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1ac524ff9f295d7ef4231da523a55de3fa" kind="variable"><name>d_start_read_idx</name></member>
+    <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1aeb5c6df3ee2399bdd839f70f9f9021cc" kind="variable"><name>d_start_write_idx</name></member>
+    <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1a711f2e56195da54513e5c3c5f22b2b88" kind="function"><name>forecast</name></member>
+    <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1afe1c11ccea2664f6056639298ddec153" kind="function"><name>general_work</name></member>
+    <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1a4f9d71ef652d1a22fd0a31ccb21cd34e" kind="function"><name>dynamic_rate_block</name></member>
+    <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1a8c95f672d925cafa6524a571a8004e23" kind="function"><name>dynamic_rate_block</name></member>
+    <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1aa65f804d9217db7376c7495525f682f4" kind="function"><name>update_rate</name></member>
+    <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1a5a37aafea0e32aeb987bd59e8e4a8442" kind="function"><name>propagate_tags</name></member>
+    <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1a7c7b07f46bf4f23e6fbfa871b1d125d6" kind="function"><name>dynamic_rate_work</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1fd__noise__adder" kind="class"><name>gr::swifi::fd_noise_adder</name>
+    <member refid="classgr_1_1swifi_1_1fd__noise__adder_1a53367f78842134ab30e70ee7f3a9c3d5" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1fd__noise__adder_1ad0232f588aa876df7ddaaf887a923bd7" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1frame__filter" kind="class"><name>gr::swifi::frame_filter</name>
+    <member refid="classgr_1_1swifi_1_1frame__filter_1acf6a94c99c68901600d321b4f8040c9c" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1frame__filter_1a094df1446d2778f07c4506c05605be68" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1frame__samples__extractor" kind="class"><name>gr::swifi::frame_samples_extractor</name>
+    <member refid="classgr_1_1swifi_1_1frame__samples__extractor_1a60307a393ce979894844a908b91a8392" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1frame__samples__extractor_1a47f99a63cc0d4f5d11f4d7a5e01b4115" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1header__payload__demux" kind="class"><name>gr::swifi::header_payload_demux</name>
+    <member refid="classgr_1_1swifi_1_1header__payload__demux_1a8d914bb9e00cbe7da23728c7bff34edd" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1header__payload__demux_1aee2564908881a4c220feba323faafc28" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1header__payload__demux__2" kind="class"><name>gr::swifi::header_payload_demux_2</name>
+    <member refid="classgr_1_1swifi_1_1header__payload__demux__2_1a50089c6cc40eba7a7ea405b2b5c3222d" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1header__payload__demux__2_1a34e49eae9bb86cf28dc4bfc257858168" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="structgr_1_1swifi_1_1ie__country__info" kind="struct"><name>gr::swifi::ie_country_info</name>
+    <member refid="structgr_1_1swifi_1_1ie__country__info_1aa7f1fe34ebd80b9a43de9a0e1536022e" kind="variable"><name>code</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__country__info_1a9b49eb86eaff4980297fff9fdca55c32" kind="variable"><name>first_channel</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__country__info_1a85ac44dfb173d44226cdf394e58b7aac" kind="variable"><name>num_channels</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__country__info_1a2aed6fc0c9f9e76e937cefbbf94e2192" kind="variable"><name>max_txpwr</name></member>
+  </compound>
+  <compound refid="structgr_1_1swifi_1_1ie__dsss__parameter__set__info" kind="struct"><name>gr::swifi::ie_dsss_parameter_set_info</name>
+    <member refid="structgr_1_1swifi_1_1ie__dsss__parameter__set__info_1a842b41ba1503a50e79dec5e16481ae7d" kind="variable"><name>channel</name></member>
+  </compound>
+  <compound refid="structgr_1_1swifi_1_1ie__erp__info" kind="struct"><name>gr::swifi::ie_erp_info</name>
+    <member refid="structgr_1_1swifi_1_1ie__erp__info_1a26ae567e65414a7f3e40ff6c3b773028" kind="variable"><name>nonerp</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__erp__info_1a1413a9846c4a385eeeede033cc2e1a4d" kind="variable"><name>use_protection</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__erp__info_1ac1d64f12f4cb629997f6832ed18e95f9" kind="variable"><name>barker</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__erp__info_1a005c49d06c98c42bb8a5aa8399c5d266" kind="variable"><name>reserved</name></member>
+  </compound>
+  <compound refid="structgr_1_1swifi_1_1ie__ht__cap" kind="struct"><name>gr::swifi::ie_ht_cap</name>
+    <member refid="structgr_1_1swifi_1_1ie__ht__cap_1aea14fc43f0599071f8dfe78894766a91" kind="variable"><name>info</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__cap_1a38d6cd0ede0024d246df33e297d26770" kind="variable"><name>ampdu_params</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__cap_1a189bb5a4d0ef33368469fe3009766233" kind="variable"><name>mcs_set</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__cap_1a35becd13851e518da2db3495aa0deead" kind="variable"><name>extended_cap</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__cap_1af18e765c5ca268eabfbbd27926b0542b" kind="variable"><name>tx_beamforming</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__cap_1abc5a50e3529b954b8e90c6786f1200ae" kind="variable"><name>asel_cap</name></member>
+  </compound>
+  <compound refid="structgr_1_1swifi_1_1ie__ht__capabilities__info" kind="struct"><name>gr::swifi::ie_ht_capabilities_info</name>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1a954495e793ac5ec873c490607a574ad9" kind="variable"><name>ldpc</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1a3a42db2627121d9ec41b6f9da2cde199" kind="variable"><name>channel40mhz</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1a42fe1de8b1a85a0875a5ca6b07aeb1be" kind="variable"><name>sm_pwr_save</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1a69f2645025e6f3f90dbf8454d31f79ef" kind="variable"><name>ht_green</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1a915160955ea9c2b6f01f364d24fa9319" kind="variable"><name>short_gi_20mhz</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1a61224b3d682d1a4708da6e8dc744b08b" kind="variable"><name>short_gi_40mhz</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1a23c3a4c329f21b12c7b391200f12ba7b" kind="variable"><name>tx_stbc</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1a87e3e1cc750acb599b5fe2229f3a3e58" kind="variable"><name>rx_stbc</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1a583ba34ce971722d18adabcc239da6af" kind="variable"><name>ht_delayed_block_ack</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1a84028bf1c6742b28020b31cb24f8e245" kind="variable"><name>max_amsdu_len</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1a4991ebffd25d2285732262ad9c6077a4" kind="variable"><name>dsss40mhz</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1aa703a1d7e51be4284d62e2a6f502385f" kind="variable"><name>reserved</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1adc89d60854bc44860e6cca2f22305126" kind="variable"><name>intorant40mhz</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1a5dea3e6ac7bb6a2fa3c0dc7a8fb13f18" kind="variable"><name>lsig_txop</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1a9e0f1119a6b59939048e536eb74e61ad" kind="variable"><name>ht</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1a5f6c9e8eb5ef75f3e76b748ee740fc9f" kind="variable"><name>max_exponent</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1a9b6c69d3748c3b6fa2edf34dd267e965" kind="variable"><name>min_spacing</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1a65f9f600dd3a6189c367170144d192f3" kind="variable"><name>ampdu_params</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1aef68bba9d55a52679985c3c51a643604" kind="variable"><name>rx_mcs_bitmask</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1ac55887bedbeedb6d9f02e5e09058dd48" kind="variable"><name>rx_highest_rate</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1ad8572a8cf8e0eeb0d2cfffe9bde8b513" kind="variable"><name>reserved1</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1a0c131d9bd3c9d2c1abb3794eb8294b71" kind="variable"><name>tx_mcs_defined</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1a607dee58b9aa0c92d4de5ee42d995d79" kind="variable"><name>tx_rx_mcs_not_equal</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1a2bf81933476028876251331ea3b7b873" kind="variable"><name>tx_max_streams</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1ac8847097e3f99872e0bf9476353a93ed" kind="variable"><name>tx_unequal_modulation</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1a35f1cba735c5a0268a972285abc4eb8d" kind="variable"><name>reserved2</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1a110fa39f78ff360ee2113fd4cebaef9b" kind="variable"><name>mcs</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1abf3142d8f3411f1bd8544b049a35e489" kind="variable"><name>pco</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1abd834350ae87ffa07fd2ac8219841b2f" kind="variable"><name>pco_transition_time</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1a3a52a13209dfa10a0c8b911ab478191b" kind="variable"><name>mcs_feedback</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1af2ea524293cad97f7559eec59f8cd663" kind="variable"><name>htc_support</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1a4135bcb1e9f47e5b0d98cd4fc10e9d2a" kind="variable"><name>rd_responder</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1aa1edb6c036b33ed25f9da03864a4dd4e" kind="variable"><name>reserved2</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1ae95a3f10cfb8eb14502b8a24b9aee8e4" kind="variable"><name>ht_extended</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1ac6c874b5ea05e9e308c60af8f5b22328" kind="variable"><name>tx_beamforming</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__ht__capabilities__info_1ad781304032a1988bff3e9438ba1bc292" kind="variable"><name>asel_cap</name></member>
+  </compound>
+  <compound refid="structgr_1_1swifi_1_1ie__info" kind="struct"><name>gr::swifi::ie_info</name>
+    <member refid="structgr_1_1swifi_1_1ie__info_1a00f7f204a646ba906243c7bf49cb1631" kind="variable"><name>has_ie</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__info_1a4b20ca34d1b2f4dd4300970be249e619" kind="variable"><name>ssid</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__info_1aa38276c449bb5f4906db6bb20a996604" kind="variable"><name>supported_rates</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__info_1aff962b84747fc38ed01badd225a6cc25" kind="variable"><name>dsss_parameter_set</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__info_1a35c3e83e9abeb690d266e56f727e478d" kind="variable"><name>country</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__info_1a754da84566d7a3698aa63225e746a3fd" kind="variable"><name>erp</name></member>
+    <member refid="structgr_1_1swifi_1_1ie__info_1a8e99332a8b3dd131c6a912031cbdf3da" kind="variable"><name>ht</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1info__tag" kind="class"><name>gr::swifi::info_tag</name>
+    <member refid="classgr_1_1swifi_1_1info__tag_1ab1f97a06a6a0a58773de79d1b94e14e6" kind="variable"><name>d_sfo</name></member>
+    <member refid="classgr_1_1swifi_1_1info__tag_1a2fa466bac7a4a267f7133f5499c1e258" kind="function"><name>info_tag</name></member>
+    <member refid="classgr_1_1swifi_1_1info__tag_1a5e9646845005aa62b976657408c27232" kind="function"><name>sfo</name></member>
+    <member refid="classgr_1_1swifi_1_1info__tag_1a010d4d0c7d761029fe6b28d59f8aac82" kind="function"><name>set_sfo</name></member>
+    <member refid="classgr_1_1swifi_1_1info__tag_1a2484babe592c5d45febe506ecae8b10c" kind="function"><name>operator pmt::pmt_t</name></member>
+    <member refid="classgr_1_1swifi_1_1info__tag_1a4b0af2c54b22ee3262d18cca468f30e7" kind="function"><name>create</name></member>
+    <member refid="classgr_1_1swifi_1_1info__tag_1aa762f9c6ffd621f12f47038cbe8fd366" kind="function"><name>parse</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1interleaver" kind="class"><name>gr::swifi::interleaver</name>
+    <member refid="classgr_1_1swifi_1_1interleaver_1ac73b8f5cc4629db12efc964611f9da48" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1interleaver_1aaac78f076d593f682372e791c0ae99ed" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1swifi_1_1interleaver_1ac9a9dfbdf32de7c319715ed8d2e1453f" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1swifi_1_1interleaver_1af1948f00b8ae1a986283ba50d8647c73" kind="function"><name>set_interleaving_map</name></member>
+    <member refid="classgr_1_1swifi_1_1interleaver_1aa70945856a1053f5a02d608a6bafccb8" kind="function"><name>set_interleaving_map</name></member>
+  </compound>
+  <compound refid="structgr_1_1swifi_1_1mac80211__beacon__frame" kind="struct"><name>gr::swifi::mac80211_beacon_frame</name>
+    <member refid="structgr_1_1swifi_1_1mac80211__beacon__frame_1a4708fc80b54ee463032d6cace483b940" kind="variable"><name>timestamp</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__beacon__frame_1a05ccc3f772ea7084cc9ae87a2bfa883d" kind="variable"><name>beacon_interval</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__beacon__frame_1abf42ddbc722df900bb08157a5dbf9093" kind="variable"><name>capability</name></member>
+  </compound>
+  <compound refid="structgr_1_1swifi_1_1mac80211__frame__control__field" kind="struct"><name>gr::swifi::mac80211_frame_control_field</name>
+    <member refid="structgr_1_1swifi_1_1mac80211__frame__control__field_1ae67afd253c153bb7cf0e9be1e10afba8" kind="variable"><name>prot_ver</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__frame__control__field_1ad671567e356a7c17f673812806e1c61d" kind="variable"><name>type</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__frame__control__field_1a080d575ec95b52ff85cde60b363d7139" kind="variable"><name>subtype</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__frame__control__field_1a33b6132fec7df2a830cfe93f7299dcb6" kind="variable"><name>toDS</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__frame__control__field_1a239e7865c1ac3c98ea103fe2338d0fa0" kind="variable"><name>fromDS</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__frame__control__field_1ad312c855b8aecdd638e3dedd9bfcf666" kind="variable"><name>more_frmts</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__frame__control__field_1ad4cc209fd1de0476d990bcc0b7871a47" kind="variable"><name>retry</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__frame__control__field_1ac1d3df043480b4ddf6b6f7e320733b59" kind="variable"><name>pwr_mngt</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__frame__control__field_1a3bf17b568f8708babb5233c5c5949c6f" kind="variable"><name>more_data</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__frame__control__field_1ace06522d8b89f19971bda5f9fb8e865e" kind="variable"><name>protected_frame</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__frame__control__field_1a1ee640fa9e521c807d5724123cfbe00d" kind="variable"><name>order</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__frame__control__field_1a429f316d91784897b04cdac1127c0ceb" kind="function"><name>is_qos_data</name></member>
+  </compound>
+  <compound refid="structgr_1_1swifi_1_1mac80211__frame__header" kind="struct"><name>gr::swifi::mac80211_frame_header</name>
+    <member refid="structgr_1_1swifi_1_1mac80211__frame__header_1a6932f362bcefd13b75aadc1e451f2a31" kind="variable"><name>fc16</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__frame__header_1ae930c2257caf15b1ba0e840d81d37fb0" kind="variable"><name>fc</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__frame__header_1a371a38d5c72980a03f96af92850ef0c9" kind="variable"><name>@10</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__frame__header_1ae7a78f63f4e26ed9bdcae56928f324f8" kind="variable"><name>duration</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__frame__header_1af3d7373d51f260feb5070709fee37a18" kind="variable"><name>addr</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__frame__header_1aa3a8e30b8bd538e6db21c65e45e08e73" kind="variable"><name>seq</name></member>
+  </compound>
+  <compound refid="structgr_1_1swifi_1_1mac80211__ht__control__field" kind="struct"><name>gr::swifi::mac80211_ht_control_field</name>
+    <member refid="structgr_1_1swifi_1_1mac80211__ht__control__field_1aeedb432aac9432cfe83a0f7b316b9365" kind="variable"><name>reserved</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__ht__control__field_1a4b47ff5897ecbf2c0bf61aafea5b536b" kind="variable"><name>trq</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__ht__control__field_1a786f79e9fa3002cb783f6f9ffef7cdc1" kind="variable"><name>mai</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__ht__control__field_1abc836285ee193909a36ef19f5aadea85" kind="variable"><name>mfsi</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__ht__control__field_1a7ce3282ff5e4a0ddd64c789def91d79d" kind="variable"><name>mfb_aselc</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__ht__control__field_1a2c9b262c19349285f1c5e7a1013cb4d7" kind="variable"><name>link_adaptation</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__ht__control__field_1aa8b1a7abde6a05238f5608e11a486ac7" kind="variable"><name>calibration_position</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__ht__control__field_1a114b27b9738dc0238c5c6999c1c040e7" kind="variable"><name>calibration_sequence</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__ht__control__field_1ab2428552f8117eae10d9a48ab62ecdcd" kind="variable"><name>reserved1</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__ht__control__field_1ae18d1bf100fb208983dca92cb510927a" kind="variable"><name>csi</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__ht__control__field_1a65c41d8357703ecbac06a75ba3e02a32" kind="variable"><name>ndp</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__ht__control__field_1a4caebc47b209baf2ec97e65391f0d998" kind="variable"><name>reserved2</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__ht__control__field_1aee6df7e23a8c1da121a7589d5bf5bc47" kind="variable"><name>ac_constraint</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__ht__control__field_1a72413cfbfabeed0a1b644233482bb463" kind="variable"><name>rdg_more_ppdu</name></member>
+  </compound>
+  <compound refid="structgr_1_1swifi_1_1mac80211__qos__control__field" kind="struct"><name>gr::swifi::mac80211_qos_control_field</name>
+    <member refid="structgr_1_1swifi_1_1mac80211__qos__control__field_1a753178163690c0e13c391b00ada4e739" kind="variable"><name>tid</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__qos__control__field_1a9e0af66bb83c3f3db2544d2f5584a67c" kind="variable"><name>eosp</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__qos__control__field_1a3749a1c93052b3d75ef08ea085ad78e5" kind="variable"><name>ack_policy</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__qos__control__field_1a19a70f7bba99912045c7def049f8844b" kind="variable"><name>amsdu</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__qos__control__field_1a8110d8674910d9f058ee00e25cbb3068" kind="variable"><name>txop</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__qos__control__field_1a4cb76507b6dc26734eabad25f51287db" kind="variable"><name>ap_ps_buf_state</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__qos__control__field_1aaa689076dfa5631af79a952572d33fb4" kind="variable"><name>queue_size</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__qos__control__field_1ad439f94174eacd8c42eb1be30457a7f1" kind="variable"><name>mesh_control_present</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__qos__control__field_1ad60c395baabea14287d70b577fe762e7" kind="variable"><name>mesh_power_save_level</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__qos__control__field_1a1d59240ca0f3d47888d9ae6574267259" kind="variable"><name>rspi</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__qos__control__field_1ace90cd6ad41e1397fe4b9c865477b16f" kind="variable"><name>reserved</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__qos__control__field_1ae9ecd558664eb1044c0dc8fa24243ff6" kind="variable"><name>mesh_control</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__qos__control__field_1a77d4c7f58f1027d98d2beb2e4b4b1a57" kind="variable"><name>@1</name></member>
+  </compound>
+  <compound refid="structgr_1_1swifi_1_1mac80211__sequence__control__field" kind="struct"><name>gr::swifi::mac80211_sequence_control_field</name>
+    <member refid="structgr_1_1swifi_1_1mac80211__sequence__control__field_1a0bb16fa193101a6d3ceeb5bb095af59e" kind="variable"><name>fragment_no</name></member>
+    <member refid="structgr_1_1swifi_1_1mac80211__sequence__control__field_1a0ad0f4f4335355abfe0f08bcfe80eb64" kind="variable"><name>seq_no</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1mac__frame__generator" kind="class"><name>gr::swifi::mac_frame_generator</name>
+    <member refid="classgr_1_1swifi_1_1mac__frame__generator_1afb777978d79f8bd5e6eabc0abaaf1e1b" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__frame__generator_1a34459b34ba0c5afa8e529214d9603879" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="structgr_1_1swifi_1_1mac__frame__info" kind="struct"><name>gr::swifi::mac_frame_info</name>
+    <member refid="structgr_1_1swifi_1_1mac__frame__info_1ad0e1bbc8cb6b1b4005280f21b94449d9" kind="variable"><name>mpdu</name></member>
+    <member refid="structgr_1_1swifi_1_1mac__frame__info_1adb58c8742b768aa755271e9d64c28ba9" kind="variable"><name>mpdu_size</name></member>
+    <member refid="structgr_1_1swifi_1_1mac__frame__info_1a9ed568fbc4b7fefb803d0a5447d1d4c5" kind="variable"><name>fc</name></member>
+    <member refid="structgr_1_1swifi_1_1mac__frame__info_1a4b671817a06488c2904c3a74cb35ad4c" kind="variable"><name>duration</name></member>
+    <member refid="structgr_1_1swifi_1_1mac__frame__info_1a0423cbecca7a73bdb81ba571aae9fe25" kind="variable"><name>addr</name></member>
+    <member refid="structgr_1_1swifi_1_1mac__frame__info_1a6ba5d1be506c8a7bc919d89f943a2baa" kind="variable"><name>seq_control</name></member>
+    <member refid="structgr_1_1swifi_1_1mac__frame__info_1aa08b1a1228d32c30793df223f29ce04e" kind="variable"><name>qos_control</name></member>
+    <member refid="structgr_1_1swifi_1_1mac__frame__info_1a2e3dbdb46f82ac74690bd661bf8c737d" kind="variable"><name>ht_control</name></member>
+    <member refid="structgr_1_1swifi_1_1mac__frame__info_1a79db2cc97a455f4e9fb8be5a3e87b5cc" kind="variable"><name>fcs</name></member>
+    <member refid="structgr_1_1swifi_1_1mac__frame__info_1a6a8e585eec9ffa14b56ae4edb7bbb86e" kind="variable"><name>correct</name></member>
+    <member refid="structgr_1_1swifi_1_1mac__frame__info_1a295096e3d9e87e0c1ee1171261d54cef" kind="variable"><name>malformed</name></member>
+    <member refid="structgr_1_1swifi_1_1mac__frame__info_1aa869a1d40d7d76ba1edc72b3f62de30a" kind="variable"><name>management_frame</name></member>
+    <member refid="structgr_1_1swifi_1_1mac__frame__info_1a46d7dcb27c9eb44a6623b75d058d3002" kind="variable"><name>control_frame</name></member>
+    <member refid="structgr_1_1swifi_1_1mac__frame__info_1acb568d25d4634cdea634b4260f1f843a" kind="variable"><name>data_frame</name></member>
+    <member refid="structgr_1_1swifi_1_1mac__frame__info_1ad5d77f1570ceb4bbdfe0d6bf2f4a08a7" kind="variable"><name>rx_info</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1mac__parser" kind="class"><name>gr::swifi::mac_parser</name>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1a9e08e988e3837f478c91cbf662cad718" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1a1b486b8856a506b166c60258a1be991f" kind="variable"><name>info</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1a18e8c65669f5369079e2ec6564a9dc7c" kind="variable"><name>read_pos</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1abc450888677a0d64fa809888c9201600" kind="function"><name>next</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1a680b742f4f1d63e07c28ddb6b87427d1" kind="function"><name>next_uint64</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1a491275ef9a2bc2f970184914cf466dba" kind="function"><name>next_uint32</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1a752e91af99d6e2416972d9d6ca4e0789" kind="function"><name>next_uint16</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1a77fd2f3eced6e39a057f663e3025a8b4" kind="function"><name>next_uint8</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1a1fe69badcf60be5e1efd630c8f90da14" kind="function"><name>next_uint64</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1a70e77558c120f15aede410336b1a916b" kind="function"><name>next_uint32</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1ac30a9beffc796151db25c12e588370ce" kind="function"><name>next_uint16</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1a57e5bab03ae2460b43f909da305ff9ce" kind="function"><name>next_chunk</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1a2cc9cda363ef703662500bad54f85b96" kind="function"><name>next_string</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1a64f3aff910f3c6549d14335debfd0d7f" kind="function"><name>get_remaining_size</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1a79cc1c3a7b72778a49b59a976138fc31" kind="function"><name>parse_management</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1a0cf5200038db1d34abf3e9b9a6e17a82" kind="function"><name>parse_management_beacon</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1a8d71fd8ac07462a9cd324be7e41dae8d" kind="function"><name>parse_ies</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1ac82ecc25b564024d5cf091813448331a" kind="function"><name>parse_ie_ssid</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1a215d9d132c12a52c499a2b6e1443ed56" kind="function"><name>parse_ie_supported_rates</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1a69afff599b3f0b7aaa351be1415e4659" kind="function"><name>parse_ie_dsss_parameter_set</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1a393d4422c4c17aec0d6887094ab3445f" kind="function"><name>parse_ie_country</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1a9a5026965b71e63ca9199b0f881bf64c" kind="function"><name>parse_ie_erp</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1ad794b90a5aa6741e02bb7ee16aa920f4" kind="function"><name>parse_ie_ht_capabilities</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1ad5a5ca84caad1ce711e460cbec3a0039" kind="function"><name>parse_control</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1a7a6f1093213b1598eb6f410bdab06c37" kind="function"><name>parse_control_block_ack_req</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1a55dca8f1760046d725f474d5a3a2d1bb" kind="function"><name>parse_control_block_ack</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1adb27ac4279442b90d3febf5e897fb6b1" kind="function"><name>parse_data</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1a1152065cb1546a1c1d09b8c318054a8b" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1ae0a09123f85a028209b31300ab42819e" kind="function"><name>mac_parser</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1a53634c85ea5f9a7b68a9d9dde63d612f" kind="function"><name>~mac_parser</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1ad159f0aff96472e574ee8d342747ef9a" kind="function"><name>check_fcs</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__parser_1a224f00185790b4b2acc8af020e313a74" kind="function"><name>parse</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1mac__utils" kind="class"><name>gr::swifi::mac_utils</name>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1af50aa12d1b0d7a29ff6ab5069621f379" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a568a0042b73cb6ebe2f3d066b2c5ddd0" kind="variable"><name>d_hdr</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a4795a4fd8479bd736430d66a4db2e800" kind="variable"><name>d_mpdu</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1aa52b5020be23c0bc21ea32480af6110d" kind="variable"><name>d_data_len</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1af9e2e688e4c9fdb5d03a20c4bd1e90b7" kind="variable"><name>d_crc</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1ad5085de76fb19881dff6bf341b9de351" kind="variable"><name>d_fstat</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1ab177339a65bf7e50431e4046d195a529" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a5217a0717a1b5c09bd942700b32cbaef" kind="function"><name>mac_utils</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1ad61aaf46c26b1a0a3aefc81499a88137" kind="function"><name>~mac_utils</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a213dcc8c1b79c570a3138699e846da21" kind="function"><name>generate_header</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a808bed8b7c3e41d0b0bb6c92bb49df93" kind="function"><name>generate_fcs</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1abbb1ba11857434322f1d439061817d21" kind="function"><name>get_addr</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1ae7a94b5f1c44ad755ec7f875c9b3b995" kind="function"><name>get_data</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1ac75cabc36383d2ef29543a63a547113d" kind="function"><name>get_datalen</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a0a9c8fd7dc21f9a0b17eb57dd71b89d5" kind="function"><name>get_duration</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1ac9804e7ed4f65bac4e87af50e5c7635e" kind="function"><name>get_fromDS</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a5bdd7532c1f44df7eed798547f75d4c4" kind="function"><name>get_header</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1aa02ad084cfdd8dec7c831bb1f064cc23" kind="function"><name>get_headerlen</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1adb38e631baa05cc649a1a4d0adf4f40f" kind="function"><name>get_seq</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a58e58933f9c1f3bdda70c59996b34732" kind="function"><name>get_fcs</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a1815a71e51ef280dd5c71602b5c0ddfc" kind="function"><name>get_toDS</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a341a8e2e07c8705fa14af6746b4cff00" kind="function"><name>get_type</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1ac794e13c485c88aa12103c5b726532c8" kind="function"><name>get_subtype</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a1d1531495c089abf2a59547f8a0f70e5" kind="function"><name>get_duration</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1aa3de7ac115caa57ff1940709a4a845d7" kind="function"><name>get_control_field</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a80f97188f54b3226aae03515bc037f81" kind="function"><name>check_recv_bytes</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a62dec7b5a4d2158e74c70b93e2eaaf49" kind="function"><name>parse_recv_bytes</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a36123a10e5a5772abcea5f7a5cbaaf24" kind="function"><name>parse_management</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1aeb14ddb8b926e937ef9c50fc54b461af" kind="function"><name>parse_management_beacon</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1ac3593a718dd20ce9bb3b9ddb13eb47b5" kind="function"><name>parse_control</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1adb0f2e0dec1f6eec327ab0e03ad437f2" kind="function"><name>parse_control_rts</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1ac8388906008a081b8f6b672f24228880" kind="function"><name>parse_control_cts</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a15274da548132191299c7a67da20ccab" kind="function"><name>parse_control_ack</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1ad512dc97c48c5d0b81c75ba713caca14" kind="function"><name>parse_control_pspoll</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a3fc4dadecb6844573e84929eaf5c3d6f" kind="function"><name>parse_control_cfend</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a02a2406ab4dc28b9e6546e6b29400a1d" kind="function"><name>parse_control_cfend_cfack</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1aa1321e0af57b25e714495ce2016cbeaf" kind="function"><name>parse_control_block_ack_req</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1aa32d73cf13cf21fc52157c7e471a18bb" kind="function"><name>parse_data</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a6c2bf124833f245c54ce60db3c4db6db" kind="function"><name>parse_data_data</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a8f08306bc51b2d5cc407a6ac98fde031" kind="function"><name>parse_data_qos_data</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1aedf215211dc200d562cdd6c17d2aed7b" kind="function"><name>parse_ies</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1addea0747df07e5f59c0c58495cd9017b" kind="function"><name>put_data</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a8e544be406594c104959db259c1ef111" kind="function"><name>reset_fcs</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a82334259964dffe2ccee1ca8993546a5" kind="function"><name>serialize</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a362387745aabe629de13dc0bcb9ee9f6" kind="function"><name>set_addr</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a4df135e681668b32aae09a4f107cb8a1" kind="function"><name>set_addr</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a6619ed0042b7cf7e2de1bd004f76e600" kind="function"><name>set_data</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a9dec86cb161df6343c03003f5d403915" kind="function"><name>set_datalen</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a3ca85ebbfcc799e5586af63f279d3060" kind="function"><name>set_duration</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a17eeff9ef9f5ac178a79f8f98a9128b3" kind="function"><name>set_seq</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a104835d4fb795a7534258359dcb0245d" kind="function"><name>set_toDS_fromDS</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1a3f75e7ebdd0a14b5d94bea21eb4ec2d8" kind="function"><name>set_type</name></member>
+    <member refid="classgr_1_1swifi_1_1mac__utils_1ad05e3f3c33fc7543d62e440881bf938e" kind="function"><name>update_fcs</name></member>
+  </compound>
+  <compound refid="structgr_1_1swifi_1_1management__frame__info" kind="struct"><name>gr::swifi::management_frame_info</name>
+    <member refid="structgr_1_1swifi_1_1management__frame__info_1a1b3a4b4142b4e5be585fd50df627b4ba" kind="variable"><name>timestamp</name></member>
+    <member refid="structgr_1_1swifi_1_1management__frame__info_1a4ebc526daff76a7a48c8c440c6673c43" kind="variable"><name>beacon_interval</name></member>
+    <member refid="structgr_1_1swifi_1_1management__frame__info_1a26582f5b42ce0269ddd047361d109314" kind="variable"><name>ess</name></member>
+    <member refid="structgr_1_1swifi_1_1management__frame__info_1ad62c03b6ec24e1b4a65cc09dd26dcf61" kind="variable"><name>ibss</name></member>
+    <member refid="structgr_1_1swifi_1_1management__frame__info_1ad8ba432ba1000a8e835472b146e36e91" kind="variable"><name>cf_pollable</name></member>
+    <member refid="structgr_1_1swifi_1_1management__frame__info_1a731ed7dafe400326e5644eadac2b0be1" kind="variable"><name>cf_pollreq</name></member>
+    <member refid="structgr_1_1swifi_1_1management__frame__info_1a08afa288fd498c4f88bdb72714e784df" kind="variable"><name>privacy</name></member>
+    <member refid="structgr_1_1swifi_1_1management__frame__info_1af2af80bca647037e63c465a6b0cda254" kind="variable"><name>short_preamble</name></member>
+    <member refid="structgr_1_1swifi_1_1management__frame__info_1aa755ae59e7a4c5822c061f299d799665" kind="variable"><name>pbcc</name></member>
+    <member refid="structgr_1_1swifi_1_1management__frame__info_1a31d6fec99a5c8f7ccee6e9fae9b1a739" kind="variable"><name>channel_agility</name></member>
+    <member refid="structgr_1_1swifi_1_1management__frame__info_1ab1a476dfe1c6b24074b33f75472dcdc8" kind="variable"><name>spectrum_mgmt</name></member>
+    <member refid="structgr_1_1swifi_1_1management__frame__info_1ac8b73801af4a8a7f77312f246d02394e" kind="variable"><name>qos</name></member>
+    <member refid="structgr_1_1swifi_1_1management__frame__info_1a705b2dd7f12b964c59515c3a72070db0" kind="variable"><name>short_slot</name></member>
+    <member refid="structgr_1_1swifi_1_1management__frame__info_1a33760dcdf5543de1b9828f5fe5237504" kind="variable"><name>apsd</name></member>
+    <member refid="structgr_1_1swifi_1_1management__frame__info_1a88ba52f45bb37bff9dcf1c087d2e3caf" kind="variable"><name>radio_measurement</name></member>
+    <member refid="structgr_1_1swifi_1_1management__frame__info_1a64abad2ccb484c4823d9a615b2c5f914" kind="variable"><name>dsss_ofdm</name></member>
+    <member refid="structgr_1_1swifi_1_1management__frame__info_1a74cf5832bd9c69d13f79b671393a4478" kind="variable"><name>delayed_block_ack</name></member>
+    <member refid="structgr_1_1swifi_1_1management__frame__info_1a6651caed794cbbf486959807bf231e0d" kind="variable"><name>immediate_block_ack</name></member>
+    <member refid="structgr_1_1swifi_1_1management__frame__info_1a0913932a50f8753bbbff58a14510d571" kind="variable"><name>capability</name></member>
+    <member refid="structgr_1_1swifi_1_1management__frame__info_1a1016ec3f626abc79c45bfe9ba12eb8c4" kind="variable"><name>ie</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1ofdm__chan__est" kind="class"><name>gr::swifi::ofdm_chan_est</name>
+    <member refid="classgr_1_1swifi_1_1ofdm__chan__est_1aded7d07e221978cc8468d64bba56eb8d" kind="enum"><name>EstimationMethod</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__chan__est_1aded7d07e221978cc8468d64bba56eb8daa143bad165a209e86cce305a28755455" kind="enumvalue"><name>ESTIMATE_LS</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__chan__est_1aded7d07e221978cc8468d64bba56eb8da4bac6385a23073c548e4f7315dec7082" kind="enumvalue"><name>ESTIMATE_LS_FOC</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__chan__est_1aded7d07e221978cc8468d64bba56eb8da2dcb3fa84a48a590065bb4cbb96d5fd2" kind="enumvalue"><name>ESTIMATE_LPI</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__chan__est_1a378bd7d8407ec3e88664e34d1bd9babb" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__chan__est_1a8f4902d2ffb67383647495da41783ae8" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__chan__est_1a4092a4302b6fddaa2cec99d4672ccf30" kind="function"><name>set_estimation_method</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1ofdm__equalizer" kind="class"><name>gr::swifi::ofdm_equalizer</name>
+    <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393b" kind="enum"><name>EqualizeMethod</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393baa2354bdd63355dddfe06194fd55ccc73" kind="enumvalue"><name>EQUALIZE_STATIC</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393ba65e553b6e43e145825aeeef36378c5b2" kind="enumvalue"><name>EQUALIZE_PPT</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393bac4c06865a19016d9b6fa94cbbf19c367" kind="enumvalue"><name>EQUALIZE_STA</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393bacc8852e34c3378d73a2b015dd1eb2429" kind="enumvalue"><name>EQUALIZE_DD</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393badf1b1ac7972d9c244df5c1adcfdd2728" kind="enumvalue"><name>EQUALIZE_LI</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393bab18f375d8f8731ec38990249ec90af95" kind="enumvalue"><name>EQUALIZE_LPI</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393ba56a736ff6441a481b62f403f1d60c6eb" kind="enumvalue"><name>EQUALIZE_PPT_LPI</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393ba554f2890051ba5c5856c9c597e555f28" kind="enumvalue"><name>EQUALIZE_PPT_DD</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393bae835e97baa939894abe8a546f127fd38" kind="enumvalue"><name>EQUALIZE_LPI2</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393ba7d7b96ae73ee17bb0fc27fd5da30738f" kind="enumvalue"><name>EQUALIZE_TEST</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1a0032e80387b43c4bdde7aa24d66a11d9" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1a22010206ed58658f7e71c0390e4c0760" kind="variable"><name>EQUALIZER_NAME</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1acc78084be7def9b9ed5f695f9779e870" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1a5e32fa28f6012e6f291f821122f06f10" kind="function"><name>enable_foc</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1a35d0b7616cd26c1a49b3a315d1f6fc38" kind="function"><name>set_equalization_method</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1a4696bf9f8a4090491091823ef961e534" kind="function"><name>set_equalization_method</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1aca45a283abc1d6af068145cbdf3b472c" kind="function"><name>set_alpha</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1a90e2840489785f1ada57240464ab7774" kind="function"><name>set_beta</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1ac9202bc023ba0ea17b62e455397d9194" kind="function"><name>set_debug_file</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1ofdm__frame__sync" kind="class"><name>gr::swifi::ofdm_frame_sync</name>
+    <member refid="classgr_1_1swifi_1_1ofdm__frame__sync_1a1b13d498f7ce11c79d58c8c4c4ccd614" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__frame__sync_1a3728b453b0285b1e6669ace47767d4d1" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1ofdm__phy__header__parser" kind="class"><name>gr::swifi::ofdm_phy_header_parser</name>
+    <member refid="classgr_1_1swifi_1_1ofdm__phy__header__parser_1a0f95f367c8f2b11674177ac399e226b3" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__phy__header__parser_1a8f47b8a811ea55d5ce665b8b3935439d" kind="variable"><name>d_frame_len_tag_key</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__phy__header__parser_1ae9d72cc0076c072e15fb541fd3770093" kind="variable"><name>d_phy_tag_key</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__phy__header__parser_1a17abda46462a62451d87d15f51109694" kind="variable"><name>inter</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__phy__header__parser_1aa21ac04d9ad028878b83e532be47e0da" kind="function"><name>ofdm_phy_header_parser</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__phy__header__parser_1a4f81fe4fa1e97d043c81545434cbe169" kind="function"><name>~ofdm_phy_header_parser</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__phy__header__parser_1ab56eb246f14b7c3d5655bb36564892ea" kind="function"><name>header_parser</name></member>
+    <member refid="classgr_1_1swifi_1_1ofdm__phy__header__parser_1aea102b30359620623f09601de01f1788" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1payload__parser" kind="class"><name>gr::swifi::payload_parser</name>
+    <member refid="classgr_1_1swifi_1_1payload__parser_1a7be8823ea020870d230c81a02353c4d5" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1payload__parser_1a08f9cb5a0e39c740deaba5ddaf9fd110" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1peak__gate" kind="class"><name>gr::swifi::peak_gate</name>
+    <member refid="classgr_1_1swifi_1_1peak__gate_1a3734c1447647b137a12ac2c7d2de626f" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1peak__gate_1a7a8347392e5a2543c5156b55849ce0bb" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="structgr_1_1swifi_1_1phy80211__dsss__frame__header" kind="struct"><name>gr::swifi::phy80211_dsss_frame_header</name>
+    <member refid="structgr_1_1swifi_1_1phy80211__dsss__frame__header_1ab4d37a8047ad4cf2476e17d6e677e41b" kind="variable"><name>signal</name></member>
+    <member refid="structgr_1_1swifi_1_1phy80211__dsss__frame__header_1a3cf0c1f868be4082ad391831349725b7" kind="variable"><name>service</name></member>
+    <member refid="structgr_1_1swifi_1_1phy80211__dsss__frame__header_1a129b0e1d3bbb069d7bd5552bdd995da2" kind="variable"><name>length</name></member>
+    <member refid="structgr_1_1swifi_1_1phy80211__dsss__frame__header_1a90185b18a1191d6fb3b6047b4d1c1b73" kind="variable"><name>crc</name></member>
+  </compound>
+  <compound refid="structgr_1_1swifi_1_1phy80211__frame__header" kind="struct"><name>gr::swifi::phy80211_frame_header</name>
+    <member refid="structgr_1_1swifi_1_1phy80211__frame__header_1afee30477c2322580ba3da2c81687bf08" kind="variable"><name>rate</name></member>
+    <member refid="structgr_1_1swifi_1_1phy80211__frame__header_1a69754386a0ca8a39e48c6206ba9d4a11" kind="variable"><name>reserved</name></member>
+    <member refid="structgr_1_1swifi_1_1phy80211__frame__header_1a573bbdcf10d5db5af90d21a5213ccab1" kind="variable"><name>length</name></member>
+    <member refid="structgr_1_1swifi_1_1phy80211__frame__header_1a30f0a9a879bbb67cf8dc5ad095838320" kind="variable"><name>parity</name></member>
+    <member refid="structgr_1_1swifi_1_1phy80211__frame__header_1a710e11b63e0501098275501c8fddce61" kind="variable"><name>tail</name></member>
+    <member refid="structgr_1_1swifi_1_1phy80211__frame__header_1a45fbf4248e7f5b1f386a3a1a7cf84346" kind="variable"><name>service</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1phy__frame__generator" kind="class"><name>gr::swifi::phy_frame_generator</name>
+    <member refid="classgr_1_1swifi_1_1phy__frame__generator_1ac12a20d8c36d637b4e92576dfe6895a6" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__frame__generator_1a741896de425a122df298ca40b92000c2" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="structgr_1_1swifi_1_1phy__frame__rx__info" kind="struct"><name>gr::swifi::phy_frame_rx_info</name>
+    <member refid="structgr_1_1swifi_1_1phy__frame__rx__info_1a00cba95ca20b6465ae373b72859a13b7" kind="variable"><name>mode</name></member>
+    <member refid="structgr_1_1swifi_1_1phy__frame__rx__info_1a35f5c5847b4c5ce81394d5737024db24" kind="variable"><name>rate</name></member>
+    <member refid="structgr_1_1swifi_1_1phy__frame__rx__info_1a7b97130f302dd4af9a331030a4bd84f4" kind="variable"><name>psdu_size</name></member>
+    <member refid="structgr_1_1swifi_1_1phy__frame__rx__info_1a9e18e761d622086fc154f49551d78f5d" kind="variable"><name>time_start</name></member>
+    <member refid="structgr_1_1swifi_1_1phy__frame__rx__info_1a86e60f1f7e66f2c8fe05563401c2f5da" kind="variable"><name>time_end</name></member>
+    <member refid="structgr_1_1swifi_1_1phy__frame__rx__info_1a9c8a1ec2ab5200e90ab3e367276e29d4" kind="variable"><name>sample_start</name></member>
+    <member refid="structgr_1_1swifi_1_1phy__frame__rx__info_1acfd873193201be593db9d670fc73b998" kind="variable"><name>sample_end</name></member>
+    <member refid="structgr_1_1swifi_1_1phy__frame__rx__info_1a5109e38e56638489539b8c077bd24070" kind="variable"><name>payload_sample_start</name></member>
+    <member refid="structgr_1_1swifi_1_1phy__frame__rx__info_1a7e50b64fc2bda67d2cbf2a4506e9435d" kind="variable"><name>payload_sample_end</name></member>
+    <member refid="structgr_1_1swifi_1_1phy__frame__rx__info_1a5c10389309eb15d8a9a0ae00ebbdfced" kind="variable"><name>freq_offset</name></member>
+    <member refid="structgr_1_1swifi_1_1phy__frame__rx__info_1a5bc140ff6fea06cecc25652a26087224" kind="variable"><name>sfo</name></member>
+    <member refid="structgr_1_1swifi_1_1phy__frame__rx__info_1a0f150fe43556dab30218df0447470199" kind="variable"><name>scrambling_seed</name></member>
+    <member refid="structgr_1_1swifi_1_1phy__frame__rx__info_1a90e16665a9569fc42abe36630ca5b58e" kind="variable"><name>data_tail_padding_bytes</name></member>
+    <member refid="structgr_1_1swifi_1_1phy__frame__rx__info_1aa28eb63fadac74a85345302c6f6e58e1" kind="function"><name>phy_frame_rx_info</name></member>
+    <member refid="structgr_1_1swifi_1_1phy__frame__rx__info_1af0a28b54c76f116fffc9459707f49873" kind="function"><name>phy_frame_rx_info</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1phy__tag" kind="class"><name>gr::swifi::phy_tag</name>
+    <member refid="classgr_1_1swifi_1_1phy__tag_1a8befaf1ac9ce5d0b4b7b4a0890d0ff81" kind="variable"><name>d_nitems</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__tag_1a41c7a2e28c717bf4daf5ff7f2c432336" kind="variable"><name>d_rate</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__tag_1a0cb660c5d79c84adc6c84e0271f92d2a" kind="variable"><name>d_flag</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__tag_1ac0aaf4ea13e45c55019f6b0a667314e3" kind="variable"><name>d_rx_time</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__tag_1aed2c8a8780adead275aac68c0d285b6c" kind="variable"><name>d_payload_sample_index</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__tag_1a9378c1bfe3c22db9bf73fa93f37a49cc" kind="variable"><name>d_freq_offset</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__tag_1ac013ea5d4ff1b7e1a548a5dbbad26be8" kind="variable"><name>d_scrambling_seed</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__tag_1a7385114d05e85d77f39c955f2e1a2dce" kind="function"><name>phy_tag</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__tag_1a5f7eafa39be3cf6f1cfb570ae15244d3" kind="function"><name>nitems</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__tag_1a3fb25cb088bc3a2627d5804778c1184a" kind="function"><name>set_nitems</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__tag_1ad15fe314f12cafffd6e3849bbe0ff395" kind="function"><name>rate</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__tag_1a58b336d7d22b9a7ee8d6777c92b83151" kind="function"><name>set_rate</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__tag_1ab7df6fd1d5b751b5ea42b7326605ffe1" kind="function"><name>flag</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__tag_1a3c9f1bd220622598a3b7ce4d9f563d04" kind="function"><name>flag</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__tag_1ab00f24e08a6c7c751d6b3e1b2124e4a3" kind="function"><name>set_flag</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__tag_1a576ddabf063319499ffad031f5159bf4" kind="function"><name>rx_time</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__tag_1a714c90fbfc48a7d6384a4e7b7227e57c" kind="function"><name>set_rx_time</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__tag_1a28df5f0ef5012895e1d54895cfdc5010" kind="function"><name>payload_sample_index</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__tag_1a565cc2fd71b9b0e01de80848af5544b0" kind="function"><name>set_payload_sample_index</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__tag_1a920bb0f3a2275c36c4eef86081bd94e5" kind="function"><name>freq_offset</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__tag_1acce5f9c732f9f1078dd16834e6b692c8" kind="function"><name>set_freq_offset</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__tag_1abfa5d55658e06a4d39af93728dbec451" kind="function"><name>scrambling_seed</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__tag_1acbd86845e68646e0efb4412131d3240e" kind="function"><name>set_scrambling_seed</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__tag_1a6dea584c01a35462aa34124185936a74" kind="function"><name>operator pmt::pmt_t</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__tag_1a217e72cbce4e4d66c1549313bb4c4267" kind="function"><name>create</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__tag_1a9690eafecaaf870a861755fe71c9061a" kind="function"><name>parse</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1phy__utils" kind="class"><name>gr::swifi::phy_utils</name>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a4adaeeb8aeae8323e38a3879ea84f8ab" kind="enum"><name>PhyMode</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a4adaeeb8aeae8323e38a3879ea84f8abaf3506026ab381dd83e195ae718acf99a" kind="enumvalue"><name>MODE_DSSS</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a4adaeeb8aeae8323e38a3879ea84f8aba471016f4519f94fef6fce85a925ceab8" kind="enumvalue"><name>MODE_OFDM</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13" kind="enum"><name>PHY_MCS</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a356922719af16d7893087576c6dd2972" kind="enumvalue"><name>MCS0</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a64efdb0918188bd00e2595ee9f10c256" kind="enumvalue"><name>MCS1</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a7568256e9c1533a2169395241f95c503" kind="enumvalue"><name>MCS2</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a37af4baea0108836727f4c2212c13fea" kind="enumvalue"><name>MCS3</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13aee246ff2b6d0abda49e3ca7e4c9529ae" kind="enumvalue"><name>MCS4</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a5ffd5655c96009827e028b70b56df658" kind="enumvalue"><name>MCS5</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a0ec4f69de802cb5e1114ffbdbc6a8a43" kind="enumvalue"><name>MCS6</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a0032d88a2c73b7c84d65d618f76ff78e" kind="enumvalue"><name>MCS7</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a0b1137190a7a8a6d9a03acd9fe409d55" kind="enumvalue"><name>QAM64_2_3</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13aff8992981f678ed3b7f4d92f332ef92c" kind="enumvalue"><name>QAM16_1_2</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a523c5130be29b4ad5b920f35f5a90e7b" kind="enumvalue"><name>QPSK_1_2</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a61b76a9d3760d67afb35a923951b384d" kind="enumvalue"><name>BPSK_1_2</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a14c94f2fed85da63779f1ae8097052ee" kind="enumvalue"><name>QAM64_3_4</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a2fcbbc8e63c7c7e02e19bae4288c47ce" kind="enumvalue"><name>QAM16_3_4</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13ae5090860a0be4fd4da4919e5022d47ed" kind="enumvalue"><name>QPSK_3_4</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a973617dc37256d4db851d355725c2229" kind="enumvalue"><name>BPSK_3_4</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1acd82a2cd4b1347eb539025f5cd303649" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1ab09819002b6c36dbd620c5ffd9f4666f" kind="variable"><name>N_DBPS</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a74fb6618d9ff8ab8eb89c28773f8c684" kind="variable"><name>N_CBPS</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a6fbb6b3f3d9ab31d29f553d25b1f6b87" kind="variable"><name>N_BPSC</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a8400c77e2d6bfed2c9c2c895a2fafbf3" kind="variable"><name>WIFI_CONSTELLATIONS</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a4ed60ff8148721e3c61faf15f6fe8c12" kind="variable"><name>INTL_TABLE</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1add35aa1dbaf255d403e84a8a2f2fa1b0" kind="variable"><name>DEINTL_TABLE</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1aa7175806e80ad877b1af319d110b0f27" kind="variable"><name>NO_PUNCTURE_MAP</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a0765914e0a7b7eb11cf4290f4620bba1" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a87474ce2b2affe324265530450f2db97" kind="function"><name>compute_n_ofdm_syms</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a610fb22059ad00408c4cb68400808bd7" kind="function"><name>compute_n_syms</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a825afa4d6805c243561dd24f5f2155ef" kind="function"><name>compute_uncoded_frame_size</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a5397fe9fb1d5b39d53fed13054ceb286" kind="function"><name>compute_uncoded_header_no_service_size</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a1d07dc41561684441eceee0066596465" kind="function"><name>compute_uncoded_service_payload_tail_pad_size</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a4d8babe7a82e06b61aa21c804a95e9ee" kind="function"><name>compute_uncoded_tail_pad_size</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a434582772fbd2142fdce971f6876f5ab" kind="function"><name>rate_string</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a87d48597243593242fdce008bf7e8e84" kind="function"><name>rate_string</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a8b390eab88efd19ef89afcda3623cf1b" kind="function"><name>create_frame</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1ad3a0725d70e20a0dad721cca8a1cca06" kind="function"><name>create_frame</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1aebbd46cd05dd613723a7d5f48fddff0c" kind="function"><name>create_header</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a0abe777e0714211f4e41e5718fd1c638" kind="function"><name>scramble</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a255cbad4e5cc0ff49af471d78e771936" kind="function"><name>scramble</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a4932bac54a9595f92da5bada15de3538" kind="function"><name>create_puncture_map</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1a23b396701f6233e177e17ab409fd89fd" kind="function"><name>create_interleaving_map</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1afac4be65be4c9f3ecd7246c806df3d56" kind="function"><name>create_deinterleaving_map</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1add90827d674048798b61f441af90002a" kind="function"><name>phy_utils</name></member>
+    <member refid="classgr_1_1swifi_1_1phy__utils_1ab09e65994b262834c7486294a6f903ad" kind="function"><name>~phy_utils</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1sample__adder" kind="class"><name>gr::swifi::sample_adder</name>
+    <member refid="classgr_1_1swifi_1_1sample__adder_1ae32270eac35977488ca202614d9d7665" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1sample__adder_1a257da880a5b3d845f6011c16e4a28154" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1sample__marker" kind="class"><name>gr::swifi::sample_marker</name>
+    <member refid="classgr_1_1swifi_1_1sample__marker_1a586cbc6ba087963eb5a3c86c1c3563fa" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1sample__marker_1a3878399ce0cb3d78dea60a62fea915f0" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1scrambler" kind="class"><name>gr::swifi::scrambler</name>
+    <member refid="classgr_1_1swifi_1_1scrambler_1a9909ebec161524f02b7d01bf1f497b4c" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1scrambler_1a01d0118bb96bb3ab0ee90234a6752bfe" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1stream__pack" kind="class"><name>gr::swifi::stream_pack</name>
+    <member refid="classgr_1_1swifi_1_1stream__pack_1a8a175d4aad0c4a8281004d5f1079ff0a" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1stream__pack_1a73e74fa6a6c231edf728d5150fa91965" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1tag__range" kind="class"><name>gr::swifi::tag_range</name>
+    <member refid="classgr_1_1swifi_1_1tag__range_1a3f92fdf6ffa9ec64bf2ec4302831d882" kind="variable"><name>d_tags</name></member>
+    <member refid="classgr_1_1swifi_1_1tag__range_1a139915365ea8bcf638533b8641815572" kind="variable"><name>d_abs_last_idx</name></member>
+    <member refid="classgr_1_1swifi_1_1tag__range_1a8cd31ff284535dcc2f91c49ed83accd9" kind="variable"><name>d_rel_first_idx</name></member>
+    <member refid="classgr_1_1swifi_1_1tag__range_1a072e48be9764d4f0dc7930c8d39b899a" kind="variable"><name>d_rel_last_idx</name></member>
+    <member refid="classgr_1_1swifi_1_1tag__range_1a4c83170d00d2a725e43709572381bc25" kind="variable"><name>d_range_nitems</name></member>
+    <member refid="classgr_1_1swifi_1_1tag__range_1ab808848f41e48be3587a787de3806899" kind="variable"><name>d_nitems_read</name></member>
+    <member refid="classgr_1_1swifi_1_1tag__range_1a4ac34464bf26f5e29f05184a66287abb" kind="function"><name>tag_range</name></member>
+    <member refid="classgr_1_1swifi_1_1tag__range_1a4e2b20c7764758fce3e1ec3ae248e81f" kind="function"><name>size</name></member>
+    <member refid="classgr_1_1swifi_1_1tag__range_1a568eca73a5048ed5b30907821d2a102c" kind="function"><name>abs_first_itemidx</name></member>
+    <member refid="classgr_1_1swifi_1_1tag__range_1a7b40e124d986b21104e9b70288ac8806" kind="function"><name>abs_last_itemidx</name></member>
+    <member refid="classgr_1_1swifi_1_1tag__range_1a5751092cba5a8660020f8dbd1431f6fc" kind="function"><name>rel_first_itemidx</name></member>
+    <member refid="classgr_1_1swifi_1_1tag__range_1a1370745e6100834dc7895b9fd5afbbf3" kind="function"><name>rel_last_itemidx</name></member>
+    <member refid="classgr_1_1swifi_1_1tag__range_1a34ffa2708462f743a0b00587e9225d5e" kind="function"><name>range_nitems</name></member>
+    <member refid="classgr_1_1swifi_1_1tag__range_1a044a957e222aef61226dc2e619276d5f" kind="function"><name>tag</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1trigger__tag" kind="class"><name>gr::swifi::trigger_tag</name>
+    <member refid="classgr_1_1swifi_1_1trigger__tag_1a0a7e44558d93e6f3f6fba2ea7cbb53a1" kind="variable"><name>d_state</name></member>
+    <member refid="classgr_1_1swifi_1_1trigger__tag_1a9401b468ffa395e1e62b16a96f437288" kind="variable"><name>d_sample_index</name></member>
+    <member refid="classgr_1_1swifi_1_1trigger__tag_1a928c7d0ce10fa3daad505d9c9eca8942" kind="variable"><name>d_freq_offset</name></member>
+    <member refid="classgr_1_1swifi_1_1trigger__tag_1a5135a870e12f536028d8cd93b02e16ab" kind="function"><name>trigger_tag</name></member>
+    <member refid="classgr_1_1swifi_1_1trigger__tag_1aaacc31c9f06730a8edb7e2d38b556e74" kind="function"><name>state</name></member>
+    <member refid="classgr_1_1swifi_1_1trigger__tag_1ac7e6929bb02c66a71df238dc1323c7de" kind="function"><name>set_state</name></member>
+    <member refid="classgr_1_1swifi_1_1trigger__tag_1af92c6023dce4fd186a26ae1d867e124c" kind="function"><name>sample_index</name></member>
+    <member refid="classgr_1_1swifi_1_1trigger__tag_1aafc0a190b1f1d600a9cc62aea74b06a8" kind="function"><name>set_sample_index</name></member>
+    <member refid="classgr_1_1swifi_1_1trigger__tag_1ab8e63db88e3247d389adea64c9344fbc" kind="function"><name>freq_offset</name></member>
+    <member refid="classgr_1_1swifi_1_1trigger__tag_1ae35073c4b34d8e721fc875ce634cbaeb" kind="function"><name>set_freq_offset</name></member>
+    <member refid="classgr_1_1swifi_1_1trigger__tag_1a3212ac7da7617886a971b04d15893f06" kind="function"><name>operator pmt::pmt_t</name></member>
+    <member refid="classgr_1_1swifi_1_1trigger__tag_1ad57b2a5cd4ab094b1ca86a47fd0c473b" kind="function"><name>create</name></member>
+    <member refid="classgr_1_1swifi_1_1trigger__tag_1a84f3142e06262c2acaddd5929382773a" kind="function"><name>parse</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1tx__time__tag__adder" kind="class"><name>gr::swifi::tx_time_tag_adder</name>
+    <member refid="classgr_1_1swifi_1_1tx__time__tag__adder_1a9850aca49cc64718ec8b5d48cb9eb7cc" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1tx__time__tag__adder_1a4a02b80f3d8fb259781e95ed1e23bdfc" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1unpack__lsb" kind="class"><name>gr::swifi::unpack_lsb</name>
+    <member refid="classgr_1_1swifi_1_1unpack__lsb_1ae1feee0eb0330b32aaa2ca16bc3edb11" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1unpack__lsb_1a025cd83fbe2f79947ac75e445e1e41a1" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1vector__valve" kind="class"><name>gr::swifi::vector_valve</name>
+    <member refid="classgr_1_1swifi_1_1vector__valve_1a47bf366d456b48591acd51613f7b4280" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1vector__valve_1a62345208ea82293f498e45f39880d9dd" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1wifi__constellation__16qam" kind="class"><name>gr::swifi::wifi_constellation_16qam</name>
+    <member refid="classgr_1_1swifi_1_1wifi__constellation__16qam_1a529b087743de43f853e30a76fcfed1eb" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__constellation__16qam_1aa51eaa936ecc353ace0543d7726d2dff" kind="variable"><name>d_midvalue</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__constellation__16qam_1acbc50f940b5d21f6d0b11b8d4d665dd2" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__constellation__16qam_1af679e7e860b6013d9fc87ea6ffa07805" kind="function"><name>~wifi_constellation_16qam</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__constellation__16qam_1a24968fb91fda5ddcf695edc2795b59c1" kind="function"><name>decision_maker</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__constellation__16qam_1a70c3d127bf961b4a5438ef85396feaa4" kind="function"><name>bitmetrics</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__constellation__16qam_1a5f8d8d01e09df7713b16841276b3d5eb" kind="function"><name>wifi_constellation_16qam</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1wifi__constellation__64qam" kind="class"><name>gr::swifi::wifi_constellation_64qam</name>
+    <member refid="classgr_1_1swifi_1_1wifi__constellation__64qam_1a7efb96cba9cf798a2ac111f9bff5f39a" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__constellation__64qam_1a6e643bd11c112d1fac61a33e7d3c06ff" kind="variable"><name>d_midvalue</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__constellation__64qam_1a23284b2974663268a06b1f9a5ec6a5e8" kind="variable"><name>d_regular_to_gray</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__constellation__64qam_1a6a1bf8989771a383cec16cd8e1522e3a" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__constellation__64qam_1a72c1a3527060cfba49263133afdc4684" kind="function"><name>~wifi_constellation_64qam</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__constellation__64qam_1accc78cbe27bd356f74907974c85548de" kind="function"><name>decision_maker</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__constellation__64qam_1a695849d997413173dcc15a7d29235c95" kind="function"><name>bitmetrics</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__constellation__64qam_1a25f5ad2c3fed9de1700fed46b0991ac4" kind="function"><name>wifi_constellation_64qam</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1wifi__constellation__bpsk" kind="class"><name>gr::swifi::wifi_constellation_bpsk</name>
+    <member refid="classgr_1_1swifi_1_1wifi__constellation__bpsk_1a52f2f933ba6736c930d557cee74ededb" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__constellation__bpsk_1a0640f1d7d11d4327f5da975b6eecd2ac" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__constellation__bpsk_1a3713a965ed46c0932c23ef53b0fa15c9" kind="function"><name>~wifi_constellation_bpsk</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__constellation__bpsk_1a802673bc699b9a2258bcd5eb496869ed" kind="function"><name>decision_maker</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__constellation__bpsk_1a4459efea3dd6ec3fccff35e49bd93b2d" kind="function"><name>bitmetrics</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__constellation__bpsk_1afa150b755b644e701564b2371f4641ec" kind="function"><name>wifi_constellation_bpsk</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1wifi__constellation__qpsk" kind="class"><name>gr::swifi::wifi_constellation_qpsk</name>
+    <member refid="classgr_1_1swifi_1_1wifi__constellation__qpsk_1a5f3f91d60128562c0bf4ae3cc21158ca" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__constellation__qpsk_1a5f2f7fb484c0fbf3c50e32fd26635ddb" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__constellation__qpsk_1a0e0efa26f3ca8aecc46b243b4a9f5f0c" kind="function"><name>~wifi_constellation_qpsk</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__constellation__qpsk_1abc375ce3652a15669ea4e18aca63a8b9" kind="function"><name>decision_maker</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__constellation__qpsk_1a6bd698ea730262d79cd7def1e73bb2ca" kind="function"><name>bitmetrics</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__constellation__qpsk_1a64b142c4a9f8779bcd0dc3d5b843a490" kind="function"><name>wifi_constellation_qpsk</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1wifi__conv__1__2" kind="class"><name>gr::swifi::wifi_conv_1_2</name>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__1__2_1a11b19c8341159679329506e1ce5913ba" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__1__2_1ac91d2a25b4a492272e5ae1e1527693ae" kind="variable"><name>STATE_NOT_SPECIFIED</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__1__2_1a1dae1b267bf511b55f9e92b66891e55c" kind="variable"><name>NO_PUNCTURE_MAP</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__1__2_1ae364679c476602d7b5a7dcb1a666af64" kind="variable"><name>d_outputA</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__1__2_1adb3893226d58d4f4afe98de9ed4daf26" kind="variable"><name>d_outputB</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__1__2_1aee32ac315b7d1dc1936af48d67e226f0" kind="variable"><name>d_nextState</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__1__2_1abd06b0c03a11b70fe34c365a8534ccd5" kind="variable"><name>d_inByStatePair</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__1__2_1a9e88589a22f0a9855436aa1eb087266a" kind="variable"><name>d_encode_state</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__1__2_1a2d8919fa6f5baca527440dbfec3a7ed5" kind="variable"><name>d_decode_state</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__1__2_1aa8e436e64788528532f0e762c93609af" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__1__2_1ae68cc8de15078f371944c83eb1048661" kind="function"><name>wifi_conv_1_2</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__1__2_1a0a70984edeba1d3612cafb7e6caa9ecc" kind="function"><name>~wifi_conv_1_2</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__1__2_1a46d04262c2494a5ec63f6601b2fc6bc4" kind="function"><name>set_encode_state</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__1__2_1a6b5722d8c6e8ff26a08d32d9ef298f0c" kind="function"><name>get_encode_state</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__1__2_1ace1d49777c561613a07a0e525514465e" kind="function"><name>set_decode_state</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__1__2_1ae6a1f0dce88f12fa2e3738c5f1eb5e92" kind="function"><name>get_decode_state</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__1__2_1a304cadcc8c346e30f414fd6437fc6d49" kind="function"><name>encode</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__1__2_1af958c3f3b5920a091cc7142200d30920" kind="function"><name>encode</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__1__2_1a0d0ea25d6e4893a48c7ba0b79c81f0fe" kind="function"><name>decode</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__1__2_1a80134a1191a264f19697b0594905e82a" kind="function"><name>decode</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__1__2_1a7a537e7f933dae2973a3be409184036d" kind="function"><name>soft_decode</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1wifi__conv__decoder" kind="class"><name>gr::swifi::wifi_conv_decoder</name>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__decoder_1a1cb640cea86457c27ac27935e5d29683" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__decoder_1a7581036d31489a1152ca0b8bd5b1b398" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__decoder_1a9425c8476e172c0c1bc6174d7d620945" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1wifi__conv__encoder" kind="class"><name>gr::swifi::wifi_conv_encoder</name>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__encoder_1ab8cce2a45b54a3a956cb9f48ab8d4f24" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__encoder_1a321734679a97cd77ecd4221b431dc1e2" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__encoder_1a573e1dc05a4ed6290f299dd2122e092b" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1wifi__conv__soft__decoder" kind="class"><name>gr::swifi::wifi_conv_soft_decoder</name>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__soft__decoder_1a007923e7b17f1f846b8c3b96333f09ea" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__soft__decoder_1aec2878c9490d8c0e07e413410861bad3" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__conv__soft__decoder_1aa5ced56e843864ff7d8392b649d2456d" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1wifi__dump__factory" kind="class"><name>gr::swifi::wifi_dump_factory</name>
+    <member refid="classgr_1_1swifi_1_1wifi__dump__factory_1a900fc8c4f546e5f2922901b2f9e152ef" kind="typedef"><name>FormatterMap</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__dump__factory_1a152e77366c696ea863d33f430884a48b" kind="variable"><name>formatter</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__dump__factory_1a47bd606970f54399bdc0a87591c7a232" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__dump__factory_1a5d9a652cf93ca6c1b4dd976191abd80d" kind="function"><name>add</name></member>
+  </compound>
+  <compound refid="classgr_1_1swifi_1_1wifi__dump__formatter" kind="class"><name>gr::swifi::wifi_dump_formatter</name>
+    <member refid="classgr_1_1swifi_1_1wifi__dump__formatter_1a4e7695a0fc9f058e98fe4f65c48b770b" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__dump__formatter_1adeb9b988053f6a17465e7f8efe7cec7a" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1swifi_1_1wifi__dump__formatter_1aa786594796875b004b59902910d5e769" kind="function"><name>dump</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1swifi" kind="namespace"><name>gr::swifi</name>
+    <member refid="namespacegr_1_1swifi_1a877d082f5ceefa0daa50b40330c094e5" kind="enum"><name>mac80211_frame_type</name></member>
+    <member refid="namespacegr_1_1swifi_1a877d082f5ceefa0daa50b40330c094e5a7080a6295dc0befa4a64caea245bac9a" kind="enumvalue"><name>FRAME_TYPE_MANAGEMENT</name></member>
+    <member refid="namespacegr_1_1swifi_1a877d082f5ceefa0daa50b40330c094e5a59378ba8bdd841be20942f0a2e0abec1" kind="enumvalue"><name>FRAME_TYPE_CONTROL</name></member>
+    <member refid="namespacegr_1_1swifi_1a877d082f5ceefa0daa50b40330c094e5a1e2fabdb36ff768ec6ec1f456236961e" kind="enumvalue"><name>FRAME_TYPE_DATA</name></member>
+    <member refid="namespacegr_1_1swifi_1a877d082f5ceefa0daa50b40330c094e5aa13e4869cc07f947ceaa5bacccf99b3c" kind="enumvalue"><name>FRAME_TYPE_RESERVED</name></member>
+    <member refid="namespacegr_1_1swifi_1a877d082f5ceefa0daa50b40330c094e5ae2f48280cfa2c5a2797c5941ae9aca74" kind="enumvalue"><name>NUM_FRAME_TYPES</name></member>
+    <member refid="namespacegr_1_1swifi_1a04e003532cff680210c3004bd9ce3c55" kind="enum"><name>mac80211_frame_management_subtype</name></member>
+    <member refid="namespacegr_1_1swifi_1a04e003532cff680210c3004bd9ce3c55af02b01621ab8543238aec3655251e304" kind="enumvalue"><name>FRAME_SUBTYPE_MANAGEMENT_ASSOC_REQ</name></member>
+    <member refid="namespacegr_1_1swifi_1a04e003532cff680210c3004bd9ce3c55ac1dc765f5221ff27d6ed07d5a2396fcc" kind="enumvalue"><name>FRAME_SUBTYPE_MANAGEMENT_ASSOC_RES</name></member>
+    <member refid="namespacegr_1_1swifi_1a04e003532cff680210c3004bd9ce3c55afcbfcc492475afa28ef3fd321429a3ef" kind="enumvalue"><name>FRAME_SUBTYPE_MANAGEMENT_REASSOC_REQ</name></member>
+    <member refid="namespacegr_1_1swifi_1a04e003532cff680210c3004bd9ce3c55ac8b22a842850bd754961a677ffdb48bd" kind="enumvalue"><name>FRAME_SUBTYPE_MANAGEMENT_REASSOC_RES</name></member>
+    <member refid="namespacegr_1_1swifi_1a04e003532cff680210c3004bd9ce3c55ad2b9aaf322fcc1fff8896b85a8ebb7de" kind="enumvalue"><name>FRAME_SUBTYPE_MANAGEMENT_PROBE_REQ</name></member>
+    <member refid="namespacegr_1_1swifi_1a04e003532cff680210c3004bd9ce3c55aea5cc97153f777ae47a477bc46f13660" kind="enumvalue"><name>FRAME_SUBTYPE_MANAGEMENT_PROBE_RES</name></member>
+    <member refid="namespacegr_1_1swifi_1a04e003532cff680210c3004bd9ce3c55aecb160d3153391907a064a158ef34099" kind="enumvalue"><name>FRAME_SUBTYPE_MANAGEMENT_TIMING_ADV</name></member>
+    <member refid="namespacegr_1_1swifi_1a04e003532cff680210c3004bd9ce3c55a17e9eb66252851a806babb17d0b920bd" kind="enumvalue"><name>FRAME_SUBTYPE_MANAGEMENT_RESERVED1</name></member>
+    <member refid="namespacegr_1_1swifi_1a04e003532cff680210c3004bd9ce3c55a50810bc073df9fcd663cf656cb4a5e16" kind="enumvalue"><name>FRAME_SUBTYPE_MANAGEMENT_BEACON</name></member>
+    <member refid="namespacegr_1_1swifi_1a04e003532cff680210c3004bd9ce3c55a84c9a89b9d2c64268ada0f69ca5a35a1" kind="enumvalue"><name>FRAME_SUBTYPE_MANAGEMENT_ATIM</name></member>
+    <member refid="namespacegr_1_1swifi_1a04e003532cff680210c3004bd9ce3c55a96b7fb0110f567daf01a458a21502618" kind="enumvalue"><name>FRAME_SUBTYPE_MANAGEMENT_DISASSOC</name></member>
+    <member refid="namespacegr_1_1swifi_1a04e003532cff680210c3004bd9ce3c55aa14e781fe90481c94ad90f946b2c89a7" kind="enumvalue"><name>FRAME_SUBTYPE_MANAGEMENT_AUTH</name></member>
+    <member refid="namespacegr_1_1swifi_1a04e003532cff680210c3004bd9ce3c55acfc664b87bf6e879e55b306c6302b83d" kind="enumvalue"><name>FRAME_SUBTYPE_MANAGEMENT_DEAUTH</name></member>
+    <member refid="namespacegr_1_1swifi_1a04e003532cff680210c3004bd9ce3c55a04239f2d4afd7c85266e7f450c6a2971" kind="enumvalue"><name>FRAME_SUBTYPE_MANAGEMENT_ACTION</name></member>
+    <member refid="namespacegr_1_1swifi_1a04e003532cff680210c3004bd9ce3c55af84091d6fc0f121dfd7427e89a38e213" kind="enumvalue"><name>FRAME_SUBTYPE_MANAGEMENT_ACTION_NOACK</name></member>
+    <member refid="namespacegr_1_1swifi_1a04e003532cff680210c3004bd9ce3c55adf425a4ab50a35b2da8e381834610425" kind="enumvalue"><name>FRAME_SUBTYPE_MANAGEMENT_RESERVED2</name></member>
+    <member refid="namespacegr_1_1swifi_1a04e003532cff680210c3004bd9ce3c55a99dae4fec4ce1c01ef5a93a3f80478a3" kind="enumvalue"><name>NUM_FRAME_SUBTYPE_MANAGEMENT</name></member>
+    <member refid="namespacegr_1_1swifi_1ae5d3530f77257fe411b4fa4da169b292" kind="enum"><name>mac80211_frame_control_subtype</name></member>
+    <member refid="namespacegr_1_1swifi_1ae5d3530f77257fe411b4fa4da169b292a6164f46b53313db1e3c0fcd6bc27de6f" kind="enumvalue"><name>FRAME_SUBTYPE_CONTROL_RESERVED0</name></member>
+    <member refid="namespacegr_1_1swifi_1ae5d3530f77257fe411b4fa4da169b292ac5a2efff160c2f95f9081640b88fc1f0" kind="enumvalue"><name>FRAME_SUBTYPE_CONTROL_RESERVED1</name></member>
+    <member refid="namespacegr_1_1swifi_1ae5d3530f77257fe411b4fa4da169b292a8f88c255097dcd7a32fbbfac5eb5c037" kind="enumvalue"><name>FRAME_SUBTYPE_CONTROL_RESERVED2</name></member>
+    <member refid="namespacegr_1_1swifi_1ae5d3530f77257fe411b4fa4da169b292a69dd346e24ce52b86c0853b9b405d406" kind="enumvalue"><name>FRAME_SUBTYPE_CONTROL_RESERVED3</name></member>
+    <member refid="namespacegr_1_1swifi_1ae5d3530f77257fe411b4fa4da169b292a5ed45cf8aa6f79c96d4a31cf72d117c5" kind="enumvalue"><name>FRAME_SUBTYPE_CONTROL_RESERVED4</name></member>
+    <member refid="namespacegr_1_1swifi_1ae5d3530f77257fe411b4fa4da169b292ac0a2d118a79330237b175d14eb9284e0" kind="enumvalue"><name>FRAME_SUBTYPE_CONTROL_RESERVED5</name></member>
+    <member refid="namespacegr_1_1swifi_1ae5d3530f77257fe411b4fa4da169b292afd1d1955eef266c9a207db84e81986cb" kind="enumvalue"><name>FRAME_SUBTYPE_CONTROL_RESERVED6</name></member>
+    <member refid="namespacegr_1_1swifi_1ae5d3530f77257fe411b4fa4da169b292a868685a0264d2c8361e5a3f8a3bcb12b" kind="enumvalue"><name>FRAME_SUBTYPE_CONTROL_WRAPPER</name></member>
+    <member refid="namespacegr_1_1swifi_1ae5d3530f77257fe411b4fa4da169b292a801fd3fd3594abe26e319479a72505b7" kind="enumvalue"><name>FRAME_SUBTYPE_CONTROL_BLOCK_ACK_REQ</name></member>
+    <member refid="namespacegr_1_1swifi_1ae5d3530f77257fe411b4fa4da169b292afd125029e6992fe87ce7193e5a1137a3" kind="enumvalue"><name>FRAME_SUBTYPE_CONTROL_BLOCK_ACK</name></member>
+    <member refid="namespacegr_1_1swifi_1ae5d3530f77257fe411b4fa4da169b292a7386665756bd36771821ef6d203302eb" kind="enumvalue"><name>FRAME_SUBTYPE_CONTROL_PSPOLL</name></member>
+    <member refid="namespacegr_1_1swifi_1ae5d3530f77257fe411b4fa4da169b292aac583f204fe2d185d1396a4a5ac4fcd3" kind="enumvalue"><name>FRAME_SUBTYPE_CONTROL_RTS</name></member>
+    <member refid="namespacegr_1_1swifi_1ae5d3530f77257fe411b4fa4da169b292a0e4e70db76ae0bb7612e5630cbbee8b6" kind="enumvalue"><name>FRAME_SUBTYPE_CONTROL_CTS</name></member>
+    <member refid="namespacegr_1_1swifi_1ae5d3530f77257fe411b4fa4da169b292a30545f8f78fc8926df1f9bfb977dd05b" kind="enumvalue"><name>FRAME_SUBTYPE_CONTROL_ACK</name></member>
+    <member refid="namespacegr_1_1swifi_1ae5d3530f77257fe411b4fa4da169b292ad87a875b1d39ba9fab272142b2cc9ede" kind="enumvalue"><name>FRAME_SUBTYPE_CONTROL_CFEND</name></member>
+    <member refid="namespacegr_1_1swifi_1ae5d3530f77257fe411b4fa4da169b292a1c467db5f74aa67137a22219a6f5c3f0" kind="enumvalue"><name>FRAME_SUBTYPE_CONTROL_CFEND_CFACK</name></member>
+    <member refid="namespacegr_1_1swifi_1ae5d3530f77257fe411b4fa4da169b292a987576ed4ef1ca8fcd156678d836456b" kind="enumvalue"><name>NUM_FRAME_SUBTYPE_CONTROL</name></member>
+    <member refid="namespacegr_1_1swifi_1a03fc1d1b2514800e646d6c0f97844c12" kind="enum"><name>mac80211_frame_data_subtype</name></member>
+    <member refid="namespacegr_1_1swifi_1a03fc1d1b2514800e646d6c0f97844c12ad7a2d6f9164344f7fc312d40a8009e01" kind="enumvalue"><name>FRAME_SUBTYPE_DATA_DATA</name></member>
+    <member refid="namespacegr_1_1swifi_1a03fc1d1b2514800e646d6c0f97844c12a96326044c60342e4d4f746c88f0f23d7" kind="enumvalue"><name>FRAME_SUBTYPE_DATA_DATA_CFACK</name></member>
+    <member refid="namespacegr_1_1swifi_1a03fc1d1b2514800e646d6c0f97844c12aef5f067eb8e1bdbf5e204fd9755b8728" kind="enumvalue"><name>FRAME_SUBTYPE_DATA_DATA_CFPOLL</name></member>
+    <member refid="namespacegr_1_1swifi_1a03fc1d1b2514800e646d6c0f97844c12a2b730cfbcce7af1923665061c96a0754" kind="enumvalue"><name>FRAME_SUBTYPE_DATA_DATA_CFACKPOLL</name></member>
+    <member refid="namespacegr_1_1swifi_1a03fc1d1b2514800e646d6c0f97844c12a3ac350cd5ed322413ad7dcc312d657fd" kind="enumvalue"><name>FRAME_SUBTYPE_DATA_NULL</name></member>
+    <member refid="namespacegr_1_1swifi_1a03fc1d1b2514800e646d6c0f97844c12ad36f89b463d88a35371545f4613080d7" kind="enumvalue"><name>FRAME_SUBTYPE_DATA_CFACK</name></member>
+    <member refid="namespacegr_1_1swifi_1a03fc1d1b2514800e646d6c0f97844c12a63b8dc98a4f452b8f4c4b5096ee9c470" kind="enumvalue"><name>FRAME_SUBTYPE_DATA_CFPOLL</name></member>
+    <member refid="namespacegr_1_1swifi_1a03fc1d1b2514800e646d6c0f97844c12aec7041efb4199972f78001a24f33d111" kind="enumvalue"><name>FRAME_SUBTYPE_DATA_CFACKPOLL</name></member>
+    <member refid="namespacegr_1_1swifi_1a03fc1d1b2514800e646d6c0f97844c12a84d5982dbd697d8ff93523f9b144b581" kind="enumvalue"><name>FRAME_SUBTYPE_DATA_QOS_DATA</name></member>
+    <member refid="namespacegr_1_1swifi_1a03fc1d1b2514800e646d6c0f97844c12aca77229d51b753efbf35bf9b9546e973" kind="enumvalue"><name>FRAME_SUBTYPE_DATA_QOS_DATA_CFACK</name></member>
+    <member refid="namespacegr_1_1swifi_1a03fc1d1b2514800e646d6c0f97844c12a3f8a9000ce91835ce8df410e7be77f7f" kind="enumvalue"><name>FRAME_SUBTYPE_DATA_QOS_DATA_CFPOLL</name></member>
+    <member refid="namespacegr_1_1swifi_1a03fc1d1b2514800e646d6c0f97844c12aa6175880150b6d7197db669591713a9a" kind="enumvalue"><name>FRAME_SUBTYPE_DATA_QOS_DATA_CFACKPOLL</name></member>
+    <member refid="namespacegr_1_1swifi_1a03fc1d1b2514800e646d6c0f97844c12a198eb8d056a583dbf3be519cb185a448" kind="enumvalue"><name>FRAME_SUBTYPE_DATA_QOS_NULL</name></member>
+    <member refid="namespacegr_1_1swifi_1a03fc1d1b2514800e646d6c0f97844c12a8f613e86334a34349777188cf68bde55" kind="enumvalue"><name>FRAME_SUBTYPE_DATA_RESERVED</name></member>
+    <member refid="namespacegr_1_1swifi_1a03fc1d1b2514800e646d6c0f97844c12a223611a344d318475a789de7ee82491d" kind="enumvalue"><name>FRAME_SUBTYPE_DATA_QOS_CFPOLL</name></member>
+    <member refid="namespacegr_1_1swifi_1a03fc1d1b2514800e646d6c0f97844c12a5627e2bda3c7a73cd0781a29714bbdba" kind="enumvalue"><name>FRAME_SUBTYPE_DATA_QOS_CFACKPOLL</name></member>
+    <member refid="namespacegr_1_1swifi_1a03fc1d1b2514800e646d6c0f97844c12aad1c807e8e0fcfc4a8648e8ae488878e" kind="enumvalue"><name>NUM_FRAME_SUBTYPE_DATA</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87" kind="enum"><name>mac80211_information_element_id</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87aaf02be20fe97b557edf8ea8ebcc88c67" kind="enumvalue"><name>IE_SSID</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a44a35e9b8acc4e8349ef3694e2e4a22e" kind="enumvalue"><name>IE_SUPPORTED_RATES</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a3883ea5d5eb88c97e273f36ac05a7406" kind="enumvalue"><name>IE_FH_PARAMETER_SET</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a5402b5301e271bf6879bb0d303a72371" kind="enumvalue"><name>IE_DSSS_PARAMETER_SET</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87aef84c1ca22a94175fad1d773e426eee3" kind="enumvalue"><name>IE_CF_PARAMETER_SET</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a43b3db4c7daadfa208b2a287a628565a" kind="enumvalue"><name>IE_TIM</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87ac16281c9497101237ec7fa93036a17ba" kind="enumvalue"><name>IE_IBSS_PARAMETER_SET</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a91bf3db92fea8918a2a20057bd519d99" kind="enumvalue"><name>IE_COUNTRY</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87ac968dec47fde3f9f1b2feed7a90b96b1" kind="enumvalue"><name>IE_HOPPING_PATTERN_PARAMETERS</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a577c93d3e1bb708f21c1edb4d18656f8" kind="enumvalue"><name>IE_HOPPING_PATTERN_TABLE</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a8bbdc8baa399b838e29273d58f3ab46d" kind="enumvalue"><name>IE_REQUEST</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a56ad371db7bd0be3c8f93f77f81b6e31" kind="enumvalue"><name>IE_BSS_LOAD</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a5d49146d530ba268fb9c4c6358e27af3" kind="enumvalue"><name>IE_EDCA_PARAMETER_SET</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a6888debf645b59adbac92c59b8b2775e" kind="enumvalue"><name>IE_TSPEC</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87ad46d4f9cb1e1b53c6e9caa060f3850f9" kind="enumvalue"><name>IE_TCLAS</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a4716c8ffebf5554b2b68281a6a92530e" kind="enumvalue"><name>IE_SCHEDULE</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a9d06f3bf9ce344fcb98c22cba71b6f7a" kind="enumvalue"><name>IE_CHALLENGE_TEXT</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a8bc88f166d44a44367335ba87bd442f3" kind="enumvalue"><name>IE_POWER_CONSTRAINT</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a52c9cd885d9b2f985e4dc3c4000255f0" kind="enumvalue"><name>IE_POWER_CAPABILITY</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87ab5ccef5208445d6e31d96a294274a688" kind="enumvalue"><name>IE_TPC_REQUEST</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a44385f8a9e9d6b00c956fe095b9e2896" kind="enumvalue"><name>IE_TPC_REPORT</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87abdcb8ab11300a2e46c5ce2a997df804f" kind="enumvalue"><name>IE_SUPPORTED_CHANNELS</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a631974ea3c09b252415145d140653560" kind="enumvalue"><name>IE_CHANNEL_SWITCH_ANNOUNCEMENT</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a04a84c458aafea35a17b63c5c6024dbc" kind="enumvalue"><name>IE_MEASUREMENT_REQUEST</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a80fafbf5f70245f80ed8e2dc4ca50a54" kind="enumvalue"><name>IE_MEASUREMENT_REPORT</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a7a86bc5ed0f907920f94f7df5984a439" kind="enumvalue"><name>IE_QUIET</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a36efbd12174e389d499a9aab13e4d88e" kind="enumvalue"><name>IE_IBSS_DFS</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a972d153aa51281633370bb541799f724" kind="enumvalue"><name>IE_ERP</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87add5a546759d6be2397f6be4c2d36c9d1" kind="enumvalue"><name>IE_TS_DELAY</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87ad1cc403c168557fd94b34a685655dd74" kind="enumvalue"><name>IE_TCLAS_PROCESSING</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a6ef59f9c845e903ece672b6bcf486ad9" kind="enumvalue"><name>IE_HT_CAPABILITIES</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87ae360d30f7ddbf10e0074de6462b901cd" kind="enumvalue"><name>IE_QOS_CAPABILITY</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87ab320d5594594abfed0cf462934e549de" kind="enumvalue"><name>IE_RSN</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a38f3e16496f3b97ddae9ae2d98bae6f5" kind="enumvalue"><name>IE_EXTENDED_SUPPORTED_RATES</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87ad5c398a533a9250fd47a1b9b382afb7e" kind="enumvalue"><name>IE_AP_CHANNEL_REPORT</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a5a78ef6b506aa5ee48a17ff2b9abe415" kind="enumvalue"><name>IE_NEIGHBOR_REPORT</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a96aa069d4bf63b4826f5e15e4f4a1540" kind="enumvalue"><name>IE_RCPI</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87ab1e2d1417390d39bdcd997b5640caaf8" kind="enumvalue"><name>IE_MOBILITY_DOMAIN</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a386fd5e004e6811522346caa23f1a2ed" kind="enumvalue"><name>IE_FAST_BSS_TRANSITION</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a2f7ed78854dc5f79a5d51c8d75b2db3a" kind="enumvalue"><name>IE_TIMEOUT_INTERVAL</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a84d2d84bd4dd1f54e2ab348c765e7407" kind="enumvalue"><name>IE_RIC_DATA</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a765fdb8474ad51236269bd048817f784" kind="enumvalue"><name>IE_DSE_REGISTERED_LOCATION</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a2c51e478bcbd11ddccbfcf18b7efdb9c" kind="enumvalue"><name>IE_SUPPORTED_OPERATING_CLASSES</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87acbaf0c8d6a1c058f14f3507da123f617" kind="enumvalue"><name>IE_EXTENDED_CHANNEL_SWITCH_ANNOUNCEMENT</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87ab8ff9b0560ad54445e6f87c24587c291" kind="enumvalue"><name>IE_HT_OPERATION</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87afddc1d16d301f945e21c38d48f8dd875" kind="enumvalue"><name>IE_SECONDARY_CHANNEL_OFFSET</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87afe756785574e4e8fd7115ca8067141c4" kind="enumvalue"><name>IE_BSS_AVERAGE_ACCESS_DELAY</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87ab200b5c60569dae3c35466ce84d65fda" kind="enumvalue"><name>IE_ANTENNA</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87af82e768e8805e792824bdc89515a9b33" kind="enumvalue"><name>IE_RSNI</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87ab83a70ed9afd24403f321ce80ee3a272" kind="enumvalue"><name>IE_MEASUREMENT_PILOT_TRANSMISSION</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87afeff4c9c863d268bfd91e36bf45e47aa" kind="enumvalue"><name>IE_BSS_AVAILABLE_ADMISSION_CAPACITY</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87aed300892e941799a58893a8af6d957d2" kind="enumvalue"><name>IE_BSS_AC_ACCESS_DELAY</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87ae3208a10a048ae6753e73a78f070ac2c" kind="enumvalue"><name>IE_TIME_ADVERTISEMENT</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a0d1747e69f12687a2d8e6a2259f5749a" kind="enumvalue"><name>IE_RM_ENABLED_CAPABILITIES</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87abe9eff58a31910449f201d91c08d86bd" kind="enumvalue"><name>IE_MULTIPLE_BSSID</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87ab8a95bdc00bf554cf7831461edf25b5b" kind="enumvalue"><name>IE_20_40_BSS_COEXISTENCE</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a1e4c4d04de04fbb158a8918e62506906" kind="enumvalue"><name>IE_20_40_BSS_INTOLERANT_CHANNEL_REPORT</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a2869a0af4de321b02e5c5e71197014dc" kind="enumvalue"><name>IE_OVERLAPPING_BSS_SCAN_PARAMETERS</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a5c092864b790f3a78926fe30445a57fc" kind="enumvalue"><name>IE_RIC_DESCRIPTOR</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87ab343ea7dd98620bc007db0c4915bc131" kind="enumvalue"><name>IE_MANAGEMENT_MIC</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87ad14ca7d801f1a0d70766c7a51df62b8d" kind="enumvalue"><name>IE_EVENT_REQUEST</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87ae071ff77687191fdd1ceb0a78acb7f7d" kind="enumvalue"><name>IE_EVENT_REPORT</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a3eb8fd61814dec76eee16c277a7a4790" kind="enumvalue"><name>IE_DIAGNOSTIC_REQUEST</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a52c048a56ef501148650bf2cdb81f0a4" kind="enumvalue"><name>IE_DIAGNOSTIC_REPORT</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87ad31661c23b8b977bdec7178ab3aafbea" kind="enumvalue"><name>IE_LOCATION_PARAMETERS</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a4a53f4fd76b82db88546df5b6004d0bf" kind="enumvalue"><name>IE_NONTRANSMITTED_BSSID_CAPABILITY</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87adb7e78bed1b8469c9c5d2bf22ae31cbd" kind="enumvalue"><name>IE_SSID_LIST</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a483dedda0ede19cea934157aaf364e9e" kind="enumvalue"><name>IE_MULTIPLE_BSSID_INDEX</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87aa472fcbce994495ad1ef682c0589ee80" kind="enumvalue"><name>IE_FMS_DESCRIPTOR</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a06d27c811043b2fe283040f63d97fd06" kind="enumvalue"><name>IE_FMS_REQUEST</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a886406818bb5a739b3abbb77d64ef7fb" kind="enumvalue"><name>IE_FMS_RESPONSE</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a7d630e7cd5bca5e36586a53881778927" kind="enumvalue"><name>IE_QOS_TRAFFICE_CAPABILITY</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a9fe7ac258a9477dafba78df9fad776b5" kind="enumvalue"><name>IE_BSS_MAX_IDLE_PERIOD</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87aa7bfe28ab6fdb3094923ad59bcfb61ec" kind="enumvalue"><name>IE_TFS_REQUEST</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a5ceaa30dcb8c3aacef829f055a47305a" kind="enumvalue"><name>IE_TFS_RESPONSE</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87ad95c721aef099efba1fe16af391c714f" kind="enumvalue"><name>IE_WNM_SLEEP_MODE</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87ae595eb1bfc8b0bb74d51cd5defdc1687" kind="enumvalue"><name>IE_TIM_BROADCAST_REQUEST</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87ab5d671ee837315a6033dccace4655c19" kind="enumvalue"><name>IE_TIM_BROADCAST_RESPONSE</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a14986b5cb0ec67566a6d712db215ee88" kind="enumvalue"><name>IE_COLLOCATED_INTERFERENCE_REPORT</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a346bb061fbc81c7abf72510c60900093" kind="enumvalue"><name>IE_CHANNEL_USAGE</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a2607b28e00627b4155bafafffae961b6" kind="enumvalue"><name>IE_TIME_ZONE</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a0cee4773be20614d3dbd8406d76f78b3" kind="enumvalue"><name>IE_DMS_REQUEST</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87acce26a7067cb41c0ad7e4b5dbd16e2d4" kind="enumvalue"><name>IE_DMS_RESPONSE</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a13572ec611dc1b938e68c0b05cad8da5" kind="enumvalue"><name>IE_LINK_IDENTIFIER</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a76041827ff0d6beb5e16a96510ca535a" kind="enumvalue"><name>IE_WAKEUP_SCHEDULE</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a13611875139cede53281515854d8feb7" kind="enumvalue"><name>IE_CHANNEL_SWITCH_TIMING</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87ae24cddb25c5d47a44be85ac71c909ffa" kind="enumvalue"><name>IE_PTI_CONTROL</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a99d0a6fdea701a9b9b802a90b2ad6319" kind="enumvalue"><name>IE_TPU_BUFFER_STATUS</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87ab52683b12acbc2b36c0b52d43d80a997" kind="enumvalue"><name>IE_INTERWORKING</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a74be433d04a33706416339207e26ad1b" kind="enumvalue"><name>IE_ADVERTISEMENT_PROTOCOL</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a1373734cd81faf1fecd1e11924369af3" kind="enumvalue"><name>IE_EXPEDITED_BANDWIDTH_REQUEST</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a86670e45a4bbd99c978bb0dc5a0c5c9f" kind="enumvalue"><name>IE_QOS_MAP_SET</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a578f36c701902f2a7d40fd554a2a3b7c" kind="enumvalue"><name>IE_ROAMING_CONSORTIUM</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87aee25cdaa18275afff73c8306fe1a10ec" kind="enumvalue"><name>IE_EMERGENCY_ALERT_IDENTIFIER</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a9019b014f5751ea4ac44cd5864f133bc" kind="enumvalue"><name>IE_MESH_CONFIGURATION</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87ab36477260cc9bcd677d1e25627378ded" kind="enumvalue"><name>IE_MESH_ID</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87acd2077c7730947bbb32f2903cf6807ba" kind="enumvalue"><name>IE_MESH_LINK_METRIC_REPORT</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a4aa0385ab3d6e46dd4c8b2a6542a18f2" kind="enumvalue"><name>IE_CONGESTION_NOTIFICATION</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87aabc3462cf9bd03dfd179614dbb4edd1a" kind="enumvalue"><name>IE_MESH_PEERING_MANAGEMENT</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87aa69e61eeb0d999bbf4db177aeb6f889d" kind="enumvalue"><name>IE_MESH_CHANNEL_SWITCH_PARAMETERS</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a9fa32b34fcfaa80239a806cf6e797b24" kind="enumvalue"><name>IE_MESH_AWAKE_WINDOW</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87aa77c0e72e2e7dca965e43eb73bd62b16" kind="enumvalue"><name>IE_BEACON_TIMING</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87ad48e4057527f0207b3bf47b561d82a40" kind="enumvalue"><name>IE_MCCAOP_SETUP_REQUEST</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a1e1b4875f60af0fc73dfb92afba7be2e" kind="enumvalue"><name>IE_MCCAOP_SETUP_REPLY</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87ae70f1fdabb912fd7b47ba6f228d057e1" kind="enumvalue"><name>IE_MCCAOP_ADVERTISEMENT</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87ad6e8790500bd106961dd28e134a26c6a" kind="enumvalue"><name>IE_MCCAOP_TEARDOWN</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a35eeea5483d06364259fce216bd6d31b" kind="enumvalue"><name>IE_GANN</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a69c84e3d298ad74bb1717433a4c2bd6b" kind="enumvalue"><name>IE_RANN</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87ad6c7b12ac76a26ab70f3700697a1548b" kind="enumvalue"><name>IE_EXTENDED_CAPABILITIES</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a5f313804574dc0da3b311fd2043ce8fb" kind="enumvalue"><name>IE_PREQ</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87aeff7df7899c6803e4ab5f73d676ec2a2" kind="enumvalue"><name>IE_PREP</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a528d84c7e1361d75f8728dfa097445d1" kind="enumvalue"><name>IE_PERR</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a08e8fb2d85369032fc060afa67ab9e52" kind="enumvalue"><name>IE_PXU</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87abea9d7f8c48d9ffff698525df244d71d" kind="enumvalue"><name>IE_PXUC</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a6d9048da76699e4b87bf917ee60c9e44" kind="enumvalue"><name>IE_AUTHENTICATED_MESH_PEERING_EXCHANGE</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a473c3e464b1dbb2ccd8c402a0408cf31" kind="enumvalue"><name>IE_MIC</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a4a8ce534339700f74141c8435930eea1" kind="enumvalue"><name>IE_DESTINATION_URI</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87aa107bf62d62b3819239c8ddf9cecb60b" kind="enumvalue"><name>IE_UAPSD_COEXISTENCE</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a3d808aa8d2346d3a39987792953e58db" kind="enumvalue"><name>IE_MCCAOP_ADVERTISEMENT_OVERVIEW</name></member>
+    <member refid="namespacegr_1_1swifi_1a479ab725d34d9c7a9e487cf29a4c0b87a7b6a15d0326bffde6bcbf298e40ce139" kind="enumvalue"><name>IE_VENDOR_SPECIFIC</name></member>
+    <member refid="namespacegr_1_1swifi_1a29e0c39bf21617e150a61bd46d58764f" kind="typedef"><name>c_sharr</name></member>
+    <member refid="namespacegr_1_1swifi_1a08dc70ce95d4e77b2bc952ce438bd270" kind="variable"><name>mac80211_frame_type_str</name></member>
+    <member refid="namespacegr_1_1swifi_1a1a405c634b510b96ee809ad4a65825f8" kind="variable"><name>mac80211_frame_management_subtype_str</name></member>
+    <member refid="namespacegr_1_1swifi_1a81bd23192a533b5a3da988678f8b2ad1" kind="variable"><name>mac80211_frame_control_subtype_str</name></member>
+    <member refid="namespacegr_1_1swifi_1ab38efa390ba1b24ec605e4f8dbe9df2b" kind="variable"><name>mac80211_frame_data_subtype_str</name></member>
+    <member refid="namespacegr_1_1swifi_1a053a3f375aa6dbb03e31de0bcebb078b" kind="variable"><name>mac80211_information_element_id_str</name></member>
+    <member refid="namespacegr_1_1swifi_1a35c27db2dd14ebb839bf458cddfe1d69" kind="variable"><name>PHY_SCRAMBLER_FLAG</name></member>
+    <member refid="namespacegr_1_1swifi_1a0f42cb41f77313419d00d5b56288a2f7" kind="variable"><name>PHY_TAIL_SET_FLAG</name></member>
+    <member refid="namespacegr_1_1swifi_1a356d27266a6d849fafeaa0fa03f1bf7d" kind="variable"><name>PHY_HEADER_FLAG</name></member>
+    <member refid="namespacegr_1_1swifi_1acf4b1311329795d2a1533d5fdef8bad5" kind="function"><name>init_ie_id_str</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1ac9da812ac72485ebd52f51752c872085" kind="define"><name>SWIFI_API</name></member>
+  </compound>
+  <compound refid="bit__inserter_8h" kind="file"><name>bit_inserter.h</name>
+  </compound>
+  <compound refid="bit__packer_8h" kind="file"><name>bit_packer.h</name>
+  </compound>
+  <compound refid="bit__stealer_8h" kind="file"><name>bit_stealer.h</name>
+  </compound>
+  <compound refid="bit__unpacker_8h" kind="file"><name>bit_unpacker.h</name>
+  </compound>
+  <compound refid="bitmetrics__computer_8h" kind="file"><name>bitmetrics_computer.h</name>
+  </compound>
+  <compound refid="bitmetrics__inserter_8h" kind="file"><name>bitmetrics_inserter.h</name>
+  </compound>
+  <compound refid="bitmetrics__interleaver_8h" kind="file"><name>bitmetrics_interleaver.h</name>
+  </compound>
+  <compound refid="chunks__to__symbols_8h" kind="file"><name>chunks_to_symbols.h</name>
+  </compound>
+  <compound refid="constellation__decoder_8h" kind="file"><name>constellation_decoder.h</name>
+  </compound>
+  <compound refid="constellation__metrics_8h" kind="file"><name>constellation_metrics.h</name>
+  </compound>
+  <compound refid="dsss__frame__sync_8h" kind="file"><name>dsss_frame_sync.h</name>
+  </compound>
+  <compound refid="dsss__frame__sync__2_8h" kind="file"><name>dsss_frame_sync_2.h</name>
+  </compound>
+  <compound refid="dynamic__rate__block_8h" kind="file"><name>dynamic_rate_block.h</name>
+  </compound>
+  <compound refid="fd__noise__adder_8h" kind="file"><name>fd_noise_adder.h</name>
+  </compound>
+  <compound refid="frame__filter_8h" kind="file"><name>frame_filter.h</name>
+  </compound>
+  <compound refid="frame__samples__extractor_8h" kind="file"><name>frame_samples_extractor.h</name>
+  </compound>
+  <compound refid="header__payload__demux_8h" kind="file"><name>header_payload_demux.h</name>
+  </compound>
+  <compound refid="header__payload__demux__2_8h" kind="file"><name>header_payload_demux_2.h</name>
+  </compound>
+  <compound refid="interleaver_8h" kind="file"><name>interleaver.h</name>
+  </compound>
+  <compound refid="mac__frame__generator_8h" kind="file"><name>mac_frame_generator.h</name>
+  </compound>
+  <compound refid="mac__frame__info_8h" kind="file"><name>mac_frame_info.h</name>
+    <member refid="mac__frame__info_8h_1a60cf9af36f952be0feb59d1f49d5edff" kind="define"><name>MAC_ADDR_LEN</name></member>
+    <member refid="mac__frame__info_8h_1a8d14266d76690c530bee01e7e5bb4099" kind="define"><name>MAC_ADDR1</name></member>
+    <member refid="mac__frame__info_8h_1a6c5df15bec1d305ed033ad9a85ec803d" kind="define"><name>MAC_ADDR2</name></member>
+    <member refid="mac__frame__info_8h_1a08a36ede83ae67498aecf54676be8fc8" kind="define"><name>MAC_ADDR3</name></member>
+    <member refid="mac__frame__info_8h_1ab018bfeb71f0ff1037323680ab5fec07" kind="define"><name>MAC_MAX_ADDRS</name></member>
+  </compound>
+  <compound refid="mac__parser_8h" kind="file"><name>mac_parser.h</name>
+  </compound>
+  <compound refid="mac__utils_8h" kind="file"><name>mac_utils.h</name>
+    <member refid="mac__utils_8h_1a60cf9af36f952be0feb59d1f49d5edff" kind="define"><name>MAC_ADDR_LEN</name></member>
+    <member refid="mac__utils_8h_1a8d14266d76690c530bee01e7e5bb4099" kind="define"><name>MAC_ADDR1</name></member>
+    <member refid="mac__utils_8h_1a6c5df15bec1d305ed033ad9a85ec803d" kind="define"><name>MAC_ADDR2</name></member>
+    <member refid="mac__utils_8h_1a08a36ede83ae67498aecf54676be8fc8" kind="define"><name>MAC_ADDR3</name></member>
+    <member refid="mac__utils_8h_1ab018bfeb71f0ff1037323680ab5fec07" kind="define"><name>MAC_MAX_ADDRS</name></member>
+  </compound>
+  <compound refid="ofdm__chan__est_8h" kind="file"><name>ofdm_chan_est.h</name>
+  </compound>
+  <compound refid="ofdm__equalizer_8h" kind="file"><name>ofdm_equalizer.h</name>
+  </compound>
+  <compound refid="ofdm__frame__sync_8h" kind="file"><name>ofdm_frame_sync.h</name>
+  </compound>
+  <compound refid="ofdm__phy__header__parser_8h" kind="file"><name>ofdm_phy_header_parser.h</name>
+  </compound>
+  <compound refid="payload__parser_8h" kind="file"><name>payload_parser.h</name>
+  </compound>
+  <compound refid="peak__gate_8h" kind="file"><name>peak_gate.h</name>
+  </compound>
+  <compound refid="phy__frame__generator_8h" kind="file"><name>phy_frame_generator.h</name>
+  </compound>
+  <compound refid="phy__utils_8h" kind="file"><name>phy_utils.h</name>
+  </compound>
+  <compound refid="sample__adder_8h" kind="file"><name>sample_adder.h</name>
+  </compound>
+  <compound refid="sample__marker_8h" kind="file"><name>sample_marker.h</name>
+  </compound>
+  <compound refid="scrambler_8h" kind="file"><name>scrambler.h</name>
+  </compound>
+  <compound refid="stream__pack_8h" kind="file"><name>stream_pack.h</name>
+  </compound>
+  <compound refid="tag__utils_8h" kind="file"><name>tag_utils.h</name>
+  </compound>
+  <compound refid="tx__time__tag__adder_8h" kind="file"><name>tx_time_tag_adder.h</name>
+  </compound>
+  <compound refid="unpack__lsb_8h" kind="file"><name>unpack_lsb.h</name>
+  </compound>
+  <compound refid="vector__valve_8h" kind="file"><name>vector_valve.h</name>
+  </compound>
+  <compound refid="wifi__constellation_8h" kind="file"><name>wifi_constellation.h</name>
+  </compound>
+  <compound refid="wifi__conv__1__2_8h" kind="file"><name>wifi_conv_1_2.h</name>
+  </compound>
+  <compound refid="wifi__conv__decoder_8h" kind="file"><name>wifi_conv_decoder.h</name>
+  </compound>
+  <compound refid="wifi__conv__encoder_8h" kind="file"><name>wifi_conv_encoder.h</name>
+  </compound>
+  <compound refid="wifi__conv__soft__decoder_8h" kind="file"><name>wifi_conv_soft_decoder.h</name>
+  </compound>
+  <compound refid="wifi__dump__factory_8h" kind="file"><name>wifi_dump_factory.h</name>
+  </compound>
+  <compound refid="wifi__dump__formatter_8h" kind="file"><name>wifi_dump_formatter.h</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>/home/wirlab/gr-swifi/include</name>
+  </compound>
+  <compound refid="dir_55182f89b58a266a5bbc0649f621daba" kind="dir"><name>/home/wirlab/gr-swifi/include/swifi</name>
+  </compound>
+</doxygenindex>

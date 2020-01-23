@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!--
+###################################################
+##Add tx_time to stream
+###################################################
+ -->
+<block>
+    <name>TX Time Tag Adder</name>
+    <key>swifi_tx_time_tag_adder</key>
+    <category>SWiFi</category>
+    <import>import swifi</import>
+    <make>swifi.tx_time_tag_adder($full_secs,$frac_sec,$length_tag_key,$length)</make>
+    <param>
+        <name>TX Time</name>
+        <key>full_secs</key>
+        <type>int</type>
+    </param>
+    
+    <param>
+        <name>TX Time(fraction)</name>
+        <key>frac_sec</key>
+        <type>float</type>
+    </param>
+
+    <param>
+        <name>Length Tag Key</name>
+        <key>length_tag_key</key>
+        <type>string</type>
+    </param>
+
+    <param>
+        <name>Length</name>
+        <key>length</key>
+        <type>int</type>
+    </param>
+
+    <sink>
+        <name>in</name>
+        <type>complex</type>
+    </sink>
+    <source>
+        <name>out</name>
+        <type>complex</type>
+    </source>
+</block>

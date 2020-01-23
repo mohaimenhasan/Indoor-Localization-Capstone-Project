@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<!--
+###################################################
+##Mac Frame Generator
+###################################################
+ -->
+<block>
+    <name>MAC Frame Generator</name>
+    <key>swifi_mac_frame_generator</key>
+    <category>SWiFi</category>
+    <import>import swifi</import>
+    <make>swifi.mac_frame_generator($phy_tag_key,$rate,$pktlen)</make>
+    <param>
+        <name>PHY Tag Key</name>
+        <key>phy_tag_key</key>
+        <value>"signal"</value>
+        <type>string</type>
+    </param>
+    <param>
+        <name>Rate</name>
+        <key>rate</key>
+        <value>11</value>
+        <type>int</type>
+        <option>
+            <name>1 Mbps</name>
+            <!-- <key>10</key> for testing only -->
+            <key>0</key>
+        </option>
+        <option>
+            <name>2 Mbps</name>
+            <key>20</key>
+        </option>
+        <option>
+            <name>5.5 Mbps</name>
+            <key>55</key>
+        </option>
+        <option>
+            <name>6 Mbps</name>
+            <key>11</key>
+        </option>
+        <option>
+            <name>9 Mbps</name>
+            <key>15</key>
+        </option>
+        <option>
+            <name>11 Mbps</name>
+            <key>110</key>
+        </option>
+        <option>
+            <name>12 Mbps</name>
+            <key>10</key>
+        </option>
+        <option>
+            <name>18 Mbps</name>
+            <key>14</key>
+        </option>
+        <option>
+            <name>24 Mbps</name>
+            <key>9</key>
+        </option>
+        <option>
+            <name>36 Mbps</name>
+            <key>13</key>
+        </option>
+        <option>
+            <name>48 Mbps</name>
+            <key>8</key>
+        </option>
+        <option>
+            <name>54 Mbps</name>
+            <key>12</key>
+        </option>
+    </param>
+    <param>
+        <name>Packet Length</name>
+        <key>pktlen</key>
+        <value>0</value>
+        <type>int</type>
+    </param>
+    <sink>
+        <name>in</name>
+        <type>byte</type>
+    </sink>
+    <source>
+        <name>out</name>
+        <type>byte</type>
+    </source>
+</block>

@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG    CMakeFiles/extract.dir/extract.cc.o CMakeFiles/extract.dir/query_parser.cc.o CMakeFiles/extract.dir/simple_filter.cc.o CMakeFiles/extract.dir/utils.cc.o CMakeFiles/extract.dir/xml_reader.cc.o CMakeFiles/extract.dir/xml_node.cc.o  -o extract -rdynamic -lboost_filesystem -lboost_system 

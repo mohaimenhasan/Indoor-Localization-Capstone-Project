@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<block>
+  <name>Stream Pack</name>
+  <key>swifi_stream_pack</key>
+  <category>SWiFi</category>
+  <import>import swifi</import>
+  <make>swifi.stream_pack($(type.itemsize),$op)</make>
+
+  <param>
+    <name>Item bit size</name>
+    <key>itembitsize</key>
+    <value>[1]</value>
+    <type>raw</type>
+  </param>
+
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+    <nports>len($itembitsize)</nports>
+  </sink>
+
+  <source>
+    <name>out</name>
+    <type>byte</type>
+  </source>
+
+</block>

@@ -1,0 +1,386 @@
+">  165</span>&#160;<span class="comment">       * \return uncoded PPDU as a vector of bytes.</span></div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment">       */</span></div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      <span class="keyword">static</span> std::vector&lt;char&gt; create_frame(<span class="keywordtype">int</span> rate, <span class="keyword">const</span> std::string &amp;data);</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment">      /*!</span></div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment">       * Create PHY header with specified rate and length.</span></div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment">       * \param rate rate of transmission.</span></div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment">       * \param len length of data payload.</span></div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment">       * \param hdr created header.</span></div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment">       */</span></div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      <span class="keyword">static</span> <span class="keywordtype">void</span> create_header(<span class="keywordtype">int</span> rate, <span class="keywordtype">int</span> len, <a class="code" href="structgr_1_1swifi_1_1phy80211__frame__header.html">phy80211_frame_header</a> &amp;hdr);</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">      /*!</span></div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment">       * Scramble a given bit array with a predefined seed. The results are</span></div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment">       * stored back to the input pointer.</span></div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment">       * \param data pointer to the bit array.</span></div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment">       * \param len number of bits in the array.</span></div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment">       * \param seed 7-bit initial integer as the seed to the scrambler.</span></div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment">       * \return new seed after scrambling.</span></div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment">       */</span></div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;      <span class="keyword">static</span> <span class="keywordtype">char</span> scramble(<span class="keywordtype">char</span>* data, <span class="keywordtype">int</span> len, <span class="keywordtype">char</span> seed);</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment">      /*!</span></div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment">       * Scramble a given bit array with a predefined seed. The results are</span></div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="comment">       * stored in the output pointer.</span></div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment">       * \param data pointer to the bit array.</span></div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment">       * \param len number of bits in the array.</span></div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment">       * \param seed 7-bit initial integer as the seed to the scrambler.</span></div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="comment">       * \param out pointer to the output.</span></div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment">       * \return new seed after scrambling.</span></div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="comment">       */</span></div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      <span class="keyword">static</span> <span class="keywordtype">char</span> scramble(<span class="keyword">const</span> <span class="keywordtype">char</span> *data, <span class="keywordtype">int</span> len, <span class="keywordtype">char</span> seed, <span class="keywordtype">char</span> *out);</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;      <span class="keyword">static</span> std::vector&lt;int&gt; create_puncture_map(<span class="keywordtype">int</span> rate);</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;      <span class="keyword">static</span> std::vector&lt;int&gt; create_interleaving_map(<span class="keywordtype">int</span> rate);</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;      <span class="keyword">static</span> std::vector&lt;int&gt; create_deinterleaving_map(<span class="keywordtype">int</span> rate);</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;      <a class="code" href="classgr_1_1swifi_1_1phy__utils.html">phy_utils</a>();</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;      ~<a class="code" href="classgr_1_1swifi_1_1phy__utils.html">phy_utils</a>();</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    };</div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  } <span class="comment">// namespace swifi</span></div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;} <span class="comment">// namespace gr</span></div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_SWIFI_PHY_UTILS_H */</span><span class="preprocessor"></span></div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div><div class="ttc" id="classgr_1_1swifi_1_1phy__utils_html_aa7175806e80ad877b1af319d110b0f27"><div class="ttname"><a href="classgr_1_1swifi_1_1phy__utils.html#aa7175806e80ad877b1af319d110b0f27">gr::swifi::phy_utils::NO_PUNCTURE_MAP</a></div><div class="ttdeci">static std::vector&lt; int &gt; NO_PUNCTURE_MAP</div><div class="ttdef"><b>Definition:</b> phy_utils.h:89</div></div>
+<div class="ttc" id="api_8h_html"><div class="ttname"><a href="api_8h.html">api.h</a></div></div>
+<div class="ttc" id="classgr_1_1swifi_1_1phy__utils_html_a8b1c1b6a828411f44223c85cac181a13a14c94f2fed85da63779f1ae8097052ee"><div class="ttname"><a href="classgr_1_1swifi_1_1phy__utils.html#a8b1c1b6a828411f44223c85cac181a13a14c94f2fed85da63779f1ae8097052ee">gr::swifi::phy_utils::QAM64_3_4</a></div><div class="ttdef"><b>Definition:</b> phy_utils.h:74</div></div>
+<div class="ttc" id="structgr_1_1swifi_1_1phy80211__dsss__frame__header_html_a129b0e1d3bbb069d7bd5552bdd995da2"><div class="ttname"><a href="structgr_1_1swifi_1_1phy80211__dsss__frame__header.html#a129b0e1d3bbb069d7bd5552bdd995da2">gr::swifi::phy80211_dsss_frame_header::length</a></div><div class="ttdeci">uint16_t length</div><div class="ttdef"><b>Definition:</b> phy_utils.h:44</div></div>
+<div class="ttc" id="classgr_1_1swifi_1_1phy__utils_html_a6fbb6b3f3d9ab31d29f553d25b1f6b87"><div class="ttname"><a href="classgr_1_1swifi_1_1phy__utils.html#a6fbb6b3f3d9ab31d29f553d25b1f6b87">gr::swifi::phy_utils::N_BPSC</a></div><div class="ttdeci">static std::map&lt; int, int &gt; N_BPSC</div><div class="ttdef"><b>Definition:</b> phy_utils.h:83</div></div>
+<div class="ttc" id="classgr_1_1swifi_1_1phy__utils_html_a8b1c1b6a828411f44223c85cac181a13aff8992981f678ed3b7f4d92f332ef92c"><div class="ttname"><a href="classgr_1_1swifi_1_1phy__utils.html#a8b1c1b6a828411f44223c85cac181a13aff8992981f678ed3b7f4d92f332ef92c">gr::swifi::phy_utils::QAM16_1_2</a></div><div class="ttdef"><b>Definition:</b> phy_utils.h:71</div></div>
+<div class="ttc" id="classgr_1_1swifi_1_1phy__utils_html_a4ed60ff8148721e3c61faf15f6fe8c12"><div class="ttname"><a href="classgr_1_1swifi_1_1phy__utils.html#a4ed60ff8148721e3c61faf15f6fe8c12">gr::swifi::phy_utils::INTL_TABLE</a></div><div class="ttdeci">static std::map&lt; int, std::vector&lt; int &gt; &gt; INTL_TABLE</div><div class="ttdef"><b>Definition:</b> phy_utils.h:86</div></div>
+<div class="ttc" id="structgr_1_1swifi_1_1phy80211__frame__header_html"><div class="ttname"><a href="structgr_1_1swifi_1_1phy80211__frame__header.html">gr::swifi::phy80211_frame_header</a></div><div class="ttdef"><b>Definition:</b> phy_utils.h:48</div></div>
+<div class="ttc" id="classgr_1_1swifi_1_1phy__utils_html_a74fb6618d9ff8ab8eb89c28773f8c684"><div class="ttname"><a href="classgr_1_1swifi_1_1phy__utils.html#a74fb6618d9ff8ab8eb89c28773f8c684">gr::swifi::phy_utils::N_CBPS</a></div><div class="ttdeci">static std::map&lt; int, int &gt; N_CBPS</div><div class="ttdef"><b>Definition:</b> phy_utils.h:82</div></div>
+<div class="ttc" id="classgr_1_1swifi_1_1phy__utils_html_add35aa1dbaf255d403e84a8a2f2fa1b0"><div class="ttname"><a href="classgr_1_1swifi_1_1phy__utils.html#add35aa1dbaf255d403e84a8a2f2fa1b0">gr::swifi::phy_utils::DEINTL_TABLE</a></div><div class="ttdeci">static std::map&lt; int, std::vector&lt; int &gt; &gt; DEINTL_TABLE</div><div class="ttdef"><b>Definition:</b> phy_utils.h:87</div></div>
+<div class="ttc" id="classgr_1_1swifi_1_1phy__utils_html_a8b1c1b6a828411f44223c85cac181a13ae5090860a0be4fd4da4919e5022d47ed"><div class="ttname"><a href="classgr_1_1swifi_1_1phy__utils.html#a8b1c1b6a828411f44223c85cac181a13ae5090860a0be4fd4da4919e5022d47ed">gr::swifi::phy_utils::QPSK_3_4</a></div><div class="ttdef"><b>Definition:</b> phy_utils.h:76</div></div>
+<div class="ttc" id="classgr_1_1swifi_1_1phy__utils_html_acd82a2cd4b1347eb539025f5cd303649"><div class="ttname"><a href="classgr_1_1swifi_1_1phy__utils.html#acd82a2cd4b1347eb539025f5cd303649">gr::swifi::phy_utils::sptr</a></div><div class="ttdeci">boost::shared_ptr&lt; phy_utils &gt; sptr</div><div class="ttdef"><b>Definition:</b> phy_utils.h:61</div></div>
+<div class="ttc" id="classgr_1_1swifi_1_1phy__utils_html_a8b1c1b6a828411f44223c85cac181a13a0032d88a2c73b7c84d65d618f76ff78e"><div class="ttname"><a href="classgr_1_1swifi_1_1phy__utils.html#a8b1c1b6a828411f44223c85cac181a13a0032d88a2c73b7c84d65d618f76ff78e">gr::swifi::phy_utils::MCS7</a></div><div class="ttdef"><b>Definition:</b> phy_utils.h:68</div></div>
+<div class="ttc" id="classgr_1_1swifi_1_1phy__utils_html_a8400c77e2d6bfed2c9c2c895a2fafbf3"><div class="ttname"><a href="classgr_1_1swifi_1_1phy__utils.html#a8400c77e2d6bfed2c9c2c895a2fafbf3">gr::swifi::phy_utils::WIFI_CONSTELLATIONS</a></div><div class="ttdeci">static std::map&lt; int, digital::constellation_sptr &gt; WIFI_CONSTELLATIONS</div><div class="ttdef"><b>Definition:</b> phy_utils.h:85</div></div>
+<div class="ttc" id="namespacegr_1_1swifi_html_a29e0c39bf21617e150a61bd46d58764f"><div class="ttname"><a href="namespacegr_1_1swifi.html#a29e0c39bf21617e150a61bd46d58764f">gr::swifi::c_sharr</a></div><div class="ttdeci">boost::shared_array&lt; char &gt; c_sharr</div><div class="ttdef"><b>Definition:</b> phy_utils.h:38</div></div>
+<div class="ttc" id="classgr_1_1swifi_1_1phy__utils_html_a8b1c1b6a828411f44223c85cac181a13a523c5130be29b4ad5b920f35f5a90e7b"><div class="ttname"><a href="classgr_1_1swifi_1_1phy__utils.html#a8b1c1b6a828411f44223c85cac181a13a523c5130be29b4ad5b920f35f5a90e7b">gr::swifi::phy_utils::QPSK_1_2</a></div><div class="ttdef"><b>Definition:</b> phy_utils.h:72</div></div>
+<div class="ttc" id="classgr_1_1swifi_1_1phy__utils_html_ab09819002b6c36dbd620c5ffd9f4666f"><div class="ttname"><a href="classgr_1_1swifi_1_1phy__utils.html#ab09819002b6c36dbd620c5ffd9f4666f">gr::swifi::phy_utils::N_DBPS</a></div><div class="ttdeci">static std::map&lt; int, int &gt; N_DBPS</div><div class="ttdef"><b>Definition:</b> phy_utils.h:81</div></div>
+<div class="ttc" id="structgr_1_1swifi_1_1phy80211__dsss__frame__header_html_a3cf0c1f868be4082ad391831349725b7"><div class="ttname"><a href="structgr_1_1swifi_1_1phy80211__dsss__frame__header.html#a3cf0c1f868be4082ad391831349725b7">gr::swifi::phy80211_dsss_frame_header::service</a></div><div class="ttdeci">uint8_t service</div><div class="ttdef"><b>Definition:</b> phy_utils.h:43</div></div>
+<div class="ttc" id="structgr_1_1swifi_1_1phy80211__dsss__frame__header_html_a90185b18a1191d6fb3b6047b4d1c1b73"><div class="ttname"><a href="structgr_1_1swifi_1_1phy80211__dsss__frame__header.html#a90185b18a1191d6fb3b6047b4d1c1b73">gr::swifi::phy80211_dsss_frame_header::crc</a></div><div class="ttdeci">uint16_t crc</div><div class="ttdef"><b>Definition:</b> phy_utils.h:45</div></div>
+<div class="ttc" id="namespacegr_html"><div class="ttname"><a href="namespacegr.html">gr</a></div><div class="ttdef"><b>Definition:</b> bit_inserter.h:31</div></div>
+<div class="ttc" id="structgr_1_1swifi_1_1phy80211__dsss__frame__header_html"><div class="ttname"><a href="structgr_1_1swifi_1_1phy80211__dsss__frame__header.html">gr::swifi::phy80211_dsss_frame_header</a></div><div class="ttdef"><b>Definition:</b> phy_utils.h:41</div></div>
+<div class="ttc" id="classgr_1_1swifi_1_1phy__utils_html"><div class="ttname"><a href="classgr_1_1swifi_1_1phy__utils.html">gr::swifi::phy_utils</a></div><div class="ttdef"><b>Definition:</b> phy_utils.h:59</div></div>
+<div class="ttc" id="classgr_1_1swifi_1_1phy__utils_html_a4adaeeb8aeae8323e38a3879ea84f8ab"><div class="ttname"><a href="classgr_1_1swifi_1_1phy__utils.html#a4adaeeb8aeae8323e38a3879ea84f8ab">gr::swifi::phy_utils::PhyMode</a></div><div class="ttdeci">PhyMode</div><div class="ttdef"><b>Definition:</b> phy_utils.h:63</div></div>
+<div class="ttc" id="classgr_1_1swifi_1_1phy__utils_html_a8b1c1b6a828411f44223c85cac181a13a0b1137190a7a8a6d9a03acd9fe409d55"><div class="ttname"><a href="classgr_1_1swifi_1_1phy__utils.html#a8b1c1b6a828411f44223c85cac181a13a0b1137190a7a8a6d9a03acd9fe409d55">gr::swifi::phy_utils::QAM64_2_3</a></div><div class="ttdef"><b>Definition:</b> phy_utils.h:70</div></div>
+<div class="ttc" id="wifi__constellation_8h_html"><div class="ttname"><a href="wifi__constellation_8h.html">wifi_constellation.h</a></div></div>
+<div class="ttc" id="api_8h_html_ac9da812ac72485ebd52f51752c872085"><div class="ttname"><a href="api_8h.html#ac9da812ac72485ebd52f51752c872085">SWIFI_API</a></div><div class="ttdeci">#define SWIFI_API</div><div class="ttdef"><b>Definition:</b> api.h:30</div></div>
+<div class="ttc" id="classgr_1_1swifi_1_1phy__utils_html_a8b1c1b6a828411f44223c85cac181a13"><div class="ttname"><a href="classgr_1_1swifi_1_1phy__utils.html#a8b1c1b6a828411f44223c85cac181a13">gr::swifi::phy_utils::PHY_MCS</a></div><div class="ttdeci">PHY_MCS</div><div class="ttdef"><b>Definition:</b> phy_utils.h:67</div></div>
+<div class="ttc" id="structgr_1_1swifi_1_1phy80211__dsss__frame__header_html_ab4d37a8047ad4cf2476e17d6e677e41b"><div class="ttname"><a href="structgr_1_1swifi_1_1phy80211__dsss__frame__header.html#ab4d37a8047ad4cf2476e17d6e677e41b">gr::swifi::phy80211_dsss_frame_header::signal</a></div><div class="ttdeci">uint8_t signal</div><div class="ttdef"><b>Definition:</b> phy_utils.h:42</div></div>
+<div class="ttc" id="classgr_1_1swifi_1_1phy__utils_html_a8b1c1b6a828411f44223c85cac181a13a2fcbbc8e63c7c7e02e19bae4288c47ce"><div class="ttname"><a href="classgr_1_1swifi_1_1phy__utils.html#a8b1c1b6a828411f44223c85cac181a13a2fcbbc8e63c7c7e02e19bae4288c47ce">gr::swifi::phy_utils::QAM16_3_4</a></div><div class="ttdef"><b>Definition:</b> phy_utils.h:75</div></div>
+<div class="ttc" id="classgr_1_1swifi_1_1phy__utils_html_a8b1c1b6a828411f44223c85cac181a13a61b76a9d3760d67afb35a923951b384d"><div class="ttname"><a href="classgr_1_1swifi_1_1phy__utils.html#a8b1c1b6a828411f44223c85cac181a13a61b76a9d3760d67afb35a923951b384d">gr::swifi::phy_utils::BPSK_1_2</a></div><div class="ttdef"><b>Definition:</b> phy_utils.h:73</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_55182f89b58a266a5bbc0649f621daba.html">swifi</a></li><li class="navelem"><a class="el" href="phy__utils_8h.html">phy_utils.h</a></li>
+    <li class="footer">Generated on Wed May 15 2019 15:56:32 for GNU Radio&#39;s SWIFI Package by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>
+                                                                                                                                                                            subclass = listofallmembersTypeSub
+# end class listofallmembersTypeSub
+
+
+class memberRefTypeSub(supermod.memberRefType):
+    def __init__(self, virt=None, prot=None, refid=None, ambiguityscope=None, scope='', name=''):
+        supermod.memberRefType.__init__(self, virt, prot, refid, ambiguityscope, scope, name)
+supermod.memberRefType.subclass = memberRefTypeSub
+# end class memberRefTypeSub
+
+
+class compoundRefTypeSub(supermod.compoundRefType):
+    def __init__(self, virt=None, prot=None, refid=None, valueOf_='', mixedclass_=None, content_=None):
+        supermod.compoundRefType.__init__(self, mixedclass_, content_)
+supermod.compoundRefType.subclass = compoundRefTypeSub
+# end class compoundRefTypeSub
+
+
+class reimplementTypeSub(supermod.reimplementType):
+    def __init__(self, refid=None, valueOf_='', mixedclass_=None, content_=None):
+        supermod.reimplementType.__init__(self, mixedclass_, content_)
+supermod.reimplementType.subclass = reimplementTypeSub
+# end class reimplementTypeSub
+
+
+class incTypeSub(supermod.incType):
+    def __init__(self, local=None, refid=None, valueOf_='', mixedclass_=None, content_=None):
+        supermod.incType.__init__(self, mixedclass_, content_)
+supermod.incType.subclass = incTypeSub
+# end class incTypeSub
+
+
+class refTypeSub(supermod.refType):
+    def __init__(self, prot=None, refid=None, valueOf_='', mixedclass_=None, content_=None):
+        supermod.refType.__init__(self, mixedclass_, content_)
+supermod.refType.subclass = refTypeSub
+# end class refTypeSub
+
+
+
+class refTextTypeSub(supermod.refTextType):
+    def __init__(self, refid=None, kindref=None, external=None, valueOf_='', mixedclass_=None, content_=None):
+        supermod.refTextType.__init__(self, mixedclass_, content_)
+
+supermod.refTextType.subclass = refTextTypeSub
+# end class refTextTypeSub
+
+class sectiondefTypeSub(supermod.sectiondefType):
+
+
+    def __init__(self, kind=None, header='', description=None, memberdef=None):
+        supermod.sectiondefType.__init__(self, kind, header, description, memberdef)
+
+    def find(self, details):
+
+        for memberdef in self.memberdef:
+            if memberdef.id == details.refid:
+                return memberdef
+
+        return None
+
+
+supermod.sectiondefType.subclass = sectiondefTypeSub
+# end class sectiondefTypeSub
+
+
+class memberdefTypeSub(supermod.memberdefType):
+    def __init__(self, initonly=None, kind=None, volatile=None, const=None, raise_=None, virt=None, readable=None, prot=None, explicit=None, new=None, final=None, writable=None, add=None, static=None, remove=None, sealed=None, mutable=None, gettable=None, inline=None, settable=None, id=None, templateparamlist=None, type_=None, definition='', argsstring='', name='', read='', write='', bitfield='', reimplements=None, reimplementedby=None, param=None, enumvalue=None, initializer=None, exceptions=None, briefdescription=None, detaileddescription=None, inbodydescription=None, location=None, references=None, referencedby=None):
+        supermod.memberdefType.__init__(self, initonly, kind, volatile, const, raise_, virt, readable, prot, explicit, new, final, writable, add, static, remove, sealed, mutable, gettable, inline, settable, id, templateparamlist, type_, definition, argsstring, name, read, write, bitfield, reimplements, reimplementedby, param, enumvalue, initializer, exceptions, briefdescription, detaileddescription, inbodydescription, location, references, referencedby)
+supermod.memberdefType.subclass = memberdefTypeSub
+# end class memberdefTypeSub
+
+
+class descriptionTypeSub(supermod.descriptionType):
+    def __init__(self, title='', para=None, sect1=None, internal=None, mixedclass_=None, content_=None):
+        supermod.descriptionType.__init__(self, mixedclass_, content_)
+supermod.descriptionType.subclass = descriptionTypeSub
+# end class descriptionTypeSub
+
+
+class enumvalueTypeSub(supermod.enumvalueType):
+    def __init__(self, prot=None, id=None, name='', initializer=None, briefdescription=None, detaileddescription=None, mixedclass_=None, content_=None):
+        supermod.enumvalueType.__init__(self, mixedclass_, content_)
+supermod.enumvalueType.subclass = enumvalueTypeSub
+# end class enumvalueTypeSub
+
+
+class templateparamlistTypeSub(supermod.templateparamlistType):
+    def __init__(self, param=None):
+        supermod.templateparamlistType.__init__(self, param)
+supermod.templateparamlistType.subclass = templateparamlistTypeSub
+# end class templateparamlistTypeSub
+
+
+class paramTypeSub(supermod.paramType):
+    def __init__(self, type_=None, declname='', defname='', array='', defval=None, briefdescription=None):
+        supermod.paramType.__init__(self, type_, declname, defname, array, defval, briefdescription)
+supermod.paramType.subclass = paramTypeSub
+# end class paramTypeSub
+
+
+class linkedTextTypeSub(supermod.linkedTextType):
+    def __init__(self, ref=None, mixedclass_=None, content_=None):
+        supermod.linkedTextType.__init__(self, mixedclass_, content_)
+supermod.linkedTextType.subclass = linkedTextTypeSub
+# end class linkedTextTypeSub
+
+
+class graphTypeSub(supermod.graphType):
+    def __init__(self, node=None):
+        supermod.graphType.__init__(self, node)
+supermod.graphType.subclass = graphTypeSub
+# end class graphTypeSub
+
+
+class nodeTypeSub(supermod.nodeType):
+    def __init__(self, id=None, label='', link=None, childnode=None):
+        supermod.nodeType.__init__(self, id, label, link, childnode)
+supermod.nodeType.subclass = nodeTypeSub
+# end class nodeTypeSub
+
+
+class childnodeTypeSub(supermod.childnodeType):
+    def __init__(self, relation=None, refid=None, edgelabel=None):
+        supermod.childnodeType.__init__(self, relation, refid, edgelabel)
+supermod.childnodeType.subclass = childnodeTypeSub
+# end class childnodeTypeSub
+
+
+class linkTypeSub(supermod.linkType):
+    def __init__(self, refid=None, external=None, valueOf_=''):
+        supermod.linkType.__init__(self, refid, external)
+supermod.linkType.subclass = linkTypeSub
+# end class linkTypeSub
+
+
+class listingTypeSub(supermod.listingType):
+    def __init__(self, codeline=None):
+        supermod.listingType.__init__(self, codeline)
+supermod.listingType.subclass = listingTypeSub
+# end class listingTypeSub
+
+
+class codelineTypeSub(supermod.codelineType):
+    def __init__(self, external=None, lineno=None, refkind=None, refid=None, highlight=None):
+        supermod.codelineType.__init__(self, external, lineno, refkind, refid, highlight)
+supermod.codelineType.subclass = codelineTypeSub
+# end class codelineTypeSub
+
+
+class highlightTypeSub(supermod.highlightType):
+    def __init__(self, class_=None, sp=None, ref=None, mixedclass_=None, content_=None):
+        supermod.highlightType.__init__(self, mixedclass_, content_)
+supermod.highlightType.subclass = highlightTypeSub
+# end class highlightTypeSub
+
+
+class referenceTypeSub(supermod.referenceType):
+    def __init__(self, endline=None, startline=None, refid=None, compoundref=None, valueOf_='', mixedclass_=None, content_=None):
+        supermod.referenceType.__init__(self, mixedclass_, content_)
+supermod.referenceType.subclass = referenceTypeSub
+# end class referenceTypeSub
+
+
+class locationTypeSub(supermod.locationType):
+    def __init__(self, bodystart=None, line=None, bodyend=None, bodyfile=None, file=None, valueOf_=''):
+        supermod.locationType.__init__(self, bodystart, line, bodyend, bodyfile, file)
+supermod.locationType.subclass = locationTypeSub
+# end class locationTypeSub
+
+
+class docSect1TypeSub(supermod.docSect1Type):
+    def __init__(self, id=None, title='', para=None, sect2=None, internal=None, mixedclass_=None, content_=None):
+        supermod.docSect1Type.__init__(self, mixedclass_, content_)
+supermod.docSect1Type.subclass = docSect1TypeSub
+# end class docSect1TypeSub
+
+
+class docSect2TypeSub(supermod.docSect2Type):
+    def __init__(self, id=None, title='', para=None, sect3=None, internal=None, mixedclass_=None, content_=None):
+        supermod.docSect2Type.__init__(self, mixedclass_, content_)
+supermod.docSect2Type.subclass = docSect2TypeSub
+# end class docSect2TypeSub
+
+
+class docSect3TypeSub(supermod.docSect3Type):
+    def __init__(self, id=None, title='', para=None, sect4=None, internal=None, mixedclass_=None, content_=None):
+        supermod.docSect3Type.__init__(self, mixedclass_, content_)
+supermod.docSect3Type.subclass = docSect3TypeSub
+# end class docSect3TypeSub
+
+
+class docSect4TypeSub(supermod.docSect4Type):
+    def __init__(self, id=None, title='', para=None, internal=None, mixedclass_=None, content_=None):
+        supermod.docSect4Type.__init__(self, mixedclass_, content_)
+supermod.docSect4Type.subclass = docSect4TypeSub
+# end class docSect4TypeSub
+
+
+class docInternalTypeSub(supermod.docInternalType):
+    def __init__(self, para=None, sect1=None, mixedclass_=None, content_=None):
+        supermod.docInternalType.__init__(self, mixedclass_, content_)
+supermod.docInternalType.subclass = docInternalTypeSub
+# end class docInternalTypeSub
+
+
+class docInternalS1TypeSub(supermod.docInternalS1Type):
+    def __init__(self, para=None, sect2=None, mixedclass_=None, content_=None):
+        supermod.docInternalS1Type.__init__(self, mixedclass_, content_)
+supermod.docInternalS1Type.subclass = docInternalS1TypeSub
+# end class docInternalS1TypeSub
+
+
+class docInternalS2TypeSub(supermod.docInternalS2Type):
+    def __init__(self, para=None, sect3=None, mixedclass_=None, content_=None):
+        supermod.docInternalS2Type.__init__(self, mixedclass_, content_)
+supermod.docInternalS2Type.subclass = docInternalS2TypeSub
+# end class docInternalS2TypeSub
+
+
+class docInternalS3TypeSub(supermod.docInternalS3Type):
+    def __init__(self, para=None, sect3=None, mixedclass_=None, content_=None):
+        supermod.docInternalS3Type.__init__(self, mixedclass_, content_)
+supermod.docInternalS3Type.subclass = docInternalS3TypeSub
+# end class docInternalS3TypeSub
+
+
+class docInternalS4TypeSub(supermod.docInternalS4Type):
+    def __init__(self, para=None, mixedclass_=None, content_=None):
+        supermod.docInternalS4Type.__init__(self, mixedclass_, content_)
+supermod.docInternalS4Type.subclass = docInternalS4TypeSub
+# end class docInternalS4TypeSub
+
+
+class docURLLinkSub(supermod.docURLLink):
+    def __init__(self, url=None, valueOf_='', mixedclass_=None, content_=None):
+        supermod.docURLLink.__init__(self, mixedclass_, content_)
+supermod.docURLLink.subclass = docURLLinkSub
+# end class docURLLinkSub
+
+
+class docAnchorTypeSub(supermod.docAnchorType):
+    def __init__(self, id=None, valueOf_='', mixedclass_=None, content_=None):
+        supermod.docAnchorType.__init__(self, mixedclass_, content_)
+supermod.docAnchorType.subclass = docAnchorTypeSub
+# end class docAnchorTypeSub
+
+
+class docFormulaTypeSub(supermod.docFormulaType):
+    def __init__(self, id=None, valueOf_='', mixedclass_=None, content_=None):
+        supermod.docFormulaType.__init__(self, mixedclass_, content_)
+supermod.docFormulaType.subclass = docFormulaTypeSub
+# end class docFormulaTypeSub
+
+
+class docIndexEntryTypeSub(supermod.docIndexEntryType):
+    def __init__(self, primaryie='', secondaryie=''):
+        supermod.docIndexEntryType.__init__(self, primaryie, secondaryie)
+supermod.docIndexEntryType.subclass = docIndexEntryTypeSub
+# end class docIndexEntryTypeSub
+
+
+class docListTypeSub(supermod.docListType):
+    def __init__(self, listitem=None):
+        supermod.docListType.__init__(self, listitem)
+supermod.docListType.subclass = docListTypeSub
+# end class docListTypeSub
+
+
+class docListItemTypeSub(supermod.docListItemType):
+    def __init__(self, para=None):
+        supermod.docListItemType.__init__(self, para)
+supermod.docListItemType.subclass = docListItemTypeSub
+# end class docListItemTypeSub
+
+
+class docSimpleSectTypeSub(supermod.docSimpleSectType):
+    def __init__(self, kind=None, title=None, para=None):
+        supermod.docSimpleSectType.__init__(self, kind, title, para)
+supermod.docSimpleSectType.subclass = docSimpleSectTypeSub
+# end class docSimpleSectTypeSub
+
+
+class docVarListEntryTypeSub(supermod.docVarListEntryType):
+    def __init__(self, term=None):
+        supermod.docVarListEntryType.__init__(self, term)
+supermod.docVarListEntryType.subclass = docVarListEntryTypeSub
+# end class docVarListEntryTypeSub
+
+
+class docRefTextTypeSub(supermod.docRefTextType):
+    def __init__(self, refid=None, kindref=None, external=None, valueOf_='', mixedclass_=None, content_=None):
+        supermod.docRefTextType.__init__(self, mixedclass_, content_)
+supermod.docRefTextType.subclass = docRefTextTypeSub
+# end class docRefTextTypeSub
+
+
+class docTableTypeSub(supermod.docTableType):
+    def __init__(self, rows=None, cols=None, row=None, caption=None):
+        supermod.docTableType.__init__(self, rows, cols, row, caption)
+supermod.docTableType.subclass = docTableTypeSub
+# end class docTableTypeSub
+
+
+class docRowTypeSub(supermod.docRowType):
+    def __init__(self, entry=None):
+        supermod.docRowType.__init__(self, entry)
+supermod.docRowType.subclass = docRowTypeSub
+# end class docRowTypeSub
+
+
+class docEntryTypeSub(supermod.docEntryType):
+    def __init__(self, thead=None, para=None):
+        supermod.docEntryType.__init__(self, thead, para)
+supermod.docEntryType.subclass = docEntryTypeSub
+# end class docEntryTypeSub
+
+
+class docHeadingTypeSub(supermod.docHeadingType):
+    def __init__(self, level=None, valueOf_='', mixedclass_=None, content_=None):
+        supermod.docHeadingType.__init__(self, mixedclass_, content_)
+supermod.docHeadingType.subclass = docHeadingTypeSub
+# end class docHeadingTypeSub
+
+
+class docImageTypeSub(supermod.docImageType):
+    def __init__(self, width=None, type_=None, name=None, height=None, valueOf_='', mixedclass_=None, content_=None):
+        supermod.docImageType.__init__(self, mixedclass_, content_)
+supermod.docImageType.subclass = docImageTypeSub
+# end class docImageTypeSub
+
+
+class docDotFileTypeSub(supermod.docDotFileType):
+    def __init__(self, name=None, valueOf_='', mixedclass_=None, content_=None):
+        supermod.docDotFileType.__init__(self, mixedclass_, content_)
+supermod.docDotFileType.subclass = docDotFileTypeSub
+# end class docDotFileTypeSub
+
+
+class docTocItemTypeSub(supermod.docTocItemType):
+    def __init__(self, id=None, valueOf_='', mixedclass_=None, content_=None):
+        supermod.docTocItemType.__init__(self, mixedclass_, content_)
+supermod.docTocItemType.subclass = do

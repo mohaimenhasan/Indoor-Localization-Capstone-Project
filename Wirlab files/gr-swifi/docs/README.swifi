@@ -1,0 +1,40 @@
+CHANGES
+- Remove old files (archived in tags/v0.1):
+    grc/swifi_conv_encoder.xml
+    grc/swifi_ofdm_equalizer_pa.xml
+    grc/swifi_ofdm_frame_sync_backup.xml
+    grc/swifi_ofdm_phy_payload_decoder.xml
+    grc/swifi_ofdm_phy_payload_decoder2.xml
+    grc/swifi_wifi_conv_decoder_2.xml
+    include/swifi/conv_encoder.h
+    include/swifi/ofdm_frame_sync_backup.h
+    include/swifi/ofdm_phy_payload_decoder.h
+    include/swifi/ofdm_phy_payload_decoder2.h
+    include/swifi/phy_header.h
+    include/swifi/wifi_conv_decoder_2.h
+    lib/bit_inserter_old_impl.cc
+    lib/bit_inserter_old_impl.h
+    lib/bit_packer_old_impl.cc
+    lib/bit_packer_old_impl.h
+    lib/bit_stealer_old_impl.cc
+    lib/bit_stealer_old_impl.h
+    lib/bit_unpacker_old_impl.cc
+    lib/bit_unpacker_old_impl.h
+    lib/chunks_to_symbols_old_impl.cc
+    lib/chunks_to_symbols_old_impl.h
+    lib/constellation_decoder_old_impl.cc
+    lib/constellation_decoder_old_impl.h
+    lib/conv_encoder_impl.cc
+    lib/conv_encoder_impl.h
+    lib/interleaver_old_impl.cc
+    lib/interleaver_old_impl.h
+    lib/ofdm_frame_sync_backup.cc
+    lib/ofdm_frame_sync_backup.h
+    lib/ofdm_phy_payload_decoder_impl.cc
+    lib/ofdm_phy_payload_decoder_impl.h
+    lib/ofdm_phy_payload_decoder2_impl.cc
+    lib/ofdm_phy_payload_decoder2_impl.h
+    lib/phy_header.cc
+    lib/wifi_conv_decoder_2_impl.cc
+    lib/wifi_conv_decoder_2_impl.h
+

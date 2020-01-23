@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!--
+###################################################
+##Bit metrics computer
+###################################################
+ -->
+<block>
+    <name>Bit Metrics Computer</name>
+    <key>swifi_bitmetrics_computer</key>
+    <category>SWiFi</category>
+    <import>import swifi</import>
+    <make>#if $mode() == 1
+swifi.bitmetrics_computer($phy_tag_key)
+#else
+swifi.bitmetrics_computer($constellation)
+#end if</make>
+    <param>
+        <name>Mode</name>
+        <key>mode</key>
+        <value>1</value>
+        <type>int</type>
+        <option>
+            <name>Normal</name>
+            <key>0</key>
+        </option>
+        <option>
+            <name>Use PHY tag</name>
+            <key>1</key>
+        </option>
+    </param>
+    <param>
+        <name>PHY Tag Key</name>
+        <key>phy_tag_key</key>
+        <value>"signal"</value>
+        <type>string</type>
+        <hide>#if $mode() == 0 then 'all' else 'none'#</hide>
+    </param>
+    <param>
+        <name>Constellation Object</name>
+        <key>constellation</key>
+        <value>None</value>
+        <type>raw</type>
+        <hide>#if $mode() == 1 then 'all' else 'none'#</hide>
+    </param>
+    <check>($mode == 1 and $phy_tag_key) or $constellation</check>
+    <sink>
+        <name>in</name>
+        <type>complex</type>
+    </sink>
+    <source>
+        <name>out</name>
+        <type>float</type>
+    </source>
+</block>

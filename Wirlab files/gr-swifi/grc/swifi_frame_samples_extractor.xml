@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!--
+###################################################
+## WiFi Frame Samples Extractor
+###################################################
+ -->
+<block>
+    <name>Frame Samples Extractor</name>
+    <key>swifi_frame_samples_extractor</key>
+    <category>SWiFi</category>
+    <import>import swifi</import>
+    <make>swifi.frame_samples_extractor($xml_dump_file, $filter_string, $start_expr, $end_expr)</make>
+
+    <param>
+        <name>XML Dump File</name>
+        <key>xml_dump_file</key>
+        <value></value>
+        <type>string</type>
+    </param>
+
+    <param>
+        <name>Filter Condition</name>
+        <key>filter_string</key>
+        <value></value>
+        <type>string</type>
+    </param>
+
+    <param>
+        <name>Start Expr</name>
+        <key>start_expr</key>
+        <value>-1</value>
+        <type>string</type>
+    </param>
+
+    <param>
+        <name>End Expr</name>
+        <key>end_expr</key>
+        <value>-1</value>
+        <type>string</type>
+    </param>
+
+    <sink>
+        <name>in</name>
+        <type>complex</type>
+    </sink>
+
+    <source>
+        <name>out</name>
+        <type>complex</type>
+    </source>
+</block>

@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<block>
+  <name>Vector Valve</name>
+  <key>swifi_vector_valve</key>
+  <category>SWiFi</category>
+  <import>import swifi</import>
+  <make>swifi.vector_valve($type.size,$valve_map)</make>
+
+  <param>
+    <name>Type</name>
+    <key>type</key>
+    <type>enum</type>
+    <option>
+      <name>Complex</name>
+      <key>complex</key>
+      <opt>size:gr.sizeof_gr_complex</opt>
+    </option>
+    <option>
+      <name>Float</name>
+      <key>float</key>
+      <opt>size:gr.sizeof_float</opt>
+    </option>
+    <option>
+      <name>Int</name>
+      <key>int</key>
+      <opt>size:gr.sizeof_int</opt>
+    </option>
+    <option>
+      <name>Short</name>
+      <key>short</key>
+      <opt>size:gr.sizeof_short</opt>
+    </option>
+    <option>
+      <name>Byte</name>
+      <key>byte</key>
+      <opt>size:gr.sizeof_char</opt>
+    </option>
+  </param>
+
+  <param>
+    <name>Valve Map</name>
+    <key>valve_map</key>
+    <value>(1,)</value>
+    <type>int_vector</type>
+  </param>
+
+  <check>len($valve_map) > 0</check>
+
+  <sink>
+    <name>in</name>
+    <type>$type</type>
+    <vlen>len($valve_map)</vlen>
+  </sink>
+
+  <source>
+    <name>out</name>
+    <type>$type</type>
+    <vlen>len($valve_map)</vlen>
+  </source>
+
+</block>

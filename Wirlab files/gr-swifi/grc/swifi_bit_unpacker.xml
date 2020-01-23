@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!--
+###################################################
+##Bit packer with support of PHY tag processing
+###################################################
+ -->
+<block>
+    <name>Bit Unpacker</name>
+    <key>swifi_bit_unpacker</key>
+    <category>SWiFi</category>
+    <import>import swifi</import>
+    <make>#if $mode() == 1
+swifi.bit_unpacker($phy_tag_key,1)
+#else
+swifi.bit_unpacker("",$bpsc)
+#end if</make>
+    <param>
+        <name>Mode</name>
+        <key>mode</key>
+        <value>1</value>
+        <type>int</type>
+        <option>
+            <name>Normal</name>
+            <key>0</key>
+        </option>
+        <option>
+            <name>Use PHY tag</name>
+            <key>1</key>
+        </option>
+    </param>
+    <param>
+        <name>PHY Tag Key</name>
+        <key>phy_tag_key</key>
+        <value>"phy"</value>
+        <type>string</type>
+        <hide>#if $mode() == 0 then 'all' else 'none'#</hide>
+    </param>
+    <param>
+        <name>Bits per Subcarrier</name>
+        <key>bpsc</key>
+        <value>1</value>
+        <type>int</type>
+        <hide>#if $mode() == 1 then 'all' else 'none'#</hide>
+    </param>
+    <check>($mode == 1 and $phy_tag_key) or $bpsc > 0</check>
+    <sink>
+        <name>in</name>
+        <type>byte</type>
+    </sink>
+    <source>
+        <name>out</name>
+        <type>byte</type>
+    </source>
+</block>

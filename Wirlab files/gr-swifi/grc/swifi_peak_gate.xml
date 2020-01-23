@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<block>
+  <name>Peak Gate</name>
+  <key>swifi_peak_gate</key>
+  <category>SWiFi</category>
+  <import>import swifi</import>
+  <make>swifi.peak_gate($threshold,$num_peaks,$min_distance,$max_distance)</make>
+
+  <param>
+    <name>Threshold</name>
+    <key>threshold</key>
+    <value>0.9</value>
+    <type>float</type>
+  </param>
+
+  <param>
+    <name>Num. Peaks</name>
+    <key>num_peaks</key>
+    <value>2</value>
+    <type>int</type>
+  </param>
+
+  <param>
+    <name>Min. Distance</name>
+    <key>min_distance</key>
+    <value>63</value>
+    <type>int</type>
+  </param>
+
+  <param>
+    <name>Max. Distance</name>
+    <key>max_distance</key>
+    <value>65</value>
+    <type>int</type>
+  </param>
+
+  <sink>
+    <name>in</name>
+    <type>float</type>
+  </sink>
+
+  <source>
+    <name>out</name>
+    <type>byte</type>
+  </source>
+
+</block>

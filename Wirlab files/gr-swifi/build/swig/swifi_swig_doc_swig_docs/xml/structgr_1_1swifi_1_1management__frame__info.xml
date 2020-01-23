@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structgr_1_1swifi_1_1management__frame__info" kind="struct" language="C++" prot="public">
+    <compoundname>gr::swifi::management_frame_info</compoundname>
+    <includes refid="mac__frame__info_8h" local="no">mac_frame_info.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1management__frame__info_1a1b3a4b4142b4e5be585fd50df627b4ba" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t gr::swifi::management_frame_info::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="661" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="661" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1management__frame__info_1a4ebc526daff76a7a48c8c440c6673c43" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t gr::swifi::management_frame_info::beacon_interval</definition>
+        <argsstring></argsstring>
+        <name>beacon_interval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="662" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="662" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1management__frame__info_1a26582f5b42ce0269ddd047361d109314" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::management_frame_info::ess</definition>
+        <argsstring></argsstring>
+        <name>ess</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="664" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="664" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1management__frame__info_1ad62c03b6ec24e1b4a65cc09dd26dcf61" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::management_frame_info::ibss</definition>
+        <argsstring></argsstring>
+        <name>ibss</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="665" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="665" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1management__frame__info_1ad8ba432ba1000a8e835472b146e36e91" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::management_frame_info::cf_pollable</definition>
+        <argsstring></argsstring>
+        <name>cf_pollable</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="666" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="666" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1management__frame__info_1a731ed7dafe400326e5644eadac2b0be1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::management_frame_info::cf_pollreq</definition>
+        <argsstring></argsstring>
+        <name>cf_pollreq</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="667" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="667" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1management__frame__info_1a08afa288fd498c4f88bdb72714e784df" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::management_frame_info::privacy</definition>
+        <argsstring></argsstring>
+        <name>privacy</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="668" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="668" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1management__frame__info_1af2af80bca647037e63c465a6b0cda254" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::management_frame_info::short_preamble</definition>
+        <argsstring></argsstring>
+        <name>short_preamble</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="669" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="669" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1management__frame__info_1aa755ae59e7a4c5822c061f299d799665" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::management_frame_info::pbcc</definition>
+        <argsstring></argsstring>
+        <name>pbcc</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="670" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="670" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1management__frame__info_1a31d6fec99a5c8f7ccee6e9fae9b1a739" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::management_frame_info::channel_agility</definition>
+        <argsstring></argsstring>
+        <name>channel_agility</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="671" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="671" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1management__frame__info_1ab1a476dfe1c6b24074b33f75472dcdc8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::management_frame_info::spectrum_mgmt</definition>
+        <argsstring></argsstring>
+        <name>spectrum_mgmt</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="672" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="672" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1management__frame__info_1ac8b73801af4a8a7f77312f246d02394e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::management_frame_info::qos</definition>
+        <argsstring></argsstring>
+        <name>qos</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="673" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="673" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1management__frame__info_1a705b2dd7f12b964c59515c3a72070db0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::management_frame_info::short_slot</definition>
+        <argsstring></argsstring>
+        <name>short_slot</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="674" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="674" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1management__frame__info_1a33760dcdf5543de1b9828f5fe5237504" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::management_frame_info::apsd</definition>
+        <argsstring></argsstring>
+        <name>apsd</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="675" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="675" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1management__frame__info_1a88ba52f45bb37bff9dcf1c087d2e3caf" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::management_frame_info::radio_measurement</definition>
+        <argsstring></argsstring>
+        <name>radio_measurement</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="676" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="676" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1management__frame__info_1a64abad2ccb484c4823d9a615b2c5f914" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::management_frame_info::dsss_ofdm</definition>
+        <argsstring></argsstring>
+        <name>dsss_ofdm</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="677" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="677" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1management__frame__info_1a74cf5832bd9c69d13f79b671393a4478" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::management_frame_info::delayed_block_ack</definition>
+        <argsstring></argsstring>
+        <name>delayed_block_ack</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="678" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="678" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1management__frame__info_1a6651caed794cbbf486959807bf231e0d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::management_frame_info::immediate_block_ack</definition>
+        <argsstring></argsstring>
+        <name>immediate_block_ack</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="679" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="679" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1management__frame__info_1a0913932a50f8753bbbff58a14510d571" prot="public" static="no" mutable="no">
+        <type>struct gr::swifi::management_frame_info::@8</type>
+        <definition>struct gr::swifi::management_frame_info::@8  gr::swifi::management_frame_info::capability</definition>
+        <argsstring></argsstring>
+        <name>capability</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="680" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1management__frame__info_1a1016ec3f626abc79c45bfe9ba12eb8c4" prot="public" static="no" mutable="no">
+        <type><ref refid="structgr_1_1swifi_1_1ie__info" kindref="compound">ie_info</ref></type>
+        <definition>ie_info gr::swifi::management_frame_info::ie</definition>
+        <argsstring></argsstring>
+        <name>ie</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="681" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="681" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="177">
+        <label>std::map&lt; int, bool &gt;</label>
+      </node>
+      <node id="175">
+        <label>gr::swifi::management_frame_info</label>
+        <link refid="structgr_1_1swifi_1_1management__frame__info"/>
+        <childnode refid="176" relation="usage">
+          <edgelabel>ie</edgelabel>
+        </childnode>
+      </node>
+      <node id="176">
+        <label>gr::swifi::ie_info</label>
+        <link refid="structgr_1_1swifi_1_1ie__info"/>
+        <childnode refid="177" relation="usage">
+          <edgelabel>has_ie</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="660" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="660" bodyend="682"/>
+    <listofallmembers>
+      <member refid="structgr_1_1swifi_1_1management__frame__info_1a33760dcdf5543de1b9828f5fe5237504" prot="public" virt="non-virtual"><scope>gr::swifi::management_frame_info</scope><name>apsd</name></member>
+      <member refid="structgr_1_1swifi_1_1management__frame__info_1a4ebc526daff76a7a48c8c440c6673c43" prot="public" virt="non-virtual"><scope>gr::swifi::management_frame_info</scope><name>beacon_interval</name></member>
+      <member refid="structgr_1_1swifi_1_1management__frame__info_1a0913932a50f8753bbbff58a14510d571" prot="public" virt="non-virtual"><scope>gr::swifi::management_frame_info</scope><name>capability</name></member>
+      <member refid="structgr_1_1swifi_1_1management__frame__info_1ad8ba432ba1000a8e835472b146e36e91" prot="public" virt="non-virtual"><scope>gr::swifi::management_frame_info</scope><name>cf_pollable</name></member>
+      <member refid="structgr_1_1swifi_1_1management__frame__info_1a731ed7dafe400326e5644eadac2b0be1" prot="public" virt="non-virtual"><scope>gr::swifi::management_frame_info</scope><name>cf_pollreq</name></member>
+      <member refid="structgr_1_1swifi_1_1management__frame__info_1a31d6fec99a5c8f7ccee6e9fae9b1a739" prot="public" virt="non-virtual"><scope>gr::swifi::management_frame_info</scope><name>channel_agility</name></member>
+      <member refid="structgr_1_1swifi_1_1management__frame__info_1a74cf5832bd9c69d13f79b671393a4478" prot="public" virt="non-virtual"><scope>gr::swifi::management_frame_info</scope><name>delayed_block_ack</name></member>
+      <member refid="structgr_1_1swifi_1_1management__frame__info_1a64abad2ccb484c4823d9a615b2c5f914" prot="public" virt="non-virtual"><scope>gr::swifi::management_frame_info</scope><name>dsss_ofdm</name></member>
+      <member refid="structgr_1_1swifi_1_1management__frame__info_1a26582f5b42ce0269ddd047361d109314" prot="public" virt="non-virtual"><scope>gr::swifi::management_frame_info</scope><name>ess</name></member>
+      <member refid="structgr_1_1swifi_1_1management__frame__info_1ad62c03b6ec24e1b4a65cc09dd26dcf61" prot="public" virt="non-virtual"><scope>gr::swifi::management_frame_info</scope><name>ibss</name></member>
+      <member refid="structgr_1_1swifi_1_1management__frame__info_1a1016ec3f626abc79c45bfe9ba12eb8c4" prot="public" virt="non-virtual"><scope>gr::swifi::management_frame_info</scope><name>ie</name></member>
+      <member refid="structgr_1_1swifi_1_1management__frame__info_1a6651caed794cbbf486959807bf231e0d" prot="public" virt="non-virtual"><scope>gr::swifi::management_frame_info</scope><name>immediate_block_ack</name></member>
+      <member refid="structgr_1_1swifi_1_1management__frame__info_1aa755ae59e7a4c5822c061f299d799665" prot="public" virt="non-virtual"><scope>gr::swifi::management_frame_info</scope><name>pbcc</name></member>
+      <member refid="structgr_1_1swifi_1_1management__frame__info_1a08afa288fd498c4f88bdb72714e784df" prot="public" virt="non-virtual"><scope>gr::swifi::management_frame_info</scope><name>privacy</name></member>
+      <member refid="structgr_1_1swifi_1_1management__frame__info_1ac8b73801af4a8a7f77312f246d02394e" prot="public" virt="non-virtual"><scope>gr::swifi::management_frame_info</scope><name>qos</name></member>
+      <member refid="structgr_1_1swifi_1_1management__frame__info_1a88ba52f45bb37bff9dcf1c087d2e3caf" prot="public" virt="non-virtual"><scope>gr::swifi::management_frame_info</scope><name>radio_measurement</name></member>
+      <member refid="structgr_1_1swifi_1_1management__frame__info_1af2af80bca647037e63c465a6b0cda254" prot="public" virt="non-virtual"><scope>gr::swifi::management_frame_info</scope><name>short_preamble</name></member>
+      <member refid="structgr_1_1swifi_1_1management__frame__info_1a705b2dd7f12b964c59515c3a72070db0" prot="public" virt="non-virtual"><scope>gr::swifi::management_frame_info</scope><name>short_slot</name></member>
+      <member refid="structgr_1_1swifi_1_1management__frame__info_1ab1a476dfe1c6b24074b33f75472dcdc8" prot="public" virt="non-virtual"><scope>gr::swifi::management_frame_info</scope><name>spectrum_mgmt</name></member>
+      <member refid="structgr_1_1swifi_1_1management__frame__info_1a1b3a4b4142b4e5be585fd50df627b4ba" prot="public" virt="non-virtual"><scope>gr::swifi::management_frame_info</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

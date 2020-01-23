@@ -1,0 +1,948 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1swifi_1_1phy__utils" kind="class" language="C++" prot="public">
+    <compoundname>gr::swifi::phy_utils</compoundname>
+    <includes refid="phy__utils_8h" local="no">phy_utils.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classgr_1_1swifi_1_1phy__utils_1a4adaeeb8aeae8323e38a3879ea84f8ab" prot="public" static="no">
+        <name>PhyMode</name>
+        <enumvalue id="classgr_1_1swifi_1_1phy__utils_1a4adaeeb8aeae8323e38a3879ea84f8abaf3506026ab381dd83e195ae718acf99a" prot="public">
+          <name>MODE_DSSS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1swifi_1_1phy__utils_1a4adaeeb8aeae8323e38a3879ea84f8aba471016f4519f94fef6fce85a925ceab8" prot="public">
+          <name>MODE_OFDM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="63" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="enum" id="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13" prot="public" static="no">
+        <name>PHY_MCS</name>
+        <enumvalue id="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a356922719af16d7893087576c6dd2972" prot="public">
+          <name>MCS0</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a64efdb0918188bd00e2595ee9f10c256" prot="public">
+          <name>MCS1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a7568256e9c1533a2169395241f95c503" prot="public">
+          <name>MCS2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a37af4baea0108836727f4c2212c13fea" prot="public">
+          <name>MCS3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13aee246ff2b6d0abda49e3ca7e4c9529ae" prot="public">
+          <name>MCS4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a5ffd5655c96009827e028b70b56df658" prot="public">
+          <name>MCS5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a0ec4f69de802cb5e1114ffbdbc6a8a43" prot="public">
+          <name>MCS6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a0032d88a2c73b7c84d65d618f76ff78e" prot="public">
+          <name>MCS7</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a0b1137190a7a8a6d9a03acd9fe409d55" prot="public">
+          <name>QAM64_2_3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13aff8992981f678ed3b7f4d92f332ef92c" prot="public">
+          <name>QAM16_1_2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a523c5130be29b4ad5b920f35f5a90e7b" prot="public">
+          <name>QPSK_1_2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a61b76a9d3760d67afb35a923951b384d" prot="public">
+          <name>BPSK_1_2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a14c94f2fed85da63779f1ae8097052ee" prot="public">
+          <name>QAM64_3_4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a2fcbbc8e63c7c7e02e19bae4288c47ce" prot="public">
+          <name>QAM16_3_4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13ae5090860a0be4fd4da4919e5022d47ed" prot="public">
+          <name>QPSK_3_4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a973617dc37256d4db851d355725c2229" prot="public">
+          <name>BPSK_3_4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="67" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" bodystart="67" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classgr_1_1swifi_1_1phy__utils_1acd82a2cd4b1347eb539025f5cd303649" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1swifi_1_1phy__utils" kindref="compound">phy_utils</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;phy_utils&gt; gr::swifi::phy_utils::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="61" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1phy__utils_1ab09819002b6c36dbd620c5ffd9f4666f" prot="public" static="yes" mutable="no">
+        <type>std::map&lt; int, int &gt;</type>
+        <definition>std::map&lt;int,int&gt; gr::swifi::phy_utils::N_DBPS</definition>
+        <argsstring></argsstring>
+        <name>N_DBPS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="81" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1phy__utils_1a74fb6618d9ff8ab8eb89c28773f8c684" prot="public" static="yes" mutable="no">
+        <type>std::map&lt; int, int &gt;</type>
+        <definition>std::map&lt;int,int&gt; gr::swifi::phy_utils::N_CBPS</definition>
+        <argsstring></argsstring>
+        <name>N_CBPS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="82" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1phy__utils_1a6fbb6b3f3d9ab31d29f553d25b1f6b87" prot="public" static="yes" mutable="no">
+        <type>std::map&lt; int, int &gt;</type>
+        <definition>std::map&lt;int,int&gt; gr::swifi::phy_utils::N_BPSC</definition>
+        <argsstring></argsstring>
+        <name>N_BPSC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="83" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1phy__utils_1a8400c77e2d6bfed2c9c2c895a2fafbf3" prot="public" static="yes" mutable="no">
+        <type>std::map&lt; int, digital::constellation_sptr &gt;</type>
+        <definition>std::map&lt;int,digital::constellation_sptr&gt; gr::swifi::phy_utils::WIFI_CONSTELLATIONS</definition>
+        <argsstring></argsstring>
+        <name>WIFI_CONSTELLATIONS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="85" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1phy__utils_1a4ed60ff8148721e3c61faf15f6fe8c12" prot="public" static="yes" mutable="no">
+        <type>std::map&lt; int, std::vector&lt; int &gt; &gt;</type>
+        <definition>std::map&lt;int,std::vector&lt;int&gt; &gt; gr::swifi::phy_utils::INTL_TABLE</definition>
+        <argsstring></argsstring>
+        <name>INTL_TABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="86" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1phy__utils_1add35aa1dbaf255d403e84a8a2f2fa1b0" prot="public" static="yes" mutable="no">
+        <type>std::map&lt; int, std::vector&lt; int &gt; &gt;</type>
+        <definition>std::map&lt;int,std::vector&lt;int&gt; &gt; gr::swifi::phy_utils::DEINTL_TABLE</definition>
+        <argsstring></argsstring>
+        <name>DEINTL_TABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="87" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1phy__utils_1aa7175806e80ad877b1af319d110b0f27" prot="public" static="yes" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; gr::swifi::phy_utils::NO_PUNCTURE_MAP</definition>
+        <argsstring></argsstring>
+        <name>NO_PUNCTURE_MAP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="89" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__utils_1a0765914e0a7b7eb11cf4290f4620bba1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1phy__utils_1acd82a2cd4b1347eb539025f5cd303649" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::swifi::phy_utils::make</definition>
+        <argsstring>()</argsstring>
+        <name>make</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__utils_1a87474ce2b2affe324265530450f2db97" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int gr::swifi::phy_utils::compute_n_ofdm_syms</definition>
+        <argsstring>(int rate, int psdu_octets)</argsstring>
+        <name>compute_n_ofdm_syms</name>
+        <param>
+          <type>int</type>
+          <declname>rate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>psdu_octets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Computes number of OFDM symbols required to transmit a number of PSDU/MPDU octects at a given rate. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of RATE field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>psdu_octets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of PSDU/MPDU octets. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="99" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__utils_1a610fb22059ad00408c4cb68400808bd7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int gr::swifi::phy_utils::compute_n_syms</definition>
+        <argsstring>(int rate, int psdu_octets)</argsstring>
+        <name>compute_n_syms</name>
+        <param>
+          <type>int</type>
+          <declname>rate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>psdu_octets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Computes number of constellation symbols required to transmit a number of PSDU/MPDU octets at a given rate. This value is equal to n_ofdm_syms * 48. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of RATE field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>psdu_octets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of PSDU/MPDU octets. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__utils_1a825afa4d6805c243561dd24f5f2155ef" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int gr::swifi::phy_utils::compute_uncoded_frame_size</definition>
+        <argsstring>(int rate, int psdu_octets)</argsstring>
+        <name>compute_uncoded_frame_size</name>
+        <param>
+          <type>int</type>
+          <declname>rate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>psdu_octets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Computes number of bytes required by the uncoded frame. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rate of transmission. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>psdu_octets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of PSDU/MPDU octets. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__utils_1a5397fe9fb1d5b39d53fed13054ceb286" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int gr::swifi::phy_utils::compute_uncoded_header_no_service_size</definition>
+        <argsstring>()</argsstring>
+        <name>compute_uncoded_header_no_service_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute number of bytes required for the PLCP header without SERVICE field. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="121" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__utils_1a1d07dc41561684441eceee0066596465" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int gr::swifi::phy_utils::compute_uncoded_service_payload_tail_pad_size</definition>
+        <argsstring>(int rate, int psdu_octets)</argsstring>
+        <name>compute_uncoded_service_payload_tail_pad_size</name>
+        <param>
+          <type>int</type>
+          <declname>rate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>psdu_octets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Computes number of bytes required by the combined part of <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rate of transmission. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>psdu_octets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of PSDU/MPDU octets. (SERVICE, PAYLOAD, TAIL, PAD). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="129" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__utils_1a4d8babe7a82e06b61aa21c804a95e9ee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int gr::swifi::phy_utils::compute_uncoded_tail_pad_size</definition>
+        <argsstring>(int rate, int psdu_octets)</argsstring>
+        <name>compute_uncoded_tail_pad_size</name>
+        <param>
+          <type>int</type>
+          <declname>rate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>psdu_octets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Computes number of tail plus padding bytes. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rate of transmission. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>psdu_octets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of PSDU/MPDU octets. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__utils_1a434582772fbd2142fdce971f6876f5ab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string gr::swifi::phy_utils::rate_string</definition>
+        <argsstring>(int rate)</argsstring>
+        <name>rate_string</name>
+        <param>
+          <type>int</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns string representation of RATE value. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of RATE field. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__utils_1a87d48597243593242fdce008bf7e8e84" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string gr::swifi::phy_utils::rate_string</definition>
+        <argsstring>(int rate, int mode)</argsstring>
+        <name>rate_string</name>
+        <param>
+          <type>int</type>
+          <declname>rate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns string representation of RATE/SIGNAL value. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of RATE/SIGNAL field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mode can be DSSS or OFDM. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="149" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__utils_1a8b390eab88efd19ef89afcda3623cf1b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void gr::swifi::phy_utils::create_frame</definition>
+        <argsstring>(int rate, int len, const char *data, std::vector&lt; char &gt; &amp;ppdu)</argsstring>
+        <name>create_frame</name>
+        <param>
+          <type>int</type>
+          <declname>rate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; char &gt; &amp;</type>
+          <declname>ppdu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create PHY frame with requested rate and length of data. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rate of transmission. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bytes in payload. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the payload. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ppdu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>contains the created PPDU frame. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="158" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__utils_1ad3a0725d70e20a0dad721cca8a1cca06" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; char &gt;</type>
+        <definition>static std::vector&lt;char&gt; gr::swifi::phy_utils::create_frame</definition>
+        <argsstring>(int rate, const std::string &amp;data)</argsstring>
+        <name>create_frame</name>
+        <param>
+          <type>int</type>
+          <declname>rate</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create PHY frame with requested rate and data. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rate of transmission. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data payload. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>uncoded PPDU as a vector of bytes. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__utils_1aebbd46cd05dd613723a7d5f48fddff0c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void gr::swifi::phy_utils::create_header</definition>
+        <argsstring>(int rate, int len, phy80211_frame_header &amp;hdr)</argsstring>
+        <name>create_header</name>
+        <param>
+          <type>int</type>
+          <declname>rate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type><ref refid="structgr_1_1swifi_1_1phy80211__frame__header" kindref="compound">phy80211_frame_header</ref> &amp;</type>
+          <declname>hdr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create PHY header with specified rate and length. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rate of transmission. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of data payload. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hdr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>created header. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="175" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__utils_1a0abe777e0714211f4e41e5718fd1c638" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>static char gr::swifi::phy_utils::scramble</definition>
+        <argsstring>(char *data, int len, char seed)</argsstring>
+        <name>scramble</name>
+        <param>
+          <type>char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>seed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scramble a given bit array with a predefined seed. The results are stored back to the input pointer. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the bit array. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bits in the array. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>7-bit initial integer as the seed to the scrambler. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>new seed after scrambling. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="185" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__utils_1a255cbad4e5cc0ff49af471d78e771936" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>static char gr::swifi::phy_utils::scramble</definition>
+        <argsstring>(const char *data, int len, char seed, char *out)</argsstring>
+        <name>scramble</name>
+        <param>
+          <type>const char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>seed</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Scramble a given bit array with a predefined seed. The results are stored in the output pointer. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the bit array. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bits in the array. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>7-bit initial integer as the seed to the scrambler. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the output. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>new seed after scrambling. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="196" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__utils_1a4932bac54a9595f92da5bada15de3538" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>static std::vector&lt;int&gt; gr::swifi::phy_utils::create_puncture_map</definition>
+        <argsstring>(int rate)</argsstring>
+        <name>create_puncture_map</name>
+        <param>
+          <type>int</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="198" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__utils_1a23b396701f6233e177e17ab409fd89fd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>static std::vector&lt;int&gt; gr::swifi::phy_utils::create_interleaving_map</definition>
+        <argsstring>(int rate)</argsstring>
+        <name>create_interleaving_map</name>
+        <param>
+          <type>int</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="200" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__utils_1afac4be65be4c9f3ecd7246c806df3d56" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>static std::vector&lt;int&gt; gr::swifi::phy_utils::create_deinterleaving_map</definition>
+        <argsstring>(int rate)</argsstring>
+        <name>create_deinterleaving_map</name>
+        <param>
+          <type>int</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="201" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__utils_1add90827d674048798b61f441af90002a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::swifi::phy_utils::phy_utils</definition>
+        <argsstring>()</argsstring>
+        <name>phy_utils</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="203" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__utils_1ab09e65994b262834c7486294a6f903ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::swifi::phy_utils::~phy_utils</definition>
+        <argsstring>()</argsstring>
+        <name>~phy_utils</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="204" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="221">
+        <label>std::map&lt; int, std::vector&lt; int &gt; &gt;</label>
+        <childnode refid="220" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="218">
+        <label>gr::swifi::phy_utils</label>
+        <link refid="classgr_1_1swifi_1_1phy__utils"/>
+        <childnode refid="219" relation="usage">
+          <edgelabel>N_DBPS</edgelabel>
+          <edgelabel>N_CBPS</edgelabel>
+          <edgelabel>N_BPSC</edgelabel>
+        </childnode>
+        <childnode refid="220" relation="usage">
+          <edgelabel>NO_PUNCTURE_MAP</edgelabel>
+        </childnode>
+        <childnode refid="221" relation="usage">
+          <edgelabel>INTL_TABLE</edgelabel>
+          <edgelabel>DEINTL_TABLE</edgelabel>
+        </childnode>
+        <childnode refid="222" relation="usage">
+          <edgelabel>WIFI_CONSTELLATIONS</edgelabel>
+        </childnode>
+      </node>
+      <node id="219">
+        <label>std::map&lt; int, int &gt;</label>
+      </node>
+      <node id="222">
+        <label>std::map&lt; int, digital::constellation_sptr &gt;</label>
+      </node>
+      <node id="220">
+        <label>std::vector&lt; int &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="59" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" bodystart="59" bodyend="207"/>
+    <listofallmembers>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a61b76a9d3760d67afb35a923951b384d" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>BPSK_1_2</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a973617dc37256d4db851d355725c2229" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>BPSK_3_4</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a87474ce2b2affe324265530450f2db97" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>compute_n_ofdm_syms</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a610fb22059ad00408c4cb68400808bd7" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>compute_n_syms</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a825afa4d6805c243561dd24f5f2155ef" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>compute_uncoded_frame_size</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a5397fe9fb1d5b39d53fed13054ceb286" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>compute_uncoded_header_no_service_size</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a1d07dc41561684441eceee0066596465" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>compute_uncoded_service_payload_tail_pad_size</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a4d8babe7a82e06b61aa21c804a95e9ee" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>compute_uncoded_tail_pad_size</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1afac4be65be4c9f3ecd7246c806df3d56" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>create_deinterleaving_map</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a8b390eab88efd19ef89afcda3623cf1b" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>create_frame</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1ad3a0725d70e20a0dad721cca8a1cca06" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>create_frame</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1aebbd46cd05dd613723a7d5f48fddff0c" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>create_header</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a23b396701f6233e177e17ab409fd89fd" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>create_interleaving_map</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a4932bac54a9595f92da5bada15de3538" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>create_puncture_map</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1add35aa1dbaf255d403e84a8a2f2fa1b0" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>DEINTL_TABLE</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a4ed60ff8148721e3c61faf15f6fe8c12" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>INTL_TABLE</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a0765914e0a7b7eb11cf4290f4620bba1" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>make</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a356922719af16d7893087576c6dd2972" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>MCS0</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a64efdb0918188bd00e2595ee9f10c256" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>MCS1</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a7568256e9c1533a2169395241f95c503" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>MCS2</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a37af4baea0108836727f4c2212c13fea" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>MCS3</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13aee246ff2b6d0abda49e3ca7e4c9529ae" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>MCS4</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a5ffd5655c96009827e028b70b56df658" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>MCS5</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a0ec4f69de802cb5e1114ffbdbc6a8a43" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>MCS6</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a0032d88a2c73b7c84d65d618f76ff78e" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>MCS7</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a4adaeeb8aeae8323e38a3879ea84f8abaf3506026ab381dd83e195ae718acf99a" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>MODE_DSSS</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a4adaeeb8aeae8323e38a3879ea84f8aba471016f4519f94fef6fce85a925ceab8" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>MODE_OFDM</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a6fbb6b3f3d9ab31d29f553d25b1f6b87" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>N_BPSC</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a74fb6618d9ff8ab8eb89c28773f8c684" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>N_CBPS</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1ab09819002b6c36dbd620c5ffd9f4666f" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>N_DBPS</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1aa7175806e80ad877b1af319d110b0f27" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>NO_PUNCTURE_MAP</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>PHY_MCS</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1add90827d674048798b61f441af90002a" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>phy_utils</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a4adaeeb8aeae8323e38a3879ea84f8ab" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>PhyMode</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13aff8992981f678ed3b7f4d92f332ef92c" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>QAM16_1_2</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a2fcbbc8e63c7c7e02e19bae4288c47ce" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>QAM16_3_4</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a0b1137190a7a8a6d9a03acd9fe409d55" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>QAM64_2_3</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a14c94f2fed85da63779f1ae8097052ee" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>QAM64_3_4</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13a523c5130be29b4ad5b920f35f5a90e7b" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>QPSK_1_2</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a8b1c1b6a828411f44223c85cac181a13ae5090860a0be4fd4da4919e5022d47ed" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>QPSK_3_4</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a434582772fbd2142fdce971f6876f5ab" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>rate_string</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a87d48597243593242fdce008bf7e8e84" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>rate_string</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a0abe777e0714211f4e41e5718fd1c638" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>scramble</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a255cbad4e5cc0ff49af471d78e771936" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>scramble</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1acd82a2cd4b1347eb539025f5cd303649" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>sptr</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1a8400c77e2d6bfed2c9c2c895a2fafbf3" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>WIFI_CONSTELLATIONS</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__utils_1ab09e65994b262834c7486294a6f903ad" prot="public" virt="non-virtual"><scope>gr::swifi::phy_utils</scope><name>~phy_utils</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

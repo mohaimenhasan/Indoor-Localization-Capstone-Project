@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG    CMakeFiles/framefilter.dir/framefilter.cc.o CMakeFiles/framefilter.dir/query_parser.cc.o CMakeFiles/framefilter.dir/simple_filter.cc.o CMakeFiles/framefilter.dir/utils.cc.o CMakeFiles/framefilter.dir/xml_reader.cc.o CMakeFiles/framefilter.dir/xml_node.cc.o  -o framefilter -rdynamic -lboost_filesystem -lboost_system 

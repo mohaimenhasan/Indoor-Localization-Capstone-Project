@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!--
+###################################################
+## WiFi Frame Filter
+###################################################
+ -->
+<block>
+    <name>Frame Filter</name>
+    <key>swifi_frame_filter</key>
+    <category>SWiFi</category>
+    <import>import swifi</import>
+    <make>swifi.frame_filter($xml_dump_file, $filter_string, $samples_type.start_sample_tagattrname, $samples_type.end_sample_tagattrname, $phy_tag_key, $xml_out_file)</make>
+
+    <param>
+        <name>XML Dump File</name>
+        <key>xml_dump_file</key>
+        <value></value>
+        <type>string</type>
+    </param>
+
+    <param>
+        <name>Filter Condition</name>
+        <key>filter_string</key>
+        <value></value>
+        <type>string</type>
+    </param>
+
+    <param>
+        <name>Extract</name>
+        <key>samples_type</key>
+        <type>enum</type>
+        <hide>part</hide>
+        <option>
+            <name>Equalized Payload Samples</name>
+            <key>0</key>
+            <opt>start_sample_tagattrname:"phy.sample@payload_start"</opt>
+            <opt>end_sample_tagattrname:"phy.sample@payload_end"</opt>
+        </option>
+        <option>
+            <name>Time-domain Preamble</name>
+            <key>1</key>
+            <opt>start_sample_tagattrname:"phy.sample@frame_start"</opt>
+            <opt>end_sample_tagattrname:"phy.sample@preamble_end"</opt>
+        </option>
+        <option>
+            <name>Time-domain Frame</name>
+            <key>2</key>
+            <opt>start_sample_tagattrname:"phy.sample@frame_start"</opt>
+            <opt>end_sample_tagattrname:"phy.sample@frame_end"</opt>
+        </option>
+    </param>
+
+    <param>
+        <name>PHY Tag Key</name>
+        <key>phy_tag_key</key>
+        <value>"phy"</value>
+        <type>string</type>
+    </param>
+
+    <param>
+        <name>Filtered XML Filename</name>
+        <key>xml_out_file</key>
+        <value></value>
+        <type>string</type>
+    </param>
+
+    <sink>
+        <name>in</name>
+        <type>complex</type>
+    </sink>
+
+    <source>
+        <name>out</name>
+        <type>complex</type>
+    </source>
+</block>

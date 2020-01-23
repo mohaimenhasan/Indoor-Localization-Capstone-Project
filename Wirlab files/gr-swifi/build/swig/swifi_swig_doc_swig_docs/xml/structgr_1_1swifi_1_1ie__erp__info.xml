@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structgr_1_1swifi_1_1ie__erp__info" kind="struct" language="C++" prot="public">
+    <compoundname>gr::swifi::ie_erp_info</compoundname>
+    <includes refid="mac__frame__info_8h" local="no">mac_frame_info.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1ie__erp__info_1a26ae567e65414a7f3e40ff6c3b773028" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::ie_erp_info::nonerp</definition>
+        <argsstring></argsstring>
+        <name>nonerp</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="588" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="588" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1ie__erp__info_1a1413a9846c4a385eeeede033cc2e1a4d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::ie_erp_info::use_protection</definition>
+        <argsstring></argsstring>
+        <name>use_protection</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="589" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="589" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1ie__erp__info_1ac1d64f12f4cb629997f6832ed18e95f9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::ie_erp_info::barker</definition>
+        <argsstring></argsstring>
+        <name>barker</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="590" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="590" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1ie__erp__info_1a005c49d06c98c42bb8a5aa8399c5d266" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::ie_erp_info::reserved</definition>
+        <argsstring></argsstring>
+        <name>reserved</name>
+        <bitfield> 5</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="591" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="591" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="587" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="587" bodyend="592"/>
+    <listofallmembers>
+      <member refid="structgr_1_1swifi_1_1ie__erp__info_1ac1d64f12f4cb629997f6832ed18e95f9" prot="public" virt="non-virtual"><scope>gr::swifi::ie_erp_info</scope><name>barker</name></member>
+      <member refid="structgr_1_1swifi_1_1ie__erp__info_1a26ae567e65414a7f3e40ff6c3b773028" prot="public" virt="non-virtual"><scope>gr::swifi::ie_erp_info</scope><name>nonerp</name></member>
+      <member refid="structgr_1_1swifi_1_1ie__erp__info_1a005c49d06c98c42bb8a5aa8399c5d266" prot="public" virt="non-virtual"><scope>gr::swifi::ie_erp_info</scope><name>reserved</name></member>
+      <member refid="structgr_1_1swifi_1_1ie__erp__info_1a1413a9846c4a385eeeede033cc2e1a4d" prot="public" virt="non-virtual"><scope>gr::swifi::ie_erp_info</scope><name>use_protection</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

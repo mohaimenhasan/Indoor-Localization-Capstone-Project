@@ -1,0 +1,505 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1swifi_1_1phy__tag" kind="class" language="C++" prot="public">
+    <compoundname>gr::swifi::phy_tag</compoundname>
+    <includes refid="tag__utils_8h" local="no">tag_utils.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1phy__tag_1a8befaf1ac9ce5d0b4b7b4a0890d0ff81" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::swifi::phy_tag::d_nitems</definition>
+        <argsstring></argsstring>
+        <name>d_nitems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="436" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="436" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1phy__tag_1a41c7a2e28c717bf4daf5ff7f2c432336" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::swifi::phy_tag::d_rate</definition>
+        <argsstring></argsstring>
+        <name>d_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="436" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="436" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1phy__tag_1a0cb660c5d79c84adc6c84e0271f92d2a" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long gr::swifi::phy_tag::d_flag</definition>
+        <argsstring></argsstring>
+        <name>d_flag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="437" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1phy__tag_1ac0aaf4ea13e45c55019f6b0a667314e3" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long gr::swifi::phy_tag::d_rx_time</definition>
+        <argsstring></argsstring>
+        <name>d_rx_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="438" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="438" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1phy__tag_1aed2c8a8780adead275aac68c0d285b6c" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long gr::swifi::phy_tag::d_payload_sample_index</definition>
+        <argsstring></argsstring>
+        <name>d_payload_sample_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="438" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="438" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1phy__tag_1a9378c1bfe3c22db9bf73fa93f37a49cc" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::swifi::phy_tag::d_freq_offset</definition>
+        <argsstring></argsstring>
+        <name>d_freq_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="439" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="439" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1phy__tag_1ac013ea5d4ff1b7e1a548a5dbbad26be8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::swifi::phy_tag::d_scrambling_seed</definition>
+        <argsstring></argsstring>
+        <name>d_scrambling_seed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="440" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="440" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__tag_1a7385114d05e85d77f39c955f2e1a2dce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr::swifi::phy_tag::phy_tag</definition>
+        <argsstring>()</argsstring>
+        <name>phy_tag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Empty constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="280" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="280" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__tag_1a5f7eafa39be3cf6f1cfb570ae15244d3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::swifi::phy_tag::nitems</definition>
+        <argsstring>() const </argsstring>
+        <name>nitems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the PSDU size attribute of the PHY tag. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="286" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="286" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__tag_1a3fb25cb088bc3a2627d5804778c1184a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1phy__tag" kindref="compound">phy_tag</ref> &amp;</type>
+        <definition>phy_tag&amp; gr::swifi::phy_tag::set_nitems</definition>
+        <argsstring>(int nitems)</argsstring>
+        <name>set_nitems</name>
+        <param>
+          <type>int</type>
+          <declname>nitems</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the PSDU size attribute of the PHY tag. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nitems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the PSDU size. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the object itself. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="295" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="295" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__tag_1ad15fe314f12cafffd6e3849bbe0ff395" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::swifi::phy_tag::rate</definition>
+        <argsstring>() const </argsstring>
+        <name>rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the rate attribute of the PHY tag. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="303" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="303" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__tag_1a58b336d7d22b9a7ee8d6777c92b83151" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1phy__tag" kindref="compound">phy_tag</ref> &amp;</type>
+        <definition>phy_tag&amp; gr::swifi::phy_tag::set_rate</definition>
+        <argsstring>(int rate)</argsstring>
+        <name>set_rate</name>
+        <param>
+          <type>int</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the rate attribute of the PHY tag. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the rate of the transmission. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the object itself. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="312" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="312" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__tag_1ab7df6fd1d5b751b5ea42b7326605ffe1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>long</type>
+        <definition>long gr::swifi::phy_tag::flag</definition>
+        <argsstring>() const </argsstring>
+        <name>flag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the flag attribute of the PHY tag. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="320" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="320" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__tag_1a3c9f1bd220622598a3b7ce4d9f563d04" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::swifi::phy_tag::flag</definition>
+        <argsstring>(long check_flag) const </argsstring>
+        <name>flag</name>
+        <param>
+          <type>long</type>
+          <declname>check_flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true if the given flag is present. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="327" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="327" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__tag_1ab00f24e08a6c7c751d6b3e1b2124e4a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1phy__tag" kindref="compound">phy_tag</ref> &amp;</type>
+        <definition>phy_tag&amp; gr::swifi::phy_tag::set_flag</definition>
+        <argsstring>(long flag)</argsstring>
+        <name>set_flag</name>
+        <param>
+          <type>long</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the flag attribute of the PHY tag. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the flag of the PHY tag. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the object itself. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="336" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="336" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__tag_1a576ddabf063319499ffad031f5159bf4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned long</type>
+        <definition>unsigned long gr::swifi::phy_tag::rx_time</definition>
+        <argsstring>() const </argsstring>
+        <name>rx_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the received time of the frame. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="344" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="344" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__tag_1a714c90fbfc48a7d6384a4e7b7227e57c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1phy__tag" kindref="compound">phy_tag</ref> &amp;</type>
+        <definition>phy_tag&amp; gr::swifi::phy_tag::set_rx_time</definition>
+        <argsstring>(unsigned long rx_time)</argsstring>
+        <name>set_rx_time</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>rx_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the received time attribute of the PHY tag. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rx_time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the received time of measured as the index of the preamble&apos;s first sample. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the object itself. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="354" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="354" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__tag_1a28df5f0ef5012895e1d54895cfdc5010" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned long</type>
+        <definition>unsigned long gr::swifi::phy_tag::payload_sample_index</definition>
+        <argsstring>() const </argsstring>
+        <name>payload_sample_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the index of the payload&apos;s first sample. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="362" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="362" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__tag_1a565cc2fd71b9b0e01de80848af5544b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1phy__tag" kindref="compound">phy_tag</ref> &amp;</type>
+        <definition>phy_tag&amp; gr::swifi::phy_tag::set_payload_sample_index</definition>
+        <argsstring>(unsigned long payload_sample_index)</argsstring>
+        <name>set_payload_sample_index</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>payload_sample_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the payload sample index attribute of the PHY tag. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>payload_sample_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the payload&apos;s first sample. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the object itself. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="371" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="371" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__tag_1a920bb0f3a2275c36c4eef86081bd94e5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::swifi::phy_tag::freq_offset</definition>
+        <argsstring>() const </argsstring>
+        <name>freq_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return frequency offset attribute of the PHY tag. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="380" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="380" bodyend="382"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__tag_1acce5f9c732f9f1078dd16834e6b692c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1phy__tag" kindref="compound">phy_tag</ref> &amp;</type>
+        <definition>phy_tag&amp; gr::swifi::phy_tag::set_freq_offset</definition>
+        <argsstring>(float freq_offset)</argsstring>
+        <name>set_freq_offset</name>
+        <param>
+          <type>float</type>
+          <declname>freq_offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the frequency offset attribute of the PHY tag. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>freq_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frequency offset estimated based on the preamble. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the object itself. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="389" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="389" bodyend="392"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__tag_1abfa5d55658e06a4d39af93728dbec451" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::swifi::phy_tag::scrambling_seed</definition>
+        <argsstring>() const </argsstring>
+        <name>scrambling_seed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the scrambling seed used by the transmitter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="397" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="397" bodyend="399"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__tag_1acbd86845e68646e0efb4412131d3240e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1phy__tag" kindref="compound">phy_tag</ref> &amp;</type>
+        <definition>phy_tag&amp; gr::swifi::phy_tag::set_scrambling_seed</definition>
+        <argsstring>(int scrambling_seed)</argsstring>
+        <name>set_scrambling_seed</name>
+        <param>
+          <type>int</type>
+          <declname>scrambling_seed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the scrambling seed attribute of the PHY tag. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scrambling_seed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>scrambling seed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the object itself. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="406" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="406" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__tag_1a6dea584c01a35462aa34124185936a74" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::swifi::phy_tag::operator pmt::pmt_t</definition>
+        <argsstring>() const </argsstring>
+        <name>operator pmt::pmt_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the PMT object representing the PHY tag to be embedded in GNU Radio tag. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="415" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__tag_1a217e72cbce4e4d66c1549313bb4c4267" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1phy__tag" kindref="compound">phy_tag</ref></type>
+        <definition>static phy_tag gr::swifi::phy_tag::create</definition>
+        <argsstring>()</argsstring>
+        <name>create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Static method for create an instance of phy tag. It is the same as the empty constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="421" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="421" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1phy__tag_1a9690eafecaaf870a861755fe71c9061a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool gr::swifi::phy_tag::parse</definition>
+        <argsstring>(const pmt::pmt_t &amp;v, phy_tag &amp;t)</argsstring>
+        <name>parse</name>
+        <param>
+          <type>const pmt::pmt_t &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type><ref refid="classgr_1_1swifi_1_1phy__tag" kindref="compound">phy_tag</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Static method for parsing a PMT value of a GNU Radio tag. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PMT value of a GNU Radio tag. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the PMT value is a valid phy tag, this argument will be instantiate to the parsed phy tag object. Otherwise, t is untouched. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if parsing is successful, false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="433" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Phy tag is used for transfer meta information between blocks in SWiFi flow graph. The following information is carried in each PHY tag:<itemizedlist>
+<listitem><para>nitems: size of the PSDU.</para></listitem><listitem><para>rate: rate specified in the SIGNAL field.</para></listitem><listitem><para>flag: contains various flags for the processing () PHY_SCRAMBLER_FLAG if set, scrambling/descrambling is required PHY_TAIL_SET_FLAG if set, tail bits are at the end (this is used for payload) PHY_HEADER_FLAG if set, the current stream is the header stream</para></listitem><listitem><para>rx_time: received time, measured by the index of the first sample of the frame (i.e., first sample of preamble) in the received stream</para></listitem><listitem><para>freq_offset: estimated frequency offset during frame synchronization</para></listitem><listitem><para>scrambling_seed: detected scrambling seed used by the transmitter</para></listitem></itemizedlist>
+</para><para>To create phy tag, use the empty constructor and make subsequent calls to setter methods. For example: <ref refid="classgr_1_1swifi_1_1phy__tag" kindref="compound">phy_tag</ref> t = <ref refid="classgr_1_1swifi_1_1phy__tag_1a7385114d05e85d77f39c955f2e1a2dce" kindref="member">phy_tag()</ref>.set_nitems(...).set_rate(...)</para><para>To query attributes of phy tag, use getter methods. </para>    </detaileddescription>
+    <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="274" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="274" bodyend="441"/>
+    <listofallmembers>
+      <member refid="classgr_1_1swifi_1_1phy__tag_1a217e72cbce4e4d66c1549313bb4c4267" prot="public" virt="non-virtual"><scope>gr::swifi::phy_tag</scope><name>create</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__tag_1a0cb660c5d79c84adc6c84e0271f92d2a" prot="private" virt="non-virtual"><scope>gr::swifi::phy_tag</scope><name>d_flag</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__tag_1a9378c1bfe3c22db9bf73fa93f37a49cc" prot="private" virt="non-virtual"><scope>gr::swifi::phy_tag</scope><name>d_freq_offset</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__tag_1a8befaf1ac9ce5d0b4b7b4a0890d0ff81" prot="private" virt="non-virtual"><scope>gr::swifi::phy_tag</scope><name>d_nitems</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__tag_1aed2c8a8780adead275aac68c0d285b6c" prot="private" virt="non-virtual"><scope>gr::swifi::phy_tag</scope><name>d_payload_sample_index</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__tag_1a41c7a2e28c717bf4daf5ff7f2c432336" prot="private" virt="non-virtual"><scope>gr::swifi::phy_tag</scope><name>d_rate</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__tag_1ac0aaf4ea13e45c55019f6b0a667314e3" prot="private" virt="non-virtual"><scope>gr::swifi::phy_tag</scope><name>d_rx_time</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__tag_1ac013ea5d4ff1b7e1a548a5dbbad26be8" prot="private" virt="non-virtual"><scope>gr::swifi::phy_tag</scope><name>d_scrambling_seed</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__tag_1ab7df6fd1d5b751b5ea42b7326605ffe1" prot="public" virt="non-virtual"><scope>gr::swifi::phy_tag</scope><name>flag</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__tag_1a3c9f1bd220622598a3b7ce4d9f563d04" prot="public" virt="non-virtual"><scope>gr::swifi::phy_tag</scope><name>flag</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__tag_1a920bb0f3a2275c36c4eef86081bd94e5" prot="public" virt="non-virtual"><scope>gr::swifi::phy_tag</scope><name>freq_offset</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__tag_1a5f7eafa39be3cf6f1cfb570ae15244d3" prot="public" virt="non-virtual"><scope>gr::swifi::phy_tag</scope><name>nitems</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__tag_1a6dea584c01a35462aa34124185936a74" prot="public" virt="non-virtual"><scope>gr::swifi::phy_tag</scope><name>operator pmt::pmt_t</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__tag_1a9690eafecaaf870a861755fe71c9061a" prot="public" virt="non-virtual"><scope>gr::swifi::phy_tag</scope><name>parse</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__tag_1a28df5f0ef5012895e1d54895cfdc5010" prot="public" virt="non-virtual"><scope>gr::swifi::phy_tag</scope><name>payload_sample_index</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__tag_1a7385114d05e85d77f39c955f2e1a2dce" prot="public" virt="non-virtual"><scope>gr::swifi::phy_tag</scope><name>phy_tag</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__tag_1ad15fe314f12cafffd6e3849bbe0ff395" prot="public" virt="non-virtual"><scope>gr::swifi::phy_tag</scope><name>rate</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__tag_1a576ddabf063319499ffad031f5159bf4" prot="public" virt="non-virtual"><scope>gr::swifi::phy_tag</scope><name>rx_time</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__tag_1abfa5d55658e06a4d39af93728dbec451" prot="public" virt="non-virtual"><scope>gr::swifi::phy_tag</scope><name>scrambling_seed</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__tag_1ab00f24e08a6c7c751d6b3e1b2124e4a3" prot="public" virt="non-virtual"><scope>gr::swifi::phy_tag</scope><name>set_flag</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__tag_1acce5f9c732f9f1078dd16834e6b692c8" prot="public" virt="non-virtual"><scope>gr::swifi::phy_tag</scope><name>set_freq_offset</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__tag_1a3fb25cb088bc3a2627d5804778c1184a" prot="public" virt="non-virtual"><scope>gr::swifi::phy_tag</scope><name>set_nitems</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__tag_1a565cc2fd71b9b0e01de80848af5544b0" prot="public" virt="non-virtual"><scope>gr::swifi::phy_tag</scope><name>set_payload_sample_index</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__tag_1a58b336d7d22b9a7ee8d6777c92b83151" prot="public" virt="non-virtual"><scope>gr::swifi::phy_tag</scope><name>set_rate</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__tag_1a714c90fbfc48a7d6384a4e7b7227e57c" prot="public" virt="non-virtual"><scope>gr::swifi::phy_tag</scope><name>set_rx_time</name></member>
+      <member refid="classgr_1_1swifi_1_1phy__tag_1acbd86845e68646e0efb4412131d3240e" prot="public" virt="non-virtual"><scope>gr::swifi::phy_tag</scope><name>set_scrambling_seed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

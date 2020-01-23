@@ -1,0 +1,434 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1swifi_1_1dynamic__rate__block" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gr::swifi::dynamic_rate_block</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">block</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1swifi_1_1bit__inserter" prot="public" virt="virtual">gr::swifi::bit_inserter</derivedcompoundref>
+    <derivedcompoundref refid="classgr_1_1swifi_1_1bit__packer" prot="public" virt="virtual">gr::swifi::bit_packer</derivedcompoundref>
+    <derivedcompoundref refid="classgr_1_1swifi_1_1bit__stealer" prot="public" virt="virtual">gr::swifi::bit_stealer</derivedcompoundref>
+    <derivedcompoundref refid="classgr_1_1swifi_1_1bit__unpacker" prot="public" virt="virtual">gr::swifi::bit_unpacker</derivedcompoundref>
+    <derivedcompoundref refid="classgr_1_1swifi_1_1bitmetrics__computer" prot="public" virt="virtual">gr::swifi::bitmetrics_computer</derivedcompoundref>
+    <derivedcompoundref refid="classgr_1_1swifi_1_1bitmetrics__inserter" prot="public" virt="virtual">gr::swifi::bitmetrics_inserter</derivedcompoundref>
+    <derivedcompoundref refid="classgr_1_1swifi_1_1bitmetrics__interleaver" prot="public" virt="virtual">gr::swifi::bitmetrics_interleaver</derivedcompoundref>
+    <derivedcompoundref refid="classgr_1_1swifi_1_1chunks__to__symbols" prot="public" virt="virtual">gr::swifi::chunks_to_symbols</derivedcompoundref>
+    <derivedcompoundref refid="classgr_1_1swifi_1_1constellation__decoder" prot="public" virt="virtual">gr::swifi::constellation_decoder</derivedcompoundref>
+    <derivedcompoundref refid="classgr_1_1swifi_1_1interleaver" prot="public" virt="virtual">gr::swifi::interleaver</derivedcompoundref>
+    <derivedcompoundref refid="classgr_1_1swifi_1_1wifi__conv__soft__decoder" prot="public" virt="virtual">gr::swifi::wifi_conv_soft_decoder</derivedcompoundref>
+    <includes refid="dynamic__rate__block_8h" local="no">dynamic_rate_block.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1swifi_1_1dynamic__rate__block_1a4e5e549a1ba3bd7ccb9401a50cda57ed" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1swifi_1_1dynamic__rate__block" kindref="compound">dynamic_rate_block</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;dynamic_rate_block&gt; gr::swifi::dynamic_rate_block::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/dynamic_rate_block.h" line="63" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/dynamic_rate_block.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1dynamic__rate__block_1ae573d38044e6f08b653b8a3fbfdd940a" prot="protected" static="no" mutable="no">
+        <type>pmt::pmt_t</type>
+        <definition>pmt::pmt_t gr::swifi::dynamic_rate_block::d_tag_key</definition>
+        <argsstring></argsstring>
+        <name>d_tag_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/dynamic_rate_block.h" line="139" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/dynamic_rate_block.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1dynamic__rate__block_1acb8e3e5119b72cea7302f249c58fcefa" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::swifi::dynamic_rate_block::d_input_itemsize</definition>
+        <argsstring></argsstring>
+        <name>d_input_itemsize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/dynamic_rate_block.h" line="140" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/dynamic_rate_block.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1dynamic__rate__block_1af0811461d3f180447151d5f82f1327ec" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::swifi::dynamic_rate_block::d_output_itemsize</definition>
+        <argsstring></argsstring>
+        <name>d_output_itemsize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/dynamic_rate_block.h" line="140" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/dynamic_rate_block.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1dynamic__rate__block_1ac524ff9f295d7ef4231da523a55de3fa" prot="protected" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t gr::swifi::dynamic_rate_block::d_start_read_idx</definition>
+        <argsstring></argsstring>
+        <name>d_start_read_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/dynamic_rate_block.h" line="141" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/dynamic_rate_block.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1dynamic__rate__block_1aeb5c6df3ee2399bdd839f70f9f9021cc" prot="protected" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t gr::swifi::dynamic_rate_block::d_start_write_idx</definition>
+        <argsstring></argsstring>
+        <name>d_start_write_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/dynamic_rate_block.h" line="141" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/dynamic_rate_block.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1dynamic__rate__block_1a711f2e56195da54513e5c3c5f22b2b88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::swifi::dynamic_rate_block::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Similar to regular block&apos;s forecast method. In general, no need to override this method. But for custom behavior, it can be overriden. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/dynamic_rate_block.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1dynamic__rate__block_1afe1c11ccea2664f6056639298ddec153" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::swifi::dynamic_rate_block::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DO NOT override this method. Instead override <ref refid="classgr_1_1swifi_1_1dynamic__rate__block_1a7c7b07f46bf4f23e6fbfa871b1d125d6" kindref="member">dynamic_rate_work()</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/dynamic_rate_block.h" line="76" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1dynamic__rate__block_1a4f9d71ef652d1a22fd0a31ccb21cd34e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr::swifi::dynamic_rate_block::dynamic_rate_block</definition>
+        <argsstring>(void)</argsstring>
+        <name>dynamic_rate_block</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/dynamic_rate_block.h" line="83" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/dynamic_rate_block.h" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1dynamic__rate__block_1a8c95f672d925cafa6524a571a8004e23" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::swifi::dynamic_rate_block::dynamic_rate_block</definition>
+        <argsstring>(const std::string &amp;name, gr::io_signature::sptr input_signature, gr::io_signature::sptr output_signature, const std::string &amp;tag_key=&quot;&quot;)</argsstring>
+        <name>dynamic_rate_block</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>gr::io_signature::sptr</type>
+          <declname>input_signature</declname>
+        </param>
+        <param>
+          <type>gr::io_signature::sptr</type>
+          <declname>output_signature</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tag_key</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Creates the <ref refid="classgr_1_1swifi_1_1dynamic__rate__block" kindref="compound">dynamic_rate_block</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="classgr_1_1swifi_1_1dynamic__rate__block" kindref="compound">dynamic_rate_block</ref> provides two modes: tag-based and regular. To work in tag-based mode, specify tag_key to be anything other than empty. To work in regular mode, specify tag_key to be an empty string.</para><para>Note: We currently only support single input single output block.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the block </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>input_signature</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input signature of the block </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output_signature</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output signature of the block </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tag_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>key of the tag </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/dynamic_rate_block.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1dynamic__rate__block_1aa65f804d9217db7376c7495525f682f4" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::swifi::dynamic_rate_block::update_rate</definition>
+        <argsstring>(const tag_t &amp;tag)</argsstring>
+        <name>update_rate</name>
+        <param>
+          <type>const tag_t &amp;</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Override this method to handle custom tags for stream rate updating. The overriding method should call set_relative_rate() to set the new stream rate for this block. Note that updating rate is important for tag propagation, as the rate is used for computing propagated tags&apos; offsets.</para><para>This method is called whenever a proper tag is found on the first item of the current range on the input stream. A tag is proper when both its key and value are not PMT_NIL. It is left to the overriding method to validate the tag according to a custom format.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the received tag on the first item in the current range on the input stream. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/dynamic_rate_block.h" line="118" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/dynamic_rate_block.h" bodystart="118" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1dynamic__rate__block_1a5a37aafea0e32aeb987bd59e8e4a8442" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::swifi::dynamic_rate_block::propagate_tags</definition>
+        <argsstring>()</argsstring>
+        <name>propagate_tags</name>
+        <briefdescription>
+<para>Propagate tags to the downstream block. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method should always be called after consume() and produce() are called, because it uses nitems_read(0) and nitems_written(0) for computing the new offset of propagated tags. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/dynamic_rate_block.h" line="126" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1dynamic__rate__block_1a7c7b07f46bf4f23e6fbfa871b1d125d6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int gr::swifi::dynamic_rate_block::dynamic_rate_work</definition>
+        <argsstring>(int noutput_items, int ninput_items, const void *input, void *output)=0</argsstring>
+        <name>dynamic_rate_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Actual item processing should override this method. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>noutput_items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum number of items to be produced </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ninput_items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of items available on the input </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>const pointer to the input stream that contains the received input values </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the output stream that contains the processed output values </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/dynamic_rate_block.h" line="135" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This block facilitates a tag processing mode in which the special tags divide the stream into multiple blocks (possibly of different size), and each block is processed at different rate determined based on the tag on the first item of the corresponding block.</para><para>An example is processing received packets of different rates. After parsing the header, an upstream block can now put a special tag to the first item carrying the rate information. When the downstream block receives this stream, based on the tag it adaptively adjusts the output/input item rate.</para><para>In comparison to GNU Radio&apos;s built-in tagged_stream_block, we don&apos;t need the length information and don&apos;t need to buffer the whole chunk before the actual processing can be performed. Instead, as long as no new tag is found, the same rate remains and the block can consistently produce items at the output.</para><para>This block simplifies the cumbersome tag handling and propagation.</para><para>Note: We currently only support SINGLE input SINGLE output block. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="78">
+        <label>gr::swifi::dynamic_rate_block</label>
+        <link refid="classgr_1_1swifi_1_1dynamic__rate__block"/>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>gr::swifi::interleaver</label>
+        <link refid="classgr_1_1swifi_1_1interleaver"/>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>gr::swifi::bit_packer</label>
+        <link refid="classgr_1_1swifi_1_1bit__packer"/>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>gr::swifi::bitmetrics_interleaver</label>
+        <link refid="classgr_1_1swifi_1_1bitmetrics__interleaver"/>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>gr::swifi::bitmetrics_inserter</label>
+        <link refid="classgr_1_1swifi_1_1bitmetrics__inserter"/>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>gr::swifi::bitmetrics_computer</label>
+        <link refid="classgr_1_1swifi_1_1bitmetrics__computer"/>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>block</label>
+      </node>
+      <node id="82">
+        <label>gr::swifi::bit_stealer</label>
+        <link refid="classgr_1_1swifi_1_1bit__stealer"/>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>gr::swifi::bit_unpacker</label>
+        <link refid="classgr_1_1swifi_1_1bit__unpacker"/>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>gr::swifi::bit_inserter</label>
+        <link refid="classgr_1_1swifi_1_1bit__inserter"/>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>gr::swifi::chunks_to_symbols</label>
+        <link refid="classgr_1_1swifi_1_1chunks__to__symbols"/>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>gr::swifi::wifi_conv_soft_decoder</label>
+        <link refid="classgr_1_1swifi_1_1wifi__conv__soft__decoder"/>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>gr::swifi::constellation_decoder</label>
+        <link refid="classgr_1_1swifi_1_1constellation__decoder"/>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="91">
+        <label>gr::swifi::dynamic_rate_block</label>
+        <link refid="classgr_1_1swifi_1_1dynamic__rate__block"/>
+        <childnode refid="92" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wirlab/gr-swifi/include/swifi/dynamic_rate_block.h" line="60" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/dynamic_rate_block.h" bodystart="58" bodyend="144"/>
+    <listofallmembers>
+      <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1acb8e3e5119b72cea7302f249c58fcefa" prot="protected" virt="non-virtual"><scope>gr::swifi::dynamic_rate_block</scope><name>d_input_itemsize</name></member>
+      <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1af0811461d3f180447151d5f82f1327ec" prot="protected" virt="non-virtual"><scope>gr::swifi::dynamic_rate_block</scope><name>d_output_itemsize</name></member>
+      <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1ac524ff9f295d7ef4231da523a55de3fa" prot="protected" virt="non-virtual"><scope>gr::swifi::dynamic_rate_block</scope><name>d_start_read_idx</name></member>
+      <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1aeb5c6df3ee2399bdd839f70f9f9021cc" prot="protected" virt="non-virtual"><scope>gr::swifi::dynamic_rate_block</scope><name>d_start_write_idx</name></member>
+      <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1ae573d38044e6f08b653b8a3fbfdd940a" prot="protected" virt="non-virtual"><scope>gr::swifi::dynamic_rate_block</scope><name>d_tag_key</name></member>
+      <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1a4f9d71ef652d1a22fd0a31ccb21cd34e" prot="protected" virt="non-virtual"><scope>gr::swifi::dynamic_rate_block</scope><name>dynamic_rate_block</name></member>
+      <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1a8c95f672d925cafa6524a571a8004e23" prot="protected" virt="non-virtual"><scope>gr::swifi::dynamic_rate_block</scope><name>dynamic_rate_block</name></member>
+      <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1a7c7b07f46bf4f23e6fbfa871b1d125d6" prot="protected" virt="pure-virtual"><scope>gr::swifi::dynamic_rate_block</scope><name>dynamic_rate_work</name></member>
+      <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1a711f2e56195da54513e5c3c5f22b2b88" prot="public" virt="non-virtual"><scope>gr::swifi::dynamic_rate_block</scope><name>forecast</name></member>
+      <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1afe1c11ccea2664f6056639298ddec153" prot="public" virt="non-virtual"><scope>gr::swifi::dynamic_rate_block</scope><name>general_work</name></member>
+      <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1a5a37aafea0e32aeb987bd59e8e4a8442" prot="protected" virt="virtual"><scope>gr::swifi::dynamic_rate_block</scope><name>propagate_tags</name></member>
+      <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1a4e5e549a1ba3bd7ccb9401a50cda57ed" prot="public" virt="non-virtual"><scope>gr::swifi::dynamic_rate_block</scope><name>sptr</name></member>
+      <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1aa65f804d9217db7376c7495525f682f4" prot="protected" virt="virtual"><scope>gr::swifi::dynamic_rate_block</scope><name>update_rate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

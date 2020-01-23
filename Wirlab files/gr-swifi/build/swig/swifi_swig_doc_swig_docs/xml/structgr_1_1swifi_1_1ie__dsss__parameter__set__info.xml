@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structgr_1_1swifi_1_1ie__dsss__parameter__set__info" kind="struct" language="C++" prot="public">
+    <compoundname>gr::swifi::ie_dsss_parameter_set_info</compoundname>
+    <includes refid="mac__frame__info_8h" local="no">mac_frame_info.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1ie__dsss__parameter__set__info_1a842b41ba1503a50e79dec5e16481ae7d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::swifi::ie_dsss_parameter_set_info::channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="578" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="578" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="577" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="577" bodyend="579"/>
+    <listofallmembers>
+      <member refid="structgr_1_1swifi_1_1ie__dsss__parameter__set__info_1a842b41ba1503a50e79dec5e16481ae7d" prot="public" virt="non-virtual"><scope>gr::swifi::ie_dsss_parameter_set_info</scope><name>channel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

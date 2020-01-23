@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structgr_1_1swifi_1_1ie__info" kind="struct" language="C++" prot="public">
+    <compoundname>gr::swifi::ie_info</compoundname>
+    <includes refid="mac__frame__info_8h" local="no">mac_frame_info.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1ie__info_1a00f7f204a646ba906243c7bf49cb1631" prot="public" static="no" mutable="no">
+        <type>std::map&lt; int, bool &gt;</type>
+        <definition>std::map&lt;int,bool&gt; gr::swifi::ie_info::has_ie</definition>
+        <argsstring></argsstring>
+        <name>has_ie</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="650" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="650" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1ie__info_1a4b20ca34d1b2f4dd4300970be249e619" prot="public" static="no" mutable="no">
+        <type>boost::shared_ptr&lt; std::string &gt;</type>
+        <definition>boost::shared_ptr&lt;std::string&gt; gr::swifi::ie_info::ssid</definition>
+        <argsstring></argsstring>
+        <name>ssid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="652" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="652" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1ie__info_1aa38276c449bb5f4906db6bb20a996604" prot="public" static="no" mutable="no">
+        <type>boost::shared_ptr&lt; std::vector&lt; float &gt; &gt;</type>
+        <definition>boost::shared_ptr&lt;std::vector&lt;float&gt; &gt; gr::swifi::ie_info::supported_rates</definition>
+        <argsstring></argsstring>
+        <name>supported_rates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="653" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="653" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1ie__info_1aff962b84747fc38ed01badd225a6cc25" prot="public" static="no" mutable="no">
+        <type>boost::shared_ptr&lt; <ref refid="structgr_1_1swifi_1_1ie__dsss__parameter__set__info" kindref="compound">ie_dsss_parameter_set_info</ref> &gt;</type>
+        <definition>boost::shared_ptr&lt;ie_dsss_parameter_set_info&gt; gr::swifi::ie_info::dsss_parameter_set</definition>
+        <argsstring></argsstring>
+        <name>dsss_parameter_set</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="654" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="654" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1ie__info_1a35c3e83e9abeb690d266e56f727e478d" prot="public" static="no" mutable="no">
+        <type>boost::shared_ptr&lt; <ref refid="structgr_1_1swifi_1_1ie__country__info" kindref="compound">ie_country_info</ref> &gt;</type>
+        <definition>boost::shared_ptr&lt;ie_country_info&gt; gr::swifi::ie_info::country</definition>
+        <argsstring></argsstring>
+        <name>country</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="655" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="655" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1ie__info_1a754da84566d7a3698aa63225e746a3fd" prot="public" static="no" mutable="no">
+        <type>boost::shared_ptr&lt; <ref refid="structgr_1_1swifi_1_1ie__erp__info" kindref="compound">ie_erp_info</ref> &gt;</type>
+        <definition>boost::shared_ptr&lt;ie_erp_info&gt; gr::swifi::ie_info::erp</definition>
+        <argsstring></argsstring>
+        <name>erp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="656" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="656" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1ie__info_1a8e99332a8b3dd131c6a912031cbdf3da" prot="public" static="no" mutable="no">
+        <type>boost::shared_ptr&lt; <ref refid="structgr_1_1swifi_1_1ie__ht__capabilities__info" kindref="compound">ie_ht_capabilities_info</ref> &gt;</type>
+        <definition>boost::shared_ptr&lt;ie_ht_capabilities_info&gt; gr::swifi::ie_info::ht</definition>
+        <argsstring></argsstring>
+        <name>ht</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="657" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="657" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="128">
+        <label>std::map&lt; int, bool &gt;</label>
+      </node>
+      <node id="127">
+        <label>gr::swifi::ie_info</label>
+        <link refid="structgr_1_1swifi_1_1ie__info"/>
+        <childnode refid="128" relation="usage">
+          <edgelabel>has_ie</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="649" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="649" bodyend="658"/>
+    <listofallmembers>
+      <member refid="structgr_1_1swifi_1_1ie__info_1a35c3e83e9abeb690d266e56f727e478d" prot="public" virt="non-virtual"><scope>gr::swifi::ie_info</scope><name>country</name></member>
+      <member refid="structgr_1_1swifi_1_1ie__info_1aff962b84747fc38ed01badd225a6cc25" prot="public" virt="non-virtual"><scope>gr::swifi::ie_info</scope><name>dsss_parameter_set</name></member>
+      <member refid="structgr_1_1swifi_1_1ie__info_1a754da84566d7a3698aa63225e746a3fd" prot="public" virt="non-virtual"><scope>gr::swifi::ie_info</scope><name>erp</name></member>
+      <member refid="structgr_1_1swifi_1_1ie__info_1a00f7f204a646ba906243c7bf49cb1631" prot="public" virt="non-virtual"><scope>gr::swifi::ie_info</scope><name>has_ie</name></member>
+      <member refid="structgr_1_1swifi_1_1ie__info_1a8e99332a8b3dd131c6a912031cbdf3da" prot="public" virt="non-virtual"><scope>gr::swifi::ie_info</scope><name>ht</name></member>
+      <member refid="structgr_1_1swifi_1_1ie__info_1a4b20ca34d1b2f4dd4300970be249e619" prot="public" virt="non-virtual"><scope>gr::swifi::ie_info</scope><name>ssid</name></member>
+      <member refid="structgr_1_1swifi_1_1ie__info_1aa38276c449bb5f4906db6bb20a996604" prot="public" virt="non-virtual"><scope>gr::swifi::ie_info</scope><name>supported_rates</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

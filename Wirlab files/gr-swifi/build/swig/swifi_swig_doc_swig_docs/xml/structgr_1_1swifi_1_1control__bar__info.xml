@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structgr_1_1swifi_1_1control__bar__info" kind="struct" language="C++" prot="public">
+    <compoundname>gr::swifi::control_bar_info</compoundname>
+    <includes refid="mac__frame__info_8h" local="no">mac_frame_info.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1control__bar__info_1a33c25e865540307a37b3f6a8e49452d7" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t gr::swifi::control_bar_info::bar_control</definition>
+        <argsstring></argsstring>
+        <name>bar_control</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="561" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="561" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1control__bar__info_1afe727d96052d3a903a5cae928530c136" prot="public" static="no" mutable="no">
+        <type>boost::shared_array&lt; char &gt;</type>
+        <definition>boost::shared_array&lt;char&gt; gr::swifi::control_bar_info::bar_info</definition>
+        <argsstring></argsstring>
+        <name>bar_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="562" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="562" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1control__bar__info_1a2451e39f2e605c9b80457523cad10d6d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::swifi::control_bar_info::bar_info_len</definition>
+        <argsstring></argsstring>
+        <name>bar_info_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="563" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="563" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="560" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="560" bodyend="564"/>
+    <listofallmembers>
+      <member refid="structgr_1_1swifi_1_1control__bar__info_1a33c25e865540307a37b3f6a8e49452d7" prot="public" virt="non-virtual"><scope>gr::swifi::control_bar_info</scope><name>bar_control</name></member>
+      <member refid="structgr_1_1swifi_1_1control__bar__info_1afe727d96052d3a903a5cae928530c136" prot="public" virt="non-virtual"><scope>gr::swifi::control_bar_info</scope><name>bar_info</name></member>
+      <member refid="structgr_1_1swifi_1_1control__bar__info_1a2451e39f2e605c9b80457523cad10d6d" prot="public" virt="non-virtual"><scope>gr::swifi::control_bar_info</scope><name>bar_info_len</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

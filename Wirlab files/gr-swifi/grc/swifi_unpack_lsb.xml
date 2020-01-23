@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!--
+###################################################
+##Unpack bytes to bits in LSB order
+###################################################
+ -->
+<block>
+    <name>Unpack LSB</name>
+    <key>swifi_unpack_lsb</key>
+    <category>SWiFi</category>
+    <import>import swifi</import>
+    <make>swifi.unpack_lsb($bits)</make>
+    <param>
+        <name>Bits per Input</name>
+        <key>bits</key>
+        <value>1</value>
+        <type>int</type>
+        <option>
+            <name>1</name>
+            <key>1</key>
+        </option>
+        <option>
+            <name>2</name>
+            <key>2</key>
+        </option>
+        <option>
+            <name>4</name>
+            <key>4</key>
+        </option>
+        <option>
+            <name>6</name>
+            <key>6</key>
+        </option>
+        <option>
+            <name>8</name>
+            <key>8</key>
+        </option>
+    </param>
+    <sink>
+        <name>in</name>
+        <type>byte</type>
+    </sink>
+    <source>
+        <name>out</name>
+        <type>byte</type>
+    </source>
+</block>

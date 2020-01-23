@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1swifi_1_1mac__frame__generator" kind="class" language="C++" prot="public">
+    <compoundname>gr::swifi::mac_frame_generator</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="mac__frame__generator_8h" local="no">mac_frame_generator.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1swifi_1_1mac__frame__generator_1afb777978d79f8bd5e6eabc0abaaf1e1b" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1swifi_1_1mac__frame__generator" kindref="compound">mac_frame_generator</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;mac_frame_generator&gt; gr::swifi::mac_frame_generator::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_generator.h" line="54" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_generator.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1mac__frame__generator_1a34459b34ba0c5afa8e529214d9603879" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1mac__frame__generator_1afb777978d79f8bd5e6eabc0abaaf1e1b" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::swifi::mac_frame_generator::make</definition>
+        <argsstring>(const std::string &amp;phy_tag_key, int rate, int datalen)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>phy_tag_key</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>datalen</declname>
+        </param>
+        <briefdescription>
+<para>Create a new instance of <ref refid="classgr_1_1swifi_1_1mac__frame__generator" kindref="compound">swifi::mac_frame_generator</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>phy_tag_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tag key for PHY properties. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>datalen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>fixed number of bytes to read if no signal tag is found on the input. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>fixed rate of the transmission if no signal tag is found on the input. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_generator.h" line="65" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>MAC frame generator embeds data from upstream block into a format specified by IEEE 802.11a. </para>    </briefdescription>
+    <detaileddescription>
+<para>The input stream of bytes will be read until a signal tag is found or a number of read bytes reaches a predefined value. Every chunk of data bytes will constitute a MAC frame, with appropriate header fields.</para><para>On the output, the MAC frame generator produces a stream of IEEE 802.11a compliant frame. A signal tag is attached to the first byte of the frame to inform the downstream block of RATE and LENGTH value for the PHY frame to be constructed. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="150">
+        <label>gr::swifi::mac_frame_generator</label>
+        <link refid="classgr_1_1swifi_1_1mac__frame__generator"/>
+        <childnode refid="151" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="151">
+        <label>block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="152">
+        <label>gr::swifi::mac_frame_generator</label>
+        <link refid="classgr_1_1swifi_1_1mac__frame__generator"/>
+        <childnode refid="153" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="153">
+        <label>block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_generator.h" line="52" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_generator.h" bodystart="51" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classgr_1_1swifi_1_1mac__frame__generator_1a34459b34ba0c5afa8e529214d9603879" prot="public" virt="non-virtual"><scope>gr::swifi::mac_frame_generator</scope><name>make</name></member>
+      <member refid="classgr_1_1swifi_1_1mac__frame__generator_1afb777978d79f8bd5e6eabc0abaaf1e1b" prot="public" virt="non-virtual"><scope>gr::swifi::mac_frame_generator</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

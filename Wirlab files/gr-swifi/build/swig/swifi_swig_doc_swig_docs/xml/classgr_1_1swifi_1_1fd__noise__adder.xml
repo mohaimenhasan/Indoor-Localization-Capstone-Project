@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1swifi_1_1fd__noise__adder" kind="class" language="C++" prot="public">
+    <compoundname>gr::swifi::fd_noise_adder</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="fd__noise__adder_8h" local="no">fd_noise_adder.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1swifi_1_1fd__noise__adder_1a53367f78842134ab30e70ee7f3a9c3d5" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1swifi_1_1fd__noise__adder" kindref="compound">fd_noise_adder</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;fd_noise_adder&gt; gr::swifi::fd_noise_adder::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/fd_noise_adder.h" line="44" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/fd_noise_adder.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1fd__noise__adder_1ad0232f588aa876df7ddaaf887a923bd7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1fd__noise__adder_1a53367f78842134ab30e70ee7f3a9c3d5" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::swifi::fd_noise_adder::make</definition>
+        <argsstring>(const std::string &amp;phy_tag_key, const std::vector&lt; int &gt; &amp;subcarrier_jamming_pattern, const std::vector&lt; int &gt; &amp;ofdmsym_jamming_pattern, float ampl)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>phy_tag_key</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>subcarrier_jamming_pattern</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>ofdmsym_jamming_pattern</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ampl</declname>
+        </param>
+        <briefdescription>
+<para>Create a new instance of <ref refid="classgr_1_1swifi_1_1fd__noise__adder" kindref="compound">swifi::fd_noise_adder</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>phy_tag_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key for PHY tag. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>subcarrier_jamming_pattern</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of pattern specifiying which locations are jammed (value 1), or not jammed (value 0). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ofdmsym_jamming_pattern</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of pattern specifiying which OFDM symbols are jammed (value 1), or not jammed (value 0). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ampl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Amplitude of noise. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/fd_noise_adder.h" line="56" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Vector valve. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="93">
+        <label>gr::swifi::fd_noise_adder</label>
+        <link refid="classgr_1_1swifi_1_1fd__noise__adder"/>
+        <childnode refid="94" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="95">
+        <label>gr::swifi::fd_noise_adder</label>
+        <link refid="classgr_1_1swifi_1_1fd__noise__adder"/>
+        <childnode refid="96" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wirlab/gr-swifi/include/swifi/fd_noise_adder.h" line="42" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/fd_noise_adder.h" bodystart="41" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classgr_1_1swifi_1_1fd__noise__adder_1ad0232f588aa876df7ddaaf887a923bd7" prot="public" virt="non-virtual"><scope>gr::swifi::fd_noise_adder</scope><name>make</name></member>
+      <member refid="classgr_1_1swifi_1_1fd__noise__adder_1a53367f78842134ab30e70ee7f3a9c3d5" prot="public" virt="non-virtual"><scope>gr::swifi::fd_noise_adder</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

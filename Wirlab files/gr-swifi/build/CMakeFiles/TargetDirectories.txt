@@ -1,0 +1,14 @@
+/home/wirlab/gr-swifi/build/swig/CMakeFiles/_swifi_swig.dir
+/home/wirlab/gr-swifi/build/swig/CMakeFiles/_swifi_swig_doc_tag.dir
+/home/wirlab/gr-swifi/build/swig/CMakeFiles/_swifi_swig_swig_tag.dir
+/home/wirlab/gr-swifi/build/docs/doxygen/CMakeFiles/doxygen_target.dir
+/home/wirlab/gr-swifi/build/lib/CMakeFiles/extract.dir
+/home/wirlab/gr-swifi/build/lib/CMakeFiles/framefilter.dir
+/home/wirlab/gr-swifi/build/lib/CMakeFiles/gnuradio-swifi.dir
+/home/wirlab/gr-swifi/build/apps/CMakeFiles/pygen_apps_9a6dd.dir
+/home/wirlab/gr-swifi/build/python/CMakeFiles/pygen_python_85b9a.dir
+/home/wirlab/gr-swifi/build/swig/CMakeFiles/pygen_swig_d1898.dir
+/home/wirlab/gr-swifi/build/swig/CMakeFiles/swifi_swig_swig_2d0df.dir
+/home/wirlab/gr-swifi/build/swig/CMakeFiles/swifi_swig_swig_doc.dir
+/home/wirlab/gr-swifi/build/lib/CMakeFiles/test-swifi.dir
+/home/wirlab/gr-swifi/build/CMakeFiles/uninstall.dir

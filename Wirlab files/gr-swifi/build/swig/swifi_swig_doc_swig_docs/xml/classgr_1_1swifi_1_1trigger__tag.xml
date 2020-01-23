@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1swifi_1_1trigger__tag" kind="class" language="C++" prot="public">
+    <compoundname>gr::swifi::trigger_tag</compoundname>
+    <includes refid="tag__utils_8h" local="no">tag_utils.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1trigger__tag_1a0a7e44558d93e6f3f6fba2ea7cbb53a1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::swifi::trigger_tag::d_state</definition>
+        <argsstring></argsstring>
+        <name>d_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="553" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="553" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1trigger__tag_1a9401b468ffa395e1e62b16a96f437288" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long gr::swifi::trigger_tag::d_sample_index</definition>
+        <argsstring></argsstring>
+        <name>d_sample_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="554" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="554" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1trigger__tag_1a928c7d0ce10fa3daad505d9c9eca8942" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::swifi::trigger_tag::d_freq_offset</definition>
+        <argsstring></argsstring>
+        <name>d_freq_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="555" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="555" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1trigger__tag_1a5135a870e12f536028d8cd93b02e16ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr::swifi::trigger_tag::trigger_tag</definition>
+        <argsstring>()</argsstring>
+        <name>trigger_tag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Empty constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="471" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="471" bodyend="472"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1trigger__tag_1aaacc31c9f06730a8edb7e2d38b556e74" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::swifi::trigger_tag::state</definition>
+        <argsstring>() const </argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return state attribute of the trigger tag. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="477" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="477" bodyend="479"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1trigger__tag_1ac7e6929bb02c66a71df238dc1323c7de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1trigger__tag" kindref="compound">trigger_tag</ref> &amp;</type>
+        <definition>trigger_tag&amp; gr::swifi::trigger_tag::set_state</definition>
+        <argsstring>(bool state)</argsstring>
+        <name>set_state</name>
+        <param>
+          <type>bool</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the state attribute of the trigger tag. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true indicates a frame is found, false indicates a frame end. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the object itself. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="487" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="487" bodyend="490"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1trigger__tag_1af92c6023dce4fd186a26ae1d867e124c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned long</type>
+        <definition>unsigned long gr::swifi::trigger_tag::sample_index</definition>
+        <argsstring>() const </argsstring>
+        <name>sample_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return sample index attribute of the trigger tag. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="495" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="495" bodyend="497"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1trigger__tag_1aafc0a190b1f1d600a9cc62aea74b06a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1trigger__tag" kindref="compound">trigger_tag</ref> &amp;</type>
+        <definition>trigger_tag&amp; gr::swifi::trigger_tag::set_sample_index</definition>
+        <argsstring>(unsigned long sample_index)</argsstring>
+        <name>set_sample_index</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>sample_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the sample index attribute of the trigger tag. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sample_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>indicates the absolute position of the first sample of the preamble. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the object itself. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="505" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="505" bodyend="508"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1trigger__tag_1ab8e63db88e3247d389adea64c9344fbc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::swifi::trigger_tag::freq_offset</definition>
+        <argsstring>() const </argsstring>
+        <name>freq_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return frequency offset attribute of the trigger tag. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="513" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="513" bodyend="515"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1trigger__tag_1ae35073c4b34d8e721fc875ce634cbaeb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1trigger__tag" kindref="compound">trigger_tag</ref> &amp;</type>
+        <definition>trigger_tag&amp; gr::swifi::trigger_tag::set_freq_offset</definition>
+        <argsstring>(float freq_offset)</argsstring>
+        <name>set_freq_offset</name>
+        <param>
+          <type>float</type>
+          <declname>freq_offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the frequency offset attribute of the trigger tag. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>freq_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frequency offset estimated based on the preamble. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the object itself. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="522" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="522" bodyend="525"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1trigger__tag_1a3212ac7da7617886a971b04d15893f06" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::swifi::trigger_tag::operator pmt::pmt_t</definition>
+        <argsstring>() const </argsstring>
+        <name>operator pmt::pmt_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the PMT object representing the trigger tag to be embedded in GNU Radio tag. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="531" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1trigger__tag_1ad57b2a5cd4ab094b1ca86a47fd0c473b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1trigger__tag" kindref="compound">trigger_tag</ref></type>
+        <definition>static trigger_tag gr::swifi::trigger_tag::create</definition>
+        <argsstring>()</argsstring>
+        <name>create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Static method for create an instance of trigger tag. It is the same as the empty constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="537" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="537" bodyend="539"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1trigger__tag_1a84f3142e06262c2acaddd5929382773a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool gr::swifi::trigger_tag::parse</definition>
+        <argsstring>(const pmt::pmt_t &amp;v, trigger_tag &amp;t)</argsstring>
+        <name>parse</name>
+        <param>
+          <type>const pmt::pmt_t &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type><ref refid="classgr_1_1swifi_1_1trigger__tag" kindref="compound">trigger_tag</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Static method for parsing a PMT value of a GNU Radio tag. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PMT value of a GNU Radio tag. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the PMT value is a valid trigger tag, this argument will be instantiate to the parsed trigger tag object. Otherwise, t is untouched. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if parsing is successful, false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="549" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Trigger tag is used for frame synchronization block to pass trigger state to the header/payload demux block. In addition, other information can also be passed such as<itemizedlist>
+<listitem><para>state, which indicates the frame beginning or the frame end</para></listitem><listitem><para>sample index, where the preamble starts</para></listitem><listitem><para>frequency offset, which was estimated during preamble detection</para></listitem></itemizedlist>
+</para><para>To create trigger tag, use the empty constructor and make subsequent calls to setter methods. For example: <ref refid="classgr_1_1swifi_1_1trigger__tag" kindref="compound">trigger_tag</ref> t = <ref refid="classgr_1_1swifi_1_1trigger__tag_1a5135a870e12f536028d8cd93b02e16ab" kindref="member">trigger_tag()</ref> .set_state(...) .set_sample_index(...)</para><para>To query attributes of trigger tag, use getter methods. </para>    </detaileddescription>
+    <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="465" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="465" bodyend="556"/>
+    <listofallmembers>
+      <member refid="classgr_1_1swifi_1_1trigger__tag_1ad57b2a5cd4ab094b1ca86a47fd0c473b" prot="public" virt="non-virtual"><scope>gr::swifi::trigger_tag</scope><name>create</name></member>
+      <member refid="classgr_1_1swifi_1_1trigger__tag_1a928c7d0ce10fa3daad505d9c9eca8942" prot="private" virt="non-virtual"><scope>gr::swifi::trigger_tag</scope><name>d_freq_offset</name></member>
+      <member refid="classgr_1_1swifi_1_1trigger__tag_1a9401b468ffa395e1e62b16a96f437288" prot="private" virt="non-virtual"><scope>gr::swifi::trigger_tag</scope><name>d_sample_index</name></member>
+      <member refid="classgr_1_1swifi_1_1trigger__tag_1a0a7e44558d93e6f3f6fba2ea7cbb53a1" prot="private" virt="non-virtual"><scope>gr::swifi::trigger_tag</scope><name>d_state</name></member>
+      <member refid="classgr_1_1swifi_1_1trigger__tag_1ab8e63db88e3247d389adea64c9344fbc" prot="public" virt="non-virtual"><scope>gr::swifi::trigger_tag</scope><name>freq_offset</name></member>
+      <member refid="classgr_1_1swifi_1_1trigger__tag_1a3212ac7da7617886a971b04d15893f06" prot="public" virt="non-virtual"><scope>gr::swifi::trigger_tag</scope><name>operator pmt::pmt_t</name></member>
+      <member refid="classgr_1_1swifi_1_1trigger__tag_1a84f3142e06262c2acaddd5929382773a" prot="public" virt="non-virtual"><scope>gr::swifi::trigger_tag</scope><name>parse</name></member>
+      <member refid="classgr_1_1swifi_1_1trigger__tag_1af92c6023dce4fd186a26ae1d867e124c" prot="public" virt="non-virtual"><scope>gr::swifi::trigger_tag</scope><name>sample_index</name></member>
+      <member refid="classgr_1_1swifi_1_1trigger__tag_1ae35073c4b34d8e721fc875ce634cbaeb" prot="public" virt="non-virtual"><scope>gr::swifi::trigger_tag</scope><name>set_freq_offset</name></member>
+      <member refid="classgr_1_1swifi_1_1trigger__tag_1aafc0a190b1f1d600a9cc62aea74b06a8" prot="public" virt="non-virtual"><scope>gr::swifi::trigger_tag</scope><name>set_sample_index</name></member>
+      <member refid="classgr_1_1swifi_1_1trigger__tag_1ac7e6929bb02c66a71df238dc1323c7de" prot="public" virt="non-virtual"><scope>gr::swifi::trigger_tag</scope><name>set_state</name></member>
+      <member refid="classgr_1_1swifi_1_1trigger__tag_1aaacc31c9f06730a8edb7e2d38b556e74" prot="public" virt="non-virtual"><scope>gr::swifi::trigger_tag</scope><name>state</name></member>
+      <member refid="classgr_1_1swifi_1_1trigger__tag_1a5135a870e12f536028d8cd93b02e16ab" prot="public" virt="non-virtual"><scope>gr::swifi::trigger_tag</scope><name>trigger_tag</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

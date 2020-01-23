@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1swifi_1_1channel__states__tag" kind="class" language="C++" prot="public">
+    <compoundname>gr::swifi::channel_states_tag</compoundname>
+    <includes refid="tag__utils_8h" local="no">tag_utils.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1channel__states__tag_1a0f3b6e477f3776507b38130ea4840682" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::swifi::channel_states_tag::d_phase_offset</definition>
+        <argsstring></argsstring>
+        <name>d_phase_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="234" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1channel__states__tag_1ad859fe3e1dafee0fc1e6bcb2d036ad18" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::swifi::channel_states_tag::d_freq_offset</definition>
+        <argsstring></argsstring>
+        <name>d_freq_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="234" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1channel__states__tag_1a6d30686ec0fcd486afc8a3d7a2b4b240" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::swifi::channel_states_tag::d_channel_states</definition>
+        <argsstring></argsstring>
+        <name>d_channel_states</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="235" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1channel__states__tag_1a66c6403464375440f1f76332671f8084" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr::swifi::channel_states_tag::channel_states_tag</definition>
+        <argsstring>()</argsstring>
+        <name>channel_states_tag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Empty constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="148" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="148" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1channel__states__tag_1ae369d56ff59668ff42d38689778dd976" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; gr_complex &gt; &amp;</type>
+        <definition>std::vector&lt;gr_complex&gt;&amp; gr::swifi::channel_states_tag::channel_states</definition>
+        <argsstring>()</argsstring>
+        <name>channel_states</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the channel states attribute of the tag. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="154" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="154" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1channel__states__tag_1abf4e05404a007dbe0ed634311eb5752e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::vector&lt; gr_complex &gt; &amp;</type>
+        <definition>const std::vector&lt;gr_complex&gt;&amp; gr::swifi::channel_states_tag::channel_states</definition>
+        <argsstring>() const </argsstring>
+        <name>channel_states</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the channel states attribute of the tag. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="161" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="161" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1channel__states__tag_1a15e6defeafa699510ca0e5d917d0d693" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1channel__states__tag" kindref="compound">channel_states_tag</ref> &amp;</type>
+        <definition>channel_states_tag&amp; gr::swifi::channel_states_tag::set_channel_states</definition>
+        <argsstring>(const std::vector&lt; gr_complex &gt; &amp;channel_states)</argsstring>
+        <name>set_channel_states</name>
+        <param>
+          <type>const std::vector&lt; gr_complex &gt; &amp;</type>
+          <declname>channel_states</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the channel states attribute. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel_states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of channel states. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the object itself. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="170" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="170" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1channel__states__tag_1af41aa1a23daa9c1e5e1c6add85644dc7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::swifi::channel_states_tag::phase_offset</definition>
+        <argsstring>() const </argsstring>
+        <name>phase_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the phase offset attribute of the tag. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="178" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="178" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1channel__states__tag_1ab001b9d9be602773f34d2fe792b255e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1channel__states__tag" kindref="compound">channel_states_tag</ref> &amp;</type>
+        <definition>channel_states_tag&amp; gr::swifi::channel_states_tag::set_phase_offset</definition>
+        <argsstring>(float phase_offset)</argsstring>
+        <name>set_phase_offset</name>
+        <param>
+          <type>float</type>
+          <declname>phase_offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the phase offset attribute. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>phase_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>phase offset value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the object itself. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="187" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="187" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1channel__states__tag_1acb3802df1b2a2faea8cf5387e0347710" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::swifi::channel_states_tag::freq_offset</definition>
+        <argsstring>() const </argsstring>
+        <name>freq_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the frequency offset attribute of the tag. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="195" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="195" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1channel__states__tag_1a2fd1b5568e108ca3bc59859b029f9b44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1channel__states__tag" kindref="compound">channel_states_tag</ref> &amp;</type>
+        <definition>channel_states_tag&amp; gr::swifi::channel_states_tag::set_freq_offset</definition>
+        <argsstring>(float freq_offset)</argsstring>
+        <name>set_freq_offset</name>
+        <param>
+          <type>float</type>
+          <declname>freq_offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the frequency offset attribute. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>freq_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frequency offset value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the object itself. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="204" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="204" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1channel__states__tag_1a88a7c0616c3e3958e8992c25e4056299" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::swifi::channel_states_tag::operator pmt::pmt_t</definition>
+        <argsstring>() const </argsstring>
+        <name>operator pmt::pmt_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the PMT object representing the trigger tag to be embedded in GNU Radio tag. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="213" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1channel__states__tag_1a5d824fc5a5ac14741af924e072b3c2be" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1channel__states__tag" kindref="compound">channel_states_tag</ref></type>
+        <definition>static channel_states_tag gr::swifi::channel_states_tag::create</definition>
+        <argsstring>()</argsstring>
+        <name>create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Static method for create an instance of channel states tag. It is the same as the empty constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="219" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="219" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1channel__states__tag_1ab43d9d6eb0310362cd9b3b98d61ca5dd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool gr::swifi::channel_states_tag::parse</definition>
+        <argsstring>(const pmt::pmt_t &amp;v, channel_states_tag &amp;t)</argsstring>
+        <name>parse</name>
+        <param>
+          <type>const pmt::pmt_t &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type><ref refid="classgr_1_1swifi_1_1channel__states__tag" kindref="compound">channel_states_tag</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Static method for parsing a PMT value of a GNU Radio tag. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PMT value of a GNU Radio tag. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the PMT value is a valid channel states tag, this argument will be instantiate to the parsed channel states tag object. Otherwise, t is untouched. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if parsing is successful, false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="231" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Channel states tag is used for sending channel states information between channel estimator and equalizer blocks. The following information is carried in each channel states tag:<itemizedlist>
+<listitem><para>channel_states: estimated channels per subcarrier</para></listitem><listitem><para>freq_offset: estimated frequency offset based on pilot subcarriers</para></listitem><listitem><para>phase_offset: estimated phase offset based on pilot subcarriers</para></listitem></itemizedlist>
+</para><para>To create channel states tag, use the empty constructor and make subsequent calls to setter methods. For example: <ref refid="classgr_1_1swifi_1_1channel__states__tag" kindref="compound">channel_states_tag</ref> t = <ref refid="classgr_1_1swifi_1_1channel__states__tag_1a66c6403464375440f1f76332671f8084" kindref="member">channel_states_tag()</ref>.set_freq_offset(...) .set_phase_offset(...) .set_channel_states(...)</para><para>To query attributes of channel states tag, use getter methods. </para>    </detaileddescription>
+    <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="142" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="142" bodyend="236"/>
+    <listofallmembers>
+      <member refid="classgr_1_1swifi_1_1channel__states__tag_1ae369d56ff59668ff42d38689778dd976" prot="public" virt="non-virtual"><scope>gr::swifi::channel_states_tag</scope><name>channel_states</name></member>
+      <member refid="classgr_1_1swifi_1_1channel__states__tag_1abf4e05404a007dbe0ed634311eb5752e" prot="public" virt="non-virtual"><scope>gr::swifi::channel_states_tag</scope><name>channel_states</name></member>
+      <member refid="classgr_1_1swifi_1_1channel__states__tag_1a66c6403464375440f1f76332671f8084" prot="public" virt="non-virtual"><scope>gr::swifi::channel_states_tag</scope><name>channel_states_tag</name></member>
+      <member refid="classgr_1_1swifi_1_1channel__states__tag_1a5d824fc5a5ac14741af924e072b3c2be" prot="public" virt="non-virtual"><scope>gr::swifi::channel_states_tag</scope><name>create</name></member>
+      <member refid="classgr_1_1swifi_1_1channel__states__tag_1a6d30686ec0fcd486afc8a3d7a2b4b240" prot="private" virt="non-virtual"><scope>gr::swifi::channel_states_tag</scope><name>d_channel_states</name></member>
+      <member refid="classgr_1_1swifi_1_1channel__states__tag_1ad859fe3e1dafee0fc1e6bcb2d036ad18" prot="private" virt="non-virtual"><scope>gr::swifi::channel_states_tag</scope><name>d_freq_offset</name></member>
+      <member refid="classgr_1_1swifi_1_1channel__states__tag_1a0f3b6e477f3776507b38130ea4840682" prot="private" virt="non-virtual"><scope>gr::swifi::channel_states_tag</scope><name>d_phase_offset</name></member>
+      <member refid="classgr_1_1swifi_1_1channel__states__tag_1acb3802df1b2a2faea8cf5387e0347710" prot="public" virt="non-virtual"><scope>gr::swifi::channel_states_tag</scope><name>freq_offset</name></member>
+      <member refid="classgr_1_1swifi_1_1channel__states__tag_1a88a7c0616c3e3958e8992c25e4056299" prot="public" virt="non-virtual"><scope>gr::swifi::channel_states_tag</scope><name>operator pmt::pmt_t</name></member>
+      <member refid="classgr_1_1swifi_1_1channel__states__tag_1ab43d9d6eb0310362cd9b3b98d61ca5dd" prot="public" virt="non-virtual"><scope>gr::swifi::channel_states_tag</scope><name>parse</name></member>
+      <member refid="classgr_1_1swifi_1_1channel__states__tag_1af41aa1a23daa9c1e5e1c6add85644dc7" prot="public" virt="non-virtual"><scope>gr::swifi::channel_states_tag</scope><name>phase_offset</name></member>
+      <member refid="classgr_1_1swifi_1_1channel__states__tag_1a15e6defeafa699510ca0e5d917d0d693" prot="public" virt="non-virtual"><scope>gr::swifi::channel_states_tag</scope><name>set_channel_states</name></member>
+      <member refid="classgr_1_1swifi_1_1channel__states__tag_1a2fd1b5568e108ca3bc59859b029f9b44" prot="public" virt="non-virtual"><scope>gr::swifi::channel_states_tag</scope><name>set_freq_offset</name></member>
+      <member refid="classgr_1_1swifi_1_1channel__states__tag_1ab001b9d9be602773f34d2fe792b255e4" prot="public" virt="non-virtual"><scope>gr::swifi::channel_states_tag</scope><name>set_phase_offset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

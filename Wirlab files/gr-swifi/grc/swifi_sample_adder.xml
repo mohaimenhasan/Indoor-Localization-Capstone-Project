@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<!--
+###################################################
+##Add pad samples to stream
+###################################################
+ -->
+<block>
+    <name>Sample Adder</name>
+    <key>swifi_sample_adder</key>
+    <category>SWiFi</category>
+    <import>import swifi</import>
+    <make>swifi.sample_adder($packet_length, $rate, $num_zeros)</make>
+    <param>
+        <name>Packet Length</name>
+        <key>packet_length</key>
+        <type>int</type>
+    </param>
+    
+    <param>
+        <name>Rate</name>
+        <key>rate</key>
+        <type>int</type>
+        <option>
+            <name>54 Mbps</name>
+            <key>12</key>
+        </option>
+        <option>
+            <name>48 Mbps</name>
+            <key>8</key>
+        </option>
+        <option>
+            <name>36 Mbps</name>
+            <key>13</key>
+        </option>
+        <option>
+            <name>24 Mbps</name>
+            <key>9</key>
+        </option>
+        <option>
+            <name>18 Mbps</name>
+            <key>14</key>
+        </option>
+        <option>
+            <name>12 Mbps</name>
+            <key>10</key>
+        </option>
+        <option>
+            <name>9 Mbps</name>
+            <key>15</key>
+        </option>
+        <option>
+            <name>6 Mbps</name>
+            <key>11</key>
+        </option>
+    </param>
+
+    <param>
+        <name>Num Zero Samples</name>
+        <key>num_zeros</key>
+        <type>int</type>
+    </param>
+
+    <sink>
+        <name>in</name>
+        <type>complex</type>
+    </sink>
+    <source>
+        <name>out</name>
+        <type>complex</type>
+    </source>
+</block>

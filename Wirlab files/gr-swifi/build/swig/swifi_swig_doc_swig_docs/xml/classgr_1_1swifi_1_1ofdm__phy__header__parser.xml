@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1swifi_1_1ofdm__phy__header__parser" kind="class" language="C++" prot="public">
+    <compoundname>gr::swifi::ofdm_phy_header_parser</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">packet_header_default</basecompoundref>
+    <includes refid="ofdm__phy__header__parser_8h" local="no">ofdm_phy_header_parser.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1swifi_1_1ofdm__phy__header__parser_1a0f95f367c8f2b11674177ac399e226b3" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1swifi_1_1ofdm__phy__header__parser" kindref="compound">ofdm_phy_header_parser</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;ofdm_phy_header_parser&gt; gr::swifi::ofdm_phy_header_parser::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/ofdm_phy_header_parser.h" line="42" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/ofdm_phy_header_parser.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1ofdm__phy__header__parser_1a8f47b8a811ea55d5ce665b8b3935439d" prot="protected" static="no" mutable="no">
+        <type>pmt::pmt_t</type>
+        <definition>pmt::pmt_t gr::swifi::ofdm_phy_header_parser::d_frame_len_tag_key</definition>
+        <argsstring></argsstring>
+        <name>d_frame_len_tag_key</name>
+        <briefdescription>
+<para>Tag key of the additional frame length tag. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/ofdm_phy_header_parser.h" line="66" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/ofdm_phy_header_parser.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1ofdm__phy__header__parser_1ae9d72cc0076c072e15fb541fd3770093" prot="protected" static="no" mutable="no">
+        <type>pmt::pmt_t</type>
+        <definition>pmt::pmt_t gr::swifi::ofdm_phy_header_parser::d_phy_tag_key</definition>
+        <argsstring></argsstring>
+        <name>d_phy_tag_key</name>
+        <briefdescription>
+<para>Tag key of RATE value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/ofdm_phy_header_parser.h" line="67" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/ofdm_phy_header_parser.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1ofdm__phy__header__parser_1a17abda46462a62451d87d15f51109694" prot="protected" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int gr::swifi::ofdm_phy_header_parser::inter[48]</definition>
+        <argsstring>[48]</argsstring>
+        <name>inter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/ofdm_phy_header_parser.h" line="68" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/ofdm_phy_header_parser.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1ofdm__phy__header__parser_1aa21ac04d9ad028878b83e532be47e0da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::swifi::ofdm_phy_header_parser::ofdm_phy_header_parser</definition>
+        <argsstring>(const std::string &amp;frame_len_tag_key, const std::string &amp;phy_tag_key)</argsstring>
+        <name>ofdm_phy_header_parser</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>frame_len_tag_key</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>phy_tag_key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/ofdm_phy_header_parser.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1ofdm__phy__header__parser_1a4f81fe4fa1e97d043c81545434cbe169" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::swifi::ofdm_phy_header_parser::~ofdm_phy_header_parser</definition>
+        <argsstring>()</argsstring>
+        <name>~ofdm_phy_header_parser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/ofdm_phy_header_parser.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1ofdm__phy__header__parser_1ab56eb246f14b7c3d5655bb36564892ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::swifi::ofdm_phy_header_parser::header_parser</definition>
+        <argsstring>(const unsigned char *header, std::vector&lt; tag_t &gt; &amp;tags)</argsstring>
+        <name>header_parser</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; tag_t &gt; &amp;</type>
+          <declname>tags</declname>
+        </param>
+        <briefdescription>
+<para>Inverse function to header_formatter(). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/ofdm_phy_header_parser.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1ofdm__phy__header__parser_1aea102b30359620623f09601de01f1788" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1ofdm__phy__header__parser_1a0f95f367c8f2b11674177ac399e226b3" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::swifi::ofdm_phy_header_parser::make</definition>
+        <argsstring>(const std::string &amp;frame_len_tag_key=&quot;frame_len&quot;, const std::string &amp;phy_tag_key=&quot;phy&quot;)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>frame_len_tag_key</declname>
+          <defval>&quot;frame_len&quot;</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>phy_tag_key</declname>
+          <defval>&quot;phy&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame_len_tag_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tag key used for the frame length (number of OFDM symbols, this is the tag key required for the frame equalizer etc.) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>phy_tag_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tag key used for PHY properties. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/ofdm_phy_header_parser.h" line="61" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Header utility for OFDM signals. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="193">
+        <label>gr::swifi::ofdm_phy_header_parser</label>
+        <link refid="classgr_1_1swifi_1_1ofdm__phy__header__parser"/>
+        <childnode refid="194" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="194">
+        <label>digital::packet_header_default</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="195">
+        <label>gr::swifi::ofdm_phy_header_parser</label>
+        <link refid="classgr_1_1swifi_1_1ofdm__phy__header__parser"/>
+        <childnode refid="196" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="196">
+        <label>digital::packet_header_default</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wirlab/gr-swifi/include/swifi/ofdm_phy_header_parser.h" line="40" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/ofdm_phy_header_parser.h" bodystart="39" bodyend="69"/>
+    <listofallmembers>
+      <member refid="classgr_1_1swifi_1_1ofdm__phy__header__parser_1a8f47b8a811ea55d5ce665b8b3935439d" prot="protected" virt="non-virtual"><scope>gr::swifi::ofdm_phy_header_parser</scope><name>d_frame_len_tag_key</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__phy__header__parser_1ae9d72cc0076c072e15fb541fd3770093" prot="protected" virt="non-virtual"><scope>gr::swifi::ofdm_phy_header_parser</scope><name>d_phy_tag_key</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__phy__header__parser_1ab56eb246f14b7c3d5655bb36564892ea" prot="public" virt="non-virtual"><scope>gr::swifi::ofdm_phy_header_parser</scope><name>header_parser</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__phy__header__parser_1a17abda46462a62451d87d15f51109694" prot="protected" virt="non-virtual"><scope>gr::swifi::ofdm_phy_header_parser</scope><name>inter</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__phy__header__parser_1aea102b30359620623f09601de01f1788" prot="public" virt="non-virtual"><scope>gr::swifi::ofdm_phy_header_parser</scope><name>make</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__phy__header__parser_1aa21ac04d9ad028878b83e532be47e0da" prot="public" virt="non-virtual"><scope>gr::swifi::ofdm_phy_header_parser</scope><name>ofdm_phy_header_parser</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__phy__header__parser_1a0f95f367c8f2b11674177ac399e226b3" prot="public" virt="non-virtual"><scope>gr::swifi::ofdm_phy_header_parser</scope><name>sptr</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__phy__header__parser_1a4f81fe4fa1e97d043c81545434cbe169" prot="public" virt="non-virtual"><scope>gr::swifi::ofdm_phy_header_parser</scope><name>~ofdm_phy_header_parser</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

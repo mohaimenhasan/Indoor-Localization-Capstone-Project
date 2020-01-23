@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!--
+###################################################
+##Chunks to Symbols with support of SIGNAL tag processing
+###################################################
+ -->
+<block>
+    <name>Chunks to Symbols</name>
+    <key>swifi_chunks_to_symbols</key>
+    <category>SWiFi</category>
+    <import>import swifi</import>
+    <make>#if $mode() == 1
+swifi.chunks_to_symbols($phy_tag_key)
+#else
+swifi.chunks_to_symbols($points)
+#end if</make>
+    <param>
+        <name>Mode</name>
+        <key>mode</key>
+        <value>1</value>
+        <type>int</type>
+        <option>
+            <name>Normal</name>
+            <key>0</key>
+        </option>
+        <option>
+            <name>Use PHY tag</name>
+            <key>1</key>
+        </option>
+    </param>
+    <param>
+        <name>PHY Tag Key</name>
+        <key>phy_tag_key</key>
+        <value>"signal"</value>
+        <type>string</type>
+        <hide>#if $mode() == 0 then 'all' else 'none'#</hide>
+    </param>
+    <param>
+        <name>Symbol Table</name>
+        <key>points</key>
+        <type>complex_vector</type>
+        <hide>#if $mode() == 1 then 'all' else 'none'#</hide>
+    </param>
+    <check>($mode == 1 and $phy_tag_key) or len($points) > 0</check>
+    <sink>
+        <name>in</name>
+        <type>byte</type>
+    </sink>
+    <source>
+        <name>out</name>
+        <type>complex</type>
+    </source>
+</block>

@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<block>
+  <name>Freq.Dom. Noise Adder</name>
+  <key>swifi_fd_noise_adder</key>
+  <category>SWiFi</category>
+  <import>import swifi</import>
+  <make>swifi.fd_noise_adder($phy_tag_key,$subcarrier_jamming_pattern,$ofdmsym_jamming_pattern,$ampl)</make>
+
+  <param>
+    <name>PHY Tag Key</name>
+    <key>phy_tag_key</key>
+    <value>"phy"</value>
+    <type>string</type>
+  </param>
+
+  <param>
+    <name>SC Jam Pattern</name>
+    <key>subcarrier_jamming_pattern</key>
+    <value>(0,)*64</value>
+    <type>int_vector</type>
+  </param>
+
+  <param>
+    <name>OFDM Sym. Jam Pattern</name>
+    <key>ofdmsym_jamming_pattern</key>
+    <value>()</value>
+    <type>int_vector</type>
+  </param>
+
+  <param>
+    <name>Noise amplitude</name>
+    <key>ampl</key>
+    <value>0</value>
+    <type>float</type>
+  </param>
+
+  <check>len($subcarrier_jamming_pattern) > 0</check>
+
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <vlen>len($subcarrier_jamming_pattern)</vlen>
+  </sink>
+
+  <source>
+    <name>out</name>
+    <type>complex</type>
+    <vlen>len($subcarrier_jamming_pattern)</vlen>
+  </source>
+
+  <source>
+    <name>out_noise</name>
+    <type>complex</type>
+    <vlen>len($subcarrier_jamming_pattern)</vlen>
+    <optional>1</optional>
+  </source>
+
+</block>

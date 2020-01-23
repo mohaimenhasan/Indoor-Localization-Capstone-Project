@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+###################################################
+##PHY Frame Generator
+###################################################
+ -->
+<block>
+    <name>PHY Frame Generator</name>
+    <key>swifi_phy_frame_generator</key>
+    <category>SWiFi</category>
+    <import>import swifi</import>
+    <make>swifi.phy_frame_generator($phy_tag_key,$len_tag_key)</make>
+    <param>
+        <name>PHY Tag Key</name>
+        <key>phy_tag_key</key>
+        <value>"phy"</value>
+        <type>string</type>
+    </param>
+    <param>
+        <name>Length Tag Key</name>
+        <key>len_tag_key</key>
+        <value>"length"</value>
+        <type>string</type>
+    </param>
+    <sink>
+        <name>in</name>
+        <type>byte</type>
+    </sink>
+    <source>
+        <name>out</name>
+        <type>byte</type>
+    </source>
+</block>

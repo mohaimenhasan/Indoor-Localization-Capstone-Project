@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1swifi_1_1ofdm__equalizer" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gr::swifi::ofdm_equalizer</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="ofdm__equalizer_8h" local="no">ofdm_equalizer.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393b" prot="public" static="no">
+        <name>EqualizeMethod</name>
+        <enumvalue id="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393baa2354bdd63355dddfe06194fd55ccc73" prot="public">
+          <name>EQUALIZE_STATIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393ba65e553b6e43e145825aeeef36378c5b2" prot="public">
+          <name>EQUALIZE_PPT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393bac4c06865a19016d9b6fa94cbbf19c367" prot="public">
+          <name>EQUALIZE_STA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393bacc8852e34c3378d73a2b015dd1eb2429" prot="public">
+          <name>EQUALIZE_DD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393badf1b1ac7972d9c244df5c1adcfdd2728" prot="public">
+          <name>EQUALIZE_LI</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393bab18f375d8f8731ec38990249ec90af95" prot="public">
+          <name>EQUALIZE_LPI</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393ba56a736ff6441a481b62f403f1d60c6eb" prot="public">
+          <name>EQUALIZE_PPT_LPI</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393ba554f2890051ba5c5856c9c597e555f28" prot="public">
+          <name>EQUALIZE_PPT_DD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393bae835e97baa939894abe8a546f127fd38" prot="public">
+          <name>EQUALIZE_LPI2</name>
+          <initializer>= 98</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393ba7d7b96ae73ee17bb0fc27fd5da30738f" prot="public">
+          <name>EQUALIZE_TEST</name>
+          <initializer>= 99</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/ofdm_equalizer.h" line="42" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/ofdm_equalizer.h" bodystart="42" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classgr_1_1swifi_1_1ofdm__equalizer_1a0032e80387b43c4bdde7aa24d66a11d9" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1swifi_1_1ofdm__equalizer" kindref="compound">ofdm_equalizer</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;ofdm_equalizer&gt; gr::swifi::ofdm_equalizer::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/ofdm_equalizer.h" line="55" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/ofdm_equalizer.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1ofdm__equalizer_1a22010206ed58658f7e71c0390e4c0760" prot="public" static="yes" mutable="no">
+        <type>std::map&lt; int, std::string &gt;</type>
+        <definition>std::map&lt;int, std::string&gt; gr::swifi::ofdm_equalizer::EQUALIZER_NAME</definition>
+        <argsstring></argsstring>
+        <name>EQUALIZER_NAME</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/ofdm_equalizer.h" line="40" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/ofdm_equalizer.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1ofdm__equalizer_1acc78084be7def9b9ed5f695f9779e870" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1ofdm__equalizer_1a0032e80387b43c4bdde7aa24d66a11d9" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::swifi::ofdm_equalizer::make</definition>
+        <argsstring>(const std::string &amp;phy_tag_key, bool propagate_channel_states, const std::string &amp;channel_states_tag_key, digital::constellation_sptr header_constellation=digital::constellation_sptr())</argsstring>
+        <name>make</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>phy_tag_key</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>propagate_channel_states</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>channel_states_tag_key</declname>
+        </param>
+        <param>
+          <type>digital::constellation_sptr</type>
+          <declname>header_constellation</declname>
+          <defval>digital::constellation_sptr()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/ofdm_equalizer.h" line="57" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1ofdm__equalizer_1a5e32fa28f6012e6f291f821122f06f10" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::swifi::ofdm_equalizer::enable_foc</definition>
+        <argsstring>(bool enabled)=0</argsstring>
+        <name>enable_foc</name>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/ofdm_equalizer.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1ofdm__equalizer_1a35d0b7616cd26c1a49b3a315d1f6fc38" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::swifi::ofdm_equalizer::set_equalization_method</definition>
+        <argsstring>(int method)=0</argsstring>
+        <name>set_equalization_method</name>
+        <param>
+          <type>int</type>
+          <declname>method</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/ofdm_equalizer.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1ofdm__equalizer_1a4696bf9f8a4090491091823ef961e534" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::swifi::ofdm_equalizer::set_equalization_method</definition>
+        <argsstring>(const std::string &amp;method)=0</argsstring>
+        <name>set_equalization_method</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>method</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/ofdm_equalizer.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1ofdm__equalizer_1aca45a283abc1d6af068145cbdf3b472c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::swifi::ofdm_equalizer::set_alpha</definition>
+        <argsstring>(float alpha)=0</argsstring>
+        <name>set_alpha</name>
+        <param>
+          <type>float</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/ofdm_equalizer.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1ofdm__equalizer_1a90e2840489785f1ada57240464ab7774" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::swifi::ofdm_equalizer::set_beta</definition>
+        <argsstring>(float beta)=0</argsstring>
+        <name>set_beta</name>
+        <param>
+          <type>float</type>
+          <declname>beta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/ofdm_equalizer.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1ofdm__equalizer_1ac9202bc023ba0ea17b62e455397d9194" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::swifi::ofdm_equalizer::set_debug_file</definition>
+        <argsstring>(const std::string &amp;filename)=0</argsstring>
+        <name>set_debug_file</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/ofdm_equalizer.h" line="67" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="183">
+        <label>sync_block</label>
+      </node>
+      <node id="182">
+        <label>gr::swifi::ofdm_equalizer</label>
+        <link refid="classgr_1_1swifi_1_1ofdm__equalizer"/>
+        <childnode refid="183" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="186">
+        <label>std::map&lt; int, std::string &gt;</label>
+        <childnode refid="187" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="188">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="185">
+        <label>sync_block</label>
+      </node>
+      <node id="184">
+        <label>gr::swifi::ofdm_equalizer</label>
+        <link refid="classgr_1_1swifi_1_1ofdm__equalizer"/>
+        <childnode refid="185" relation="public-inheritance">
+        </childnode>
+        <childnode refid="186" relation="usage">
+          <edgelabel>EQUALIZER_NAME</edgelabel>
+        </childnode>
+      </node>
+      <node id="187">
+        <label>std::string</label>
+        <childnode refid="188" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wirlab/gr-swifi/include/swifi/ofdm_equalizer.h" line="37" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/ofdm_equalizer.h" bodystart="36" bodyend="69"/>
+    <listofallmembers>
+      <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1a5e32fa28f6012e6f291f821122f06f10" prot="public" virt="pure-virtual"><scope>gr::swifi::ofdm_equalizer</scope><name>enable_foc</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393bacc8852e34c3378d73a2b015dd1eb2429" prot="public" virt="non-virtual"><scope>gr::swifi::ofdm_equalizer</scope><name>EQUALIZE_DD</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393badf1b1ac7972d9c244df5c1adcfdd2728" prot="public" virt="non-virtual"><scope>gr::swifi::ofdm_equalizer</scope><name>EQUALIZE_LI</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393bab18f375d8f8731ec38990249ec90af95" prot="public" virt="non-virtual"><scope>gr::swifi::ofdm_equalizer</scope><name>EQUALIZE_LPI</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393bae835e97baa939894abe8a546f127fd38" prot="public" virt="non-virtual"><scope>gr::swifi::ofdm_equalizer</scope><name>EQUALIZE_LPI2</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393ba65e553b6e43e145825aeeef36378c5b2" prot="public" virt="non-virtual"><scope>gr::swifi::ofdm_equalizer</scope><name>EQUALIZE_PPT</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393ba554f2890051ba5c5856c9c597e555f28" prot="public" virt="non-virtual"><scope>gr::swifi::ofdm_equalizer</scope><name>EQUALIZE_PPT_DD</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393ba56a736ff6441a481b62f403f1d60c6eb" prot="public" virt="non-virtual"><scope>gr::swifi::ofdm_equalizer</scope><name>EQUALIZE_PPT_LPI</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393bac4c06865a19016d9b6fa94cbbf19c367" prot="public" virt="non-virtual"><scope>gr::swifi::ofdm_equalizer</scope><name>EQUALIZE_STA</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393baa2354bdd63355dddfe06194fd55ccc73" prot="public" virt="non-virtual"><scope>gr::swifi::ofdm_equalizer</scope><name>EQUALIZE_STATIC</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393ba7d7b96ae73ee17bb0fc27fd5da30738f" prot="public" virt="non-virtual"><scope>gr::swifi::ofdm_equalizer</scope><name>EQUALIZE_TEST</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1aabeb3d63593d1b08fc03961ab28c393b" prot="public" virt="non-virtual"><scope>gr::swifi::ofdm_equalizer</scope><name>EqualizeMethod</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1a22010206ed58658f7e71c0390e4c0760" prot="public" virt="non-virtual"><scope>gr::swifi::ofdm_equalizer</scope><name>EQUALIZER_NAME</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1acc78084be7def9b9ed5f695f9779e870" prot="public" virt="non-virtual"><scope>gr::swifi::ofdm_equalizer</scope><name>make</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1aca45a283abc1d6af068145cbdf3b472c" prot="public" virt="pure-virtual"><scope>gr::swifi::ofdm_equalizer</scope><name>set_alpha</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1a90e2840489785f1ada57240464ab7774" prot="public" virt="pure-virtual"><scope>gr::swifi::ofdm_equalizer</scope><name>set_beta</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1ac9202bc023ba0ea17b62e455397d9194" prot="public" virt="pure-virtual"><scope>gr::swifi::ofdm_equalizer</scope><name>set_debug_file</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1a35d0b7616cd26c1a49b3a315d1f6fc38" prot="public" virt="pure-virtual"><scope>gr::swifi::ofdm_equalizer</scope><name>set_equalization_method</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1a4696bf9f8a4090491091823ef961e534" prot="public" virt="pure-virtual"><scope>gr::swifi::ofdm_equalizer</scope><name>set_equalization_method</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__equalizer_1a0032e80387b43c4bdde7aa24d66a11d9" prot="public" virt="non-virtual"><scope>gr::swifi::ofdm_equalizer</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

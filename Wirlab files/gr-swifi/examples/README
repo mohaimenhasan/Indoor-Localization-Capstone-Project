@@ -1,0 +1,42 @@
+Decode captured Wi-Fi samples from file
+---------------------------------------
+swifi_rx.py -F <samplefile.32fc>
+
+Default output: XML format
+
+
+
+
+Decode captured Wi-Fi signal from USRP
+--------------------------------------
+First need to modify the GRC file to enable USRP Source and disable File Source.
+Regenerate the script and run:
+swifi_rx.py -f <freq> -s 20M
+
+Default output: XML format
+
+
+
+
+Soft-decoding
+-------------
+Replace swifi_rx with swifi_rx_softdec
+
+
+
+
+
+Generate Wi-Fi samples to file
+--------------------------------
+swifi_tx.py -F <samplefile.32fc>
+
+
+
+
+Generate Wi-Fi samples to USRP Sink
+--------------------------------
+Modify the GRC file to enable USRP Sink and disable File Sink
+Regenerate the script and run
+swifi_tx.py -f <freq> -s 20M
+
+

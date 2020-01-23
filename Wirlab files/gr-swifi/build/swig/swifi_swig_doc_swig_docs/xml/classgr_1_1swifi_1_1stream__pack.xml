@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1swifi_1_1stream__pack" kind="class" language="C++" prot="public">
+    <compoundname>gr::swifi::stream_pack</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="stream__pack_8h" local="no">stream_pack.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1swifi_1_1stream__pack_1a8a175d4aad0c4a8281004d5f1079ff0a" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1swifi_1_1stream__pack" kindref="compound">stream_pack</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;stream_pack&gt; gr::swifi::stream_pack::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/stream_pack.h" line="45" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/stream_pack.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1stream__pack_1a73e74fa6a6c231edf728d5150fa91965" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1stream__pack_1a8a175d4aad0c4a8281004d5f1079ff0a" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::swifi::stream_pack::make</definition>
+        <argsstring>(const std::vector&lt; int &gt; &amp;itembitsize)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>itembitsize</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1swifi_1_1stream__pack" kindref="compound">swifi::stream_pack</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1swifi_1_1stream__pack" kindref="compound">swifi::stream_pack</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1swifi_1_1stream__pack_1a73e74fa6a6c231edf728d5150fa91965" kindref="member">swifi::stream_pack::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/stream_pack.h" line="55" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Pack items from multiple input streams to a single output stream. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="235">
+        <label>gr::swifi::stream_pack</label>
+        <link refid="classgr_1_1swifi_1_1stream__pack"/>
+        <childnode refid="236" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="236">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="237">
+        <label>gr::swifi::stream_pack</label>
+        <link refid="classgr_1_1swifi_1_1stream__pack"/>
+        <childnode refid="238" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="238">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wirlab/gr-swifi/include/swifi/stream_pack.h" line="43" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/stream_pack.h" bodystart="42" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classgr_1_1swifi_1_1stream__pack_1a73e74fa6a6c231edf728d5150fa91965" prot="public" virt="non-virtual"><scope>gr::swifi::stream_pack</scope><name>make</name></member>
+      <member refid="classgr_1_1swifi_1_1stream__pack_1a8a175d4aad0c4a8281004d5f1079ff0a" prot="public" virt="non-virtual"><scope>gr::swifi::stream_pack</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

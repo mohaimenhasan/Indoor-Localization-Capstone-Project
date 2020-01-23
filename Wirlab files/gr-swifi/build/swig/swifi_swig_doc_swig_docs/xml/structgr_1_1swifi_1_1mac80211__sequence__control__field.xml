@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structgr_1_1swifi_1_1mac80211__sequence__control__field" kind="struct" language="C++" prot="public">
+    <compoundname>gr::swifi::mac80211_sequence_control_field</compoundname>
+    <includes refid="mac__frame__info_8h" local="no">mac_frame_info.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1mac80211__sequence__control__field_1a0bb16fa193101a6d3ceeb5bb095af59e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::mac80211_sequence_control_field::fragment_no</definition>
+        <argsstring></argsstring>
+        <name>fragment_no</name>
+        <bitfield> 4</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="481" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="481" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1mac80211__sequence__control__field_1a0ad0f4f4335355abfe0f08bcfe80eb64" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t gr::swifi::mac80211_sequence_control_field::seq_no</definition>
+        <argsstring></argsstring>
+        <name>seq_no</name>
+        <bitfield> 12</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="482" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="482" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="480" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="480" bodyend="483"/>
+    <listofallmembers>
+      <member refid="structgr_1_1swifi_1_1mac80211__sequence__control__field_1a0bb16fa193101a6d3ceeb5bb095af59e" prot="public" virt="non-virtual"><scope>gr::swifi::mac80211_sequence_control_field</scope><name>fragment_no</name></member>
+      <member refid="structgr_1_1swifi_1_1mac80211__sequence__control__field_1a0ad0f4f4335355abfe0f08bcfe80eb64" prot="public" virt="non-virtual"><scope>gr::swifi::mac80211_sequence_control_field</scope><name>seq_no</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

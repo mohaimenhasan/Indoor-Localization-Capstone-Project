@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1swifi_1_1bit__unpacker" kind="class" language="C++" prot="public">
+    <compoundname>gr::swifi::bit_unpacker</compoundname>
+    <basecompoundref refid="classgr_1_1swifi_1_1dynamic__rate__block" prot="public" virt="virtual">gr::swifi::dynamic_rate_block</basecompoundref>
+    <includes refid="bit__unpacker_8h" local="no">bit_unpacker.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1swifi_1_1bit__unpacker_1a57cb80ceeeb663f6b1adb09b5f5e0152" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1swifi_1_1bit__unpacker" kindref="compound">bit_unpacker</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;bit_unpacker&gt; gr::swifi::bit_unpacker::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/bit_unpacker.h" line="45" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/bit_unpacker.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1bit__unpacker_1a8111dce323599cf5e62c39dd84c89c17" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1bit__unpacker_1a57cb80ceeeb663f6b1adb09b5f5e0152" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::swifi::bit_unpacker::make</definition>
+        <argsstring>(const std::string &amp;phy_tag_key, int bpsc=1)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>phy_tag_key</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bpsc</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Create a new instance of <ref refid="classgr_1_1swifi_1_1bit__unpacker" kindref="compound">swifi::bit_unpacker</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>phy_tag_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tag key for PHY. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bpsc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bits per subcarrier (initial value, possibly changed later by PHY tag). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/bit_unpacker.h" line="53" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Unpack q-ary symbol to a stream of bits based on info in PHY tag. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="19">
+        <label>gr::swifi::dynamic_rate_block</label>
+        <link refid="classgr_1_1swifi_1_1dynamic__rate__block"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>block</label>
+      </node>
+      <node id="18">
+        <label>gr::swifi::bit_unpacker</label>
+        <link refid="classgr_1_1swifi_1_1bit__unpacker"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="22">
+        <label>gr::swifi::dynamic_rate_block</label>
+        <link refid="classgr_1_1swifi_1_1dynamic__rate__block"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>block</label>
+      </node>
+      <node id="21">
+        <label>gr::swifi::bit_unpacker</label>
+        <link refid="classgr_1_1swifi_1_1bit__unpacker"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wirlab/gr-swifi/include/swifi/bit_unpacker.h" line="43" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/bit_unpacker.h" bodystart="40" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1acb8e3e5119b72cea7302f249c58fcefa" prot="protected" virt="non-virtual"><scope>gr::swifi::bit_unpacker</scope><name>d_input_itemsize</name></member>
+      <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1af0811461d3f180447151d5f82f1327ec" prot="protected" virt="non-virtual"><scope>gr::swifi::bit_unpacker</scope><name>d_output_itemsize</name></member>
+      <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1ac524ff9f295d7ef4231da523a55de3fa" prot="protected" virt="non-virtual"><scope>gr::swifi::bit_unpacker</scope><name>d_start_read_idx</name></member>
+      <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1aeb5c6df3ee2399bdd839f70f9f9021cc" prot="protected" virt="non-virtual"><scope>gr::swifi::bit_unpacker</scope><name>d_start_write_idx</name></member>
+      <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1ae573d38044e6f08b653b8a3fbfdd940a" prot="protected" virt="non-virtual"><scope>gr::swifi::bit_unpacker</scope><name>d_tag_key</name></member>
+      <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1a4f9d71ef652d1a22fd0a31ccb21cd34e" prot="protected" virt="non-virtual"><scope>gr::swifi::bit_unpacker</scope><name>dynamic_rate_block</name></member>
+      <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1a8c95f672d925cafa6524a571a8004e23" prot="protected" virt="non-virtual"><scope>gr::swifi::bit_unpacker</scope><name>dynamic_rate_block</name></member>
+      <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1a7c7b07f46bf4f23e6fbfa871b1d125d6" prot="protected" virt="pure-virtual"><scope>gr::swifi::bit_unpacker</scope><name>dynamic_rate_work</name></member>
+      <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1a711f2e56195da54513e5c3c5f22b2b88" prot="public" virt="non-virtual"><scope>gr::swifi::bit_unpacker</scope><name>forecast</name></member>
+      <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1afe1c11ccea2664f6056639298ddec153" prot="public" virt="non-virtual"><scope>gr::swifi::bit_unpacker</scope><name>general_work</name></member>
+      <member refid="classgr_1_1swifi_1_1bit__unpacker_1a8111dce323599cf5e62c39dd84c89c17" prot="public" virt="non-virtual"><scope>gr::swifi::bit_unpacker</scope><name>make</name></member>
+      <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1a5a37aafea0e32aeb987bd59e8e4a8442" prot="protected" virt="virtual"><scope>gr::swifi::bit_unpacker</scope><name>propagate_tags</name></member>
+      <member refid="classgr_1_1swifi_1_1bit__unpacker_1a57cb80ceeeb663f6b1adb09b5f5e0152" prot="public" virt="non-virtual"><scope>gr::swifi::bit_unpacker</scope><name>sptr</name></member>
+      <member refid="classgr_1_1swifi_1_1dynamic__rate__block_1aa65f804d9217db7376c7495525f682f4" prot="protected" virt="virtual"><scope>gr::swifi::bit_unpacker</scope><name>update_rate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

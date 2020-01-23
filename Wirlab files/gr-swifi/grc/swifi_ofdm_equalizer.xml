@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<block>
+  <name>OFDM Equalizer</name>
+  <key>swifi_ofdm_equalizer</key>
+  <category>SWiFi</category>
+  <import>import swifi</import>
+  <make>#if $set_constellation() == 1
+swifi.ofdm_equalizer("",$propagate_channel_states,$channel_states_tag_key,${constellation}.base())
+#else
+swifi.ofdm_equalizer($phy_tag_key,$propagate_channel_states,$channel_states_tag_key)
+#end if
+self.$(id).set_equalization_method($method)
+self.$(id).set_alpha($alpha)
+self.$(id).set_beta($beta)
+self.$(id).enable_foc($foc_enabled)
+#if $debug_file()
+self.$(id).set_debug_file($debug_file)
+#end if</make>
+
+  <param>
+    <name>Method</name>
+    <key>method</key>
+    <value>1</value>
+    <type>raw</type>
+    <hide>part</hide>
+    <option>
+      <name>Static</name>
+      <key>0</key>
+    </option>
+    <option>
+      <name>Pilot Phase Tracking</name>
+      <key>1</key>
+    </option>
+    <option>
+      <name>Spectral Temporal Averaging</name>
+      <key>2</key>
+    </option>
+    <option>
+      <name>Decision Directed</name>
+      <key>3</key>
+    </option>
+    <option>
+      <name>Linear Interpolation</name>
+      <key>4</key>
+    </option>
+    <option>
+      <name>Low Pass Interpolation</name>
+      <key>5</key>
+    </option>
+    <option>
+      <name>PPT + LPI</name>
+      <key>6</key>
+    </option>
+    <option>
+      <name>PPT + DD</name>
+      <key>7</key>
+    </option>
+    <option>
+      <name>TEST</name>
+      <key>99</key>
+    </option>
+    <option>
+      <name>From Parameter</name>
+      <key>equalization_method</key>
+    </option>
+  </param>
+
+  <param>
+    <name>Freq. Offset Correction</name>
+    <key>foc_enabled</key>
+    <value>False</value>
+    <type>bool</type>
+    <hide>part</hide>
+    <option>
+      <name>Disabled</name>
+      <key>False</key>
+    </option>
+    <option>
+      <name>Enabled</name>
+      <key>True</key>
+    </option>
+  </param>
+
+  <param>
+    <name>Set Constellation</name>
+    <key>set_constellation</key>
+    <value>0</value>
+    <hide>part</hide>
+    <option>
+      <name>From PHY Tag Key</name>
+      <key>0</key>
+    </option>
+    <option>
+      <name>Fixed Constellation</name>
+      <key>1</key>
+    </option>
+  </param>
+
+  <param>
+    <name>PHY Tag Key</name>
+    <key>phy_tag_key</key>
+    <value>"phy"</value>
+    <type>string</type>
+    <hide>#if $set_constellation() == 0 then 'none' else 'all'#</hide>
+  </param>
+
+  <param>
+    <name>Constellation</name>
+    <key>constellation</key>
+    <value>None</value>
+    <type>raw</type>
+    <hide>#if $set_constellation() == 1 then 'none' else 'all'#</hide>
+  </param>
+
+  <param>
+    <name>CSI Tag Key</name>
+    <key>channel_states_tag_key</key>
+    <value>"channel_states"</value>
+    <type>string</type>
+  </param>
+
+  <param>
+    <name>Propgate States</name>
+    <key>propagate_channel_states</key>
+    <value>False</value>
+    <type>bool</type>
+    <hide>part</hide>
+    <option>
+      <name>No</name>
+      <key>False</key>
+    </option>
+    <option>
+      <name>Yes</name>
+      <key>True</key>
+    </option>
+  </param>
+
+  <param>
+    <name>Alpha</name>
+    <key>alpha</key>
+    <value>0.01</value>
+    <type>float</type>
+    <hide>part</hide>
+  </param>
+
+  <param>
+    <name>Beta</name>
+    <key>beta</key>
+    <value>0.01</value>
+    <type>float</type>
+    <hide>part</hide>
+  </param>
+
+  <param>
+    <name>Debug File</name>
+    <key>debug_file</key>
+    <value>""</value>
+    <type>string</type>
+    <hide>part</hide>
+  </param>
+
+  <check>($set_constellation == 0) or $constellation</check>
+
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <vlen>64</vlen>
+  </sink>
+
+  <source>
+    <name>out</name>
+    <type>complex</type>
+    <vlen>48</vlen>
+  </source>
+
+</block>

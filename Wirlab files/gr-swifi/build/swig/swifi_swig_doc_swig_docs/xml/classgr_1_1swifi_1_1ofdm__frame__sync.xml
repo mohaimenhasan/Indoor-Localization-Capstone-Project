@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1swifi_1_1ofdm__frame__sync" kind="class" language="C++" prot="public">
+    <compoundname>gr::swifi::ofdm_frame_sync</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="ofdm__frame__sync_8h" local="no">ofdm_frame_sync.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1swifi_1_1ofdm__frame__sync_1a1b13d498f7ce11c79d58c8c4c4ccd614" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1swifi_1_1ofdm__frame__sync" kindref="compound">ofdm_frame_sync</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;ofdm_frame_sync&gt; gr::swifi::ofdm_frame_sync::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/ofdm_frame_sync.h" line="61" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/ofdm_frame_sync.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1ofdm__frame__sync_1a3728b453b0285b1e6669ace47767d4d1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1ofdm__frame__sync_1a1b13d498f7ce11c79d58c8c4c4ccd614" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::swifi::ofdm_frame_sync::make</definition>
+        <argsstring>(float short_threshold, int min_short_plateau_len, float long_threshold, float avg_alpha, float drop_ratio_threshold, const std::string &amp;trigger_tag_key=&quot;trigger&quot;)</argsstring>
+        <name>make</name>
+        <param>
+          <type>float</type>
+          <declname>short_threshold</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>min_short_plateau_len</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>long_threshold</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>avg_alpha</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>drop_ratio_threshold</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>trigger_tag_key</declname>
+          <defval>&quot;trigger&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Create an instance of <ref refid="classgr_1_1swifi_1_1ofdm__frame__sync" kindref="compound">ofdm_frame_sync</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>short_threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>threshold for short symbols. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min_short_plateau_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum plateau length for short symbols. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>long_threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>threshold for long symbols. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>avg_alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>moving average coefficient. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>drop_ratio_threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ratio between current signal power an preamble power, below which the frame is thought to be ended. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>trigger_tag_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key of trigger tag. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/ofdm_frame_sync.h" line="73" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>OFDM Frame synchronization. </para>    </briefdescription>
+    <detaileddescription>
+<para>We use state machine for frame synchronization:<orderedlist>
+<listitem><para>First, we are in SHORT_SEARCH state, where we look for two repeated short symbols (16 samples) by Schmidt-Cox method: computing the correlation between them and comparing to a threshold.</para></listitem><listitem><para>When the threshold is exceeded, we move to LONG_SEARCH state, in which we correct the frequency offset for the incoming samples with the coarse estimated value obtained in SHORT_SEARCH. We start searching for two repeated long symbols (64 symbols). Again, Schmidt-Cox mechanism is applied.</para></listitem><listitem><para>When the threshold is exceeded, we compute the correlation of these long symbols with the predefined long preamble sequence. If this exceeds a threshold, we believe that this is the start of the new frame and move to SYNC state.</para></listitem><listitem><para>In SYNC state, we modify the signal with fine estimated value of frequency offset and send samples to the next block for processing. During SYNC state, if we see a drop in energy, we think that the frame has ended, then we go back to SHORT SEARCH state. </para></listitem></orderedlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="189">
+        <label>gr::swifi::ofdm_frame_sync</label>
+        <link refid="classgr_1_1swifi_1_1ofdm__frame__sync"/>
+        <childnode refid="190" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="190">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="191">
+        <label>gr::swifi::ofdm_frame_sync</label>
+        <link refid="classgr_1_1swifi_1_1ofdm__frame__sync"/>
+        <childnode refid="192" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="192">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wirlab/gr-swifi/include/swifi/ofdm_frame_sync.h" line="59" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/ofdm_frame_sync.h" bodystart="58" bodyend="77"/>
+    <listofallmembers>
+      <member refid="classgr_1_1swifi_1_1ofdm__frame__sync_1a3728b453b0285b1e6669ace47767d4d1" prot="public" virt="non-virtual"><scope>gr::swifi::ofdm_frame_sync</scope><name>make</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__frame__sync_1a1b13d498f7ce11c79d58c8c4c4ccd614" prot="public" virt="non-virtual"><scope>gr::swifi::ofdm_frame_sync</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

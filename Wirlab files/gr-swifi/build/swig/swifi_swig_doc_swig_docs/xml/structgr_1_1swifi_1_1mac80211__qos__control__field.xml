@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structgr_1_1swifi_1_1mac80211__qos__control__field" kind="struct" language="C++" prot="public">
+    <compoundname>gr::swifi::mac80211_qos_control_field</compoundname>
+    <includes refid="mac__frame__info_8h" local="no">mac_frame_info.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1mac80211__qos__control__field_1a753178163690c0e13c391b00ada4e739" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::mac80211_qos_control_field::tid</definition>
+        <argsstring></argsstring>
+        <name>tid</name>
+        <bitfield> 4</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="486" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="486" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1mac80211__qos__control__field_1a9e0af66bb83c3f3db2544d2f5584a67c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::mac80211_qos_control_field::eosp</definition>
+        <argsstring></argsstring>
+        <name>eosp</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="487" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="487" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1mac80211__qos__control__field_1a3749a1c93052b3d75ef08ea085ad78e5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::mac80211_qos_control_field::ack_policy</definition>
+        <argsstring></argsstring>
+        <name>ack_policy</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="488" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="488" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1mac80211__qos__control__field_1a19a70f7bba99912045c7def049f8844b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::mac80211_qos_control_field::amsdu</definition>
+        <argsstring></argsstring>
+        <name>amsdu</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="489" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="489" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1mac80211__qos__control__field_1a8110d8674910d9f058ee00e25cbb3068" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::mac80211_qos_control_field::txop</definition>
+        <argsstring></argsstring>
+        <name>txop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="491" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="491" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1mac80211__qos__control__field_1a4cb76507b6dc26734eabad25f51287db" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::mac80211_qos_control_field::ap_ps_buf_state</definition>
+        <argsstring></argsstring>
+        <name>ap_ps_buf_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="492" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="492" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1mac80211__qos__control__field_1aaa689076dfa5631af79a952572d33fb4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::mac80211_qos_control_field::queue_size</definition>
+        <argsstring></argsstring>
+        <name>queue_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="493" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="493" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1mac80211__qos__control__field_1ad439f94174eacd8c42eb1be30457a7f1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::mac80211_qos_control_field::mesh_control_present</definition>
+        <argsstring></argsstring>
+        <name>mesh_control_present</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="495" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="495" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1mac80211__qos__control__field_1ad60c395baabea14287d70b577fe762e7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::mac80211_qos_control_field::mesh_power_save_level</definition>
+        <argsstring></argsstring>
+        <name>mesh_power_save_level</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="496" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="496" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1mac80211__qos__control__field_1a1d59240ca0f3d47888d9ae6574267259" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::mac80211_qos_control_field::rspi</definition>
+        <argsstring></argsstring>
+        <name>rspi</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="497" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="497" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1mac80211__qos__control__field_1ace90cd6ad41e1397fe4b9c865477b16f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::mac80211_qos_control_field::reserved</definition>
+        <argsstring></argsstring>
+        <name>reserved</name>
+        <bitfield> 4</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="498" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="498" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1mac80211__qos__control__field_1ae9ecd558664eb1044c0dc8fa24243ff6" prot="public" static="no" mutable="no">
+        <type>struct gr::swifi::mac80211_qos_control_field::@0::@2</type>
+        <definition>struct gr::swifi::mac80211_qos_control_field::@0::@2  gr::swifi::mac80211_qos_control_field::mesh_control</definition>
+        <argsstring></argsstring>
+        <name>mesh_control</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="499" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1mac80211__qos__control__field_1a77d4c7f58f1027d98d2beb2e4b4b1a57" prot="public" static="no" mutable="no">
+        <type>union gr::swifi::mac80211_qos_control_field::@0</type>
+        <definition>union gr::swifi::mac80211_qos_control_field::@0 gr::swifi::mac80211_qos_control_field::@1</definition>
+        <argsstring></argsstring>
+        <name>@1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="500" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" line="485" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_frame_info.h" bodystart="485" bodyend="501"/>
+    <listofallmembers>
+      <member refid="structgr_1_1swifi_1_1mac80211__qos__control__field_1a3749a1c93052b3d75ef08ea085ad78e5" prot="public" virt="non-virtual"><scope>gr::swifi::mac80211_qos_control_field</scope><name>ack_policy</name></member>
+      <member refid="structgr_1_1swifi_1_1mac80211__qos__control__field_1a19a70f7bba99912045c7def049f8844b" prot="public" virt="non-virtual"><scope>gr::swifi::mac80211_qos_control_field</scope><name>amsdu</name></member>
+      <member refid="structgr_1_1swifi_1_1mac80211__qos__control__field_1a4cb76507b6dc26734eabad25f51287db" prot="public" virt="non-virtual"><scope>gr::swifi::mac80211_qos_control_field</scope><name>ap_ps_buf_state</name></member>
+      <member refid="structgr_1_1swifi_1_1mac80211__qos__control__field_1a9e0af66bb83c3f3db2544d2f5584a67c" prot="public" virt="non-virtual"><scope>gr::swifi::mac80211_qos_control_field</scope><name>eosp</name></member>
+      <member refid="structgr_1_1swifi_1_1mac80211__qos__control__field_1ae9ecd558664eb1044c0dc8fa24243ff6" prot="public" virt="non-virtual"><scope>gr::swifi::mac80211_qos_control_field</scope><name>mesh_control</name></member>
+      <member refid="structgr_1_1swifi_1_1mac80211__qos__control__field_1ad439f94174eacd8c42eb1be30457a7f1" prot="public" virt="non-virtual"><scope>gr::swifi::mac80211_qos_control_field</scope><name>mesh_control_present</name></member>
+      <member refid="structgr_1_1swifi_1_1mac80211__qos__control__field_1ad60c395baabea14287d70b577fe762e7" prot="public" virt="non-virtual"><scope>gr::swifi::mac80211_qos_control_field</scope><name>mesh_power_save_level</name></member>
+      <member refid="structgr_1_1swifi_1_1mac80211__qos__control__field_1aaa689076dfa5631af79a952572d33fb4" prot="public" virt="non-virtual"><scope>gr::swifi::mac80211_qos_control_field</scope><name>queue_size</name></member>
+      <member refid="structgr_1_1swifi_1_1mac80211__qos__control__field_1ace90cd6ad41e1397fe4b9c865477b16f" prot="public" virt="non-virtual"><scope>gr::swifi::mac80211_qos_control_field</scope><name>reserved</name></member>
+      <member refid="structgr_1_1swifi_1_1mac80211__qos__control__field_1a1d59240ca0f3d47888d9ae6574267259" prot="public" virt="non-virtual"><scope>gr::swifi::mac80211_qos_control_field</scope><name>rspi</name></member>
+      <member refid="structgr_1_1swifi_1_1mac80211__qos__control__field_1a753178163690c0e13c391b00ada4e739" prot="public" virt="non-virtual"><scope>gr::swifi::mac80211_qos_control_field</scope><name>tid</name></member>
+      <member refid="structgr_1_1swifi_1_1mac80211__qos__control__field_1a8110d8674910d9f058ee00e25cbb3068" prot="public" virt="non-virtual"><scope>gr::swifi::mac80211_qos_control_field</scope><name>txop</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

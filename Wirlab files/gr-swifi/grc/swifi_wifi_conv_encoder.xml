@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!--
+###################################################
+##Convolutional Encoder with PHY tag processing
+###################################################
+ -->
+<block>
+    <name>WiFi Convolutional Encoder</name>
+    <key>swifi_wifi_conv_encoder</key>
+    <category>SWiFi</category>
+    <import>import swifi</import>
+    <make>#if $mode() == 0
+swifi.wifi_conv_encoder($phy_tag_key)
+#else
+swifi.wifi_conv_encoder($blocksize)
+#end if</make>
+    
+    <param>
+        <name>Mode</name>
+        <key>mode</key>
+        <value>0</value>
+        <type>int</type>
+        <option>
+            <name>Use PHY Tag</name>
+            <key>0</key>
+        </option>
+        <option>
+            <name>Fixed Blocksize</name>
+            <key>1</key>
+        </option>
+    </param>
+
+    <param>
+        <name>PHY Tag Key</name>
+        <key>phy_tag_key</key>
+        <value>"phy"</value>
+        <type>string</type>
+        <hide>#if $mode() == 0 then 'none' else 'all'#</hide>
+    </param>
+
+    <param>
+        <name>Uncoded Blocksize</name>
+        <key>blocksize</key>
+        <value>0</value>
+        <type>int</type>
+        <hide>#if $mode() == 1 then 'none' else 'all'#</hide>
+    </param>
+
+    <check>$mode() == 0 or ($mode() == 1 and $blocksize() > 0)</check>
+
+    <sink>
+        <name>in</name>
+        <type>byte</type>
+    </sink>
+
+    <source>
+        <name>out</name>
+        <type>byte</type>
+    </source>
+</block>

@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1swifi_1_1info__tag" kind="class" language="C++" prot="public">
+    <compoundname>gr::swifi::info_tag</compoundname>
+    <includes refid="tag__utils_8h" local="no">tag_utils.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1info__tag_1ab1f97a06a6a0a58773de79d1b94e14e6" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::swifi::info_tag::d_sfo</definition>
+        <argsstring></argsstring>
+        <name>d_sfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="623" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="623" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1info__tag_1a2fa466bac7a4a267f7133f5499c1e258" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr::swifi::info_tag::info_tag</definition>
+        <argsstring>()</argsstring>
+        <name>info_tag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Empty constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="578" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="578" bodyend="579"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1info__tag_1a5e9646845005aa62b976657408c27232" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::swifi::info_tag::sfo</definition>
+        <argsstring>() const </argsstring>
+        <name>sfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return sampling frequency offset attribute of the info tag. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="584" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="584" bodyend="586"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1info__tag_1a010d4d0c7d761029fe6b28d59f8aac82" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1info__tag" kindref="compound">info_tag</ref> &amp;</type>
+        <definition>info_tag&amp; gr::swifi::info_tag::set_sfo</definition>
+        <argsstring>(float sfo)</argsstring>
+        <name>set_sfo</name>
+        <param>
+          <type>float</type>
+          <declname>sfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the frequency offset attribute of the info tag. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frequency offset estimated based on the preamble. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the object itself. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="593" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="593" bodyend="596"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1info__tag_1a2484babe592c5d45febe506ecae8b10c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::swifi::info_tag::operator pmt::pmt_t</definition>
+        <argsstring>() const </argsstring>
+        <name>operator pmt::pmt_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the PMT object representing the info tag to be embedded in GNU Radio tag. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="602" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1info__tag_1a4b0af2c54b22ee3262d18cca468f30e7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1info__tag" kindref="compound">info_tag</ref></type>
+        <definition>static info_tag gr::swifi::info_tag::create</definition>
+        <argsstring>()</argsstring>
+        <name>create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Static method for create an instance of info tag. It is the same as the empty constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="608" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="608" bodyend="610"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1info__tag_1aa762f9c6ffd621f12f47038cbe8fd366" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool gr::swifi::info_tag::parse</definition>
+        <argsstring>(const pmt::pmt_t &amp;v, info_tag &amp;t)</argsstring>
+        <name>parse</name>
+        <param>
+          <type>const pmt::pmt_t &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type><ref refid="classgr_1_1swifi_1_1info__tag" kindref="compound">info_tag</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Static method for parsing a PMT value of a GNU Radio tag. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PMT value of a GNU Radio tag. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the PMT value is a valid info tag, this argument will be instantiate to the parsed info tag object. Otherwise, t is untouched. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if parsing is successful, false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="620" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Info tag is used for add information to downstream blocks. The following information is carried in each info tag:<itemizedlist>
+<listitem><para>sfo: sampling frequency offset.</para></listitem></itemizedlist>
+</para><para>To create info tag, use the empty constructor and make subsequent calls to setter methods. For example: <ref refid="classgr_1_1swifi_1_1info__tag" kindref="compound">info_tag</ref> t = <ref refid="classgr_1_1swifi_1_1info__tag_1a2fa466bac7a4a267f7133f5499c1e258" kindref="member">info_tag()</ref>.set_sfo(...)</para><para>To query attributes of info tag, use getter methods. </para>    </detaileddescription>
+    <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="572" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="572" bodyend="624"/>
+    <listofallmembers>
+      <member refid="classgr_1_1swifi_1_1info__tag_1a4b0af2c54b22ee3262d18cca468f30e7" prot="public" virt="non-virtual"><scope>gr::swifi::info_tag</scope><name>create</name></member>
+      <member refid="classgr_1_1swifi_1_1info__tag_1ab1f97a06a6a0a58773de79d1b94e14e6" prot="private" virt="non-virtual"><scope>gr::swifi::info_tag</scope><name>d_sfo</name></member>
+      <member refid="classgr_1_1swifi_1_1info__tag_1a2fa466bac7a4a267f7133f5499c1e258" prot="public" virt="non-virtual"><scope>gr::swifi::info_tag</scope><name>info_tag</name></member>
+      <member refid="classgr_1_1swifi_1_1info__tag_1a2484babe592c5d45febe506ecae8b10c" prot="public" virt="non-virtual"><scope>gr::swifi::info_tag</scope><name>operator pmt::pmt_t</name></member>
+      <member refid="classgr_1_1swifi_1_1info__tag_1aa762f9c6ffd621f12f47038cbe8fd366" prot="public" virt="non-virtual"><scope>gr::swifi::info_tag</scope><name>parse</name></member>
+      <member refid="classgr_1_1swifi_1_1info__tag_1a010d4d0c7d761029fe6b28d59f8aac82" prot="public" virt="non-virtual"><scope>gr::swifi::info_tag</scope><name>set_sfo</name></member>
+      <member refid="classgr_1_1swifi_1_1info__tag_1a5e9646845005aa62b976657408c27232" prot="public" virt="non-virtual"><scope>gr::swifi::info_tag</scope><name>sfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

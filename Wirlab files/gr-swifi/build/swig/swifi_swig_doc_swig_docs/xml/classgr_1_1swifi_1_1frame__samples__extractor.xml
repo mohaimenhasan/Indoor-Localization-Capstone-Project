@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1swifi_1_1frame__samples__extractor" kind="class" language="C++" prot="public">
+    <compoundname>gr::swifi::frame_samples_extractor</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="frame__samples__extractor_8h" local="no">frame_samples_extractor.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1swifi_1_1frame__samples__extractor_1a60307a393ce979894844a908b91a8392" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1swifi_1_1frame__samples__extractor" kindref="compound">frame_samples_extractor</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;frame_samples_extractor&gt; gr::swifi::frame_samples_extractor::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/frame_samples_extractor.h" line="47" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/frame_samples_extractor.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1frame__samples__extractor_1a47f99a63cc0d4f5d11f4d7a5e01b4115" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1frame__samples__extractor_1a60307a393ce979894844a908b91a8392" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::swifi::frame_samples_extractor::make</definition>
+        <argsstring>(const std::string &amp;xml_dump_file, const std::string &amp;filter_string, const std::string &amp;start_expr, const std::string &amp;end_expr)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>xml_dump_file</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filter_string</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>start_expr</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>end_expr</declname>
+        </param>
+        <briefdescription>
+<para>Create a new instance of <ref refid="classgr_1_1swifi_1_1frame__samples__extractor" kindref="compound">swifi::frame_samples_extractor</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xml_dump_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File name of XML dump. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filter_string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Frame filter string. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start_expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of tag/attribute in XML file that indicates the index of the first sample to get from input stream. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end_expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of tag/attribute in XML file that indicates the index of the last sample to get from input stream. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/frame_samples_extractor.h" line="59" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>WiFi Samples Extractor extracts samples per frame based on the XML description file. </para>    </briefdescription>
+    <detaileddescription>
+<para>The specific range of samples to be extracted is completely determined by the user, who needs to specify the start (inclusive) and end position (exclusive) of the range by using XML expression. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="101">
+        <label>gr::swifi::frame_samples_extractor</label>
+        <link refid="classgr_1_1swifi_1_1frame__samples__extractor"/>
+        <childnode refid="102" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="103">
+        <label>gr::swifi::frame_samples_extractor</label>
+        <link refid="classgr_1_1swifi_1_1frame__samples__extractor"/>
+        <childnode refid="104" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="104">
+        <label>block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wirlab/gr-swifi/include/swifi/frame_samples_extractor.h" line="45" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/frame_samples_extractor.h" bodystart="44" bodyend="63"/>
+    <listofallmembers>
+      <member refid="classgr_1_1swifi_1_1frame__samples__extractor_1a47f99a63cc0d4f5d11f4d7a5e01b4115" prot="public" virt="non-virtual"><scope>gr::swifi::frame_samples_extractor</scope><name>make</name></member>
+      <member refid="classgr_1_1swifi_1_1frame__samples__extractor_1a60307a393ce979894844a908b91a8392" prot="public" virt="non-virtual"><scope>gr::swifi::frame_samples_extractor</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

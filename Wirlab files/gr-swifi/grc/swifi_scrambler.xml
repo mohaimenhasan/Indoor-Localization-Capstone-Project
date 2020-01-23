@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!--
+###################################################
+##Scrambler with PHY tag processing
+###################################################
+ -->
+<block>
+    <name>OFDM Scrambler</name>
+    <key>swifi_scrambler</key>
+    <category>SWiFi</category>
+    <import>import swifi</import>
+    <make>swifi.scrambler($is_scrambler,$phy_tag_key)</make>
+    <param>
+        <name>Type</name>
+        <key>is_scrambler</key>
+        <value>True</value>
+        <type>bool</type>
+        <option>
+            <name>Scrambler</name>
+            <key>True</key>
+        </option>
+        <option>
+            <name>Descrambler</name>
+            <key>False</key>
+        </option>
+    </param>
+    <param>
+        <name>PHY Tag Key</name>
+        <key>phy_tag_key</key>
+        <value>"phy"</value>
+        <type>string</type>
+    </param>
+    <sink>
+        <name>in</name>
+        <type>byte</type>
+    </sink>
+    <source>
+        <name>out</name>
+        <type>byte</type>
+    </source>
+</block>

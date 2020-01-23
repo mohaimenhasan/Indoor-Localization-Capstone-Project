@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1swifi_1_1dsss__frame__sync" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gr::swifi::dsss_frame_sync</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="dsss__frame__sync_8h" local="no">dsss_frame_sync.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1swifi_1_1dsss__frame__sync_1ac501ccdf95393382c14a57ee7d22b971" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1swifi_1_1dsss__frame__sync" kindref="compound">dsss_frame_sync</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;dsss_frame_sync&gt; gr::swifi::dsss_frame_sync::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/dsss_frame_sync.h" line="44" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/dsss_frame_sync.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1dsss__frame__sync_1ae2faa63ca0547d39bd011089599bc0f9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1dsss__frame__sync_1ac501ccdf95393382c14a57ee7d22b971" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::swifi::dsss_frame_sync::make</definition>
+        <argsstring>(int samprate_mhz, const std::vector&lt; float &gt; &amp;taps=std::vector&lt; float &gt;())</argsstring>
+        <name>make</name>
+        <param>
+          <type>int</type>
+          <declname>samprate_mhz</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; float &gt; &amp;</type>
+          <declname>taps</declname>
+          <defval>std::vector&lt; float &gt;()</defval>
+        </param>
+        <briefdescription>
+<para>Create an instance of <ref refid="classgr_1_1swifi_1_1dsss__frame__sync" kindref="compound">dsss_frame_sync</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>samprate_mhz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sample rate in MHz </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>taps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Filter taps </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/dsss_frame_sync.h" line="52" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1dsss__frame__sync_1a55844a51c5c2b52f93497e8d3cceb2a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::swifi::dsss_frame_sync::set_demod_reset_tag_key</definition>
+        <argsstring>(const std::string &amp;demod_reset_tag_key=&quot;demod_reset&quot;)=0</argsstring>
+        <name>set_demod_reset_tag_key</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>demod_reset_tag_key</declname>
+          <defval>&quot;demod_reset&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Set key of reset tag for demodulator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>demod_reset_tag_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>key of reset tag for demodulator </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/dsss_frame_sync.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1dsss__frame__sync_1a26f8b7ce48b5af1f71be80d12155c01b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::swifi::dsss_frame_sync::set_descrambler_reset_tag_key</definition>
+        <argsstring>(const std::string &amp;descrambler_reset_tag_key=&quot;descrambler_reset&quot;)=0</argsstring>
+        <name>set_descrambler_reset_tag_key</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>descrambler_reset_tag_key</declname>
+          <defval>&quot;descrambler_reset&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Set key of reset tag for descrambler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>descrambler_reset_tag_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>key of reset tag for descrambler </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/dsss_frame_sync.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1dsss__frame__sync_1a93032080275013454a5caa59f91003ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::swifi::dsss_frame_sync::set_control_message_queue</definition>
+        <argsstring>(gr::msg_queue::sptr msgq)=0</argsstring>
+        <name>set_control_message_queue</name>
+        <param>
+          <type>gr::msg_queue::sptr</type>
+          <declname>msgq</declname>
+        </param>
+        <briefdescription>
+<para>Set control message queue. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msgq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>control message queue </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/dsss_frame_sync.h" line="73" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Frame synchronization. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="71">
+        <label>block</label>
+      </node>
+      <node id="70">
+        <label>gr::swifi::dsss_frame_sync</label>
+        <link refid="classgr_1_1swifi_1_1dsss__frame__sync"/>
+        <childnode refid="71" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="73">
+        <label>block</label>
+      </node>
+      <node id="72">
+        <label>gr::swifi::dsss_frame_sync</label>
+        <link refid="classgr_1_1swifi_1_1dsss__frame__sync"/>
+        <childnode refid="73" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wirlab/gr-swifi/include/swifi/dsss_frame_sync.h" line="42" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/dsss_frame_sync.h" bodystart="41" bodyend="74"/>
+    <listofallmembers>
+      <member refid="classgr_1_1swifi_1_1dsss__frame__sync_1ae2faa63ca0547d39bd011089599bc0f9" prot="public" virt="non-virtual"><scope>gr::swifi::dsss_frame_sync</scope><name>make</name></member>
+      <member refid="classgr_1_1swifi_1_1dsss__frame__sync_1a93032080275013454a5caa59f91003ce" prot="public" virt="pure-virtual"><scope>gr::swifi::dsss_frame_sync</scope><name>set_control_message_queue</name></member>
+      <member refid="classgr_1_1swifi_1_1dsss__frame__sync_1a55844a51c5c2b52f93497e8d3cceb2a0" prot="public" virt="pure-virtual"><scope>gr::swifi::dsss_frame_sync</scope><name>set_demod_reset_tag_key</name></member>
+      <member refid="classgr_1_1swifi_1_1dsss__frame__sync_1a26f8b7ce48b5af1f71be80d12155c01b" prot="public" virt="pure-virtual"><scope>gr::swifi::dsss_frame_sync</scope><name>set_descrambler_reset_tag_key</name></member>
+      <member refid="classgr_1_1swifi_1_1dsss__frame__sync_1ac501ccdf95393382c14a57ee7d22b971" prot="public" virt="non-virtual"><scope>gr::swifi::dsss_frame_sync</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

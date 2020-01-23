@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<block>
+  <name>OFDM Frame Sync</name>
+  <key>swifi_ofdm_frame_sync</key>
+  <category>SWiFi</category>
+  <import>import swifi</import>
+  <make>swifi.ofdm_frame_sync($short_threshold,$min_short_plateau_len,$long_threshold,$avg_alpha,$drop_ratio_threshold,$trigger_tag_key)</make>
+
+  <param>
+    <name>Short Threshold</name>
+    <key>short_threshold</key>
+    <value>0.9</value>
+    <type>float</type>
+  </param>
+
+  <param>
+    <name>Min. Short Plateau Len</name>
+    <key>min_short_plateau_len</key>
+    <value>64</value>
+    <type>int</type>
+    <hide>part</hide>
+  </param>
+
+  <param>
+    <name>Long Threshold</name>
+    <key>long_threshold</key>
+    <value>0.4</value>
+    <type>float</type>
+  </param>
+
+  <param>
+    <name>Drop Ratio Threshold</name>
+    <key>drop_ratio_threshold</key>
+    <value>0.2</value>
+    <type>float</type>
+  </param>
+
+  <param>
+    <name>Moving Avg. Coeff.</name>
+    <key>avg_alpha</key>
+    <value>0.05</value>
+    <type>float</type>
+    <hide>part</hide>
+  </param>
+
+  <param>
+    <name>Trigger</name>
+    <key>trigger_method</key>
+    <value>0</value>
+    <option>
+      <name>Use Tag</name>
+      <key>0</key>
+    </option>
+    <option>
+      <name>Use Second Stream</name>
+      <key>1</key>
+    </option>
+  </param>
+
+  <param>
+    <name>Trigger Tag Key</name>
+    <key>trigger_tag_key</key>
+    <value>"trigger"</value>
+    <type>string</type>
+    <hide>#if $trigger_method() then 'all' else 'none'#</hide>
+  </param>
+
+  <!-- Make one 'sink' node per input. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+
+  <!-- Make one 'source' node per output. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional outputs) -->
+
+  <source>
+    <name>out</name>
+    <type>complex</type>
+  </source>
+
+  <source>
+    <name>detect</name>
+    <type>byte</type>
+    <optional>1</optional>
+  </source>
+
+</block>

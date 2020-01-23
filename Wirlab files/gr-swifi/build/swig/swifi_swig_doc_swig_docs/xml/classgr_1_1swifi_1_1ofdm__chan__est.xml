@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1swifi_1_1ofdm__chan__est" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gr::swifi::ofdm_chan_est</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="ofdm__chan__est_8h" local="no">ofdm_chan_est.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classgr_1_1swifi_1_1ofdm__chan__est_1aded7d07e221978cc8468d64bba56eb8d" prot="public" static="no">
+        <name>EstimationMethod</name>
+        <enumvalue id="classgr_1_1swifi_1_1ofdm__chan__est_1aded7d07e221978cc8468d64bba56eb8daa143bad165a209e86cce305a28755455" prot="public">
+          <name>ESTIMATE_LS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1swifi_1_1ofdm__chan__est_1aded7d07e221978cc8468d64bba56eb8da4bac6385a23073c548e4f7315dec7082" prot="public">
+          <name>ESTIMATE_LS_FOC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1swifi_1_1ofdm__chan__est_1aded7d07e221978cc8468d64bba56eb8da2dcb3fa84a48a590065bb4cbb96d5fd2" prot="public">
+          <name>ESTIMATE_LPI</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/ofdm_chan_est.h" line="37" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/ofdm_chan_est.h" bodystart="37" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classgr_1_1swifi_1_1ofdm__chan__est_1a378bd7d8407ec3e88664e34d1bd9babb" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1swifi_1_1ofdm__chan__est" kindref="compound">ofdm_chan_est</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;ofdm_chan_est&gt; gr::swifi::ofdm_chan_est::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/ofdm_chan_est.h" line="43" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/ofdm_chan_est.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1ofdm__chan__est_1a8f4902d2ffb67383647495da41783ae8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1ofdm__chan__est_1a378bd7d8407ec3e88664e34d1bd9babb" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::swifi::ofdm_chan_est::make</definition>
+        <argsstring>(int fft_len, const std::vector&lt; std::vector&lt; gr_complex &gt; &gt; &amp;sync_ofdm_symbols, float alpha, const std::string &amp;channel_states_tag_key=&quot;channel_states&quot;, const std::string &amp;len_tag_key=&quot;length&quot;, int total_ofdm_symbols=0, bool copy_sync_symbols=false)</argsstring>
+        <name>make</name>
+        <param>
+          <type>int</type>
+          <declname>fft_len</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; gr_complex &gt; &gt; &amp;</type>
+          <declname>sync_ofdm_symbols</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>channel_states_tag_key</declname>
+          <defval>&quot;channel_states&quot;</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>len_tag_key</declname>
+          <defval>&quot;length&quot;</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>total_ofdm_symbols</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>copy_sync_symbols</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/ofdm_chan_est.h" line="44" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1ofdm__chan__est_1a4092a4302b6fddaa2cec99d4672ccf30" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::swifi::ofdm_chan_est::set_estimation_method</definition>
+        <argsstring>(int method)=0</argsstring>
+        <name>set_estimation_method</name>
+        <param>
+          <type>int</type>
+          <declname>method</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/ofdm_chan_est.h" line="52" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="178">
+        <label>gr::swifi::ofdm_chan_est</label>
+        <link refid="classgr_1_1swifi_1_1ofdm__chan__est"/>
+        <childnode refid="179" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="179">
+        <label>block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="180">
+        <label>gr::swifi::ofdm_chan_est</label>
+        <link refid="classgr_1_1swifi_1_1ofdm__chan__est"/>
+        <childnode refid="181" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="181">
+        <label>block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wirlab/gr-swifi/include/swifi/ofdm_chan_est.h" line="35" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/ofdm_chan_est.h" bodystart="34" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classgr_1_1swifi_1_1ofdm__chan__est_1aded7d07e221978cc8468d64bba56eb8da2dcb3fa84a48a590065bb4cbb96d5fd2" prot="public" virt="non-virtual"><scope>gr::swifi::ofdm_chan_est</scope><name>ESTIMATE_LPI</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__chan__est_1aded7d07e221978cc8468d64bba56eb8daa143bad165a209e86cce305a28755455" prot="public" virt="non-virtual"><scope>gr::swifi::ofdm_chan_est</scope><name>ESTIMATE_LS</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__chan__est_1aded7d07e221978cc8468d64bba56eb8da4bac6385a23073c548e4f7315dec7082" prot="public" virt="non-virtual"><scope>gr::swifi::ofdm_chan_est</scope><name>ESTIMATE_LS_FOC</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__chan__est_1aded7d07e221978cc8468d64bba56eb8d" prot="public" virt="non-virtual"><scope>gr::swifi::ofdm_chan_est</scope><name>EstimationMethod</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__chan__est_1a8f4902d2ffb67383647495da41783ae8" prot="public" virt="non-virtual"><scope>gr::swifi::ofdm_chan_est</scope><name>make</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__chan__est_1a4092a4302b6fddaa2cec99d4672ccf30" prot="public" virt="pure-virtual"><scope>gr::swifi::ofdm_chan_est</scope><name>set_estimation_method</name></member>
+      <member refid="classgr_1_1swifi_1_1ofdm__chan__est_1a378bd7d8407ec3e88664e34d1bd9babb" prot="public" virt="non-virtual"><scope>gr::swifi::ofdm_chan_est</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1swifi_1_1tag__range" kind="class" language="C++" prot="public">
+    <compoundname>gr::swifi::tag_range</compoundname>
+    <includes refid="tag__utils_8h" local="no">tag_utils.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1tag__range_1a3f92fdf6ffa9ec64bf2ec4302831d882" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; tag_t &gt;</type>
+        <definition>std::vector&lt;tag_t&gt; gr::swifi::tag_range::d_tags</definition>
+        <argsstring></argsstring>
+        <name>d_tags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="112" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1tag__range_1a139915365ea8bcf638533b8641815572" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; long &gt;</type>
+        <definition>std::vector&lt;long&gt; gr::swifi::tag_range::d_abs_last_idx</definition>
+        <argsstring></argsstring>
+        <name>d_abs_last_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="113" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1tag__range_1a8cd31ff284535dcc2f91c49ed83accd9" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; gr::swifi::tag_range::d_rel_first_idx</definition>
+        <argsstring></argsstring>
+        <name>d_rel_first_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="114" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1tag__range_1a072e48be9764d4f0dc7930c8d39b899a" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; gr::swifi::tag_range::d_rel_last_idx</definition>
+        <argsstring></argsstring>
+        <name>d_rel_last_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="114" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1tag__range_1a4c83170d00d2a725e43709572381bc25" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; gr::swifi::tag_range::d_range_nitems</definition>
+        <argsstring></argsstring>
+        <name>d_range_nitems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="114" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1swifi_1_1tag__range_1ab808848f41e48be3587a787de3806899" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long gr::swifi::tag_range::d_nitems_read</definition>
+        <argsstring></argsstring>
+        <name>d_nitems_read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="115" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1tag__range_1a4ac34464bf26f5e29f05184a66287abb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::swifi::tag_range::tag_range</definition>
+        <argsstring>(long nitems_read, int ninput_items, const std::vector&lt; tag_t &gt; &amp;tags)</argsstring>
+        <name>tag_range</name>
+        <param>
+          <type>long</type>
+          <declname>nitems_read</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; tag_t &gt; &amp;</type>
+          <declname>tags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1tag__range_1a4e2b20c7764758fce3e1ec3ae248e81f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::swifi::tag_range::size</definition>
+        <argsstring>()</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return number of ranges. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1tag__range_1a568eca73a5048ed5b30907821d2a102c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long gr::swifi::tag_range::abs_first_itemidx</definition>
+        <argsstring>(int range_index)</argsstring>
+        <name>abs_first_itemidx</name>
+        <param>
+          <type>int</type>
+          <declname>range_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the absolute index of the first item of a range. The absolute index is based on the index in the input stream. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>range_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which range to query. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1tag__range_1a7b40e124d986b21104e9b70288ac8806" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long gr::swifi::tag_range::abs_last_itemidx</definition>
+        <argsstring>(int range_index)</argsstring>
+        <name>abs_last_itemidx</name>
+        <param>
+          <type>int</type>
+          <declname>range_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a range&apos;s last item&apos;s absolute index - 1. The absolute index is based on the index in the input stream. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>range_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which range to query. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1tag__range_1a5751092cba5a8660020f8dbd1431f6fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::swifi::tag_range::rel_first_itemidx</definition>
+        <argsstring>(int range_index)</argsstring>
+        <name>rel_first_itemidx</name>
+        <param>
+          <type>int</type>
+          <declname>range_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the relative index of the first item of a range. The relative index is based on how many items read in the input stream at the time <ref refid="classgr_1_1swifi_1_1tag__range" kindref="compound">tag_range</ref> is constructed. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>range_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which range to query. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1tag__range_1a1370745e6100834dc7895b9fd5afbbf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::swifi::tag_range::rel_last_itemidx</definition>
+        <argsstring>(int range_index)</argsstring>
+        <name>rel_last_itemidx</name>
+        <param>
+          <type>int</type>
+          <declname>range_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a range&apos;s last item&apos;s relative index - 1. The relative index is based on how many items read in the input stream at the time <ref refid="classgr_1_1swifi_1_1tag__range" kindref="compound">tag_range</ref> is constructed. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>range_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which range to query. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1tag__range_1a34ffa2708462f743a0b00587e9225d5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::swifi::tag_range::range_nitems</definition>
+        <argsstring>(int range_index)</argsstring>
+        <name>range_nitems</name>
+        <param>
+          <type>int</type>
+          <declname>range_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return number of items in a range. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>range_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which range to query. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1swifi_1_1tag__range_1a044a957e222aef61226dc2e619276d5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>tag_t &amp;</type>
+        <definition>tag_t&amp; gr::swifi::tag_range::tag</definition>
+        <argsstring>(int range_index)</argsstring>
+        <name>tag</name>
+        <param>
+          <type>int</type>
+          <declname>range_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the tag attached to the first item of a range. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>range_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which range to query. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="109" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A utility for creating item ranges based on specified tags found on an input stream. </para>    </briefdescription>
+    <detaileddescription>
+<para>When constructed with given vector of tags, this class will scan for the tags and split the input stream into separate ranges, where each range has a tag on the first item in the range.</para><para>For range that does not have a tag, a &quot;PMT_NIL&quot; tag is attached. Therefore, before any tag processing, the caller must check if a tag is not PMT_NIL, otherwise tag processing should not be proceeded. </para>    </detaileddescription>
+    <location file="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" line="58" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/tag_utils.h" bodystart="58" bodyend="117"/>
+    <listofallmembers>
+      <member refid="classgr_1_1swifi_1_1tag__range_1a568eca73a5048ed5b30907821d2a102c" prot="public" virt="non-virtual"><scope>gr::swifi::tag_range</scope><name>abs_first_itemidx</name></member>
+      <member refid="classgr_1_1swifi_1_1tag__range_1a7b40e124d986b21104e9b70288ac8806" prot="public" virt="non-virtual"><scope>gr::swifi::tag_range</scope><name>abs_last_itemidx</name></member>
+      <member refid="classgr_1_1swifi_1_1tag__range_1a139915365ea8bcf638533b8641815572" prot="private" virt="non-virtual"><scope>gr::swifi::tag_range</scope><name>d_abs_last_idx</name></member>
+      <member refid="classgr_1_1swifi_1_1tag__range_1ab808848f41e48be3587a787de3806899" prot="private" virt="non-virtual"><scope>gr::swifi::tag_range</scope><name>d_nitems_read</name></member>
+      <member refid="classgr_1_1swifi_1_1tag__range_1a4c83170d00d2a725e43709572381bc25" prot="private" virt="non-virtual"><scope>gr::swifi::tag_range</scope><name>d_range_nitems</name></member>
+      <member refid="classgr_1_1swifi_1_1tag__range_1a8cd31ff284535dcc2f91c49ed83accd9" prot="private" virt="non-virtual"><scope>gr::swifi::tag_range</scope><name>d_rel_first_idx</name></member>
+      <member refid="classgr_1_1swifi_1_1tag__range_1a072e48be9764d4f0dc7930c8d39b899a" prot="private" virt="non-virtual"><scope>gr::swifi::tag_range</scope><name>d_rel_last_idx</name></member>
+      <member refid="classgr_1_1swifi_1_1tag__range_1a3f92fdf6ffa9ec64bf2ec4302831d882" prot="private" virt="non-virtual"><scope>gr::swifi::tag_range</scope><name>d_tags</name></member>
+      <member refid="classgr_1_1swifi_1_1tag__range_1a34ffa2708462f743a0b00587e9225d5e" prot="public" virt="non-virtual"><scope>gr::swifi::tag_range</scope><name>range_nitems</name></member>
+      <member refid="classgr_1_1swifi_1_1tag__range_1a5751092cba5a8660020f8dbd1431f6fc" prot="public" virt="non-virtual"><scope>gr::swifi::tag_range</scope><name>rel_first_itemidx</name></member>
+      <member refid="classgr_1_1swifi_1_1tag__range_1a1370745e6100834dc7895b9fd5afbbf3" prot="public" virt="non-virtual"><scope>gr::swifi::tag_range</scope><name>rel_last_itemidx</name></member>
+      <member refid="classgr_1_1swifi_1_1tag__range_1a4e2b20c7764758fce3e1ec3ae248e81f" prot="public" virt="non-virtual"><scope>gr::swifi::tag_range</scope><name>size</name></member>
+      <member refid="classgr_1_1swifi_1_1tag__range_1a044a957e222aef61226dc2e619276d5f" prot="public" virt="non-virtual"><scope>gr::swifi::tag_range</scope><name>tag</name></member>
+      <member refid="classgr_1_1swifi_1_1tag__range_1a4ac34464bf26f5e29f05184a66287abb" prot="public" virt="non-virtual"><scope>gr::swifi::tag_range</scope><name>tag_range</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

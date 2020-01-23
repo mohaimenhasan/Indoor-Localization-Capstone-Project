@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<block>
+    <name>Payload Parser</name>
+    <key>swifi_payload_parser</key>
+    <category>SWiFi</category>
+    <import>import swifi</import>
+    <make>swifi.payload_parser($phy_tag_key,$dump_filename,$dump_format,$filter_string,$is_print_raw)</make>
+    <param>
+        <name>PHY Tag Key</name>
+        <key>phy_tag_key</key>
+        <value>"phy"</value>
+        <type>string</type>
+    </param>
+    <param>
+        <name>Dump Filename</name>
+        <key>dump_filename</key>
+        <value>"&lt;&lt;stdout&gt;&gt;"</value>
+        <type>string</type>
+    </param>
+    <param>
+        <name>Dump Format</name>
+        <key>dump_format</key>
+        <value>"text"</value>
+        <type>string</type>
+        <hide>part</hide>
+        <option>
+            <name>Human readable text</name>
+            <key>"text"</key>
+        </option>
+        <option>
+            <name>XML</name>
+            <key>"xml"</key>
+        </option>
+        <option>
+            <name>Binary</name>
+            <key>"bin"</key>
+        </option>
+    </param>
+    <param>
+        <name>Filter</name>
+        <key>filter_string</key>
+        <value>""</value>
+        <type>string</type>
+        <hide>part</hide>
+    </param>
+    <param>
+        <name>Print Raw</name>
+        <key>is_print_raw</key>
+        <value>False</value>
+        <type>bool</type>
+        <hide>part</hide>
+        <option>
+            <name>No</name>
+            <key>False</key>
+        </option>
+        <option>
+            <name>Yes</name>
+            <key>True</key>
+        </option>
+    </param>
+    <sink>
+        <name>in</name>
+        <type>byte</type>
+    </sink>
+</block>

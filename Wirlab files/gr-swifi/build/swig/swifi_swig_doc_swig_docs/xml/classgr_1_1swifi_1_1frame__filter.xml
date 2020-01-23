@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1swifi_1_1frame__filter" kind="class" language="C++" prot="public">
+    <compoundname>gr::swifi::frame_filter</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="frame__filter_8h" local="no">frame_filter.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1swifi_1_1frame__filter_1acf6a94c99c68901600d321b4f8040c9c" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1swifi_1_1frame__filter" kindref="compound">frame_filter</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;frame_filter&gt; gr::swifi::frame_filter::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/frame_filter.h" line="44" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/frame_filter.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1swifi_1_1frame__filter_1a094df1446d2778f07c4506c05605be68" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1swifi_1_1frame__filter_1acf6a94c99c68901600d321b4f8040c9c" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::swifi::frame_filter::make</definition>
+        <argsstring>(const std::string &amp;xml_dump_file, const std::string &amp;filter_string, const std::string &amp;start_sample_tagattrname, const std::string &amp;end_sample_tagattrname, const std::string &amp;phy_tag_key=&quot;phy&quot;, const std::string &amp;xml_out_file=&quot;&quot;)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>xml_dump_file</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filter_string</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>start_sample_tagattrname</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>end_sample_tagattrname</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>phy_tag_key</declname>
+          <defval>&quot;phy&quot;</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>xml_out_file</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Create a new instance of <ref refid="classgr_1_1swifi_1_1frame__filter" kindref="compound">swifi::frame_filter</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xml_dump_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File name of XML dump. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filter_string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Filter string. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start_sample_tagattrname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of tag/attribute in XML file that indicates the index of the first sample to get from input stream. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end_sample_tagattrname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of tag/attribute in XML file that indicates the index of the last sample to get from input stream. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>phy_tag_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key of PHY tag. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xml_out_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of filtered XML file. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/frame_filter.h" line="58" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>WiFi Frame filter. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="98">
+        <label>block</label>
+      </node>
+      <node id="97">
+        <label>gr::swifi::frame_filter</label>
+        <link refid="classgr_1_1swifi_1_1frame__filter"/>
+        <childnode refid="98" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="100">
+        <label>block</label>
+      </node>
+      <node id="99">
+        <label>gr::swifi::frame_filter</label>
+        <link refid="classgr_1_1swifi_1_1frame__filter"/>
+        <childnode refid="100" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/wirlab/gr-swifi/include/swifi/frame_filter.h" line="42" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/frame_filter.h" bodystart="41" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classgr_1_1swifi_1_1frame__filter_1a094df1446d2778f07c4506c05605be68" prot="public" virt="non-virtual"><scope>gr::swifi::frame_filter</scope><name>make</name></member>
+      <member refid="classgr_1_1swifi_1_1frame__filter_1acf6a94c99c68901600d321b4f8040c9c" prot="public" virt="non-virtual"><scope>gr::swifi::frame_filter</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

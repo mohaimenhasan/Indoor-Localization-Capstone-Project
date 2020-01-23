@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structgr_1_1swifi_1_1ie__ht__cap" kind="struct" language="C++" prot="public">
+    <compoundname>gr::swifi::ie_ht_cap</compoundname>
+    <includes refid="mac__utils_8h" local="no">mac_utils.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1ie__ht__cap_1aea14fc43f0599071f8dfe78894766a91" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t gr::swifi::ie_ht_cap::info</definition>
+        <argsstring></argsstring>
+        <name>info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_utils.h" line="72" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_utils.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1ie__ht__cap_1a38d6cd0ede0024d246df33e297d26770" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::ie_ht_cap::ampdu_params</definition>
+        <argsstring></argsstring>
+        <name>ampdu_params</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_utils.h" line="73" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_utils.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1ie__ht__cap_1a189bb5a4d0ef33368469fe3009766233" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::ie_ht_cap::mcs_set[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>mcs_set</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_utils.h" line="74" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_utils.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1ie__ht__cap_1a35becd13851e518da2db3495aa0deead" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t gr::swifi::ie_ht_cap::extended_cap</definition>
+        <argsstring></argsstring>
+        <name>extended_cap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_utils.h" line="75" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_utils.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1ie__ht__cap_1af18e765c5ca268eabfbbd27926b0542b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::swifi::ie_ht_cap::tx_beamforming</definition>
+        <argsstring></argsstring>
+        <name>tx_beamforming</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_utils.h" line="76" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_utils.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1ie__ht__cap_1abc5a50e3529b954b8e90c6786f1200ae" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::ie_ht_cap::asel_cap</definition>
+        <argsstring></argsstring>
+        <name>asel_cap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/mac_utils.h" line="77" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_utils.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/wirlab/gr-swifi/include/swifi/mac_utils.h" line="71" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/mac_utils.h" bodystart="71" bodyend="78"/>
+    <listofallmembers>
+      <member refid="structgr_1_1swifi_1_1ie__ht__cap_1a38d6cd0ede0024d246df33e297d26770" prot="public" virt="non-virtual"><scope>gr::swifi::ie_ht_cap</scope><name>ampdu_params</name></member>
+      <member refid="structgr_1_1swifi_1_1ie__ht__cap_1abc5a50e3529b954b8e90c6786f1200ae" prot="public" virt="non-virtual"><scope>gr::swifi::ie_ht_cap</scope><name>asel_cap</name></member>
+      <member refid="structgr_1_1swifi_1_1ie__ht__cap_1a35becd13851e518da2db3495aa0deead" prot="public" virt="non-virtual"><scope>gr::swifi::ie_ht_cap</scope><name>extended_cap</name></member>
+      <member refid="structgr_1_1swifi_1_1ie__ht__cap_1aea14fc43f0599071f8dfe78894766a91" prot="public" virt="non-virtual"><scope>gr::swifi::ie_ht_cap</scope><name>info</name></member>
+      <member refid="structgr_1_1swifi_1_1ie__ht__cap_1a189bb5a4d0ef33368469fe3009766233" prot="public" virt="non-virtual"><scope>gr::swifi::ie_ht_cap</scope><name>mcs_set</name></member>
+      <member refid="structgr_1_1swifi_1_1ie__ht__cap_1af18e765c5ca268eabfbbd27926b0542b" prot="public" virt="non-virtual"><scope>gr::swifi::ie_ht_cap</scope><name>tx_beamforming</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

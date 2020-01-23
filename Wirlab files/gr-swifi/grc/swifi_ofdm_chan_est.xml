@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<block>
+  <name>OFDM Channel Estimator</name>
+  <key>swifi_ofdm_chan_est</key>
+  <category>SWiFi</category>
+  <import>import swifi</import>
+  <make>swifi.ofdm_chan_est($fft_len,$sync_symbols,$alpha,
+    $channel_states_tag_key,$len_tag_key,$fixed_length,$copy_sync_symbols)
+self.$(id).set_estimation_method($method)</make>
+
+  <param>
+    <name>Method</name>
+    <key>method</key>
+    <value>0</value>
+    <type>int</type>
+    <hide>part</hide>
+    <option>
+      <name>LS</name>
+      <key>0</key>
+    </option>
+    <option>
+      <name>LS_FOC</name>
+      <key>1</key>
+    </option>
+    <option>
+      <name>LPI2</name>
+      <key>2</key>
+    </option>
+  </param>
+
+  <param>
+    <name>FFT Length</name>
+    <key>fft_len</key>
+    <value>64</value>
+    <type>int</type>
+    <hide>part</hide>
+  </param>
+
+  <param>
+    <name>Sync. Symbols</name>
+    <key>sync_symbols</key>
+    <value>()</value>
+    <type>raw</type>
+  </param>
+
+  <param>
+    <name>Set Frame Length</name>
+    <key>set_frame_length</key>
+    <value>0</value>
+    <hide>part</hide>
+    <option>
+      <name>Use Length Tag Key</name>
+      <key>0</key>
+    </option>
+    <option>
+      <name>Use Fixed Length</name>
+      <key>1</key>
+    </option>
+  </param>
+
+  <param>
+    <name>Length Tag Key</name>
+    <key>len_tag_key</key>
+    <value>""</value>
+    <type>string</type>
+    <hide>#if $set_frame_length() == 0 then 'none' else 'all'#</hide>
+  </param>
+
+  <param>
+    <name>Fixed Length</name>
+    <key>fixed_length</key>
+    <value>1</value>
+    <type>int</type>
+    <hide>#if $set_frame_length() == 1 then 'none' else 'all'#</hide>
+  </param>
+
+  <param>
+    <name>CSI Tag Key</name>
+    <key>channel_states_tag_key</key>
+    <value>"channel_states"</value>
+    <type>string</type>
+  </param>
+
+  <param>
+    <name>Copy Sync. Symbols</name>
+    <key>copy_sync_symbols</key>
+    <value>False</value>
+    <type>bool</type>
+    <hide>part</hide>
+    <option>
+      <name>No</name>
+      <key>False</key>
+    </option>
+    <option>
+      <name>Yes</name>
+      <key>True</key>
+    </option>
+  </param>
+
+  <param>
+    <name>Alpha</name>
+    <key>alpha</key>
+    <value>0.1</value>
+    <type>float</type>
+    <hide>part</hide>
+  </param>
+
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <vlen>$fft_len</vlen>
+  </sink>
+
+  <source>
+    <name>out</name>
+    <type>complex</type>
+    <vlen>$fft_len</vlen>
+  </source>
+
+</block>

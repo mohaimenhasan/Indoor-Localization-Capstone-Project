@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structgr_1_1swifi_1_1phy80211__dsss__frame__header" kind="struct" language="C++" prot="public">
+    <compoundname>gr::swifi::phy80211_dsss_frame_header</compoundname>
+    <includes refid="phy__utils_8h" local="no">phy_utils.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1phy80211__dsss__frame__header_1ab4d37a8047ad4cf2476e17d6e677e41b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::phy80211_dsss_frame_header::signal</definition>
+        <argsstring></argsstring>
+        <name>signal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="42" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1phy80211__dsss__frame__header_1a3cf0c1f868be4082ad391831349725b7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::swifi::phy80211_dsss_frame_header::service</definition>
+        <argsstring></argsstring>
+        <name>service</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="43" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1phy80211__dsss__frame__header_1a129b0e1d3bbb069d7bd5552bdd995da2" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t gr::swifi::phy80211_dsss_frame_header::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="44" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1swifi_1_1phy80211__dsss__frame__header_1a90185b18a1191d6fb3b6047b4d1c1b73" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t gr::swifi::phy80211_dsss_frame_header::crc</definition>
+        <argsstring></argsstring>
+        <name>crc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="45" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" line="41" column="1" bodyfile="/home/wirlab/gr-swifi/include/swifi/phy_utils.h" bodystart="41" bodyend="46"/>
+    <listofallmembers>
+      <member refid="structgr_1_1swifi_1_1phy80211__dsss__frame__header_1a90185b18a1191d6fb3b6047b4d1c1b73" prot="public" virt="non-virtual"><scope>gr::swifi::phy80211_dsss_frame_header</scope><name>crc</name></member>
+      <member refid="structgr_1_1swifi_1_1phy80211__dsss__frame__header_1a129b0e1d3bbb069d7bd5552bdd995da2" prot="public" virt="non-virtual"><scope>gr::swifi::phy80211_dsss_frame_header</scope><name>length</name></member>
+      <member refid="structgr_1_1swifi_1_1phy80211__dsss__frame__header_1a3cf0c1f868be4082ad391831349725b7" prot="public" virt="non-virtual"><scope>gr::swifi::phy80211_dsss_frame_header</scope><name>service</name></member>
+      <member refid="structgr_1_1swifi_1_1phy80211__dsss__frame__header_1ab4d37a8047ad4cf2476e17d6e677e41b" prot="public" virt="non-virtual"><scope>gr::swifi::phy80211_dsss_frame_header</scope><name>signal</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
