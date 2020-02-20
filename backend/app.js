@@ -10,12 +10,12 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var analysisRouter = require('./routes/analysis');
 var changesRouter = require('./routes/changes');
+var receiverRouter = require('./routes/receiverval');
 // add new route here
-
 var app = express();
 
 // database setup
-let dev_url = 'mongodb://localhost:27017/datachain';
+let dev_url = 'mongodb+srv://ece496admin:admin@datachain-iegr3.azure.mongodb.net/receivers?retryWrites=true&w=majority';
 let mongoDB = process.env.MONGO_URI || dev_url;
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.Promise = global.Promise;
@@ -42,6 +42,7 @@ app.use(cors());
 app.use('/', indexRouter);
 app.use('/analysis', analysisRouter);
 app.use('/changes', changesRouter);
+app.use('/receiver', receiverRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
