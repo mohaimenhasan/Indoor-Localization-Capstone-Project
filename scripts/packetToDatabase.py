@@ -4,12 +4,12 @@ import requests
 from datetime import datetime
 
 def main():
-    with open("data.txt") as f:
+    with open("temp.txt") as f:
         for line in f:
-            l = line.split("AoA is at: ")
-            if len(l) == 2:
+            if line.startswith("AoA is at: "):
+                l = line.split("AoA is at: ")[1]
                 # Send AoA
-                aoa = l[1]
+                aoa = l.split()[0]
                 # Post AoA
                 # Hardcode AP
                 ap = 1
@@ -17,7 +17,7 @@ def main():
                 packet = {
                     "access_point": ap,
                     "timestamp": timestamp,
-                    "angle_of_arrival": "aoa",
+                    "angle_of_arrival": aoa,
                 }
                 print(packet)
 
