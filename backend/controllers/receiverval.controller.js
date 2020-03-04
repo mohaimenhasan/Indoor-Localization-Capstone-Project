@@ -20,13 +20,15 @@ async function retrieveValues(accessPt, timestamp, AoA){
     }
 }
 exports.postVal = async function(req, res, next){
-    console.log("The request is: ", req.body);
     let accessPt = req.body.access_point;
     let timestamp = req.body.timestamp;
     let AoA = req.body.angle_of_arrival;
     let val = await retrieveValues(accessPt, timestamp, AoA);
     if (val === null){
-        res.send("ERROR DID NOT RECEIVE SHIT");
+        res.send({
+            code: 500,
+            message: "ERROR !!! Did not receive any data"
+        });
     }else{
         res.send({
             code: 200,

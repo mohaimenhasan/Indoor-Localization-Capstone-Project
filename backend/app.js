@@ -9,7 +9,6 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var analysisRouter = require('./routes/analysis');
-var changesRouter = require('./routes/changes');
 var receiverRouter = require('./routes/receiverval');
 // add new route here
 var app = express();
@@ -41,7 +40,6 @@ app.use(cors());
 // create routes here
 app.use('/', indexRouter);
 app.use('/analysis', analysisRouter);
-app.use('/changes', changesRouter);
 app.use('/receiver', receiverRouter);
 
 // catch 404 and forward to error handler
