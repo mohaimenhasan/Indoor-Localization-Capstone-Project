@@ -14,12 +14,19 @@ def main():
                 # Hardcode AP
                 ap = 1
                 timestamp = datetime.now().isoformat()
+                # To send to backend 
+                url = "http://172.20.10.2:8888/receiver/addData"
                 packet = {
                     "access_point": ap,
                     "timestamp": timestamp,
                     "angle_of_arrival": aoa,
                 }
-                print(packet)
+                print("Sending post request ... ")
+                print("Data: " + str(packet))
+                r = requests.post(url = url, json = packet)
+                print("Reqest response: " + str(r))
+                print("-----")
+                # print(json_packet)
 
 if __name__ == "__main__":
     main()
