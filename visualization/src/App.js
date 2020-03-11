@@ -14,7 +14,7 @@ class App extends Component{
 
     componentDidMount() {
         this.setState({
-            currentScreen: <Current/>
+            currentScreen: <Dashboard/>
         })
     }
 
