@@ -21,10 +21,10 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import DashboardIcon from '@material-ui/icons/Dashboard';
 import BarChartIcon from '@material-ui/icons/BarChart';
 import TrackChangesIcon from '@material-ui/icons/TrackChanges';
 import DataUsageIcon from '@material-ui/icons/DataUsage';
+import Current from "./currentRun";
 import Chart from './Chart';
 import Deposits from './Deposits';
 import Orders from './Orders';
@@ -134,38 +134,34 @@ class Dashboard extends Component{
     constructor(props){
         super(props);
         this.state = {
-            open: true,
-            setOpen: true
+            open: false
         }
     }
 
-    render() {
+    changeToCurrent(event){
+        console.log("Current Screen picked");
+        this.props.appContext.setState({
+            currentScreen: <Current appContext={this.props.appContext}/>
+        });
+    }
 
+    render() {
         const classes = this.props.classes;
-        //const [open, setOpen] = React.useState(true);
         const handleDrawerOpen = () => {
             this.setState({
-                open: true,
-                setOpen: true
+                open: true
             });
         };
         const handleDrawerClose = () => {
             this.setState({
-                open: false,
-                setOpen: false
+                open: false
             })
         };
-        const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight); // probs
+        const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
         const mainListItems = (
             <div>
-                <ListItem button>
-                    <ListItemIcon>
-                        <DashboardIcon />
-                    </ListItemIcon>
-                    <ListItemText primary="Dashboard" />
-                </ListItem>
-                <ListItem button>
+                <ListItem button onClick={(event) => this.changeToCurrent(event)}>
                     <ListItemIcon>
                         <DataUsageIcon />
                     </ListItemIcon>
@@ -189,7 +185,7 @@ class Dashboard extends Component{
         return (
             <div className={classes.root}>
                 <CssBaseline />
-                <AppBar position="absolute" className={clsx(classes.appBar, this.state. open && classes.appBarShift)}>
+                <AppBar position="absolute" className={clsx(classes.appBar, this.state.open && classes.appBarShift)}>
                     <Toolbar className={classes.toolbar}>
                         <IconButton
                             edge="start"
