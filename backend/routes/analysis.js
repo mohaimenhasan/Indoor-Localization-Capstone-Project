@@ -7,5 +7,7 @@ router.get('/', analysisController.home);
 router.get('/allData', analysisController.getAllData);
 router.get('/byTime', analysisController.parseByTime);
 router.post('/addCSIData', analysisController.addCSIData);
+router.post('/storeAnalysisData', analysisController.storeAnalysisData);
+router.get('/sendAnalysisData', analysisController.sendAnalysisData);
 
 module.exports = router;

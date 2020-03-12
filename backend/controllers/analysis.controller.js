@@ -2,6 +2,7 @@ const fs = require('fs');
 const request = require('request');
 let ReceiverVal = require('../models/receiver.model');
 let CSIVal = require('../models/csi.model');
+let AnalysisVal = require('../models/analysis.model');
 
 exports.home = function(req, res, next){
     res.send("Analysis Controller Home")
@@ -17,7 +18,7 @@ exports.parseByTime = async function(req, res, next) {
             let timeFrom = new Date(req.body.day+" "+req.body.month+" "+req.body.year + " " + req.body.timeFrom);
             let timeTo = new Date(req.body.day+" "+req.body.month+" "+req.body.year + " " + req.body.timeTo);
             let retVal = [];
-            for (let i in data){
+            for (let i=0; i < data.length; ++i){
                 console.log(data[i].timestamp)
                 console.log(timeFrom);
                 console.log(timeTo);
@@ -45,31 +46,92 @@ exports.getAllData = async function(req, res, next){
     await allData()
         .then(data => {res.send(data);});
 };
-/*
-function readFile(inputStream){
-    try{
-        let remaining = '';
-        inputStream.on('data', function(data){
-            let file = data.toString();
-            console.log(file)
-            remaining += data;
-            let index = remaining.indexOf('\n');
-            let last = 0;
-            while (index > -1){
-                let line = remaining.substring(last, index);
-                last = index + 1;
-                func(line);
-                index = remaining.indexOf('\n');
-            }
-            remaining = remaining.substring(last);
 
+async function saveAnalysisData(gridData, from, to){
+    try{
+        let analVal = new AnalysisVal({
+            position: gridData,
+            timefrom: from,
+            timeto: to
+        });
+        return await analVal.save(function(err){
+            if (err){
+                throw err;
+            }
+            return analVal;
         });
     }catch(err){
-        console.log("File reading error");
-        console.log(err);
+        console.log("Failed to store data");
+        return null;
     }
 }
- */
+
+exports.sendAnalysisData = async function(req, res, next){
+    try{
+        let timeFrom = new Date(req.body.from);
+        let timeTo = new Date(req.body.to);
+        await getAnalysisData(timeFrom, timeTo)
+            .then(data => {
+                if (data === undefined){
+                    res.send([]);
+                }
+                else{
+                    res.send(data);
+                }
+            });
+    }catch(err){
+        console.log("BAD INPUT !!!!!");
+        let badData = [];
+        res.send(badData);
+    }
+};
+
+async function getAnalysisData(from, to){
+    try{
+        // console.log(from);
+        // console.log(to);
+        return await AnalysisVal.find()
+            .then(data=>{
+                //console.log(data);
+                let vals = [];
+                for(let i=0; i < data.length; ++i){
+                    // console.log("----------");
+                    // console.log(data[i].timefrom);
+                    // console.log(data[i].timeto);
+                    if (data[i].timefrom >= from && data[i].timeto <= to){
+                        vals.push(data[i]);
+                    }
+                }
+                return vals;
+            })
+    }catch (err) {
+        console.log("ERROR");
+        return undefined;
+    }
+}
+
+exports.storeAnalysisData = async function(req, res, next){
+    // sanity check
+    try{
+        let val = req.body.data;
+        val = JSON.parse(val);
+        let gridData = new Array(val["position"]);
+        let timeFrom = new Date(val["timefrom"]);
+        let timeTo = new Date(val["timeto"]);
+        await saveAnalysisData(gridData, timeFrom, timeTo)
+            .then(response => {
+                if (response === null){
+                    res.send("Data could not be stored");
+                }else{
+                    res.send("Completed");
+                }
+            })
+    }catch(err){
+        console.log("Check Error: ", err);
+        res.send("Bad Data");
+    }
+};
+
 
 async function saveCSIData(csi_frame, csi_grid, csi_data){
     try{
@@ -78,12 +140,12 @@ async function saveCSIData(csi_frame, csi_grid, csi_data){
             grid: csi_grid,
             data: csi_data
         });
-        await newVal.save(function(err){
+        return await newVal.save(function(err){
             if (err){
                 throw(err);
             }
+            return newVal;
         });
-        return newVal;
     }
     catch(err){
         console.log(err);
