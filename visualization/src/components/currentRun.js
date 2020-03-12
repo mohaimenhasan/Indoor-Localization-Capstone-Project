@@ -25,9 +25,11 @@ import Dashboard from "./Dashboard";
 import Container from "@material-ui/core/Container";
 import Link from "@material-ui/core/Link";
 import Box from "@material-ui/core/Box";
+import Grid from "@material-ui/core/Grid";
+import Paper from "@material-ui/core/Paper";
+import RecentResults from "./RecentResults";
 
 let drawerWidth = 240;
-
 let useStyles;
 
 useStyles = makeStyles(theme => ({
@@ -182,7 +184,7 @@ class currentRun extends Component{
         let positionMatrix = PositionData["position"];
         positionMatrix = Array.from(positionMatrix);
         const xLabels = new Array(positionMatrix.length).fill(0).map((_,i) => `${i}`);
-
+        const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
         // Display only even labels
         const xLabelsVisibility = new Array(24)
             .fill(0)
@@ -234,6 +236,12 @@ class currentRun extends Component{
                 <main className={classes.content}>
                     <div className={classes.appBarSpacer} />
                     <Container maxWidth="lg" className={classes.container}>
+                        {/* Recent Deposits */}
+                        <Grid item xs={12} md={4} lg={3}>
+                            <Paper className={fixedHeightPaper}>
+                                <RecentResults/>
+                            </Paper>
+                        </Grid>
                         <div style={{ fontSize: "16px" }}>
                             <HeatMap
                                 height={75}

@@ -25,8 +25,8 @@ import BarChartIcon from '@material-ui/icons/BarChart';
 import TrackChangesIcon from '@material-ui/icons/TrackChanges';
 import DataUsageIcon from '@material-ui/icons/DataUsage';
 import Current from "./currentRun";
+import RecentResults from "./RecentResults";
 import Chart from './Chart';
-import Deposits from './Deposits';
 import Orders from './Orders';
 
 function Copyright() {
@@ -230,12 +230,6 @@ class Dashboard extends Component{
                             <Grid item xs={12} md={8} lg={9}>
                                 <Paper className={fixedHeightPaper}>
                                     <Chart />
-                                </Paper>
-                            </Grid>
-                            {/* Recent Deposits */}
-                            <Grid item xs={12} md={4} lg={3}>
-                                <Paper className={fixedHeightPaper}>
-                                    <Deposits />
                                 </Paper>
                             </Grid>
                             {/* Recent Orders */}
