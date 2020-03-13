@@ -3,9 +3,39 @@
 import requests
 from datetime import datetime
 
+def process_frame(frame):
+    return [data.replace('[', '').replace(']', '') for data in frame]
+
 def main():
     with open("temp.txt") as f:
-        for line in f:
+        lines = f.readlines()
+        for i in range(0, len(lines)):
+            line = lines[i]
+            if line.startswith("CSI FRAME"):
+                # csi_frame = lines[i+1]
+                temp = i
+                i += 1
+                line = lines[i]
+                csi_frame = []
+                while(not line.startswith("start calculation")):
+                    csi_frame.append(line.strip())
+                    i += 1
+                    line = lines[i]
+                csi_frame = process_frame(csi_frame)
+                i = temp
+                line = lines[i]
+            if line.startswith("GRID"):
+                temp = i
+                i += 1
+                line = lines[i]
+                grid = []
+                while(not line.startswith("AoA")):
+                    line = line.replace('[', '').replace(']', '')
+                    grid += line.split()
+                    i += 1
+                    line = lines[i]
+                i = temp
+                line = lines[i]
             if line.startswith("AoA is at: "):
                 l = line.split("AoA is at: ")[1]
                 # Send AoA
@@ -20,13 +50,15 @@ def main():
                     "access_point": ap,
                     "timestamp": timestamp,
                     "angle_of_arrival": aoa,
+                    "csi_frame": csi_frame,
+                    "grid":grid,
                 }
                 print("Sending post request ... ")
                 print("Data: " + str(packet))
-                r = requests.post(url = url, json = packet)
-                print("Reqest response: " + str(r))
+                # Uncomment to send POST request
+                # r = requests.post(url = url, json = packet)
+                # print("Reqest response: " + str(r))
                 print("-----")
-                # print(json_packet)
 
 if __name__ == "__main__":
     main()
