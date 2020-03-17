@@ -133,62 +133,22 @@ exports.storeAnalysisData = async function(req, res, next){
 };
 
 
-async function saveCSIData(csi_frame, csi_grid, csi_data){
+exports.getAllDates = async function (req, res, next) {
     try{
-        let newVal = new CSIVal({
-            frame: csi_frame,
-            grid: csi_grid,
-            data: csi_data
-        });
-        return await newVal.save(function(err){
-            if (err){
-                throw(err);
-            }
-            return newVal;
-        });
-    }
-    catch(err){
-        console.log(err);
-    }
-}
-
-exports.addCSIData = async function (req, res, next){
-    try{
-        // need the csi file
-        await request(req.body.filePath).pipe(fs.createWriteStream(req.body.fileName));
-        request.get(req.body.filePath, function(err, response, body){
-            if(!err && response.statusCode === 200){
-                let chunk = body.toString();
-                chunk = chunk.split("scrambler zero items!!!!!!!!!")[0];
-                chunk = chunk.split("TEMP_FILLED");
-                csi = [];
-                for (let pieces in chunk){
-                    if (pieces === '0'){
-                        continue;
-                    }
-
-                    let each_frame = chunk[pieces];
-                    let begin = each_frame.indexOf("\n"+"[[");
-                    if (begin === -1){
-                        continue;
-                    }
-                    each_frame = each_frame.substr(begin);
-                    let csi_data = each_frame.split("CSI FRAME")[0];
-                    let end_frame = each_frame.split("CSI FRAME")[1].indexOf("]]");
-                    end_frame = end_frame+2;
-                    let csi_frame = each_frame.split("CSI FRAME")[1].substr(0, end_frame);
-                    let csi_grid = each_frame.split("GRID")[1];
-                    end_frame = csi_grid.indexOf("]");
-                    csi_grid = csi_grid.substr(0, end_frame);
-                    saveCSIData(csi_frame, csi_grid, csi_data);
+        let allDates= [];
+        await AnalysisVal.find()
+            .then(data =>{
+                for (i in data){
+                    allDates.push(data[i]['timefrom']);
+                    allDates.push(data[i]['timeto']);
                 }
-                res.send("Done");
-            }else{
-                res.send("Error");
-            }
-        });
+                res.send({
+                    dates: allDates}
+                    );
+            })
     }catch(err){
-        console.log("Error: ", err);
-        res.send("Error");
+        console.log("Error with fetching dates");
+        res.send([]);
     }
 };
+

@@ -1,23 +1,13 @@
 import React, {Component} from 'react';
-import HeatMap from "react-heatmap-grid";
-import PositionData from "../sampleOut";
-import { makeStyles } from '@material-ui/core/styles';
+import HeatMap from "react-simple-heatmap";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import AppBar from "@material-ui/core/AppBar/AppBar";
 import clsx from "clsx";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from '@material-ui/icons/Menu';
 import Typography from "@material-ui/core/Typography";
-import Badge from "@material-ui/core/Badge/Badge";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import DashboardIcon from '@material-ui/icons/Dashboard';
-import BarChartIcon from '@material-ui/icons/BarChart';
-import TrackChangesIcon from '@material-ui/icons/TrackChanges';
-import NotificationsIcon from '@material-ui/icons/Notifications';
-import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import Divider from "@material-ui/core/Divider";
 import List from "@material-ui/core/List";
 import Drawer from "@material-ui/core/Drawer";
@@ -25,9 +15,17 @@ import Dashboard from "./Dashboard";
 import Container from "@material-ui/core/Container";
 import Link from "@material-ui/core/Link";
 import Box from "@material-ui/core/Box";
-import Grid from "@material-ui/core/Grid";
-import Paper from "@material-ui/core/Paper";
-import RecentResults from "./RecentResults";
+import { makeStyles } from '@material-ui/core/styles';
+import AppBar from "@material-ui/core/AppBar/AppBar";
+import MenuIcon from '@material-ui/icons/Menu';
+import DashboardIcon from '@material-ui/icons/Dashboard';
+import BarChartIcon from '@material-ui/icons/BarChart';
+import TrackChangesIcon from '@material-ui/icons/TrackChanges';
+import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
+import RssFeedIcon from '@material-ui/icons/RssFeed';
+import PositionData from "../sampleOut";
+import AnalysisReport from "./AnalysisReport";
+
 
 let drawerWidth = 240;
 let useStyles;
@@ -109,6 +107,30 @@ useStyles = makeStyles(theme => ({
     fixedHeight: {
         height: 240,
     },
+    heatmapex: {
+        fontSize: "16px",
+        height: "60vh",
+        width: "80vw",
+        margin: "4rem auto"
+    },
+    iconsTop: {
+
+    },
+    iconsBottom: {
+
+    },
+    receiver1: {
+        marginRight: "58vw",
+    },
+    receiver2: {
+        marginRight: "8vw"
+    },
+    receiver3: {
+        marginRight: "58vw"
+    },
+    receiver4: {
+        marginRight: "8vw"
+    }
 }));
 
 
@@ -124,7 +146,7 @@ function Copyright() {
         <Typography variant="body2" color="textSecondary" align="center">
             {'Copyright © '}
             <Link color="inherit" href="https://github.com/mohaimenhasan/Indoor-Localization-Capstone-Project">
-                Mohaimen and Friends
+                ECE496 Capstone Project - group 2019100
             </Link>{' '}
             {new Date().getFullYear()}
             {'.'}
@@ -157,8 +179,30 @@ class currentRun extends Component{
             currentScreen: <Dashboard appContext={this.props.appContext}/>
         })
     }
+
+    changeToReport(event){
+        this.props.appContext.setState({
+            currentScreen: <AnalysisReport appContext={this.props.appContext}/>
+        })
+    }
+
     render() {
         let classes = this.props.classes;
+        let positionMatrix = PositionData["position"];
+        positionMatrix = Array.from(positionMatrix);
+        const xLabels = new Array(positionMatrix.length).fill(0).map((_,i) => `${i}`);
+        const xLabelsVisibility = new Array(24)
+            .fill(0)
+            .map((_, i) => (i %1 === 0));
+
+        const yLabels = new Array(positionMatrix[0].length).fill(0).map((_,i) => `${i}`);
+
+        const data = positionMatrix;
+        for (let i in data){
+            for (let j in data[i]){
+                data[i][j] =Math.round((data[i][j]*100 + Number.EPSILON) * 1000) / 1000;
+            }
+        }
         const mainListItems = (
             <div>
                 <ListItem button onClick={(event) => this.changeDashboard(event)}>
@@ -167,7 +211,7 @@ class currentRun extends Component{
                     </ListItemIcon>
                     <ListItemText primary="Dashboard" />
                 </ListItem>
-                <ListItem button>
+                <ListItem button onClick={(event) => this.changeToReport(event)}>
                     <ListItemIcon>
                         <BarChartIcon />
                     </ListItemIcon>
@@ -181,17 +225,6 @@ class currentRun extends Component{
                 </ListItem>
             </div>
         );
-        let positionMatrix = PositionData["position"];
-        positionMatrix = Array.from(positionMatrix);
-        const xLabels = new Array(positionMatrix.length).fill(0).map((_,i) => `${i}`);
-        const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
-        // Display only even labels
-        const xLabelsVisibility = new Array(24)
-            .fill(0)
-            .map((_, i) => (i %1 === 0));
-
-        const yLabels = new Array(positionMatrix[0].length).fill(0).map((_,i) => `${i}`);
-        const data = positionMatrix;
 
         return(
             <div className={classes.root}>
@@ -208,13 +241,8 @@ class currentRun extends Component{
                             <MenuIcon />
                         </IconButton>
                         <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-                            Dashboard
+                            Current Run
                         </Typography>
-                        <IconButton color="inherit">
-                            <Badge badgeContent={4} color="secondary">
-                                <NotificationsIcon />
-                            </Badge>
-                        </IconButton>
                     </Toolbar>
                 </AppBar>
                 <Drawer
@@ -236,31 +264,42 @@ class currentRun extends Component{
                 <main className={classes.content}>
                     <div className={classes.appBarSpacer} />
                     <Container maxWidth="lg" className={classes.container}>
-                        {/* Recent Deposits */}
-                        <Grid item xs={12} md={4} lg={3}>
-                            <Paper className={fixedHeightPaper}>
-                                <RecentResults/>
-                            </Paper>
-                        </Grid>
-                        <div style={{ fontSize: "16px" }}>
-                            <HeatMap
-                                height={75}
-                                xLabels={xLabels}
-                                yLabels={yLabels}
-                                xLabelsLocation={"bottom"}
-                                xLabelsVisibility={xLabelsVisibility}
-                                xLabelWidth={60}
-                                data={data}
-                                squares
-                                onClick={(x, y) => alert(`Clicked ${x}, ${y}`)}
-                                cellStyle={(background, value, min, max, data, x, y) => ({
-                                    background: `rgb(230, 81, 0, ${1 + 0.1 - (max - value) / (max - min)})`,
-                                    fontSize: "15px",
-                                    color: "#000"
-                                })}
-                                cellRender={value => value && `${value}%`}
-                            />
-                        </div>
+                            <div className={classes.heatmapex}>
+                                <div className={classes.iconsTop}>
+                                        <IconButton className={classes.receiver1}>
+                                        <RssFeedIcon fontSize={"large"}/>
+                                    </IconButton>
+                                    <IconButton className={classes.receiver2}>
+                                        <RssFeedIcon fontSize={"large"}/>
+                                    </IconButton>
+                                </div>
+                                    <HeatMap
+                                        data={data}
+                                        bgColors={ ["rgb(255, 11, 11)", "rgb(255, 255, 0)"] }
+                                        xLabels={xLabels}
+                                        yLabels={yLabels}
+                                        xLabelsStyle={{ fontWeight: "bold", fontSize: "11px" }}
+                                        yLabelsStyle={{ fontWeight: "bold" }}
+                                        legendStyle={{ fontWeight: "bold" }}
+                                        showLegend={ true }
+                                        showData={true}
+                                        xStepLabel={ 1 }
+                                        yStepLabel={ 1 }
+                                        showTicks={ "x" }
+                                        bordered={ true }
+                                        borderRadius={ "4px" }
+                                        squares
+                                        onClick={(data, x, y) => alert(`Data: ${ data }, X: ${x}, Y: ${y}`)}
+                                    />
+                                    <div className={classes.iconsBottom}>
+                                        <IconButton className={classes.receiver3}>
+                                            <RssFeedIcon fontSize={"large"}/>
+                                        </IconButton>
+                                        <IconButton className={classes.receiver4}>
+                                            <RssFeedIcon fontSize={"large"}/>
+                                        </IconButton>
+                                    </div>
+                            </div>
                         <Box pt={4}>
                             <Copyright />
                         </Box>

@@ -6,8 +6,8 @@ let analysisController = require('../controllers/analysis.controller');
 router.get('/', analysisController.home);
 router.get('/allData', analysisController.getAllData);
 router.get('/byTime', analysisController.parseByTime);
-router.post('/addCSIData', analysisController.addCSIData);
 router.post('/storeAnalysisData', analysisController.storeAnalysisData);
-router.get('/sendAnalysisData', analysisController.sendAnalysisData);
+router.post('/sendAnalysisData', analysisController.sendAnalysisData);
+router.get('/getAllDates', analysisController.getAllDates);
 
 module.exports = router;
