@@ -47,12 +47,14 @@ exports.getAllData = async function(req, res, next){
         .then(data => {res.send(data);});
 };
 
-async function saveAnalysisData(gridData, from, to){
+async function saveAnalysisData(gridData, from, to, allReceivers, griddim){
     try{
         let analVal = new AnalysisVal({
             position: gridData,
             timefrom: from,
-            timeto: to
+            timeto: to,
+            receivers: allReceivers,
+            griddim: griddim
         });
         return await analVal.save(function(err){
             if (err){
@@ -118,7 +120,10 @@ exports.storeAnalysisData = async function(req, res, next){
         let gridData = new Array(val["position"]);
         let timeFrom = new Date(val["timefrom"]);
         let timeTo = new Date(val["timeto"]);
-        await saveAnalysisData(gridData, timeFrom, timeTo)
+        let allReceivers = val["receivers"];
+        let griddim = new Array(val["griddim"]);
+
+        await saveAnalysisData(gridData, timeFrom, timeTo, allReceivers, griddim)
             .then(response => {
                 if (response === null){
                     res.send("Data could not be stored");
