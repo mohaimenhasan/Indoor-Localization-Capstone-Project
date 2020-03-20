@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import HeatMap from "react-simple-heatmap";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import clsx from "clsx";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -22,8 +21,6 @@ import DashboardIcon from '@material-ui/icons/Dashboard';
 import BarChartIcon from '@material-ui/icons/BarChart';
 import TrackChangesIcon from '@material-ui/icons/TrackChanges';
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
-import RssFeedIcon from '@material-ui/icons/RssFeed';
-import PositionData from "../sampleOut";
 import AnalysisReport from "./AnalysisReport";
 
 
@@ -155,11 +152,11 @@ function Copyright() {
 }
 
 
-class currentRun extends Component{
+class howItWorks extends Component{
     constructor(props){
         super(props);
         this.state = {
-            open: false
+            open: true
         }
     }
     handleDrawerOpen = () => {
@@ -188,21 +185,6 @@ class currentRun extends Component{
 
     render() {
         let classes = this.props.classes;
-        let positionMatrix = PositionData["position"];
-        positionMatrix = Array.from(positionMatrix);
-        const xLabels = new Array(positionMatrix.length).fill(0).map((_,i) => `${i}`);
-        const xLabelsVisibility = new Array(24)
-            .fill(0)
-            .map((_, i) => (i %1 === 0));
-
-        const yLabels = new Array(positionMatrix[0].length).fill(0).map((_,i) => `${i}`);
-
-        const data = positionMatrix;
-        for (let i in data){
-            for (let j in data[i]){
-                data[i][j] =Math.round((data[i][j]*100 + Number.EPSILON) * 1000) / 1000;
-            }
-        }
         const mainListItems = (
             <div>
                 <ListItem button onClick={(event) => this.changeDashboard(event)}>
@@ -215,7 +197,7 @@ class currentRun extends Component{
                     <ListItemIcon>
                         <BarChartIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Reports" />
+                    <ListItemText primary="Past Results" />
                 </ListItem>
                 <ListItem button>
                     <ListItemIcon>
@@ -241,7 +223,7 @@ class currentRun extends Component{
                             <MenuIcon />
                         </IconButton>
                         <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-                            Current Run
+                            How It Works
                         </Typography>
                     </Toolbar>
                 </AppBar>
@@ -264,42 +246,7 @@ class currentRun extends Component{
                 <main className={classes.content}>
                     <div className={classes.appBarSpacer} />
                     <Container maxWidth="lg" className={classes.container}>
-                            <div className={classes.heatmapex}>
-                                <div className={classes.iconsTop}>
-                                        <IconButton className={classes.receiver1}>
-                                        <RssFeedIcon fontSize={"large"}/>
-                                    </IconButton>
-                                    <IconButton className={classes.receiver2}>
-                                        <RssFeedIcon fontSize={"large"}/>
-                                    </IconButton>
-                                </div>
-                                    <HeatMap
-                                        data={data}
-                                        bgColors={ ["rgb(255, 11, 11)", "rgb(255, 255, 0)"] }
-                                        xLabels={xLabels}
-                                        yLabels={yLabels}
-                                        xLabelsStyle={{ fontWeight: "bold", fontSize: "11px" }}
-                                        yLabelsStyle={{ fontWeight: "bold" }}
-                                        legendStyle={{ fontWeight: "bold" }}
-                                        showLegend={ true }
-                                        showData={true}
-                                        xStepLabel={ 1 }
-                                        yStepLabel={ 1 }
-                                        showTicks={ "x" }
-                                        bordered={ true }
-                                        borderRadius={ "4px" }
-                                        squares
-                                        onClick={(data, x, y) => alert(`Data: ${ data }, X: ${x}, Y: ${y}`)}
-                                    />
-                                    <div className={classes.iconsBottom}>
-                                        <IconButton className={classes.receiver3}>
-                                            <RssFeedIcon fontSize={"large"}/>
-                                        </IconButton>
-                                        <IconButton className={classes.receiver4}>
-                                            <RssFeedIcon fontSize={"large"}/>
-                                        </IconButton>
-                                    </div>
-                            </div>
+
                         <Box pt={4}>
                             <Copyright />
                         </Box>
@@ -310,6 +257,6 @@ class currentRun extends Component{
     }
 }
 
-currentRun = withMyHook(currentRun);
+howItWorks = withMyHook(howItWorks);
 
-export default currentRun;
+export default howItWorks;

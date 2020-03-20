@@ -18,7 +18,7 @@ import DashboardIcon from "@material-ui/icons/Dashboard";
 import ListItemText from "@material-ui/core/ListItemText";
 import TrackChangesIcon from "@material-ui/icons/TrackChanges";
 import Dashboard from "./Dashboard";
-import Current from "./CurrentRun";
+import Current from "./HowItWorks";
 import DataUsageIcon from "@material-ui/icons/DataUsage";
 import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
@@ -30,7 +30,6 @@ import fetch from 'node-fetch';
 import Button from "@material-ui/core/Button";
 import RssFeedIcon from "@material-ui/icons/RssFeed";
 import HeatMap from "react-simple-heatmap";
-import PositionData from "../sampleOut";
 
 
 function Copyright() {
@@ -163,7 +162,7 @@ class AnalysisReport extends Component{
     constructor(props){
         super(props);
         this.state = {
-            open: false,
+            open: true,
             fromDate: "",
             toDate: "",
             allDates: [],
@@ -223,10 +222,6 @@ class AnalysisReport extends Component{
                     let positionMatrix = response[k]["position"][0];
                     positionMatrix = Array.from(positionMatrix);
                     const xLabels = new Array(positionMatrix.length).fill(0).map((_,i) => `${i}`);
-                    const xLabelsVisibility = new Array(24)
-                        .fill(0)
-                        .map((_, i) => (i %1 === 0));
-
                     const yLabels = new Array(positionMatrix[0].length).fill(0).map((_,i) => `${i}`);
 
                     const data = positionMatrix;
@@ -335,7 +330,7 @@ class AnalysisReport extends Component{
                     <ListItemIcon>
                         <DataUsageIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Current" />
+                    <ListItemText primary="How it works" />
                 </ListItem>
                 <ListItem button>
                     <ListItemIcon>

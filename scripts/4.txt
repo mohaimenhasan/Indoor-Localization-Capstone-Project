@@ -1,0 +1,31 @@
+Using Volk machine: ssse3_64_orc
+---------------------------------------------------------------
+LimeSuite Source (RX) info
+
+##################
+Connecting to device
+##################
+Devices found: 1
+##################
+Device list:
+Nr.:|0|device:|LimeSDR-USB, media=USB 2.0, module=FX3, addr=1d50:6108, serial=00090726074E1515
+##################
+INFO: device_handler::open_device(): no serial number. Using first device in the list. Use "LimeUtil --find" in terminal to find prefered device serial.
+##################
+Device number 0 from the list is used.
+##################
+
+INFO: device_handler::enable_channels(): MIMO mode set for device number 0.
+INFO: device_handler::set_samp_rate(): set sampling rate: 10 MS/s.
+INFO: device_handler::set_rf_freq(): RF frequency set [RX]: 2472 MHz.
+INFO: device_handler::set_analog_filter(): INFO: device_handler::set_analog_filter(): INFO: device_handler::set_gain(): set gain [RX] CH0: 60 dB.
+INFO: device_handler::set_gain(): set gain [RX] CH1: 60 dB.
+INFO: device_handler::set_antenna(): CH0 antenna set [RX]: LNAH.
+INFO: device_handler::set_antenna(): CH1 antenna set [RX]: LNAH.
+INFO: device_handler::calibrate(): INFO: device_handler::calibrate(): INFO: source_impl::init_stream(): source channel 0 (device nr. 0) stream setup done.
+INFO: source_impl::init_stream(): source channel 1 (device nr. 0) stream setup done.
+
+##################
+INFO: device_handler::close_device(): Disconnected from device number 0.
+##################
+

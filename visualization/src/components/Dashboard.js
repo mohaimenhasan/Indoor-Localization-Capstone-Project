@@ -22,21 +22,17 @@ import ListItemText from '@material-ui/core/ListItemText';
 import BarChartIcon from '@material-ui/icons/BarChart';
 import TrackChangesIcon from '@material-ui/icons/TrackChanges';
 import DataUsageIcon from '@material-ui/icons/DataUsage';
-import Current from "./CurrentRun";
-import FloorPlan from './floorplan.png';
+import Current from "./HowItWorks";
+import FloorPlan from './floorplan.jpg';
 import AnalysisReport from "./AnalysisReport";
 import Card from "@material-ui/core/Card";
-import CardHeader from "@material-ui/core/CardHeader";
-import Avatar from "@material-ui/core/Avatar";
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import ShareIcon from '@material-ui/icons/Share';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
-import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
-import Collapse from '@material-ui/core/Collapse';
 import {red} from "@material-ui/core/colors";
+import MapIcon from '@material-ui/icons/Map';
+import Button from "@material-ui/core/Button";
+import EmojiEmotionsIcon from '@material-ui/icons/EmojiEmotions';
+import BuildIcon from '@material-ui/icons/Build';
 
 function Copyright() {
     return (
@@ -127,8 +123,11 @@ const useStyles = makeStyles(theme => ({
         overflow: 'auto',
         flexDirection: 'column',
     },
+    fixedFunct:{
+      height: 350
+    },
     fixedFloorHeight:{
-        height: 1300
+        height: 445
     },
     fixedHeight: {
         height: 240,
@@ -150,6 +149,9 @@ const useStyles = makeStyles(theme => ({
     avatar: {
         backgroundColor: red[500],
     },
+    button: {
+        margin: theme.spacing(1),
+    },
 }));
 
 function withMyHook(Component){
@@ -163,8 +165,9 @@ class Dashboard extends Component{
     constructor(props){
         super(props);
         this.state = {
-            open: false,
-            expanded: false
+            open: true,
+            expanded: false,
+            showFloor: "None"
         }
     }
 
@@ -182,9 +185,15 @@ class Dashboard extends Component{
     }
 
     handleExpandClick = (event) => {
-        this.setState({
-            expanded: !this.state.expanded
-        });
+        if (this.state.showFloor === "None"){
+            this.setState({
+                showFloor: ""
+            })
+        }else{
+            this.setState({
+                showFloor: "None"
+            })
+        }
     };
 
 
@@ -202,6 +211,7 @@ class Dashboard extends Component{
         };
         const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
         const fixedFloorPlan = clsx(classes.paper, classes.fixedFloorHeight);
+        const fixedFuncHeight = clsx(classes.paper, classes.fixedFunct);
 
         const mainListItems = (
             <div>
@@ -209,13 +219,13 @@ class Dashboard extends Component{
                     <ListItemIcon>
                         <DataUsageIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Current" />
+                    <ListItemText primary="How it works" />
                 </ListItem>
                 <ListItem button onClick={(event) => this.changeToReport(event)}>
                     <ListItemIcon>
                         <BarChartIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Reports" />
+                    <ListItemText primary="Past Results" />
                 </ListItem>
                 <ListItem button>
                     <ListItemIcon>
@@ -268,6 +278,7 @@ class Dashboard extends Component{
                             <Grid item xs={6.5} md={6.5} lg={6.5}>
                                 <Paper className={fixedHeightPaper}>
                                     <iframe
+                                        title={"Bahen Map"}
                                         width={"500"}
                                         height={"500"}
                                         id={"gmap_canvas"}
@@ -279,41 +290,27 @@ class Dashboard extends Component{
                                     </iframe>
                                 </Paper>
                             </Grid>
-                            <Grid item xs={7} md={7} lg={7}>
+                            <Grid item xs={6.5} md={5} lg={5}>
                                 <Card className={classes.root}>
-                                    <CardHeader
-                                        avatar={
-                                            <Avatar aria-label="recipe" className={classes.avatar}>
-                                                R
-                                            </Avatar>
-                                        }
-                                        action={
-                                            <IconButton aria-label="settings">
-                                                <MoreVertIcon />
-                                            </IconButton>
-                                        }
-                                        title="Shrimp and Chorizo Paella"
-                                        subheader="September 14, 2016"
-                                    />
-                                    <CardMedia
-                                        className={classes.media}
-                                        image="/static/images/cards/paella.jpg"
-                                        title="Paella dish"
-                                    />
                                     <CardContent>
-                                        <Typography variant="body2" color="textSecondary" component="p">
-                                            This impressive paella is a perfect party dish and a fun meal to cook together with your
-                                            guests. Add 1 cup of frozen peas along with the mussels, if you like.
+                                        <Typography variant="h4" color="textPrimary" component="p">
+                                            Indoor Localization Capstone Project
+                                        </Typography>
+                                        <br/>
+                                        <Typography variant="h5" color="textSecondary" component="p">
+                                           <b>Group 2019100</b>
+                                        </Typography>
+                                        <Typography variant="h6" color="textSecondary" component="p">
+                                            {new Date().toLocaleTimeString()}
+                                        </Typography>
+                                        <Typography variant="p" color="secondary" component="p">
+                                            <br/>
+                                            <b> Click on the map icon to see floor plan </b>
                                         </Typography>
                                     </CardContent>
                                     <CardActions disableSpacing>
-                                        <IconButton aria-label="add to favorites">
-                                            <FavoriteIcon />
-                                        </IconButton>
-                                        <IconButton aria-label="share">
-                                            <ShareIcon />
-                                        </IconButton>
                                         <IconButton
+                                            color="secondary"
                                             className={clsx(classes.expand, {
                                                 [classes.expandOpen]: this.state.expanded,
                                             })}
@@ -321,40 +318,59 @@ class Dashboard extends Component{
                                             aria-expanded={this.state.expanded}
                                             aria-label="show more"
                                         >
-                                            <ExpandMoreIcon />
+                                            <MapIcon/>
                                         </IconButton>
                                     </CardActions>
-                                    <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
-                                        <CardContent>
-                                            <Typography paragraph>Method:</Typography>
-                                            <Typography paragraph>
-                                                Heat 1/2 cup of the broth in a pot until simmering, add saffron and set aside for 10
-                                                minutes.
-                                            </Typography>
-                                            <Typography paragraph>
-                                                Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet over medium-high
-                                                heat. Add chicken, shrimp and chorizo, and cook, stirring occasionally until lightly
-                                                browned, 6 to 8 minutes. Transfer shrimp to a large plate and set aside, leaving chicken
-                                                and chorizo in the pan. Add pimentón, bay leaves, garlic, tomatoes, onion, salt and
-                                                pepper, and cook, stirring often until thickened and fragrant, about 10 minutes. Add
-                                                saffron broth and remaining 4 1/2 cups chicken broth; bring to a boil.
-                                            </Typography>
-                                            <Typography paragraph>
-                                                Add rice and stir very gently to distribute. Top with artichokes and peppers, and cook
-                                                without stirring, until most of the liquid is absorbed, 15 to 18 minutes. Reduce heat to
-                                                medium-low, add reserved shrimp and mussels, tucking them down into the rice, and cook
-                                                again without stirring, until mussels have opened and rice is just tender, 5 to 7
-                                                minutes more. (Discard any mussels that don’t open.)
-                                            </Typography>
-                                            <Typography>
-                                                Set aside off of the heat to let rest for 10 minutes, and then serve.
-                                            </Typography>
-                                        </CardContent>
-                                    </Collapse>
                                 </Card>
                             </Grid>
-                            <Grid item xs={12} md={12} lg={12}>
-                                <Paper className={fixedFloorPlan}>
+                            <Grid item xs={12} md={4} lg={4}>
+                                <Paper className={fixedFuncHeight}>
+                                    <Typography variant="h4" color="textPrimary" component="p">
+                                        Main Menu
+                                        <br/> <br/>
+                                    </Typography>
+                                    <Button
+                                        variant="contained"
+                                        color="secondary"
+                                        className={classes.button}
+                                        startIcon={<EmojiEmotionsIcon/>}
+                                    >
+                                        Motivation
+                                    </Button>
+                                    <Button
+                                        variant="contained"
+                                        color="primary"
+                                        className={classes.button}
+                                        startIcon={<BuildIcon/>}
+                                    >
+                                        Setup
+                                    </Button>
+                                    <Button
+                                        variant="contained"
+                                        color="primary"
+                                        className={classes.button}
+                                        startIcon={<DataUsageIcon/>}
+                                        onClick={(event) => this.changeToCurrent(event)}
+                                    >
+                                        How it works
+                                    </Button>
+                                    <Button
+                                        variant="contained"
+                                        color="primary"
+                                        className={classes.button}
+                                        startIcon={<BarChartIcon/>}
+                                        onClick={(event) => this.changeToReport(event)}
+                                    >
+                                        Past Results
+                                    </Button>
+                                </Paper>
+                            </Grid>
+                            <Grid
+                                item xs={12} md={7} lg={7}
+                            >
+                                <Paper className={fixedFloorPlan} style={{
+                                    display: this.state.showFloor
+                                }}>
                                     <img src={FloorPlan} alt="floorplan" />;
                                 </Paper>
                             </Grid>
@@ -372,38 +388,3 @@ class Dashboard extends Component{
 Dashboard = withMyHook(Dashboard);
 
 export default Dashboard;
-/*
-    <IconButton color="inherit">
-        <Badge badgeContent={4} color="secondary">
-            <NotificationsIcon />
-        </Badge>
-    </IconButton>
-    <Grid container spacing={3}>
-        <Grid item xs={12} md={8} lg={9}>
-            <Paper className={fixedHeightPaper}>
-                <Chart />
-            </Paper>
-        </Grid>
-        <Grid item xs={12} md={4} lg={3}>
-            <Paper className={fixedHeightPaper}>
-                <RecentResults/>
-            </Paper>
-        </Grid>
-        <Grid item xs={12}>
-            <Paper className={classes.paper}>
-                <Orders />
-            </Paper>
-        </Grid>
-    </Grid>
-
-    <Grid container spacing={3}>
-                            <Paper className={fixedHeightPaper}>
-                                <iframe
-                                    width="600"
-                                    height="450"
-                                    frameBorder="0" style="border:0"
-                                    src="https://www.google.com/maps/embed/v1/place?key=API_KEY&q=Space+Needle,Seattle+WA" allowFullScreen>
-                                </iframe>
-                            </Paper>
-                        </Grid>
- */

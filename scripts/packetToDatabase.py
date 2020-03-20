@@ -7,7 +7,7 @@ def process_frame(frame):
     return [data.replace('[', '').replace(']', '') for data in frame]
 
 def main():
-    with open("temp.txt") as f:
+    with open("1.txt") as f:
         lines = f.readlines()
         for i in range(0, len(lines)):
             line = lines[i]
@@ -45,7 +45,7 @@ def main():
                 ap = 1
                 timestamp = datetime.now().isoformat()
                 # To send to backend 
-                url = "http://172.20.10.2:8888/receiver/addData"
+                url = "http://localhost:8888/receiver/addData"
                 packet = {
                     "access_point": ap,
                     "timestamp": timestamp,
@@ -54,10 +54,10 @@ def main():
                     "grid":grid,
                 }
                 print("Sending post request ... ")
-                print("Data: " + str(packet))
+                # print("Data: " + str(packet))
                 # Uncomment to send POST request
-                # r = requests.post(url = url, json = packet)
-                # print("Reqest response: " + str(r))
+                r = requests.post(url = url, json = packet)
+                print("Reqest response: " + str(r))
                 print("-----")
 
 if __name__ == "__main__":
