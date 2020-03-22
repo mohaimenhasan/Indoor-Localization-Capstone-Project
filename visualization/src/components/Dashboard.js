@@ -33,6 +33,8 @@ import MapIcon from '@material-ui/icons/Map';
 import Button from "@material-ui/core/Button";
 import EmojiEmotionsIcon from '@material-ui/icons/EmojiEmotions';
 import BuildIcon from '@material-ui/icons/Build';
+import Motivation from './Motivation';
+import Setup from "./Setup";
 
 function Copyright() {
     return (
@@ -169,6 +171,18 @@ class Dashboard extends Component{
             expanded: false,
             showFloor: "None"
         }
+    }
+
+    changeToMotivation(event){
+        this.props.appContext.setState({
+            currentScreen: <Motivation appContext={this.props.appContext}/>
+        })
+    }
+
+    changeToSetup(event){
+        this.props.appContext.setState({
+            currentScreen: <Setup appContext={this.props.appContext}/>
+        })
     }
 
     changeToCurrent(event){
@@ -334,6 +348,7 @@ class Dashboard extends Component{
                                         color="secondary"
                                         className={classes.button}
                                         startIcon={<EmojiEmotionsIcon/>}
+                                        onClick={(event)=>{this.changeToMotivation(event)}}
                                     >
                                         Motivation
                                     </Button>
@@ -342,6 +357,7 @@ class Dashboard extends Component{
                                         color="primary"
                                         className={classes.button}
                                         startIcon={<BuildIcon/>}
+                                        onClick={(event)=> this.changeToSetup(event)}
                                     >
                                         Setup
                                     </Button>
