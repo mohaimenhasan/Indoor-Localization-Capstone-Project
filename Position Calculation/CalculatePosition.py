@@ -3,6 +3,7 @@ from Receiver import Receiver
 from ReceiverData import ReceiverData
 from Line import Line
 from ConnectionManager import ConnectionManager
+import datetime
 # import Position
 # import Receiver
 # import ReceivedData
@@ -23,6 +24,7 @@ DEFAULT_SLOPE = (math.pi / 4)
 connectionMgr = ConnectionManager()
 
 def main():
+    startTime = str(datetime.datetime.now())
     config()
 
     if TESTING:
@@ -47,8 +49,10 @@ def main():
     else:
         receiverData = fetchReceiverData()
         positionData = calculatePosition(receiverData, Resolution.Meters)
-    
-    response = constructResponse(positionData, receiverData)
+
+    endTime = str(datetime.datetime.now())
+    response = constructResponse(positionData, receiverData, startTime, endTime)
+    print(response)
     connectionMgr.sendPositionData(response)
 
 # function: calculatePosition
@@ -140,7 +144,7 @@ def calculatePosition(receiverData, resolution=Resolution.Centimeters):
         for j in range(positionMatrix.shape[1]):
             if positionMatrix[i][j] < 0.1*maxVal:
                 positionMatrix[i][j] = 0
-                
+
     # Show plot of position estimation
     plotHeatmap(positionMatrix)
     positionMatrix = changeResolution(positionMatrix, resolution)
@@ -178,11 +182,11 @@ def containsReceiverData(receiverData, receiverId):
     
     return False
 
-def constructResponse(positionData, receiverData):
+def constructResponse(positionData, receiverData, startTime, endTime):
     jsonData = {}
     jsonData['position'] = positionData.tolist()
     
-    receiverInfo = []
+    receiverInfo = {}
     for receiver in receiverData:
         receiverId = receiver.get_receiverId()
         receiverPositionObj = receivers[receiverId].get_receiverPosition()
@@ -191,16 +195,16 @@ def constructResponse(positionData, receiverData):
         
         receiverKey = "receiver{0}".format(str(receiverId))
         receiverValue = {"position": receiverPosition, "angle_of_arrival": angleOfArrival}
-        
-        receiverInfo.append({receiverKey:receiverValue})
+
+        receiverInfo[receiverKey] = receiverValue
     
     jsonData['receivers'] = receiverInfo
     
     gridDimensions = [xDimension, yDimension]
     jsonData['gridDim'] = gridDimensions
     
-    jsonData['timefrom'] = 1
-    jsonData['timeto'] = 10
+    jsonData['timefrom'] = startTime
+    jsonData['timeto'] = endTime
     
     with open('sampleOut.json', 'w') as outFile:
         json.dump(jsonData, outFile)

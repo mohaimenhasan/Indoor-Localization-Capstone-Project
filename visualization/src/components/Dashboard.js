@@ -23,7 +23,7 @@ import BarChartIcon from '@material-ui/icons/BarChart';
 import TrackChangesIcon from '@material-ui/icons/TrackChanges';
 import DataUsageIcon from '@material-ui/icons/DataUsage';
 import Current from "./HowItWorks";
-import FloorPlan from './floorplan.jpg';
+import FloorPlan from './markedFloor.jpg';
 import AnalysisReport from "./AnalysisReport";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
@@ -129,7 +129,7 @@ const useStyles = makeStyles(theme => ({
       height: 350
     },
     fixedFloorHeight:{
-        height: 445
+        height: 460
     },
     fixedHeight: {
         height: 240,
@@ -385,7 +385,8 @@ class Dashboard extends Component{
                                 item xs={12} md={7} lg={7}
                             >
                                 <Paper className={fixedFloorPlan} style={{
-                                    display: this.state.showFloor
+                                    display: this.state.showFloor,
+                                    border: "5px inset #00A417"
                                 }}>
                                     <img src={FloorPlan} alt="floorplan" />;
                                 </Paper>

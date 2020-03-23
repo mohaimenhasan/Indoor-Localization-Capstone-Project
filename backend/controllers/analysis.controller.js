@@ -1,7 +1,5 @@
-const fs = require('fs');
-const request = require('request');
+let spawn = require("child_process").spawn;
 let ReceiverVal = require('../models/receiver.model');
-let CSIVal = require('../models/csi.model');
 let AnalysisVal = require('../models/analysis.model');
 
 exports.home = function(req, res, next){
@@ -47,13 +45,31 @@ exports.getAllData = async function(req, res, next){
         .then(data => {res.send(data);});
 };
 
-async function saveAnalysisData(gridData, from, to, allReceivers, griddim){
+async function saveAnalysisData(gridData, from, to, griddim, receiver1Pos, receiver1aoa, receiver2Pos, receiver2aoa,
+                                receiver3Pos, receiver3aoa,receiver4Pos, receiver4aoa){
     try{
         let analVal = new AnalysisVal({
             position: gridData,
             timefrom: from,
             timeto: to,
-            receivers: allReceivers,
+            receivers: {
+                receiver1: {
+                    position: receiver1Pos,
+                    angle_of_arrival: receiver1aoa
+                },
+                receiver2: {
+                    position: receiver2Pos,
+                    angle_of_arrival: receiver2aoa
+                },
+                receiver3: {
+                    position: receiver3Pos,
+                    angle_of_arrival: receiver3aoa
+                },
+                receiver4: {
+                    position: receiver4Pos,
+                    angle_of_arrival: receiver4aoa
+                }
+            },
             griddim: griddim
         });
         return await analVal.save(function(err){
@@ -121,9 +137,14 @@ exports.storeAnalysisData = async function(req, res, next){
         let timeFrom = new Date(val["timefrom"]);
         let timeTo = new Date(val["timeto"]);
         let allReceivers = val["receivers"];
-        let griddim = new Array(val["griddim"]);
+        let griddim = new Array(val["gridDim"]);
 
-        await saveAnalysisData(gridData, timeFrom, timeTo, allReceivers, griddim)
+        console.log(griddim);
+        await saveAnalysisData(gridData, timeFrom, timeTo, griddim,
+            allReceivers["receiver0"]["position"], allReceivers["receiver0"]["angle_of_arrival"],
+            allReceivers["receiver1"]["position"], allReceivers["receiver1"]["angle_of_arrival"],
+            allReceivers["receiver2"]["position"], allReceivers["receiver2"]["angle_of_arrival"],
+            allReceivers["receiver3"]["position"], allReceivers["receiver3"]["angle_of_arrival"])
             .then(response => {
                 if (response === null){
                     res.send("Data could not be stored");
@@ -131,12 +152,40 @@ exports.storeAnalysisData = async function(req, res, next){
                     res.send("Completed");
                 }
             })
+
     }catch(err){
         console.log("Check Error: ", err);
         res.send("Bad Data");
     }
 };
 
+async function getLatestDates(){
+    try{
+        return await AnalysisVal.findOne().sort({ field: 'asc', _id: -1 }).limit(1)
+            .then(data => {
+                console.log(data);
+                return data;
+            })
+    }catch (e) {
+
+    }
+}
+
+exports.runPythonCur = async function(req, res, next){
+    try{
+        let currentPath = process.cwd();
+        let pythonPath = currentPath+'/../Position Calculation/CalculatePosition.py';
+        const pythonProcess = spawn('python',[pythonPath]);
+        pythonProcess.stdout.on('data', async (data) => {
+            await getLatestDates()
+                .then(data=>{
+                    res.send(data);
+                });
+        });
+    }catch(err){
+
+    }
+};
 
 exports.getAllDates = async function (req, res, next) {
     try{

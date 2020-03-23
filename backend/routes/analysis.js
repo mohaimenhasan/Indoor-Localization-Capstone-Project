@@ -9,5 +9,5 @@ router.get('/byTime', analysisController.parseByTime);
 router.post('/storeAnalysisData', analysisController.storeAnalysisData);
 router.post('/sendAnalysisData', analysisController.sendAnalysisData);
 router.get('/getAllDates', analysisController.getAllDates);
-
+router.get('/getCurrentRun', analysisController.runPythonCur);
 module.exports = router;

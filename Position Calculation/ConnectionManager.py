@@ -28,7 +28,9 @@ class ConnectionManager:
     
     def sendPositionData(self, data):
         url = "http://localhost:8888/analysis/storeAnalysisData"
-        response = self.__executeApiCall(RequestType.POST, url, {'data':data})
+        print("Sending post request ... ")
+        packet = {'data':data}
+        response = requests.post(url = url, json = packet)
     
     def __executeApiCall(self, callType, url, data=None):
         if callType == RequestType.GET:
@@ -38,10 +40,9 @@ class ConnectionManager:
                 req = requests.get(url = url)
         elif callType == RequestType.POST:
             return 0 # here just to prevent call in testing
-            req = requests.post(url = url, data = data)
+            req = requests.post(url = url, json = data)
         
         if req:
-            
             return req.json()
         else:
             print("Error in exectuting api call: {}".format(str(url)))
