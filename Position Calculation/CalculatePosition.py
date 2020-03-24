@@ -43,16 +43,16 @@ def main():
         # r4Data
         ])
         
-        positionData = calculatePosition(receiverData, Resolution.Meters)
+        positionData, linesOfIntersection = calculatePosition(receiverData, Resolution.Meters)
         
         # print(positionReturn)
     else:
         receiverData = fetchReceiverData()
-        positionData = calculatePosition(receiverData, Resolution.Meters)
+        positionData, linesOfIntersection = calculatePosition(receiverData, Resolution.Meters)
 
     endTime = str(datetime.datetime.now())
-    response = constructResponse(positionData, receiverData, startTime, endTime)
-    print(response)
+    response = constructResponse(positionData, receiverData, startTime, endTime, linesOfIntersection)
+    #print(response)
     connectionMgr.sendPositionData(response)
 
 # function: calculatePosition
@@ -68,6 +68,7 @@ def calculatePosition(receiverData, resolution=Resolution.Centimeters):
     intersectionPoints = np.array(np.shape(0))
 
     # Update Lines
+    linesOfIntersection = {}
     directionLines = np.array(np.shape(0))
     for i in range(len(receiverData)):
         data = receiverData[i]
@@ -77,6 +78,7 @@ def calculatePosition(receiverData, resolution=Resolution.Centimeters):
 
         updatedLine = Line(equivalentSlope, findYIntercept(
             equivalentSlope, receiverPosition))
+        linesOfIntersection[receiverId] = str(updatedLine)
         print(str(updatedLine))
         directionLines = np.append(directionLines, updatedLine)
 
@@ -151,7 +153,7 @@ def calculatePosition(receiverData, resolution=Resolution.Centimeters):
     print("changed resolution from Centimeters to ", resolution)
     plotHeatmap(positionMatrix)
     
-    return positionMatrix
+    return positionMatrix, linesOfIntersection
 
 # retrieved data from the database
 def fetchReceiverData():
@@ -182,7 +184,7 @@ def containsReceiverData(receiverData, receiverId):
     
     return False
 
-def constructResponse(positionData, receiverData, startTime, endTime):
+def constructResponse(positionData, receiverData, startTime, endTime, linesOfIntersection):
     jsonData = {}
     jsonData['position'] = positionData.tolist()
     
@@ -194,7 +196,7 @@ def constructResponse(positionData, receiverData, startTime, endTime):
         angleOfArrival = receiver.get_angleOfArrival()
         
         receiverKey = "receiver{0}".format(str(receiverId))
-        receiverValue = {"position": receiverPosition, "angle_of_arrival": angleOfArrival}
+        receiverValue = {"position": receiverPosition, "angle_of_arrival": angleOfArrival, "line": linesOfIntersection[receiverId]}
 
         receiverInfo[receiverKey] = receiverValue
     

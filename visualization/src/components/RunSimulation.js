@@ -152,7 +152,7 @@ function Copyright() {
 }
 
 
-class howItWorks extends Component{
+class RunSimulation extends Component{
     constructor(props){
         super(props);
         this.state = {
@@ -257,6 +257,6 @@ class howItWorks extends Component{
     }
 }
 
-howItWorks = withMyHook(howItWorks);
+RunSimulation = withMyHook(RunSimulation);
 
-export default howItWorks;
+export default RunSimulation;

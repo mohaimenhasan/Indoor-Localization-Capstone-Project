@@ -6,19 +6,23 @@ let analysisSchema = new Schema({
     receivers: {
         receiver1: {
             position: {type: Array, default: []},
-            angle_of_arrival: {type: Number}
+            angle_of_arrival: {type: Number},
+            line: {type: String, default: null}
         },
         receiver2: {
             position: {type: Array, default: []},
-            angle_of_arrival: {type: Number}
+            angle_of_arrival: {type: Number},
+            line: {type: String, default: null}
         },
         receiver3: {
             position: {type: Array, default: []},
-            angle_of_arrival: {type: Number}
+            angle_of_arrival: {type: Number},
+            line: {type: String, default: null}
         },
         receiver4: {
             position: {type: Array, default: []},
-            angle_of_arrival: {type: Number}
+            angle_of_arrival: {type: Number},
+            line: {type: String, default: null}
         }
     },
     timefrom: {type: Date, default: Date.now },

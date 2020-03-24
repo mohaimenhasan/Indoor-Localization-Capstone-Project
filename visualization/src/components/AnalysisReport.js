@@ -16,7 +16,6 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import DashboardIcon from "@material-ui/icons/Dashboard";
 import ListItemText from "@material-ui/core/ListItemText";
-import TrackChangesIcon from "@material-ui/icons/TrackChanges";
 import Dashboard from "./Dashboard";
 import Current from "./HowItWorks";
 import DataUsageIcon from "@material-ui/icons/DataUsage";
@@ -30,6 +29,7 @@ import fetch from 'node-fetch';
 import Button from "@material-ui/core/Button";
 import RssFeedIcon from "@material-ui/icons/RssFeed";
 import HeatMap from "react-simple-heatmap";
+import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
 
 
 function Copyright() {
@@ -334,9 +334,9 @@ class AnalysisReport extends Component{
                 </ListItem>
                 <ListItem button>
                     <ListItemIcon>
-                        <TrackChangesIcon />
+                        <PlayCircleOutlineIcon/>
                     </ListItemIcon>
-                    <ListItemText primary="Changes" />
+                    <ListItemText primary="Run Simulation" />
                 </ListItem>
             </div>
         );

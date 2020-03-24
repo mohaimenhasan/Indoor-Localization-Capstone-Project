@@ -25,10 +25,10 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import DataUsageIcon from "@material-ui/icons/DataUsage";
 import ListItemText from "@material-ui/core/ListItemText";
 import BarChartIcon from "@material-ui/icons/BarChart";
-import TrackChangesIcon from "@material-ui/icons/TrackChanges";
 import Dashboard from "./Dashboard";
 import DashboardIcon from "@material-ui/icons/Dashboard";
 import Box from "@material-ui/core/Box";
+import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
 
 function Copyright() {
     return (
@@ -213,9 +213,9 @@ class Motivation extends Component{
                 </ListItem>
                 <ListItem button>
                     <ListItemIcon>
-                        <TrackChangesIcon />
+                        <PlayCircleOutlineIcon/>
                     </ListItemIcon>
-                    <ListItemText primary="Changes" />
+                    <ListItemText primary="Run Simulation" />
                 </ListItem>
             </div>
         );

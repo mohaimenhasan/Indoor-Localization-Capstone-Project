@@ -45,8 +45,9 @@ exports.getAllData = async function(req, res, next){
         .then(data => {res.send(data);});
 };
 
-async function saveAnalysisData(gridData, from, to, griddim, receiver1Pos, receiver1aoa, receiver2Pos, receiver2aoa,
-                                receiver3Pos, receiver3aoa,receiver4Pos, receiver4aoa){
+async function saveAnalysisData(gridData, from, to, griddim, receiver1Pos, receiver1aoa, receiver1line, receiver2Pos,
+                                receiver2aoa, receiver2line, receiver3Pos, receiver3aoa, receiver3line, receiver4Pos,
+                                receiver4aoa, receiver4line){
     try{
         let analVal = new AnalysisVal({
             position: gridData,
@@ -55,19 +56,23 @@ async function saveAnalysisData(gridData, from, to, griddim, receiver1Pos, recei
             receivers: {
                 receiver1: {
                     position: receiver1Pos,
-                    angle_of_arrival: receiver1aoa
+                    angle_of_arrival: receiver1aoa,
+                    line: receiver1line
                 },
                 receiver2: {
                     position: receiver2Pos,
-                    angle_of_arrival: receiver2aoa
+                    angle_of_arrival: receiver2aoa,
+                    line: receiver2line
                 },
                 receiver3: {
                     position: receiver3Pos,
-                    angle_of_arrival: receiver3aoa
+                    angle_of_arrival: receiver3aoa,
+                    line: receiver3line
                 },
                 receiver4: {
                     position: receiver4Pos,
-                    angle_of_arrival: receiver4aoa
+                    angle_of_arrival: receiver4aoa,
+                    line: receiver4line
                 }
             },
             griddim: griddim
@@ -141,10 +146,10 @@ exports.storeAnalysisData = async function(req, res, next){
 
         console.log(griddim);
         await saveAnalysisData(gridData, timeFrom, timeTo, griddim,
-            allReceivers["receiver0"]["position"], allReceivers["receiver0"]["angle_of_arrival"],
-            allReceivers["receiver1"]["position"], allReceivers["receiver1"]["angle_of_arrival"],
-            allReceivers["receiver2"]["position"], allReceivers["receiver2"]["angle_of_arrival"],
-            allReceivers["receiver3"]["position"], allReceivers["receiver3"]["angle_of_arrival"])
+            allReceivers["receiver0"]["position"], allReceivers["receiver0"]["angle_of_arrival"], allReceivers["receiver0"]["line"],
+            allReceivers["receiver1"]["position"], allReceivers["receiver1"]["angle_of_arrival"], allReceivers["receiver1"]["line"],
+            allReceivers["receiver2"]["position"], allReceivers["receiver2"]["angle_of_arrival"], allReceivers["receiver2"]["line"],
+            allReceivers["receiver3"]["position"], allReceivers["receiver3"]["angle_of_arrival"], allReceivers["receiver3"]["line"])
             .then(response => {
                 if (response === null){
                     res.send("Data could not be stored");

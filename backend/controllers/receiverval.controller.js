@@ -27,6 +27,8 @@ exports.postVal = async function(req, res, next){
     let AoA = req.body.angle_of_arrival;
     let csi_frame = req.body.csi_frame;
     let grid = req.body.grid;
+    console.log("The request is: ");
+    console.log(req.body);
     let val = await retrieveValues(accessPt, timestamp, AoA, csi_frame, grid);
     if (val === null){
         res.send({

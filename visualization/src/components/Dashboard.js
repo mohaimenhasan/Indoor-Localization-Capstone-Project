@@ -20,7 +20,6 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import BarChartIcon from '@material-ui/icons/BarChart';
-import TrackChangesIcon from '@material-ui/icons/TrackChanges';
 import DataUsageIcon from '@material-ui/icons/DataUsage';
 import Current from "./HowItWorks";
 import FloorPlan from './markedFloor.jpg';
@@ -35,6 +34,7 @@ import EmojiEmotionsIcon from '@material-ui/icons/EmojiEmotions';
 import BuildIcon from '@material-ui/icons/Build';
 import Motivation from './Motivation';
 import Setup from "./Setup";
+import PlayCircleOutlineIcon from '@material-ui/icons/PlayCircleOutline';
 
 function Copyright() {
     return (
@@ -243,9 +243,9 @@ class Dashboard extends Component{
                 </ListItem>
                 <ListItem button>
                     <ListItemIcon>
-                        <TrackChangesIcon />
+                        <PlayCircleOutlineIcon/>
                     </ListItemIcon>
-                    <ListItemText primary="Changes" />
+                    <ListItemText primary="Run Simulation" />
                 </ListItem>
             </div>
         );
