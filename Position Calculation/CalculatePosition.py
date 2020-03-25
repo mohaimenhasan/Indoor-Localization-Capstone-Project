@@ -202,7 +202,7 @@ def constructResponse(positionData, receiverData, startTime, endTime, linesOfInt
     
     jsonData['receivers'] = receiverInfo
     
-    gridDimensions = [xDimension, yDimension]
+    gridDimensions = [xDimension/100.0, yDimension/100.0]
     jsonData['gridDim'] = gridDimensions
     
     jsonData['timefrom'] = startTime

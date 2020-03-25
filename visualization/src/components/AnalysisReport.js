@@ -162,7 +162,7 @@ class AnalysisReport extends Component{
     constructor(props){
         super(props);
         this.state = {
-            open: true,
+            open: false,
             fromDate: "",
             toDate: "",
             allDates: [],
@@ -220,16 +220,29 @@ class AnalysisReport extends Component{
                 let heatMaps = [];
                 for (let k in response){
                     let positionMatrix = response[k]["position"][0];
+                    let xDim = response[k]["griddim"][0][0];
+                    let yDim = response[k]["griddim"][0][1];
                     positionMatrix = Array.from(positionMatrix);
-                    const xLabels = new Array(positionMatrix.length).fill(0).map((_,i) => `${i}`);
-                    const yLabels = new Array(positionMatrix[0].length).fill(0).map((_,i) => `${i}`);
+                    const xLabels = new Array(Math.round(xDim)).fill(0).map((_,i) => `${i+1}m`);
+                    const yLabels = new Array(Math.round(yDim)).fill(0).map((_,i) => `${i+1}m`);
 
                     const data = positionMatrix;
-                    for (let i in data){
-                        for (let j in data[i]){
+                    for (let i=0; i < data.length; ++i){
+                        for (let j=0; j < data[i].length; ++j){
                             data[i][j] =Math.round((data[i][j]*100 + Number.EPSILON) * 1000) / 1000;
+                            console.log(j+":"+i);
+                            if (i === Math.ceil(response[k]["receivers"]["receiver1"]["position"][0]/100) && j === Math.ceil(response[k]["receivers"]["receiver1"]["position"][1]/100)){
+                                data[i][j] = 1;
+                            }else if (i === Math.ceil(response[k]["receivers"]["receiver2"]["position"][0]/100) && j === Math.ceil(response[k]["receivers"]["receiver2"]["position"][1]/100)){
+                                data[i][j] = 1;
+                            }else if (i === Math.ceil(response[k]["receivers"]["receiver3"]["position"][0]/100) && j === Math.ceil(response[k]["receivers"]["receiver3"]["position"][1]/100)){
+                                data[i][j] = 1;
+                            }else if (i === Math.ceil(response[k]["receivers"]["receiver4"]["position"][0]/100) && j === Math.ceil(response[k]["receivers"]["receiver4"]["position"][1]/100)){
+                                data[i][j] = 1;
+                            }
                         }
                     }
+
                     let temp = [];
                     temp.push(
                         <div className={classes.heatmapex}>
@@ -253,12 +266,13 @@ class AnalysisReport extends Component{
                                 showData={true}
                                 xStepLabel={ 1 }
                                 yStepLabel={ 1 }
-                                showTicks={ "x" }
+                                showTicks={ true }
                                 bordered={ true }
                                 borderRadius={ "4px" }
                                 squares
                                 onClick={(data, x, y) => alert(`Data: ${ data }, X: ${x}, Y: ${y}`)}
-                            />
+                            >
+                            </HeatMap>
                             <div className={classes.iconsBottom}>
                                 <IconButton className={classes.receiver3}>
                                     <RssFeedIcon fontSize={"large"}/>

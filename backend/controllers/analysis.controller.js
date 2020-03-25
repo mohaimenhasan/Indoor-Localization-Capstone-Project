@@ -118,9 +118,6 @@ async function getAnalysisData(from, to){
                 //console.log(data);
                 let vals = [];
                 for(let i=0; i < data.length; ++i){
-                    // console.log("----------");
-                    // console.log(data[i].timefrom);
-                    // console.log(data[i].timeto);
                     if (data[i].timefrom >= from && data[i].timeto <= to){
                         vals.push(data[i]);
                     }
@@ -143,8 +140,6 @@ exports.storeAnalysisData = async function(req, res, next){
         let timeTo = new Date(val["timeto"]);
         let allReceivers = val["receivers"];
         let griddim = new Array(val["gridDim"]);
-
-        console.log(griddim);
         await saveAnalysisData(gridData, timeFrom, timeTo, griddim,
             allReceivers["receiver0"]["position"], allReceivers["receiver0"]["angle_of_arrival"], allReceivers["receiver0"]["line"],
             allReceivers["receiver1"]["position"], allReceivers["receiver1"]["angle_of_arrival"], allReceivers["receiver1"]["line"],

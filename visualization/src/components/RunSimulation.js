@@ -23,7 +23,6 @@ import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import AnalysisReport from "./AnalysisReport";
 import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
 
-
 let drawerWidth = 240;
 let useStyles;
 
@@ -246,7 +245,6 @@ class RunSimulation extends Component{
                 <main className={classes.content}>
                     <div className={classes.appBarSpacer} />
                     <Container maxWidth="lg" className={classes.container}>
-
                         <Box pt={4}>
                             <Copyright />
                         </Box>
