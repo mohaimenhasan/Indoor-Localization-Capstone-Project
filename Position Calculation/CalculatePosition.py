@@ -19,7 +19,7 @@ class Resolution(Enum):
     Decimeters = 10
     Meters = 100
 
-TESTING = False
+TESTING = True
 DEFAULT_SLOPE = (math.pi / 4)
 connectionMgr = ConnectionManager()
 
@@ -50,10 +50,10 @@ def main():
         receiverData = fetchReceiverData()
         positionData, linesOfIntersection = calculatePosition(receiverData, Resolution.Meters)
 
-    endTime = str(datetime.datetime.now())
-    response = constructResponse(positionData, receiverData, startTime, endTime, linesOfIntersection)
-    #print(response)
-    connectionMgr.sendPositionData(response)
+        endTime = str(datetime.datetime.now())
+        response = constructResponse(positionData, receiverData, startTime, endTime, linesOfIntersection)
+        #print(response)
+        connectionMgr.sendPositionData(response)
 
 # function: calculatePosition
 # input(s):
@@ -150,11 +150,14 @@ def calculatePosition(receiverData, resolution=Resolution.Centimeters):
     # Show plot of position estimation
     generateHeatmap(positionMatrix)
     generateReceiverLines(directionLines)
+    generateReceivers(receiverData)
     plt.show()
     positionMatrix = changeResolution(positionMatrix, resolution)
+    positionMatrix = normalize(positionMatrix)
     print("changed resolution from Centimeters to ", resolution)
     generateHeatmap(positionMatrix)
     generateReceiverLines(directionLines, resolution)
+    generateReceivers(receiverData, resolution)
     plt.show()
     
     return positionMatrix, linesOfIntersection
@@ -265,6 +268,17 @@ def generateLine(line, resolution):
             y.append(yVal)
 
     return (x,y)
+    
+def generateReceivers(receiverData, resolution=Resolution.Centimeters):
+    resolutionScale = int(resolution.value)
+    for data in receiverData:
+        receiver = receivers[data.get_receiverId()]
+        # print(str(receiver))
+        receiverPositon = receiver.get_receiverPosition()
+        x = receiverPositon.get_x()/resolutionScale
+        y = receiverPositon.get_y()/resolutionScale
+        plt.plot(x=x, y=y, style='wx', markersize = 100)
+    pass
 
 def findYIntercept(slope, position):
     return position.y - (slope * position.x)
@@ -282,6 +296,9 @@ def calculateGaussian(sigma, distanceFromIntersection):
         return 0
     return multiplier * exponential
 
+def normalize(matrix):
+    sum = np.sum(matrix)
+    return matrix/sum
 def config():
     # Dimension given in cm
     global xDimension
