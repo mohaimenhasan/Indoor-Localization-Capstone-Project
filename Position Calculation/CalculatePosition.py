@@ -148,10 +148,14 @@ def calculatePosition(receiverData, resolution=Resolution.Centimeters):
                 positionMatrix[i][j] = 0
 
     # Show plot of position estimation
-    plotHeatmap(positionMatrix)
+    generateHeatmap(positionMatrix)
+    generateReceiverLines(directionLines)
+    plt.show()
     positionMatrix = changeResolution(positionMatrix, resolution)
     print("changed resolution from Centimeters to ", resolution)
-    plotHeatmap(positionMatrix)
+    generateHeatmap(positionMatrix)
+    generateReceiverLines(directionLines, resolution)
+    plt.show()
     
     return positionMatrix, linesOfIntersection
 
@@ -235,7 +239,7 @@ def changeResolution(positionMatrix, units=Resolution.Meters):
     
     return newPositionMatrix
     
-def plotHeatmap(matrix):
+def generateHeatmap(matrix):
     # print(positionMatrix)
     plt.imshow(matrix, cmap='jet')
     plt.gca().invert_yaxis()
@@ -244,7 +248,23 @@ def plotHeatmap(matrix):
     plt.ylabel('y', fontsize=18)
     plt.grid()
     plt.colorbar()
-    plt.show()
+
+def generateReceiverLines(lines, resolution=Resolution.Centimeters):
+    for line in lines:
+        (x,y) = generateLine(line, resolution)
+        plt.plot(x,y, 'w--', label=str(line))
+
+def generateLine(line, resolution):
+    resolutionScale = int(resolution.value)
+    x = []; y= []
+    
+    for i in range(int(xDimension/resolutionScale)):
+        yVal = line.calculateY(i*resolutionScale)/resolutionScale
+        if yVal <= (yDimension/resolutionScale) and yVal >= 0:
+            x.append(i)
+            y.append(yVal)
+
+    return (x,y)
 
 def findYIntercept(slope, position):
     return position.y - (slope * position.x)
