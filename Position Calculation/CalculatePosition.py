@@ -244,7 +244,7 @@ def changeResolution(positionMatrix, units=Resolution.Meters):
     
 def generateHeatmap(matrix):
     # print(positionMatrix)
-    plt.imshow(matrix, cmap='jet')
+    plt.imshow(matrix,interpolation='nearest', cmap='jet')
     plt.gca().invert_yaxis()
     # plt.axis([0,10,0,10]) # Limit size of axis to 10x10
     plt.xlabel('x', fontsize=18)
