@@ -19,7 +19,7 @@ class Resolution(Enum):
     Decimeters = 10
     Meters = 100
 
-TESTING = True
+TESTING = False
 DEFAULT_SLOPE = (math.pi / 4)
 connectionMgr = ConnectionManager()
 
