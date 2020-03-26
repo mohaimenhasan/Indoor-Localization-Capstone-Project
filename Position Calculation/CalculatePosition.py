@@ -50,10 +50,10 @@ def main():
         receiverData = fetchReceiverData()
         positionData, linesOfIntersection = calculatePosition(receiverData, Resolution.Meters)
 
-    endTime = str(datetime.datetime.now())
-    response = constructResponse(positionData, receiverData, startTime, endTime, linesOfIntersection)
-    #print(response)
-    connectionMgr.sendPositionData(response)
+        endTime = str(datetime.datetime.now())
+        response = constructResponse(positionData, receiverData, startTime, endTime, linesOfIntersection)
+        #print(response)
+        connectionMgr.sendPositionData(response)
 
 # function: calculatePosition
 # input(s):
@@ -148,10 +148,17 @@ def calculatePosition(receiverData, resolution=Resolution.Centimeters):
                 positionMatrix[i][j] = 0
 
     # Show plot of position estimation
-    plotHeatmap(positionMatrix)
+    generateHeatmap(positionMatrix)
+    generateReceiverLines(directionLines)
+    generateReceivers(receiverData)
+    plt.show()
     positionMatrix = changeResolution(positionMatrix, resolution)
+    positionMatrix = normalize(positionMatrix)
     print("changed resolution from Centimeters to ", resolution)
-    plotHeatmap(positionMatrix)
+    generateHeatmap(positionMatrix)
+    generateReceiverLines(directionLines, resolution)
+    generateReceivers(receiverData, resolution) 
+    plt.show()
     
     return positionMatrix, linesOfIntersection
 
@@ -235,16 +242,42 @@ def changeResolution(positionMatrix, units=Resolution.Meters):
     
     return newPositionMatrix
     
-def plotHeatmap(matrix):
+def generateHeatmap(matrix):
     # print(positionMatrix)
-    plt.imshow(matrix, cmap='jet')
+    plt.imshow(matrix,interpolation='nearest', cmap='jet')
     plt.gca().invert_yaxis()
     # plt.axis([0,10,0,10]) # Limit size of axis to 10x10
     plt.xlabel('x', fontsize=18)
     plt.ylabel('y', fontsize=18)
     plt.grid()
     plt.colorbar()
-    plt.show()
+
+def generateReceiverLines(lines, resolution=Resolution.Centimeters):
+    for line in lines:
+        (x,y) = generateLine(line, resolution)
+        plt.plot(x,y, 'w--', label=str(line))
+
+def generateLine(line, resolution):
+    resolutionScale = int(resolution.value)
+    x = []; y= []
+    
+    for i in range(int(xDimension/resolutionScale)):
+        yVal = line.calculateY(i*resolutionScale)/resolutionScale
+        if yVal <= (yDimension/resolutionScale) and yVal >= 0:
+            x.append(i)
+            y.append(yVal)
+
+    return (x,y)
+    
+def generateReceivers(receiverData, resolution=Resolution.Centimeters):
+    resolutionScale = int(resolution.value)
+    for data in receiverData:
+        receiver = receivers[data.get_receiverId()]
+        # print(str(receiver))
+        receiverPositon = receiver.get_receiverPosition()
+        x = receiverPositon.get_x()/resolutionScale
+        y = receiverPositon.get_y()/resolutionScale
+        plt.plot(x,y,'w*', markersize=30)
 
 def findYIntercept(slope, position):
     return position.y - (slope * position.x)
@@ -262,6 +295,9 @@ def calculateGaussian(sigma, distanceFromIntersection):
         return 0
     return multiplier * exponential
 
+def normalize(matrix):
+    sum = np.sum(matrix)
+    return matrix/sum
 def config():
     # Dimension given in cm
     global xDimension
