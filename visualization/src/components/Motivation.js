@@ -29,6 +29,7 @@ import Dashboard from "./Dashboard";
 import DashboardIcon from "@material-ui/icons/Dashboard";
 import Box from "@material-ui/core/Box";
 import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
+import RunSimulation from "./RunSimulation";
 
 function Copyright() {
     return (
@@ -178,6 +179,12 @@ class Motivation extends Component{
         })
     }
 
+    changeToRun(event){
+        this.props.appContext.setState({
+            currentScreen: <RunSimulation appContext={this.props.appContext}/>
+        });
+    }
+
     render(){
         const classes = this.props.classes;
         const handleDrawerOpen = () => {
@@ -211,7 +218,7 @@ class Motivation extends Component{
                     </ListItemIcon>
                     <ListItemText primary="Past Results" />
                 </ListItem>
-                <ListItem button>
+                <ListItem button onClick={(event) => this.changeToRun(event)}>
                     <ListItemIcon>
                         <PlayCircleOutlineIcon/>
                     </ListItemIcon>

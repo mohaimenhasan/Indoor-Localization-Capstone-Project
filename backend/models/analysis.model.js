@@ -7,22 +7,34 @@ let analysisSchema = new Schema({
         receiver1: {
             position: {type: Array, default: []},
             angle_of_arrival: {type: Number},
-            line: {type: String, default: null}
+            line: {
+                slope: {type: Number, default: null},
+                intercept: {type: Number, default: null}
+            }
         },
         receiver2: {
             position: {type: Array, default: []},
             angle_of_arrival: {type: Number},
-            line: {type: String, default: null}
+            line: {
+                slope: {type: Number, default: null},
+                intercept: {type: Number, default: null}
+            }
         },
         receiver3: {
             position: {type: Array, default: []},
             angle_of_arrival: {type: Number},
-            line: {type: String, default: null}
+            line: {
+                slope: {type: Number, default: null},
+                intercept: {type: Number, default: null}
+            }
         },
         receiver4: {
             position: {type: Array, default: []},
             angle_of_arrival: {type: Number},
-            line: {type: String, default: null}
+            line: {
+                slope: {type: Number, default: null},
+                intercept: {type: Number, default: null}
+            }
         }
     },
     timefrom: {type: Date, default: Date.now },

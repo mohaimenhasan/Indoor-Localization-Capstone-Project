@@ -35,6 +35,7 @@ import BuildIcon from '@material-ui/icons/Build';
 import Motivation from './Motivation';
 import Setup from "./Setup";
 import PlayCircleOutlineIcon from '@material-ui/icons/PlayCircleOutline';
+import RunSimulation from "./RunSimulation";
 
 function Copyright() {
     return (
@@ -192,6 +193,12 @@ class Dashboard extends Component{
         });
     }
 
+    changeToRun(event){
+        this.props.appContext.setState({
+            currentScreen: <RunSimulation appContext={this.props.appContext}/>
+        });
+    }
+
     changeToReport(event){
         this.props.appContext.setState({
             currentScreen: <AnalysisReport appContext={this.props.appContext}/>
@@ -241,7 +248,7 @@ class Dashboard extends Component{
                     </ListItemIcon>
                     <ListItemText primary="Past Results" />
                 </ListItem>
-                <ListItem button>
+                <ListItem button onClick={(event) => this.changeToRun(event)}>
                     <ListItemIcon>
                         <PlayCircleOutlineIcon/>
                     </ListItemIcon>

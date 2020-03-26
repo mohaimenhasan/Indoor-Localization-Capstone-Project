@@ -50,10 +50,9 @@ def main():
         receiverData = fetchReceiverData()
         positionData, linesOfIntersection = calculatePosition(receiverData, Resolution.Meters)
 
-        endTime = str(datetime.datetime.now())
-        response = constructResponse(positionData, receiverData, startTime, endTime, linesOfIntersection)
-        #print(response)
-        connectionMgr.sendPositionData(response)
+    endTime = str(datetime.datetime.now())
+    response = constructResponse(positionData, receiverData, startTime, endTime, linesOfIntersection)
+    connectionMgr.sendPositionData(response)
 
 # function: calculatePosition
 # input(s):
@@ -78,7 +77,7 @@ def calculatePosition(receiverData, resolution=Resolution.Centimeters):
 
         updatedLine = Line(equivalentSlope, findYIntercept(
             equivalentSlope, receiverPosition))
-        linesOfIntersection[receiverId] = str(updatedLine)
+        linesOfIntersection[receiverId] = (updatedLine.returnLineProperties())
         print(str(updatedLine))
         directionLines = np.append(directionLines, updatedLine)
 

@@ -45,9 +45,9 @@ exports.getAllData = async function(req, res, next){
         .then(data => {res.send(data);});
 };
 
-async function saveAnalysisData(gridData, from, to, griddim, receiver1Pos, receiver1aoa, receiver1line, receiver2Pos,
-                                receiver2aoa, receiver2line, receiver3Pos, receiver3aoa, receiver3line, receiver4Pos,
-                                receiver4aoa, receiver4line){
+async function saveAnalysisData(gridData, from, to, griddim, receiver1Pos, receiver1aoa, receiver1slope, receiver1int, receiver2Pos,
+                                receiver2aoa, receiver2slope, receiver2int, receiver3Pos, receiver3aoa, receiver3slope, receiver3int,
+                                receiver4Pos, receiver4aoa, receiver4slope, receiver4int){
     try{
         let analVal = new AnalysisVal({
             position: gridData,
@@ -57,22 +57,34 @@ async function saveAnalysisData(gridData, from, to, griddim, receiver1Pos, recei
                 receiver1: {
                     position: receiver1Pos,
                     angle_of_arrival: receiver1aoa,
-                    line: receiver1line
+                    line: {
+                        slope: receiver1slope,
+                        intercept: receiver1int
+                    }
                 },
                 receiver2: {
                     position: receiver2Pos,
                     angle_of_arrival: receiver2aoa,
-                    line: receiver2line
+                    line: {
+                        slope: receiver2slope,
+                        intercept: receiver2int
+                    }
                 },
                 receiver3: {
                     position: receiver3Pos,
                     angle_of_arrival: receiver3aoa,
-                    line: receiver3line
+                    line: {
+                        slope: receiver3slope,
+                        intercept: receiver3int
+                    }
                 },
                 receiver4: {
                     position: receiver4Pos,
                     angle_of_arrival: receiver4aoa,
-                    line: receiver4line
+                    line: {
+                        slope: receiver4slope,
+                        intercept: receiver4int
+                    }
                 }
             },
             griddim: griddim
@@ -141,10 +153,10 @@ exports.storeAnalysisData = async function(req, res, next){
         let allReceivers = val["receivers"];
         let griddim = new Array(val["gridDim"]);
         await saveAnalysisData(gridData, timeFrom, timeTo, griddim,
-            allReceivers["receiver0"]["position"], allReceivers["receiver0"]["angle_of_arrival"], allReceivers["receiver0"]["line"],
-            allReceivers["receiver1"]["position"], allReceivers["receiver1"]["angle_of_arrival"], allReceivers["receiver1"]["line"],
-            allReceivers["receiver2"]["position"], allReceivers["receiver2"]["angle_of_arrival"], allReceivers["receiver2"]["line"],
-            allReceivers["receiver3"]["position"], allReceivers["receiver3"]["angle_of_arrival"], allReceivers["receiver3"]["line"])
+            allReceivers["receiver0"]["position"], allReceivers["receiver0"]["angle_of_arrival"], allReceivers["receiver0"]["line"]["slope"], allReceivers["receiver0"]["line"]["intercept"],
+            allReceivers["receiver1"]["position"], allReceivers["receiver1"]["angle_of_arrival"], allReceivers["receiver1"]["line"]["slope"], allReceivers["receiver1"]["line"]["intercept"],
+            allReceivers["receiver2"]["position"], allReceivers["receiver2"]["angle_of_arrival"], allReceivers["receiver2"]["line"]["slope"], allReceivers["receiver2"]["line"]["intercept"],
+            allReceivers["receiver3"]["position"], allReceivers["receiver3"]["angle_of_arrival"], allReceivers["receiver3"]["line"]["slope"], allReceivers["receiver3"]["line"]["intercept"])
             .then(response => {
                 if (response === null){
                     res.send("Data could not be stored");

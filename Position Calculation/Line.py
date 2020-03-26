@@ -11,3 +11,9 @@ class Line:
     
     def calculateY(self, x):
         return self.slope * x + self.intercept
+
+    def returnLineProperties(self):
+        return {
+            "slope": self.slope,
+            "intercept": self.intercept
+        }

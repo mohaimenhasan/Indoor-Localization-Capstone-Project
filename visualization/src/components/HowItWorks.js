@@ -22,6 +22,7 @@ import BarChartIcon from '@material-ui/icons/BarChart';
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import AnalysisReport from "./AnalysisReport";
 import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
+import RunSimulation from "./RunSimulation";
 
 
 let drawerWidth = 240;
@@ -183,6 +184,12 @@ class howItWorks extends Component{
         })
     }
 
+    changeToRun(event){
+        this.props.appContext.setState({
+            currentScreen: <RunSimulation appContext={this.props.appContext}/>
+        });
+    }
+
     render() {
         let classes = this.props.classes;
         const mainListItems = (
@@ -199,7 +206,7 @@ class howItWorks extends Component{
                     </ListItemIcon>
                     <ListItemText primary="Past Results" />
                 </ListItem>
-                <ListItem button>
+                <ListItem button onClick={(event) => this.changeToRun(event)}>
                     <ListItemIcon>
                         <PlayCircleOutlineIcon/>
                     </ListItemIcon>

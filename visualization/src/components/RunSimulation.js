@@ -24,9 +24,28 @@ import AnalysisReport from "./AnalysisReport";
 import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
 import Plot from 'react-plotly.js';
 import Grid from "@material-ui/core/Grid";
+import PlayArrowIcon from '@material-ui/icons/PlayArrow';
+import Paper from "@material-ui/core/Paper";
+import Button from "@material-ui/core/Button";
+import fetch from "node-fetch";
+import LinearProgress from "@material-ui/core/LinearProgress";
+import {lighten} from "@material-ui/core";
+import withStyles from "@material-ui/core/styles/withStyles";
 
 let drawerWidth = 240;
 let useStyles;
+
+const api_base_url= "http://localhost:8888/";
+const BorderLinearProgress = withStyles({
+    root: {
+        height: 10,
+        backgroundColor: lighten('#ff6c5c', 0.5),
+    },
+    bar: {
+        borderRadius: 20,
+        backgroundColor: '#ff6c5c',
+    },
+})(LinearProgress);
 
 useStyles = makeStyles(theme => ({
     root: {
@@ -103,7 +122,7 @@ useStyles = makeStyles(theme => ({
         flexDirection: 'column',
     },
     fixedHeight: {
-        height: 240,
+        height: 70,
     },
     heatmapex: {
         fontSize: "16px",
@@ -157,7 +176,8 @@ class RunSimulation extends Component{
     constructor(props){
         super(props);
         this.state = {
-            open: true
+            open: true,
+            currentMap: []
         }
     }
     handleDrawerOpen = () => {
@@ -184,15 +204,202 @@ class RunSimulation extends Component{
         })
     }
 
+    runSimulation = async (event) => {
+        const classes = this.props.classes;
+        this.setState({
+           currentMap: <BorderLinearProgress
+                           className={classes.margin}
+                           variant="determinate"
+                           color="secondary"
+                           value={50}
+                       />
+        });
+        await fetch(api_base_url+'analysis/getCurrentRun',
+            {
+                method: 'GET',
+                headers: {
+                    "Content-Type": "application/json",
+                    "Access-Control-Allow-Origin": '*'
+                }
+            }).then(res => res.json())
+            .then(response => {
+                console.log(response);
+                let r1x = [];
+                let r1y = [];
+                let r2x = [];
+                let r2y = [];
+                let r3x = [];
+                let r3y = [];
+                let r4x = [];
+                let r4y = [];
+                let heatMaps = [];
+                let positionMatrix = response["position"][0];
+                let xDim = response["griddim"][0][0];
+                let yDim = response["griddim"][0][1];
+                positionMatrix = Array.from(positionMatrix);
+
+                for (let i=0; i < xDim; ++i){
+                    r1x.push(i);
+                    r1y.push(response["receivers"]["receiver1"]["line"]["slope"]*i+response["receivers"]["receiver1"]["line"]["intercept"]/100.0);
+                }
+                for (let i=0; i < xDim; ++i){
+                    r2x.push(i);
+                    r2y.push(response["receivers"]["receiver2"]["line"]["slope"]*i+response["receivers"]["receiver2"]["line"]["intercept"]/100.0);
+                }
+
+                for (let i=0; i < xDim; ++i){
+                    r3x.push(i);
+                    r3y.push(response["receivers"]["receiver3"]["line"]["slope"]*i+response["receivers"]["receiver3"]["line"]["intercept"]/100.0);
+                }
+
+                for (let i=0; i < xDim; ++i){
+                    r3x.push(i);
+                    r3y.push(response["receivers"]["receiver4"]["line"]["slope"]*i+response["receivers"]["receiver4"]["line"]["intercept"]/100.0);
+                }
+
+                let xLabels = [];
+                let yLabels = [];
+
+                for (let i=0; i < xDim; ++i){
+                    xLabels.push(i);
+                }
+
+                for (let i=0; i < yDim; ++i){
+                    yLabels.push(i);
+                }
+                const data = positionMatrix;
+
+                let temp = [];
+                temp.push(
+                    <div className={classes.heatmapex}>
+                        <Plot
+                            data={[{
+                                z: data,
+                                x: xLabels,
+                                y: yLabels,
+                                type: "heatmap",
+                                colorscale: "Portland",
+                                hovertemplate: "Position: %{x}m, %{y}m"
+                            },
+                                {
+                                    x: [(response["receivers"]["receiver1"]["position"][0])/100.0],
+                                    y: [(response["receivers"]["receiver1"]["position"][1])/100.0],
+                                    type: 'scatter',
+                                    mode: 'markers',
+                                    marker: {
+                                        color: 'rgb(17, 157, 255)',
+                                        size: 30,
+                                        line: {
+                                            color: 'rgb(231, 99, 250)',
+                                            width: 6
+                                        },
+                                        symbol: 'asterisk'
+                                    },
+                                    showlegend: false,
+                                    name: 'Receiver 1',
+                                    hovertemplate: "Position: %{x}m, %{y}m"
+                                },
+                                {
+                                    x: [(response["receivers"]["receiver2"]["position"][0])/100.0],
+                                    y: [(response["receivers"]["receiver2"]["position"][1])/100.0],
+                                    type: 'scatter',
+                                    mode: 'markers',
+                                    marker: {
+                                        color: 'rgb(17, 157, 255)',
+                                        size: 30,
+                                        line: {
+                                            color: 'rgb(231, 99, 250)',
+                                            width: 6
+                                        },
+                                        symbol: 'asterisk'
+                                    },
+                                    showlegend: false,
+                                    name: 'Receiver 2',
+                                    hovertemplate: "Position: %{x}m, %{y}m"
+                                },
+                                {
+                                    x: [(response["receivers"]["receiver3"]["position"][0])/100.0],
+                                    y: [(response["receivers"]["receiver3"]["position"][1])/100.0],
+                                    type: 'scatter',
+                                    mode: 'markers',
+                                    marker: {
+                                        color: 'rgb(17, 157, 255)',
+                                        size: 30,
+                                        line: {
+                                            color: 'rgb(231, 99, 250)',
+                                            width: 6
+                                        },
+                                        symbol: 'asterisk'
+                                    },
+                                    showlegend: false,
+                                    name: 'Receiver 3',
+                                    hovertemplate: "Position: %{x}m, %{y}m"
+                                },
+                                {
+                                    x: [(response["receivers"]["receiver4"]["position"][0])/100.0],
+                                    y: [(response["receivers"]["receiver4"]["position"][1])/100.0],
+                                    type: 'scatter',
+                                    mode: 'markers',
+                                    marker: {
+                                        color: 'rgb(17, 157, 255)',
+                                        size: 30,
+                                        line: {
+                                            color: 'rgb(231, 99, 250)',
+                                            width: 6
+                                        },
+                                        symbol: 'asterisk'
+                                    },
+                                    showlegend: false,
+                                    name: 'Receiver 4',
+                                    hovertemplate: "Position: %{x}m, %{y}m"
+                                },
+                                {
+                                    x: r1x,
+                                    y: r1y,
+                                    mode: 'lines',
+                                    showlegend: false
+                                },
+                                {
+                                    x: r2x,
+                                    y: r2y,
+                                    mode: 'lines',
+                                    showlegend: false
+                                },
+                                {
+                                    x: r3x,
+                                    y: r3y,
+                                    mode: 'lines',
+                                    showlegend: false
+                                },
+                                {
+                                    x: r4x,
+                                    y: r4y,
+                                    mode: 'lines',
+                                    showlegend: false
+                                }
+                            ]}
+                            layout={{
+                                width: "80vw",
+                                height: "60vh",
+                                title: "Timeline: <b>"+response["timefrom"]+"</b> to <b>"+response["timeto"]+"</b>",
+                                font: {
+                                    size: "20px"
+                                }}}
+                        />
+                    </div>
+                );
+                heatMaps.push(temp);
+
+
+                this.setState({
+                    currentMap: heatMaps
+                });
+            })
+    };
+
     render() {
         let classes = this.props.classes;
-        let x = [];
-        let y = [];
-        for (let i=0; i < 100; ++i){
-            x.push(i);
-            y.push(3*i + 5);
-        }
-
+        const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
         const mainListItems = (
             <div>
                 <ListItem button onClick={(event) => this.changeDashboard(event)}>
@@ -231,7 +438,7 @@ class RunSimulation extends Component{
                             <MenuIcon />
                         </IconButton>
                         <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-                            How It Works
+                            Run Simulation
                         </Typography>
                     </Toolbar>
                 </AppBar>
@@ -254,49 +461,21 @@ class RunSimulation extends Component{
                 <main className={classes.content}>
                     <div className={classes.appBarSpacer} />
                     <Container maxWidth="lg" className={classes.container}>
+                        <Grid item xs={4} md={4} lg={4} style={{marginLeft: "25vw"}}>
+                            <Paper className={fixedHeightPaper}>
+                                <Button
+                                    variant="contained"
+                                    color="secondary"
+                                    className={classes.button}
+                                    startIcon={<PlayArrowIcon/>}
+                                    onClick={(event)=> this.runSimulation(event)}
+                                >
+                                    Run Simulation
+                                </Button>
+                            </Paper>
+                        </Grid>
                         <Grid item xs={12} md={12} lg={12}>
-                            <Plot
-                                data={[{
-                                        z: [[1, 20, 30],
-                                            [20, 1, 60],
-                                            [30, 60, 1]],
-                                        x: [1, 50, 100],
-                                        y: [1, 50, 100],
-                                        type: "heatmap",
-                                        colorscale: "Portland"
-                                    },
-                                    {
-                                        x: [2],
-                                        y: [4.5],
-                                        type: 'scatter',
-                                        mode: 'markers',
-                                        marker: {
-                                            color: 'rgb(17, 157, 255)',
-                                            size: 30,
-                                            line: {
-                                                color: 'rgb(255, 0, 255)',
-                                                width: 6
-                                            },
-                                            symbol: 'asterisk'
-                                        },
-                                        showlegend: false,
-                                        name: 'Legendary',
-                                        hovertemplate: "Position: %{x}m,%{y}m"
-                                    },{
-                                        x: x,
-                                        y: y,
-                                        type: 'scatter',
-                                        showlegend: false
-                                    }]
-                                }
-                                layout={{
-                                    width: "80vw",
-                                    height: "60vh",
-                                    title: "Heat Map of Position Estimation",
-                                    font: {
-                                        size: "20px"
-                                    }}}
-                            />
+                            {this.state.currentMap}
                         </Grid>
                         <Box pt={4}>
                             <Copyright />

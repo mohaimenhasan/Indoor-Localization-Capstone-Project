@@ -29,6 +29,7 @@ import fetch from 'node-fetch';
 import Button from "@material-ui/core/Button";
 import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
 import Plot from "react-plotly.js";
+import RunSimulation from "./RunSimulation";
 
 
 function Copyright() {
@@ -193,6 +194,12 @@ class AnalysisReport extends Component{
         });
     }
 
+    changeToRun(event){
+        this.props.appContext.setState({
+            currentScreen: <RunSimulation appContext={this.props.appContext}/>
+        });
+    }
+
     handleDateFrom = (event) => {
         this.setState({
             fromDate: event.target.value
@@ -234,11 +241,34 @@ class AnalysisReport extends Component{
                         yLabels.push(i);
                     }
                     const data = positionMatrix;
-                    for (let i=0; i < data.length; ++i){
-                        for (let j=0; j < data[i].length; ++j){
-                            data[i][j] =Math.round((data[i][j]*100 + Number.EPSILON) * 1000) / 1000;
-                        }
+                    let r1x = [];
+                    let r1y = [];
+                    let r2x = [];
+                    let r2y = [];
+                    let r3x = [];
+                    let r3y = [];
+                    let r4x = [];
+                    let r4y = [];
+
+                    for (let i=0; i < xDim; ++i){
+                        r1x.push(i);
+                        r1y.push(response[k]["receivers"]["receiver1"]["line"]["slope"]*i+response[k]["receivers"]["receiver1"]["line"]["intercept"]/100.0);
                     }
+                    for (let i=0; i < xDim; ++i){
+                        r2x.push(i);
+                        r2y.push(response[k]["receivers"]["receiver2"]["line"]["slope"]*i+response[k]["receivers"]["receiver2"]["line"]["intercept"]/100.0);
+                    }
+
+                    for (let i=0; i < xDim; ++i){
+                        r3x.push(i);
+                        r3y.push(response[k]["receivers"]["receiver3"]["line"]["slope"]*i+response[k]["receivers"]["receiver3"]["line"]["intercept"]/100.0);
+                    }
+
+                    for (let i=0; i < xDim; ++i){
+                        r3x.push(i);
+                        r3y.push(response[k]["receivers"]["receiver4"]["line"]["slope"]*i+response[k]["receivers"]["receiver4"]["line"]["intercept"]/100.0);
+                    }
+
 
                     let temp = [];
                     temp.push(
@@ -249,7 +279,8 @@ class AnalysisReport extends Component{
                                         x: xLabels,
                                         y: yLabels,
                                         type: "heatmap",
-                                        colorscale: "Portland"
+                                        colorscale: "Portland",
+                                        hovertemplate: "Position: %{x}m, %{y}m"
                                     },
                                     {
                                         x: [(response[k]["receivers"]["receiver1"]["position"][0])/100.0],
@@ -322,6 +353,30 @@ class AnalysisReport extends Component{
                                         showlegend: false,
                                         name: 'Receiver 4',
                                         hovertemplate: "Position: %{x}m, %{y}m"
+                                    },
+                                    {
+                                        x: r1x,
+                                        y: r1y,
+                                        mode: 'lines',
+                                        showlegend: false
+                                    },
+                                    {
+                                        x: r2x,
+                                        y: r2y,
+                                        mode: 'lines',
+                                        showlegend: false
+                                    },
+                                    {
+                                        x: r3x,
+                                        y: r3y,
+                                        mode: 'lines',
+                                        showlegend: false
+                                    },
+                                    {
+                                        x: r4x,
+                                        y: r4y,
+                                        mode: 'lines',
+                                        showlegend: false
                                     }
                                 ]}
                                 layout={{
@@ -397,7 +452,7 @@ class AnalysisReport extends Component{
                     </ListItemIcon>
                     <ListItemText primary="How it works" />
                 </ListItem>
-                <ListItem button>
+                <ListItem button onClick={(event) => this.changeToRun(event)}>
                     <ListItemIcon>
                         <PlayCircleOutlineIcon/>
                     </ListItemIcon>
