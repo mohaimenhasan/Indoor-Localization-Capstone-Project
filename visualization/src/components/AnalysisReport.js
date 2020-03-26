@@ -27,9 +27,8 @@ import TextField from "@material-ui/core/TextField";
 import MenuItem from "@material-ui/core/MenuItem";
 import fetch from 'node-fetch';
 import Button from "@material-ui/core/Button";
-import RssFeedIcon from "@material-ui/icons/RssFeed";
-import HeatMap from "react-simple-heatmap";
 import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
+import Plot from "react-plotly.js";
 
 
 function Copyright() {
@@ -138,16 +137,16 @@ const useStyles = makeStyles(theme => ({
         height: 240,
     },
     receiver1: {
-        marginRight: "58vw",
+        marginRight: "38vw",
     },
     receiver2: {
-        marginRight: "8vw"
+        marginRight: "0vw"
     },
     receiver3: {
-        marginRight: "58vw"
+        marginRight: "38vw"
     },
     receiver4: {
-        marginRight: "8vw"
+        marginRight: "0vw"
     }
 }));
 
@@ -162,7 +161,7 @@ class AnalysisReport extends Component{
     constructor(props){
         super(props);
         this.state = {
-            open: false,
+            open: true,
             fromDate: "",
             toDate: "",
             allDates: [],
@@ -223,64 +222,116 @@ class AnalysisReport extends Component{
                     let xDim = response[k]["griddim"][0][0];
                     let yDim = response[k]["griddim"][0][1];
                     positionMatrix = Array.from(positionMatrix);
-                    const xLabels = new Array(Math.round(xDim)).fill(0).map((_,i) => `${i+1}m`);
-                    const yLabels = new Array(Math.round(yDim)).fill(0).map((_,i) => `${i+1}m`);
 
+                    let xLabels = [];
+                    let yLabels = [];
+
+                    for (let i=0; i < xDim; ++i){
+                        xLabels.push(i);
+                    }
+
+                    for (let i=0; i < yDim; ++i){
+                        yLabels.push(i);
+                    }
                     const data = positionMatrix;
                     for (let i=0; i < data.length; ++i){
                         for (let j=0; j < data[i].length; ++j){
                             data[i][j] =Math.round((data[i][j]*100 + Number.EPSILON) * 1000) / 1000;
-                            console.log(j+":"+i);
-                            if (i === Math.ceil(response[k]["receivers"]["receiver1"]["position"][0]/100) && j === Math.ceil(response[k]["receivers"]["receiver1"]["position"][1]/100)){
-                                data[i][j] = 1;
-                            }else if (i === Math.ceil(response[k]["receivers"]["receiver2"]["position"][0]/100) && j === Math.ceil(response[k]["receivers"]["receiver2"]["position"][1]/100)){
-                                data[i][j] = 1;
-                            }else if (i === Math.ceil(response[k]["receivers"]["receiver3"]["position"][0]/100) && j === Math.ceil(response[k]["receivers"]["receiver3"]["position"][1]/100)){
-                                data[i][j] = 1;
-                            }else if (i === Math.ceil(response[k]["receivers"]["receiver4"]["position"][0]/100) && j === Math.ceil(response[k]["receivers"]["receiver4"]["position"][1]/100)){
-                                data[i][j] = 1;
-                            }
                         }
                     }
 
                     let temp = [];
                     temp.push(
                         <div className={classes.heatmapex}>
-                            <div className={classes.iconsTop}>
-                                <IconButton className={classes.receiver1}>
-                                    <RssFeedIcon fontSize={"large"}/>
-                                </IconButton>
-                                <IconButton className={classes.receiver2}>
-                                    <RssFeedIcon fontSize={"large"}/>
-                                </IconButton>
-                            </div>
-                            <HeatMap
-                                data={data}
-                                bgColors={ ["rgb(255, 11, 11)", "rgb(255, 255, 0)"] }
-                                xLabels={xLabels}
-                                yLabels={yLabels}
-                                xLabelsStyle={{ fontWeight: "bold", fontSize: "11px" }}
-                                yLabelsStyle={{ fontWeight: "bold" }}
-                                legendStyle={{ fontWeight: "bold" }}
-                                showLegend={ true }
-                                showData={true}
-                                xStepLabel={ 1 }
-                                yStepLabel={ 1 }
-                                showTicks={ true }
-                                bordered={ true }
-                                borderRadius={ "4px" }
-                                squares
-                                onClick={(data, x, y) => alert(`Data: ${ data }, X: ${x}, Y: ${y}`)}
-                            >
-                            </HeatMap>
-                            <div className={classes.iconsBottom}>
-                                <IconButton className={classes.receiver3}>
-                                    <RssFeedIcon fontSize={"large"}/>
-                                </IconButton>
-                                <IconButton className={classes.receiver4}>
-                                    <RssFeedIcon fontSize={"large"}/>
-                                </IconButton>
-                            </div>
+                            <Plot
+                                data={[{
+                                        z: data,
+                                        x: xLabels,
+                                        y: yLabels,
+                                        type: "heatmap",
+                                        colorscale: "Portland"
+                                    },
+                                    {
+                                        x: [(response[k]["receivers"]["receiver1"]["position"][0])/100.0],
+                                        y: [(response[k]["receivers"]["receiver1"]["position"][1])/100.0],
+                                        type: 'scatter',
+                                        mode: 'markers',
+                                        marker: {
+                                            color: 'rgb(17, 157, 255)',
+                                            size: 30,
+                                            line: {
+                                                color: 'rgb(231, 99, 250)',
+                                                width: 6
+                                            },
+                                            symbol: 'asterisk'
+                                        },
+                                        showlegend: false,
+                                        name: 'Receiver 1',
+                                        hovertemplate: "Position: %{x}m, %{y}m"
+                                    },
+                                    {
+                                        x: [(response[k]["receivers"]["receiver2"]["position"][0])/100.0],
+                                        y: [(response[k]["receivers"]["receiver2"]["position"][1])/100.0],
+                                        type: 'scatter',
+                                        mode: 'markers',
+                                        marker: {
+                                            color: 'rgb(17, 157, 255)',
+                                            size: 30,
+                                            line: {
+                                                color: 'rgb(231, 99, 250)',
+                                                width: 6
+                                            },
+                                            symbol: 'asterisk'
+                                        },
+                                        showlegend: false,
+                                        name: 'Receiver 2',
+                                        hovertemplate: "Position: %{x}m, %{y}m"
+                                    },
+                                    {
+                                        x: [(response[k]["receivers"]["receiver3"]["position"][0])/100.0],
+                                        y: [(response[k]["receivers"]["receiver3"]["position"][1])/100.0],
+                                        type: 'scatter',
+                                        mode: 'markers',
+                                        marker: {
+                                            color: 'rgb(17, 157, 255)',
+                                            size: 30,
+                                            line: {
+                                                color: 'rgb(231, 99, 250)',
+                                                width: 6
+                                            },
+                                            symbol: 'asterisk'
+                                        },
+                                        showlegend: false,
+                                        name: 'Receiver 3',
+                                        hovertemplate: "Position: %{x}m, %{y}m"
+                                    },
+                                    {
+                                        x: [(response[k]["receivers"]["receiver4"]["position"][0])/100.0],
+                                        y: [(response[k]["receivers"]["receiver4"]["position"][1])/100.0],
+                                        type: 'scatter',
+                                        mode: 'markers',
+                                        marker: {
+                                            color: 'rgb(17, 157, 255)',
+                                            size: 30,
+                                            line: {
+                                                color: 'rgb(231, 99, 250)',
+                                                width: 6
+                                            },
+                                            symbol: 'asterisk'
+                                        },
+                                        showlegend: false,
+                                        name: 'Receiver 4',
+                                        hovertemplate: "Position: %{x}m, %{y}m"
+                                    }
+                                ]}
+                                layout={{
+                                    width: "80vw",
+                                    height: "60vh",
+                                    title: "Timeline: <b>"+response[k]["timefrom"]+"</b> to <b>"+response[k]["timeto"]+"</b>",
+                                    font: {
+                                        size: "20px"
+                                    }}}
+                            />
                         </div>
                     );
                     heatMaps.push(temp);

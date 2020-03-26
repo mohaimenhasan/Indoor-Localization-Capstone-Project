@@ -22,6 +22,8 @@ import BarChartIcon from '@material-ui/icons/BarChart';
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import AnalysisReport from "./AnalysisReport";
 import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
+import Plot from 'react-plotly.js';
+import Grid from "@material-ui/core/Grid";
 
 let drawerWidth = 240;
 let useStyles;
@@ -184,6 +186,13 @@ class RunSimulation extends Component{
 
     render() {
         let classes = this.props.classes;
+        let x = [];
+        let y = [];
+        for (let i=0; i < 100; ++i){
+            x.push(i);
+            y.push(3*i + 5);
+        }
+
         const mainListItems = (
             <div>
                 <ListItem button onClick={(event) => this.changeDashboard(event)}>
@@ -245,11 +254,56 @@ class RunSimulation extends Component{
                 <main className={classes.content}>
                     <div className={classes.appBarSpacer} />
                     <Container maxWidth="lg" className={classes.container}>
+                        <Grid item xs={12} md={12} lg={12}>
+                            <Plot
+                                data={[{
+                                        z: [[1, 20, 30],
+                                            [20, 1, 60],
+                                            [30, 60, 1]],
+                                        x: [1, 50, 100],
+                                        y: [1, 50, 100],
+                                        type: "heatmap",
+                                        colorscale: "Portland"
+                                    },
+                                    {
+                                        x: [2],
+                                        y: [4.5],
+                                        type: 'scatter',
+                                        mode: 'markers',
+                                        marker: {
+                                            color: 'rgb(17, 157, 255)',
+                                            size: 30,
+                                            line: {
+                                                color: 'rgb(255, 0, 255)',
+                                                width: 6
+                                            },
+                                            symbol: 'asterisk'
+                                        },
+                                        showlegend: false,
+                                        name: 'Legendary',
+                                        hovertemplate: "Position: %{x}m,%{y}m"
+                                    },{
+                                        x: x,
+                                        y: y,
+                                        type: 'scatter',
+                                        showlegend: false
+                                    }]
+                                }
+                                layout={{
+                                    width: "80vw",
+                                    height: "60vh",
+                                    title: "Heat Map of Position Estimation",
+                                    font: {
+                                        size: "20px"
+                                    }}}
+                            />
+                        </Grid>
                         <Box pt={4}>
                             <Copyright />
                         </Box>
                     </Container>
                 </main>
+
             </div>
         )
     }
