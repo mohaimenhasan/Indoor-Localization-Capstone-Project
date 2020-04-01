@@ -69,10 +69,11 @@ def calculatePosition(receiverData, resolution=Resolution.Centimeters):
     # Update Lines
     linesOfIntersection = {}
     directionLines = np.array(np.shape(0))
-    for i in range(len(receiverData)):
-        data = receiverData[i]
+    for data in receiverData:
         receiverId = data.get_receiverId()
-        equivalentSlope = math.tan(data.get_angleOfArrival())
+        receiverAngleOffset = receivers[receiverId].get_angleOffset()
+        print("receiver angle offset: ", receiverAngleOffset)
+        equivalentSlope = math.tan(data.get_angleOfArrival()) + receiverAngleOffset
         receiverPosition = receivers[receiverId].get_receiverPosition()
 
         updatedLine = Line(equivalentSlope, findYIntercept(
@@ -311,9 +312,9 @@ def config():
     else:
         xDimension = 518
         yDimension = 335
-        receiver1 = Receiver(0, Position(0, yDimension), 0)
+        receiver1 = Receiver(0, Position(0, yDimension), math.radians(-62))
         receiver2 = Receiver(1, Position(0, 0), 0)
-        receiver3 = Receiver(2, Position(xDimension, yDimension), 0)
+        receiver3 = Receiver(2, Position(xDimension, yDimension), math.radians(100))
         receiver4 = Receiver(3, Position(xDimension, 0), 0)
 
 
