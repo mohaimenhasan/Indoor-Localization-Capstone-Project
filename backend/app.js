@@ -16,7 +16,7 @@ var app = express();
 // database setup
 // change the dev url to the cloud for prod
 let dev_url = 'mongodb+srv://ece496admin:admin@datachain-iegr3.azure.mongodb.net/receivers?retryWrites=true&w=majority';
-//let dev_url = 'mongodb://localhost:27017/ece496';
+//let dev_url = 'mongodb://localhost:27017/ece496'; // local db url
 let mongoDB = process.env.MONGO_URI || dev_url;
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.Promise = global.Promise;

@@ -250,23 +250,35 @@ class AnalysisReport extends Component{
                     let r4x = [];
                     let r4y = [];
 
-                    for (let i=0; i < xDim; ++i){
-                        r1x.push(i);
-                        r1y.push(response[k]["receivers"]["receiver1"]["line"]["slope"]*i+response[k]["receivers"]["receiver1"]["line"]["intercept"]/100.0);
+                    for (let i=0; i < xDim; i=i+0.01){
+                        let y_val = response[k]["receivers"]["receiver1"]["line"]["slope"]*i+response[k]["receivers"]["receiver1"]["line"]["intercept"]/100.0;
+                        if (y_val >= 0 && y_val <= yDim){
+                            r1x.push(i);
+                            r1y.push(response[k]["receivers"]["receiver1"]["line"]["slope"]*i+response[k]["receivers"]["receiver1"]["line"]["intercept"]/100.0);
+                        }
                     }
-                    for (let i=0; i < xDim; ++i){
-                        r2x.push(i);
-                        r2y.push(response[k]["receivers"]["receiver2"]["line"]["slope"]*i+response[k]["receivers"]["receiver2"]["line"]["intercept"]/100.0);
+                    for (let i=0; i < xDim; i=i+0.01){
+                        let y_val = response[k]["receivers"]["receiver2"]["line"]["slope"]*i+response[k]["receivers"]["receiver2"]["line"]["intercept"]/100.0;
+                        if (y_val >= 0 && y_val <= yDim){
+                            r2x.push(i);
+                            r2y.push(response[k]["receivers"]["receiver2"]["line"]["slope"]*i+response[k]["receivers"]["receiver2"]["line"]["intercept"]/100.0);
+                        }
                     }
 
-                    for (let i=0; i < xDim; ++i){
-                        r3x.push(i);
-                        r3y.push(response[k]["receivers"]["receiver3"]["line"]["slope"]*i+response[k]["receivers"]["receiver3"]["line"]["intercept"]/100.0);
+                    for (let i=0; i < xDim; i=i+0.01){
+                        let y_val = response[k]["receivers"]["receiver3"]["line"]["slope"]*i+response[k]["receivers"]["receiver3"]["line"]["intercept"]/100.0;
+                        if (y_val >= 0 && y_val <= yDim){
+                            r3x.push(i);
+                            r3y.push(response[k]["receivers"]["receiver3"]["line"]["slope"]*i+response[k]["receivers"]["receiver3"]["line"]["intercept"]/100.0);
+                        }
                     }
 
-                    for (let i=0; i < xDim; ++i){
-                        r3x.push(i);
-                        r3y.push(response[k]["receivers"]["receiver4"]["line"]["slope"]*i+response[k]["receivers"]["receiver4"]["line"]["intercept"]/100.0);
+                    for (let i=0; i < xDim; i=i+0.01){
+                        let y_val = response[k]["receivers"]["receiver4"]["line"]["slope"]*i+response[k]["receivers"]["receiver4"]["line"]["intercept"]/100.0;
+                        if (y_val >= 0 && y_val <= yDim){
+                            r4x.push(i);
+                            r4y.push(response[k]["receivers"]["receiver4"]["line"]["slope"]*i+response[k]["receivers"]["receiver4"]["line"]["intercept"]/100.0);
+                        }
                     }
 
 
@@ -357,24 +369,36 @@ class AnalysisReport extends Component{
                                     {
                                         x: r1x,
                                         y: r1y,
+                                        marker: {
+                                            color: 'rgb(255, 255, 255)',
+                                        },
                                         mode: 'lines',
                                         showlegend: false
                                     },
                                     {
                                         x: r2x,
                                         y: r2y,
+                                        marker: {
+                                            color: 'rgb(255, 255, 255)',
+                                        },
                                         mode: 'lines',
                                         showlegend: false
                                     },
                                     {
                                         x: r3x,
                                         y: r3y,
+                                        marker: {
+                                            color: 'rgb(255, 255, 255)',
+                                        },
                                         mode: 'lines',
                                         showlegend: false
                                     },
                                     {
                                         x: r4x,
                                         y: r4y,
+                                        marker: {
+                                            color: 'rgb(255, 255, 255)',
+                                        },
                                         mode: 'lines',
                                         showlegend: false
                                     }
@@ -387,6 +411,7 @@ class AnalysisReport extends Component{
                                         size: "20px"
                                     }}}
                             />
+                            <br/>
                         </div>
                     );
                     heatMaps.push(temp);
