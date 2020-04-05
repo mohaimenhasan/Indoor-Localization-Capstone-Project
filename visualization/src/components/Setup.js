@@ -9,7 +9,6 @@ import DashboardIcon from "@material-ui/icons/Dashboard";
 import ListItemText from "@material-ui/core/ListItemText";
 import DataUsageIcon from "@material-ui/icons/DataUsage";
 import BarChartIcon from "@material-ui/icons/BarChart";
-import TrackChangesIcon from "@material-ui/icons/TrackChanges";
 import Dashboard from "./Dashboard";
 import Current from "./HowItWorks";
 import AnalysisReport from "./AnalysisReport";
@@ -43,6 +42,8 @@ import justsdr from "./sdrcomplete.png";
 import transmission from "./transmission.png";
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
+import {Pannellum} from "pannellum-react";
+import Panorama from "./panaroma.jpg";
 
 function Copyright() {
     return (
@@ -134,7 +135,7 @@ const useStyles = makeStyles(theme => ({
         flexDirection: 'column',
     },
     fixedFunct:{
-        height: 350
+        height: 500
     },
     fixedFloorHeight:{
         height: 445
@@ -143,7 +144,7 @@ const useStyles = makeStyles(theme => ({
         height: 200,
     },
     fixedSetupHeight: {
-        height: 610
+        height: 660
     },
     media: {
         height: 0,
@@ -180,7 +181,16 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: "#red",
         borderRadius: "50%",
         display: "inline-block"
-}
+    },
+    line: {
+        height: "47px",
+        borderBottom: "5px dotted red",
+    },
+    vertical: {
+        width: "0px",
+        height: "100%",
+        borderLeft: "5px dotted red",
+    }
 }));
 
 function withMyHook(Component){
@@ -239,45 +249,13 @@ class Setup extends Component{
         })
     }
 
-    componentDidUpdate() {
-        let cur = this;
-        if (this.state.wave1 === "None" && this.state.wave2 === "None" && this.state.wave3 === "None"){
-            setTimeout(function () {
-                cur.setState({
-                    wave1: "",
-                })
-            }, 200)
-        }
-        if (this.state.wave1 === "" && this.state.wave2 === "None" && this.state.wave3 === "None"){
-            setTimeout(function () {
-                cur.setState({
-                    wave2: ""
-                })
-            }, 800)
-        }
-        if (this.state.wave1 === "" && this.state.wave2 === "" && this.state.wave3 === "None"){
-            setTimeout(function () {
-                cur.setState({
-                    wave3: ""
-                })
-            }, 800)
-        }
-        if (this.state.wave1 === "" && this.state.wave2 === "" && this.state.wave3 === ""){
-            setTimeout(function () {
-                cur.setState({
-                    wave1: "None",
-                    wave2: "None",
-                    wave3: "None"
-                })
-            }, 800)
-        }
-    }
 
     render() {
 
         const classes = this.props.classes;
         const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
         const fixedSetupPaper = clsx(classes.paper, classes.fixedSetupHeight);
+        const fixedFuncHeight = clsx(classes.paper, classes.fixedFunct);
         const handleDrawerOpen = () => {
             this.setState({
                 open: true
@@ -354,12 +332,6 @@ class Setup extends Component{
                         <BarChartIcon />
                     </ListItemIcon>
                     <ListItemText primary="Past Results" />
-                </ListItem>
-                <ListItem button>
-                    <ListItemIcon>
-                        <TrackChangesIcon />
-                    </ListItemIcon>
-                    <ListItemText primary="Changes" />
                 </ListItem>
             </div>
         );
@@ -563,7 +535,10 @@ class Setup extends Component{
                                     backgroundSize: "40px 40px",
                                     backgroundImage: "linear-gradient(to right, grey 1px, transparent 1px),linear-gradient(to bottom, grey 1px, transparent 1px)"
                                 }}>
-                                    <Typography variant="h6" style={{color: "green"}} component="p"><b>Bahen Wireless Lab: 4145</b></Typography>
+                                    <div className={classes.line}>
+                                        <h4 style={{color: "red"}}><b> 5 meter </b></h4>
+                                    </div>
+                                    <Typography variant="h6" style={{color: "blue"}} component="p"><b>Bahen Wireless Lab: 4145</b></Typography>
                                     <img
                                         src={justsdr}
                                         alt={"receiver-1"}
@@ -676,6 +651,28 @@ class Setup extends Component{
                                             display: this.state.wave3
                                         }}
                                     />
+                                </Paper>
+                            </Grid>
+                            <Grid item xs={12} md={12} lg={12} style={{display: this.state.displaySetup, border: "5px inset #A40000"}}>
+                                <Paper className={fixedFuncHeight}>
+                                    <Pannellum
+                                        width="100%"
+                                        height="500px"
+                                        image={Panorama}
+                                        pitch={10}
+                                        yaw={180}
+                                        hfov={110}
+                                        autoLoad
+                                        showZoomCtrl={false}
+                                    >
+                                        <Pannellum.Hotspot
+                                            type="custom"
+                                            pitch={31}
+                                            yaw={150}
+                                            handleClick={(evt, name) => console.log(name)}
+                                            name="hs1"
+                                        />
+                                    </Pannellum>
                                 </Paper>
                             </Grid>
                             <Grid item xs={12} md={12} lg={12} style={{display: this.state.displayImage, border: "5px inset #A40000"}}>
