@@ -6,7 +6,7 @@ Final Year Design Project for ECE496 - Engineering Capstone at University of Tor
 ## Getting Started
 
 To get started with the project, please follow the following guidelines: <br/>
-<li >Install the prerequisites under <i> prerequisite </i> </li>
+<li >Install the prerequisites under [prerequisite](Prerequisites) </li>
 <li> Git clone the repository under <code> git clone https://github.com/mohaimenhasan/Indoor-Localization-Capstone-Project.git </code></li>
 
 ### Prerequisites
@@ -55,7 +55,7 @@ See also the list of [contributors](https://github.com/mohaimenhasan/Indoor-Loca
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
 
 ## Acknowledgments
 
