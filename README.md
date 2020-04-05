@@ -6,7 +6,7 @@ Final Year Design Project for ECE496 - Engineering Capstone at University of Tor
 ## Getting Started
 
 To get started with the project, please follow the following guidelines: <br/>
-<li >Install the prerequisites under [prerequisite](Prerequisites) </li>
+<li >Install the prerequisites under Prerequisites </li>
 <li> Git clone the repository under <code> git clone https://github.com/mohaimenhasan/Indoor-Localization-Capstone-Project.git </code></li>
 
 ### Prerequisites
